@@ -67,8 +67,11 @@ export interface Config {
   };
   blocks: {};
   collections: {
-    users: User;
+    departments: Department;
+    specialists: Specialist;
+    offices: Office;
     media: Media;
+    users: User;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -76,15 +79,18 @@ export interface Config {
   };
   collectionsJoins: {};
   collectionsSelect: {
-    users: UsersSelect<false> | UsersSelect<true>;
+    departments: DepartmentsSelect<false> | DepartmentsSelect<true>;
+    specialists: SpecialistsSelect<false> | SpecialistsSelect<true>;
+    offices: OfficesSelect<false> | OfficesSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    users: UsersSelect<false> | UsersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
   db: {
-    defaultIDType: string;
+    defaultIDType: number;
   };
   fallbackLocale: null;
   globals: {};
@@ -119,35 +125,237 @@ export interface UserAuthOperations {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users".
+ * via the `definition` "departments".
  */
-export interface User {
-  id: string;
-  updatedAt: string;
-  createdAt: string;
-  email: string;
-  resetPasswordToken?: string | null;
-  resetPasswordExpiration?: string | null;
-  salt?: string | null;
-  hash?: string | null;
-  loginAttempts?: number | null;
-  lockUntil?: string | null;
-  sessions?:
+export interface Department {
+  id: number;
+  /**
+   * e.g. Allergy, asthma & immunology
+   */
+  name: string;
+  /**
+   * Page address: /care/<slug>
+   */
+  slug: string;
+  order?: number | null;
+  /**
+   * Short label for office cards and filters, e.g. ENT
+   */
+  tag: string;
+  /**
+   * e.g. SH Allergy, Asthma & Immunology
+   */
+  brand: string;
+  /**
+   * Shown in the department header, e.g. SH Allergy
+   */
+  shortBrand: string;
+  /**
+   * White logo on transparent background. Without one, a placeholder badge is shown.
+   */
+  logo?: (number | null) | Media;
+  phone: string;
+  /**
+   * e.g. Allergy
+   */
+  phoneLabel: string;
+  /**
+   * e.g. Book an allergy appointment
+   */
+  bookLabel: string;
+  eyebrow: string;
+  /**
+   * Use *asterisks* for italic and **double asterisks** for bold.
+   */
+  headline: string;
+  intro: string;
+  photo: number | Media;
+  /**
+   * CSS object-position, e.g. center 30%
+   */
+  photoPosition?: string | null;
+  /**
+   * Second hero button; defaults to calling the department
+   */
+  heroSecondaryLabel?: string | null;
+  heroSecondaryHref?: string | null;
+  facts?:
     | {
-        id: string;
-        createdAt?: string | null;
-        expiresAt: string;
+        big: string;
+        small: string;
+        id?: string | null;
       }[]
     | null;
-  password?: string | null;
-  collection: 'users';
+  home: {
+    /**
+     * Used in “Explore …” on the home page
+     */
+    short: string;
+    summary: string;
+    chips?: string[] | null;
+    photo?: (number | null) | Media;
+    photoPosition?: string | null;
+  };
+  overview: {
+    eyebrow?: string | null;
+    heading: string;
+    paras?:
+      | {
+          text: string;
+          id?: string | null;
+        }[]
+      | null;
+    glanceTitle?: string | null;
+    glance?: string[] | null;
+    note?: string | null;
+  };
+  reviews?:
+    | {
+        quote: string;
+        attribution?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  conditions: {
+    /**
+     * Name of this page in the department menu; the page address is made from it.
+     */
+    navLabel?: string | null;
+    eyebrow?: string | null;
+    heading: string;
+    lede?: string | null;
+    items?:
+      | {
+          title: string;
+          description: string;
+          id?: string | null;
+        }[]
+      | null;
+    /**
+     * Optional sub-specialty panels (used by ENT and Surgery) instead of simple cards
+     */
+    programs?:
+      | {
+          title: string;
+          summary: string;
+          conditions?: string[] | null;
+          procedures?: string[] | null;
+          procLabel?: string | null;
+          more?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  treatments?: {
+    enabled?: boolean | null;
+    /**
+     * Name of this page in the department menu; the page address is made from it.
+     */
+    navLabel?: string | null;
+    eyebrow?: string | null;
+    heading?: string | null;
+    lede?: string | null;
+    items?:
+      | {
+          title: string;
+          description: string;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  /**
+   * A page of its own, such as Shot clinic or Hearing aids
+   */
+  feature?: {
+    enabled?: boolean | null;
+    /**
+     * Show on the Patients page instead of as its own page
+     */
+    onPatientsPage?: boolean | null;
+    /**
+     * Name of this page in the department menu; the page address is made from it.
+     */
+    navLabel?: string | null;
+    eyebrow?: string | null;
+    heading?: string | null;
+    paras?:
+      | {
+          text: string;
+          id?: string | null;
+        }[]
+      | null;
+    chips?: string[] | null;
+    bullets?:
+      | {
+          text: string;
+          id?: string | null;
+        }[]
+      | null;
+    links?: string[] | null;
+    image?: (number | null) | Media;
+  };
+  visit: {
+    eyebrow?: string | null;
+    heading: string;
+    steps?:
+      | {
+          title: string;
+          description: string;
+          id?: string | null;
+        }[]
+      | null;
+    note?: string | null;
+    linkLabel?: string | null;
+  };
+  resources?:
+    | {
+        /**
+         * Material Symbols icon name, e.g. description
+         */
+        icon?: string | null;
+        title: string;
+        description?: string | null;
+        href?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  faq?:
+    | {
+        question: string;
+        /**
+         * Start lines with “- ” for a bulleted list.
+         */
+        answer: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * How many answers start open
+   */
+  faqOpen?: number | null;
+  team?: {
+    eyebrow?: string | null;
+    heading?: string | null;
+    members?: (number | Specialist)[] | null;
+    emptyNote?: string | null;
+  };
+  offices?: (number | Office)[] | null;
+  /**
+   * Phone shown for every office on the department pages
+   */
+  officePhone?: string | null;
+  whereHeading: string;
+  whereNote?: string | null;
+  ctaHeading: string;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "media".
  */
 export interface Media {
-  id: string;
+  id: number;
   alt: string;
   updatedAt: string;
   createdAt: string;
@@ -163,10 +371,109 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "specialists".
+ */
+export interface Specialist {
+  id: number;
+  /**
+   * With credentials, e.g. Jacob Johnson, MD
+   */
+  name: string;
+  slug: string;
+  /**
+   * One short line shown on cards
+   */
+  role: string;
+  /**
+   * Full professional title for the profile page
+   */
+  title?: string | null;
+  photo?: (number | null) | Media;
+  offices?: (number | Office)[] | null;
+  bio?:
+    | {
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Education, memberships, hospital affiliations and similar lists
+   */
+  sections?:
+    | {
+        heading: string;
+        items?: string[] | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "offices".
+ */
+export interface Office {
+  id: number;
+  name: string;
+  slug: string;
+  region: 'San Francisco' | 'Peninsula' | 'South Bay' | 'East Bay' | 'North Bay';
+  street: string;
+  /**
+   * City, state and ZIP, e.g. San Francisco, CA 94108
+   */
+  city: string;
+  phone?: string | null;
+  hours?: string | null;
+  /**
+   * One short line, e.g. Our home since 1945
+   */
+  note?: string | null;
+  photo?: (number | null) | Media;
+  /**
+   * Latitude, for the map and “nearest office”
+   */
+  lat?: number | null;
+  /**
+   * Longitude
+   */
+  lng?: number | null;
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users".
+ */
+export interface User {
+  id: number;
+  updatedAt: string;
+  createdAt: string;
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  resetPasswordRequestedAt?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  sessions?:
+    | {
+        id: string;
+        createdAt?: string | null;
+        expiresAt: string;
+      }[]
+    | null;
+  password?: string | null;
+  collection: 'users';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
-  id: string;
+  id: number;
   key: string;
   data:
     | {
@@ -183,20 +490,32 @@ export interface PayloadKv {
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
-  id: string;
+  id: number;
   document?:
     | ({
-        relationTo: 'users';
-        value: string | User;
+        relationTo: 'departments';
+        value: number | Department;
+      } | null)
+    | ({
+        relationTo: 'specialists';
+        value: number | Specialist;
+      } | null)
+    | ({
+        relationTo: 'offices';
+        value: number | Office;
       } | null)
     | ({
         relationTo: 'media';
-        value: string | Media;
+        value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'users';
+        value: number | User;
       } | null);
   globalSlug?: string | null;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   updatedAt: string;
   createdAt: string;
@@ -206,10 +525,10 @@ export interface PayloadLockedDocument {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: string;
+  id: number;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   key?: string | null;
   value?:
@@ -229,7 +548,7 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: string;
+  id: number;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;
@@ -237,25 +556,224 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users_select".
+ * via the `definition` "departments_select".
  */
-export interface UsersSelect<T extends boolean = true> {
-  updatedAt?: T;
-  createdAt?: T;
-  email?: T;
-  resetPasswordToken?: T;
-  resetPasswordExpiration?: T;
-  salt?: T;
-  hash?: T;
-  loginAttempts?: T;
-  lockUntil?: T;
-  sessions?:
+export interface DepartmentsSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  order?: T;
+  tag?: T;
+  brand?: T;
+  shortBrand?: T;
+  logo?: T;
+  phone?: T;
+  phoneLabel?: T;
+  bookLabel?: T;
+  eyebrow?: T;
+  headline?: T;
+  intro?: T;
+  photo?: T;
+  photoPosition?: T;
+  heroSecondaryLabel?: T;
+  heroSecondaryHref?: T;
+  facts?:
     | T
     | {
+        big?: T;
+        small?: T;
         id?: T;
-        createdAt?: T;
-        expiresAt?: T;
       };
+  home?:
+    | T
+    | {
+        short?: T;
+        summary?: T;
+        chips?: T;
+        photo?: T;
+        photoPosition?: T;
+      };
+  overview?:
+    | T
+    | {
+        eyebrow?: T;
+        heading?: T;
+        paras?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        glanceTitle?: T;
+        glance?: T;
+        note?: T;
+      };
+  reviews?:
+    | T
+    | {
+        quote?: T;
+        attribution?: T;
+        id?: T;
+      };
+  conditions?:
+    | T
+    | {
+        navLabel?: T;
+        eyebrow?: T;
+        heading?: T;
+        lede?: T;
+        items?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              id?: T;
+            };
+        programs?:
+          | T
+          | {
+              title?: T;
+              summary?: T;
+              conditions?: T;
+              procedures?: T;
+              procLabel?: T;
+              more?: T;
+              id?: T;
+            };
+      };
+  treatments?:
+    | T
+    | {
+        enabled?: T;
+        navLabel?: T;
+        eyebrow?: T;
+        heading?: T;
+        lede?: T;
+        items?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              id?: T;
+            };
+      };
+  feature?:
+    | T
+    | {
+        enabled?: T;
+        onPatientsPage?: T;
+        navLabel?: T;
+        eyebrow?: T;
+        heading?: T;
+        paras?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        chips?: T;
+        bullets?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        links?: T;
+        image?: T;
+      };
+  visit?:
+    | T
+    | {
+        eyebrow?: T;
+        heading?: T;
+        steps?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              id?: T;
+            };
+        note?: T;
+        linkLabel?: T;
+      };
+  resources?:
+    | T
+    | {
+        icon?: T;
+        title?: T;
+        description?: T;
+        href?: T;
+        id?: T;
+      };
+  faq?:
+    | T
+    | {
+        question?: T;
+        answer?: T;
+        id?: T;
+      };
+  faqOpen?: T;
+  team?:
+    | T
+    | {
+        eyebrow?: T;
+        heading?: T;
+        members?: T;
+        emptyNote?: T;
+      };
+  offices?: T;
+  officePhone?: T;
+  whereHeading?: T;
+  whereNote?: T;
+  ctaHeading?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "specialists_select".
+ */
+export interface SpecialistsSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  role?: T;
+  title?: T;
+  photo?: T;
+  offices?: T;
+  bio?:
+    | T
+    | {
+        text?: T;
+        id?: T;
+      };
+  sections?:
+    | T
+    | {
+        heading?: T;
+        items?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "offices_select".
+ */
+export interface OfficesSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  region?: T;
+  street?: T;
+  city?: T;
+  phone?: T;
+  hours?: T;
+  note?: T;
+  photo?: T;
+  lat?: T;
+  lng?: T;
+  order?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -274,6 +792,29 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users_select".
+ */
+export interface UsersSelect<T extends boolean = true> {
+  updatedAt?: T;
+  createdAt?: T;
+  email?: T;
+  resetPasswordToken?: T;
+  resetPasswordExpiration?: T;
+  salt?: T;
+  hash?: T;
+  resetPasswordRequestedAt?: T;
+  loginAttempts?: T;
+  lockUntil?: T;
+  sessions?:
+    | T
+    | {
+        id?: T;
+        createdAt?: T;
+        expiresAt?: T;
+      };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

@@ -1,67 +1,42 @@
-# Payload Blank Template
+# SH Medical website
 
-This template comes configured with the bare minimum to get started on anything you need.
+Next.js 16 (App Router) with Payload CMS 3, built from the designs on the [SH Medical Redesign canvas](https://claude.ai/artifact/KXJvxM5mLaQi6UPSwwngGo). See `../PLAN.md` for the project plan.
 
-## Quick start
+## Run it
 
-This template can be deployed directly from our Cloud hosting and it will setup MongoDB and cloud S3 object storage for media.
+```
+npm install
+npm run seed      # loads departments, specialists, offices and images into the local database
+npm run dev       # http://localhost:3000 · CMS at /admin (create the first admin user there)
+```
 
-## Quick Start - local setup
+Requires Node 20.18+. The local database is SQLite (`sh-medical.db`, set in `.env`); production should use Postgres (`@payloadcms/db-postgres`).
 
-To spin up this template locally, follow these steps:
+## What's here
 
-### Clone
+| Route | Page |
+| --- | --- |
+| `/` | Home: hero and care finder, who we are, how we care, all departments, specialists, locations |
+| `/care` | All departments |
+| `/care/<dept>` | A department's own mini-site, with its own header and footer. Overview, then `/conditions`, `/treatments` (or its own label), a feature page such as `/shot-clinic`, `/patients`, `/team`, `/locations` |
+| `/specialists` | Directory, filterable by care, region and name (`?care=allergy&region=San Francisco&q=`) |
+| `/specialists/<slug>` | Profile with bio, training and offices |
+| `/locations` | Offices by region, with the care offered at each |
+| `/patients` | New patients, insurance, forms and records (PDFs in `public/forms`), video visits, MyChart |
+| `/about` | Story, mission, history, reviews |
+| `/book` | 4-step appointment request (see below) |
 
-After you click the `Deploy` button above, you'll want to have standalone copy of this repo on your machine. If you've already cloned this repo, skip to [Development](#development).
+CMS collections (`src/collections`): **Departments** (everything on a department's pages, in tabs), **Specialists**, **Offices**, **Media**, **Users**. A department's menu labels and page addresses come from its content (`sitePages()` in `src/lib/content.ts`). Text fields accept `*italic*` and `**bold**`; FAQ answers accept `- ` bullet lines.
 
-### Development
+Seed content comes from the design work: `../design/export_content.py` writes `src/seed/content.json`; images are in `src/seed/media`. Re-running `npm run seed` replaces departments, specialists, offices and media.
 
-1. First [clone the repo](#clone) if you have not done so already
-2. `cd my-project && cp .env.example .env` to copy the example environment variables. You'll need to add the `MONGODB_URL` from your Cloud project to your `.env` if you want to use S3 storage and the MongoDB database that was created for you.
+## The booking form doesn't send anything yet
 
-3. `pnpm install && pnpm dev` to install dependencies and start the dev server
-4. open `http://localhost:3000` to open the app in your browser
+Appointment requests contain health information, so they must only go to a HIPAA-compliant form service covered by a BAA. Until one is chosen, `/book` walks through all four steps but sends nothing, and the last step says so and gives the department's phone number. To switch it on, send the data to that service where `next()` in `src/app/(frontend)/book/BookingForm.tsx` has its TODO, and set `NEXT_PUBLIC_BOOKING_ENABLED=true`.
 
-That's it! Changes made in `./src` will be reflected in your app. Follow the on-screen instructions to login and create your first admin user. Then check out [Production](#production) once you're ready to build and serve your app, and [Deployment](#deployment) when you're ready to go live.
+## Before launch
 
-#### Docker (Optional)
-
-If you prefer to use Docker for local development instead of a local MongoDB instance, the provided docker-compose.yml file can be used.
-
-To do so, follow these steps:
-
-- Modify the `MONGODB_URL` in your `.env` file to `mongodb://127.0.0.1/<dbname>`
-- Modify the `docker-compose.yml` file's `MONGODB_URL` to match the above `<dbname>`
-- Run `docker-compose up` to start the database, optionally pass `-d` to run in the background.
-
-## How it works
-
-The Payload config is tailored specifically to the needs of most websites. It is pre-configured in the following ways:
-
-### Collections
-
-See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
-
-- #### Users (Authentication)
-
-  Users are auth-enabled collections that have access to the admin panel.
-
-  For additional help, see the official [Auth Example](https://github.com/payloadcms/payload/tree/3.x/examples/auth) or the [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) docs.
-
-- #### Media
-
-  This is the uploads enabled collection. It features pre-configured sizes, focal point and manual resizing to help you manage your pictures.
-
-### Docker
-
-Alternatively, you can use [Docker](https://www.docker.com) to spin up this template locally. To do so, follow these steps:
-
-1. Follow [steps 1 and 2 from above](#development), the docker-compose file will automatically use the `.env` file in your project root
-1. Next run `docker-compose up`
-1. Follow [steps 4 and 5 from above](#development) to login and create your first admin user
-
-That's it! The Docker instance will help you get up and running quickly while also standardizing the development environment across your teams.
-
-## Questions
-
-If you have any issues or questions, reach out to us on [Discord](https://discord.com/invite/payload) or start a [GitHub discussion](https://github.com/payloadcms/payload/discussions).
+- Postgres and hosting covered by a BAA; real admin users; email adapter for Payload.
+- Replace stand-in photos (see `../design/stock/SOURCES.md`); department logos for Dermatology, Surgery and Wellness; Dermatology and Wellness content (bracketed placeholders on their pages).
+- Bios for 12 specialists, and the facts marked "[to confirm]" (listed in `../PLAN.md`).
+- 301 redirects from the old specialty domains and sh.health URLs.

@@ -1,0 +1,4078 @@
+{
+ "departments": [
+  {
+   "slug": "ent",
+   "order": 0,
+   "name": "Ear, nose & throat",
+   "brand": "SH Otolaryngology",
+   "shortBrand": "SH Otolaryngology",
+   "eyebrow": "SH Otolaryngology · formerly San Francisco Otolaryngology",
+   "headline": "Ear, nose and throat care, *since 1940.*",
+   "intro": "Board-certified ENT physicians and head and neck surgeons for adults and children, with in-house imaging, allergy and hearing testing, so we can find the cause and treat it in one place.",
+   "phone": "(415) 362-5443",
+   "phoneLabel": "ENT",
+   "bookLabel": "Book an ENT appointment",
+   "heroSecondary": null,
+   "logo": "26ff922bcabb15ea56c8012101ea8035",
+   "photo": "e92db3f85769f9f2b67bfe6252c8e1f4",
+   "photoAlt": "A father and his young daughter laughing together in warm sunlight",
+   "photoPosition": "center 40%",
+   "facts": [
+    {
+     "big": "13 physicians",
+     "small": "Adult and pediatric ENT and head and neck surgeons"
+    },
+    {
+     "big": "UCSF faculty",
+     "small": "Our physicians hold academic appointments at UCSF"
+    },
+    {
+     "big": "In-office CT",
+     "small": "Sinus and ear imaging, reviewed with you the same visit"
+    }
+   ],
+   "home": {
+    "short": "ENT care",
+    "summary": "Adult and pediatric ENT specialists and head and neck surgeons, many of them UCSF clinical faculty. From chronic sinus trouble to thyroid care and ear surgery, we look at the whole picture.",
+    "chips": [
+     "Sinus & rhinology",
+     "Thyroid center",
+     "Head & neck surgery",
+     "Pediatric ENT"
+    ],
+    "photo": "e92db3f85769f9f2b67bfe6252c8e1f4",
+    "photoAlt": "A father and his young daughter laughing together in warm sunlight",
+    "photoPosition": "center 40%"
+   },
+   "overview": {
+    "eyebrow": "About SH Otolaryngology",
+    "heading": "Experience, innovation and a strong local network",
+    "paras": [
+     "SH Otolaryngology has cared for the Bay Area’s ears, noses and throats since 1940, when Dr. Meyer Schindler joined the Chief of Otolaryngology at UCSF in practice. Today our physicians treat common and rare conditions of the ears, nose, throat, head and neck.",
+     "For sinus problems we look at three things that can each play a part: **structure**, using in-office CT and sinus telescopes; **allergy**, with testing by our allergists; and **infection**, with lab tests and cultures. Treating the right cause is what brings lasting relief.",
+     "Our mission is to be a community leader in otolaryngology–head and neck surgery, giving every patient comprehensive, high-quality care through an integrated practice."
+    ],
+    "glance_title": "Why patients choose us",
+    "glance": [
+     "Physicians with academic appointments at UCSF",
+     "In-house allergy and audiology testing for adults and children",
+     "In-office CT scanner for the sinuses and ears",
+     "Research in office-based sinuplasty, hearing and cognition, and ear bone health",
+     "After-hours calls answered by our own physicians [to confirm]",
+     "Hospital affiliations with UCSF, CPMC and Saint Francis"
+    ],
+    "note": "Collaborations include the Alliston Lab at UCSF, on bone in the ear and hearing loss, and Hearing Research Inc., the charity that funded development of the cochlear implant."
+   },
+   "conditions": {
+    "eyebrow": "What we treat",
+    "heading": "Every part of ENT, under one roof",
+    "lede": "Each area has its own specialists and equipment. Here is everything we treat and the procedures we offer.",
+    "programs": [
+     {
+      "title": "Sinus and nasal care",
+      "summary": "Our Sinus and Allergy Center treats sinusitis, rhinitis, polyps and blocked airways, from medicines and allergy care to in-office procedures and endoscopic surgery.",
+      "conditions": [
+       "Sinusitis (acute, recurrent and chronic)",
+       "Allergic and atrophic rhinitis",
+       "Nasal polyps",
+       "Deviated septum",
+       "Perforated septum",
+       "Concha bullosa",
+       "Inferior turbinate hypertrophy",
+       "Inverted papilloma",
+       "Nasal fracture",
+       "Nosebleeds",
+       "Postnasal drip",
+       "Sinus headaches and pain",
+       "Loss of smell and taste",
+       "Stuffy nose and congestion"
+      ],
+      "procedures": [
+       "Balloon sinuplasty",
+       "Functional endoscopic sinus surgery (FESS)",
+       "Image-guided sinus surgery",
+       "PROPEL sinus implants",
+       "ClariFix cryotherapy",
+       "Aerin VivAer",
+       "LATERA implant",
+       "Septoplasty",
+       "Functional rhinoplasty",
+       "Turbinate reduction",
+       "Nasal polypectomy",
+       "Concha bullosa excision",
+       "Medial maxillectomy",
+       "Caldwell-Luc",
+       "In-office sinus irrigation",
+       "Fiberoptic nasal endoscopy",
+       "Nosebleed cauterization"
+      ]
+     },
+     {
+      "title": "Ear and hearing (otology)",
+      "summary": "Increasingly less invasive ear surgery, alongside medical care for infections, dizziness and hearing loss, with our audiologists in the same group.",
+      "conditions": [
+       "Hearing loss, including sudden and single-sided",
+       "Ear infections and swimmer’s ear",
+       "Chronic middle ear fluid",
+       "Perforated eardrum",
+       "Cholesteatoma",
+       "Eustachian tube dysfunction",
+       "Earwax",
+       "Tinnitus",
+       "Vertigo, BPPV and Ménière’s disease",
+       "Vestibular neuritis and labyrinthitis",
+       "Acoustic neuroma",
+       "Surfer’s ear",
+       "Facial nerve paralysis",
+       "Superior canal dehiscence",
+       "Mastoiditis",
+       "Barotrauma"
+      ],
+      "procedures": [
+       "Ear tubes, including in-office Tula",
+       "Tympanoplasty",
+       "Tympanomastoidectomy",
+       "Mastoidectomy",
+       "Stapedectomy",
+       "Eustachian tube balloon dilation",
+       "BAHA bone-anchored implants",
+       "Cochlear implant evaluation",
+       "Atresia repair",
+       "Earwax and foreign body removal",
+       "Tinnitus retraining therapy",
+       "Vestibular rehabilitation"
+      ]
+     },
+     {
+      "title": "Thyroid and parathyroid",
+      "summary": "The Thyroid Center of San Francisco brings together surgeons, endocrinologists, pathologists and radiologists, with in-house ultrasound and biopsy.",
+      "conditions": [
+       "Thyroid nodules",
+       "Multinodular goiter",
+       "Thyroid cancers: papillary, follicular, medullary and anaplastic",
+       "Graves’ disease",
+       "Hyperthyroidism",
+       "Hypothyroidism",
+       "Hashimoto’s disease",
+       "Hyperparathyroidism",
+       "Parathyroid adenoma"
+      ],
+      "procedures": [
+       "In-office ultrasound",
+       "Fine needle aspiration biopsy",
+       "Hemi and total thyroidectomy",
+       "Parathyroidectomy",
+       "Lymph node removal",
+       "Medication treatment",
+       "Radioactive iodine"
+      ]
+     },
+     {
+      "title": "Head and neck",
+      "summary": "A full spectrum of increasingly less invasive treatment for tumors, salivary glands, tonsils and the throat.",
+      "conditions": [
+       "Head and neck skin cancer: basal cell, squamous cell, melanoma",
+       "Neck lumps",
+       "Oral cavity tumors",
+       "Salivary gland tumors, infections and stones",
+       "Nasopharynx disorders",
+       "Tonsil and adenoid infections",
+       "Tonsil stones",
+       "Throat conditions"
+      ],
+      "procedures": [
+       "Tumor excision and reconstruction",
+       "Neck dissection",
+       "Neck mass excision and lymph node biopsy",
+       "Thyroglossal duct cyst excision",
+       "Salivary gland surgery and office dilation",
+       "Tonsillectomy",
+       "Adenoidectomy",
+       "Laryngoscopy and bronchoscopy"
+      ]
+     },
+     {
+      "title": "Children’s ENT",
+      "summary": "Gentle care for children’s ears, noses and throats, using our low-dose in-office CT scanner and in-office ear tubes when we can.",
+      "conditions": [
+       "Ear infections and middle ear problems",
+       "Hearing loss",
+       "Speech disorders",
+       "Tonsil and adenoid problems",
+       "Chronic congestion and mouth breathing",
+       "Sinus infections and allergies",
+       "Nosebleeds",
+       "Tongue-tie",
+       "Acid reflux",
+       "Laryngomalacia",
+       "Preauricular pits and cysts",
+       "Head and neck masses: branchial cleft and dermoid cysts, hemangioma, lymphatic malformation"
+      ],
+      "procedures": [
+       "Tula ear tubes without general anesthesia",
+       "Myringotomy and ear tubes",
+       "Tonsillectomy and adenoidectomy",
+       "Tongue-tie release",
+       "BAHA implants and hearing aids",
+       "Middle ear and reconstructive ear surgery",
+       "Balloon sinuplasty",
+       "Speech therapy"
+      ]
+     },
+     {
+      "title": "Voice and throat",
+      "summary": "In-house videostroboscopy to see the voice box in motion, with our Voice and Swallowing team for therapy and surgery.",
+      "conditions": [
+       "Hoarseness",
+       "Laryngitis",
+       "Vocal cord nodules, cysts and polyps",
+       "Vocal cord paralysis",
+       "Spasmodic dysphonia",
+       "Reactive vocal cord lesions"
+      ],
+      "procedures": [
+       "Videostroboscopy",
+       "Flexible fiberoptic laryngoscopy",
+       "Voice rest and speech therapy",
+       "Reflux treatment",
+       "Nodule and polyp removal",
+       "Vocal cord medialization",
+       "Voice prosthesis",
+       "Tracheotomy"
+      ]
+     },
+     {
+      "title": "Snoring and sleep apnea",
+      "summary": "ENT physicians are uniquely placed to find where the airway narrows during sleep and treat it, from oral appliances to Inspire therapy.",
+      "conditions": [
+       "Snoring",
+       "Obstructive sleep apnea",
+       "Central and complex sleep apnea",
+       "Enlarged tonsils and adenoids",
+       "Nasal obstruction"
+      ],
+      "procedures": [
+       "Sleep studies, including at home",
+       "CPAP, BiPAP and ASV",
+       "Oral appliances",
+       "Inspire upper airway stimulation",
+       "UPPP and LAUP",
+       "Tonsillectomy and adenoidectomy",
+       "Nasal surgery",
+       "Maxillomandibular advancement"
+      ]
+     },
+     {
+      "title": "Allergy and hearing, in-house",
+      "summary": "Our allergists and audiologists work alongside our ENT physicians, so testing and treatment don’t mean a referral elsewhere.",
+      "conditions": [
+       "Allergic rhinitis and food allergy",
+       "Asthma",
+       "Hearing loss",
+       "Tinnitus"
+      ],
+      "procedures": [
+       "Skin and blood allergy testing",
+       "Allergy shots and drops",
+       "Hearing evaluations",
+       "Hearing aids",
+       "Cochlear implant evaluation"
+      ],
+      "more": "Allergy and Audiology pages →"
+     }
+    ],
+    "navLabel": "Conditions"
+   },
+   "treatments": {
+    "tab": "In-office procedures",
+    "eyebrow": "In-office technology",
+    "heading": "Less invasive, often in our office",
+    "lede": "Many treatments that once meant a hospital visit now happen in our offices, usually under local anesthesia, with most patients back to normal the same day.",
+    "items": [
+     [
+      "Balloon sinuplasty",
+      "A small balloon gently widens blocked sinus openings, often without removing tissue or bone. Many people return to normal activities within 24 hours."
+     ],
+     [
+      "In-office sinus CT (MiniCAT)",
+      "An upright scanner made for sinuses and ears. Your doctor reviews the images with you in minutes, at 10 to 50 times less radiation than a standard head CT."
+     ],
+     [
+      "ClariFix cryotherapy",
+      "Cold therapy for chronic runny nose and congestion, 30–45 seconds per side. Most people improve within 2–6 weeks, with relief lasting up to two years."
+     ],
+     [
+      "LATERA implant",
+      "An absorbable implant that supports the side of the nose when weak cartilage collapses. 86% of patients reported better breathing."
+     ],
+     [
+      "PROPEL sinus implants",
+      "Placed during sinus surgery to keep openings clear and deliver anti-inflammatory medicine directly to the sinuses."
+     ],
+     [
+      "Tula ear tubes",
+      "Ear tubes placed in the office without general anesthesia, for children from six months and adults. The visit takes 30–45 minutes."
+     ],
+     [
+      "Inspire therapy",
+      "A mask-free implant for moderate to severe obstructive sleep apnea, for adults who have struggled with CPAP. A remote turns it on at bedtime."
+     ],
+     [
+      "BAHA bone-anchored hearing",
+      "A titanium implant behind the ear sends sound through bone to the inner ear, for conductive or mixed loss and single-sided deafness."
+     ],
+     [
+      "Videostroboscopy",
+      "Slow-motion video of your vocal cords as you speak, to diagnose hoarseness and other voice problems."
+     ],
+     [
+      "Septoplasty",
+      "Straightens the wall between the nostrils through small incisions inside the nose, with no visible scar. Most people go home the same day."
+     ]
+    ],
+    "navLabel": "Procedures"
+   },
+   "feature": {
+    "tab": "Insurance",
+    "eyebrow": "Insurance and billing",
+    "heading": "Plans we accept",
+    "paras": [
+     "We accept most PPO plans and Medicare, and we’re preferred providers with the Brown & Toland, Hill Physicians and Meritage medical groups. You’re responsible for co-pays, deductibles and non-covered services. We accept all major credit cards and personal checks.",
+     "We seek prior authorization for any tests your physician orders, though authorization doesn’t guarantee payment. Your Explanation of Benefits will name “UCSF Clinical Integrated Partners”. Billing questions: (888) 362-5443."
+    ],
+    "bullets": [
+     "Aetna PPO",
+     "Anthem Blue Cross PPO",
+     "Blue Shield PPO",
+     "Cigna / Great-West Healthcare PPO",
+     "HealthNet PPO",
+     "UnitedHealth (PacifiCare) PPO",
+     "Sterling Insurance PPO",
+     "Medicare and most supplements, such as AARP",
+     "Brown & Toland HMOs: Aetna, Blue Cross, Blue Shield, Cigna, HealthNet, UnitedHealth",
+     "Hill Physicians HMOs: Aetna, Blue Cross, Blue Shield, Cigna, HealthNet, UnitedHealth"
+    ],
+    "links": [
+     "We don’t participate with Medi-Cal or its managed care plans",
+     "Insurance glossary"
+    ],
+    "navLabel": "Insurance",
+    "image": null,
+    "onPatientsPage": true
+   },
+   "visit": {
+    "heading": "Your ENT visit",
+    "steps": [
+     [
+      "Before you come",
+      "New patients complete the registration and adult or pediatric health history forms online. Patients returning after a year complete a health update."
+     ],
+     [
+      "What to bring",
+      "Your insurance card, a list of medicines and questions, and your actual X-ray or CT images on CD, not just the reports."
+     ],
+     [
+      "Your consultation",
+      "We may use a lighted scope, in-office CT, allergy or hearing tests. Not every visit needs every test; your doctor explains each step."
+     ],
+     [
+      "Your plan",
+      "We agree next steps together, from medicines to an in-office procedure or surgery, and send updates to your other doctors."
+     ]
+    ],
+    "note": "Self-assessment questionnaires are available for sinusitis and nasal allergies, cough, sleep problems, hearing loss, ear infection, ringing in the ears, dizziness and hoarseness. Print and bring the ones that apply."
+   },
+   "team": {
+    "eyebrow": "Your ENT team",
+    "heading": "Board-certified ENT physicians and head and neck surgeons",
+    "members": [
+     "jacob-johnson-md",
+     "andrea-h-yeung-md",
+     "gerald-kangelaris-md",
+     "daniel-flis-md",
+     "lauren-luk-md-fars",
+     "monica-lee-md",
+     "douglas-mann-md-mba",
+     "aasif-kazi-md-pharm-d",
+     "christina-laane-md",
+     "jennifer-bock-hughes-md",
+     "sai-challapalli-md",
+     "virginia-smith-bronstein-md",
+     "farshid-taghizadeh-md"
+    ]
+   },
+   "reviews": [
+    {
+     "quote": "I was able to get an appointment within 2 days. Dr. Kangelaris was super friendly, heard me out, and explained my diagnosis with a lot of clarity.",
+     "attribution": "May 2025"
+    },
+    {
+     "quote": "Dr. Yeung is the best! She goes above and beyond when it comes to taking care of me. She is very knowledgeable about everything!",
+     "attribution": "May 2025"
+    },
+    {
+     "quote": "Dr. Johnson is delightful. He’s thorough, kind, polite and professional, and skilled.",
+     "attribution": "April 2025"
+    }
+   ],
+   "offices": [
+    "union",
+    "pac",
+    "castro",
+    "mateo",
+    "sunny",
+    "marin",
+    "sonoma"
+   ],
+   "officePhone": "(415) 362-5443",
+   "whereHeading": "ENT care in 7 Bay Area offices",
+   "whereNote": "Open Monday to Friday, 8am to 5pm. Surgery takes place at Campus, Pacific Heights, San Francisco and Presidio surgery centers, CPMC, UCSF Mount Zion, Saint Francis and MarinHealth.",
+   "resources": [
+    {
+     "icon": "description",
+     "title": "Online forms",
+     "description": "Registration, adult and pediatric health history, and health updates."
+    },
+    {
+     "icon": "forum",
+     "title": "Online requests",
+     "description": "Appointments, questions, refills, and lab and test results."
+    },
+    {
+     "icon": "checklist",
+     "title": "Self-assessment questionnaires",
+     "description": "Sinus, cough, sleep, hearing, ear, tinnitus, dizziness and voice."
+    },
+    {
+     "icon": "video_call",
+     "title": "Video visits",
+     "description": "See your doctor from your phone, tablet or computer."
+    },
+    {
+     "icon": "surgical",
+     "title": "Surgery instructions",
+     "description": "Fasting rules, what to arrange, and discharge instructions."
+    },
+    {
+     "icon": "payments",
+     "title": "Pay your bill online",
+     "description": "Billing questions: (888) 362-5443."
+    },
+    {
+     "icon": "folder_open",
+     "title": "Medical records",
+     "description": "Request records to or from our office."
+    },
+    {
+     "icon": "handshake",
+     "title": "For referring physicians",
+     "description": "Referral form and prompt consultation notes."
+    }
+   ],
+   "faq": [
+    {
+     "question": "How do I know if it’s sinusitis or just a bad cold?",
+     "answer": "A cold usually peaks in two to three days and improves within 10. Sinus symptoms tend to last beyond 10 days, or improve and then get worse again."
+    },
+    {
+     "question": "Will I need surgery for my sinuses?",
+     "answer": "Not necessarily. Most sinusitis is treated with medicines. Surgery is considered when chronic sinusitis doesn’t respond, or when polyps, a deviated septum or imaging show a structural cause."
+    },
+    {
+     "question": "Can sinusitis cause tooth pain?",
+     "answer": "Yes. The roots of the upper back teeth sit right below the cheek sinuses, so inflamed sinuses can make those teeth ache."
+    },
+    {
+     "question": "Is sinusitis contagious?",
+     "answer": "The cold virus that often starts it can be, but the sinus inflammation itself isn’t passed from person to person."
+    },
+    {
+     "question": "Can I treat sinusitis at home?",
+     "answer": "Saline rinses, steam, fluids and decongestants help mild cases. If symptoms are severe, getting worse or lasting more than 10 days, see a doctor."
+    },
+    {
+     "question": "Is a BAHA implant permanent?",
+     "answer": "It’s designed to last, but it can be removed if needed. The implant bonds with the bone behind the ear, and the sound processor is activated once it heals."
+    },
+    {
+     "question": "Who is a candidate for Inspire therapy?",
+     "answer": "Adults 18 and over with moderate to severe obstructive sleep apnea who have tried and struggled with CPAP."
+    },
+    {
+     "question": "What should I do about sudden hearing loss?",
+     "answer": "Treat rapid, unexplained hearing loss in one ear as an emergency. Contact us or go to an emergency room right away; early steroid treatment gives the best chance of recovery."
+    }
+   ],
+   "faqOpen": 2,
+   "ctaHeading": "Breathe, hear and speak more easily.",
+   "tag": "ENT"
+  },
+  {
+   "slug": "audiology",
+   "order": 1,
+   "name": "Audiology & hearing aids",
+   "brand": "SH Audiology",
+   "shortBrand": "SH Audiology",
+   "eyebrow": "SH Audiology · formerly San Francisco Audiology",
+   "headline": "Hear the sounds of the Bay *again.*",
+   "intro": "Realizing you’re having difficulty hearing is the first step. Our team is here to help you take the second, so you stay connected to conversation, live music and the soundscapes of our city.",
+   "phone": "(415) 362-2901",
+   "phoneLabel": "Audiology",
+   "bookLabel": "Book a hearing evaluation",
+   "heroSecondary": null,
+   "logo": "a770aa18cb5064c67f7a9bfb7d595781",
+   "photo": "cf6af823b270e7fdae1d518874e51a61",
+   "photoAlt": "A woman gently adjusts a behind-the-ear hearing aid",
+   "photoPosition": "30% center",
+   "facts": [
+    {
+     "big": "Since 1940",
+     "small": "Expert care in audiology, balance and hearing health"
+    },
+    {
+     "big": "6 languages",
+     "small": "English, Spanish, Tagalog, German, Hebrew and Tamil"
+    },
+    {
+     "big": "10 offices",
+     "small": "In person across the Bay Area, or by telehealth"
+    }
+   ],
+   "home": {
+    "short": "audiology",
+    "summary": "Thorough hearing evaluations, personalized hearing aids from leading brands, and care that continues long after your fitting, in person or by telehealth.",
+    "chips": [
+     "Hearing tests",
+     "Hearing aids",
+     "Tinnitus",
+     "Custom earmolds"
+    ],
+    "photo": "cf6af823b270e7fdae1d518874e51a61",
+    "photoAlt": "A woman adjusting her behind-the-ear hearing aid",
+    "photoPosition": "center 30%"
+   },
+   "overview": {
+    "eyebrow": "About SH Audiology",
+    "heading": "A full-service audiology and hearing aid practice",
+    "paras": [
+     "SH Audiology has cared for hearing and balance since 1940. As part of SH Medical, we work alongside ENT, allergy, sleep, voice and physical therapy specialists, so your care connects.",
+     "Our mission is to go the extra mile: to care for you, and to explain the most innovative diagnostic and treatment technologies available. We stay involved in hearing and product development research, and our goal is simple: to optimize your hearing and make listening effortless.",
+     "We see adults and children, in person or online, and we want everyone to be able to hear the diverse sounds of our unique city."
+    ],
+    "glance_title": "Our services",
+    "glance": [
+     "Comprehensive hearing evaluations",
+     "Vestibular (balance) testing",
+     "Hearing aid consultations and fittings",
+     "Hearing aid servicing and repair",
+     "Custom earmolds",
+     "Assistive listening devices",
+     "Telehealth visits"
+    ],
+    "note": "Audiologists hold a Doctor of Audiology (Au.D.) or a master’s degree, and are licensed to diagnose and treat hearing and balance disorders. They don’t perform surgery or prescribe medication; our ENT physicians do, in the same group."
+   },
+   "conditions": {
+    "eyebrow": "What we treat",
+    "heading": "What we help with",
+    "lede": "Hearing loss usually develops slowly, and on average people wait seven years before seeking treatment. The sooner it’s diagnosed, the more options you have.",
+    "items": [
+     [
+      "Hearing loss",
+      "Signs include people seeming to mumble, trouble following group conversations or phone calls, and others remarking on your TV volume."
+     ],
+     [
+      "Types of hearing loss",
+      "Conductive (outer or middle ear), sensorineural (inner ear) or mixed, in one ear or both. The type and cause shape your plan."
+     ],
+     [
+      "Age-related hearing loss",
+      "Presbycusis affects about a third of adults over 65 and nearly half by 75. It usually comes on gradually, starting with high pitches."
+     ],
+     [
+      "Noise-induced hearing loss",
+      "The most common type in younger people. Sounds above 85 decibels can permanently damage the inner ear, but it’s usually preventable."
+     ],
+     [
+      "Tinnitus",
+      "Ringing, buzzing or pulsing in one or both ears. We help you manage it with hearing aids, sound therapy, counseling and retraining therapy."
+     ],
+     [
+      "Balance disorders",
+      "Dizziness, vertigo and unsteadiness, diagnosed with vestibular testing and treated with our balance and physical therapy team."
+     ],
+     [
+      "Auditory processing disorders",
+      "When the brain struggles to process sound and to tell speech apart from other noise."
+     ],
+     [
+      "Custom earmolds",
+      "Made from impressions of your ears for hearing protection and in-ear monitors: for musicians, swimmers, hunters and more."
+     ],
+     [
+      "Assistive listening devices",
+      "Portable amplifiers, on their own or with hearing aids and cochlear implants, that lift speech out of background noise."
+     ]
+    ],
+    "navLabel": "Conditions"
+   },
+   "treatments": {
+    "tab": "Hearing tests",
+    "eyebrow": "Hearing evaluations",
+    "heading": "A complete picture of your hearing",
+    "lede": "Quick and painless, usually with results the same day. After a physical exam and a look at your medical history, we use any of these tests.",
+    "items": [
+     [
+      "Pure-tone testing",
+      "Through headphones in a sound-proof room, you signal when you hear tones of different pitch and volume. Results are charted on an audiogram."
+     ],
+     [
+      "Bone conduction testing",
+      "A small vibrator behind the ear sends sound straight to the inner ear, to tell conductive from sensorineural hearing loss."
+     ],
+     [
+      "Speech testing",
+      "Finds the faintest speech you can understand half the time, and how well you separate speech from background noise."
+     ],
+     [
+      "Tympanometry",
+      "Measures how your eardrum moves, to detect fluid, wax buildup, perforations and tumors in the middle ear."
+     ],
+     [
+      "Acoustic reflex testing",
+      "Measures involuntary muscle contractions in the middle ear to pinpoint where a hearing problem sits."
+     ],
+     [
+      "Auditory brainstem response",
+      "Records brainwave activity in response to sound. Also used to screen newborns."
+     ],
+     [
+      "Otoacoustic emissions",
+      "A tiny probe checks how the hair cells of the inner ear respond, looking for blockage, fluid or damage."
+     ],
+     [
+      "Online hearing test",
+      "A quick, free first step you can take at home before booking a full evaluation."
+     ]
+    ],
+    "navLabel": "Hearing tests"
+   },
+   "feature": {
+    "tab": "Hearing aids",
+    "eyebrow": "Hearing aids",
+    "heading": "Technology that fits your life",
+    "img": "/_blob/a23623a486988bf47020b4f2b9e5e47c",
+    "img_alt": "A hand holding a small, discreet hearing aid",
+    "paras": [
+     "Today’s hearing aids range from invisible-in-the-canal models to behind-the-ear designs. Many stream calls, music and TV over Bluetooth, and some are rechargeable and adjust automatically as you move between places.",
+     "Price depends on your hearing loss and the technology that suits your lifestyle. Many packages include servicing, and financing is available. Over-the-counter aids suit only mild to moderate loss in adults; prescription aids are fitted to you after an exam."
+    ],
+    "chips": [
+     "Lyric",
+     "Oticon",
+     "Phonak",
+     "ReSound",
+     "Signia",
+     "Starkey",
+     "Widex"
+    ],
+    "links": [
+     "Choosing a hearing aid",
+     "Pricing",
+     "Fitting",
+     "Repair & service",
+     "Accessories",
+     "Upgrades"
+    ],
+    "navLabel": "Hearing aids",
+    "image": "a23623a486988bf47020b4f2b9e5e47c",
+    "onPatientsPage": false
+   },
+   "visit": {
+    "heading": "From first test to lifelong support",
+    "steps": [
+     [
+      "Hearing evaluation",
+      "A physical exam, your medical history and a series of tests measure the type, degree and configuration of any hearing loss."
+     ],
+     [
+      "Getting to know you",
+      "We talk about your daily life, where you spend your time and anything you’ve given up because of your hearing."
+     ],
+     [
+      "Choosing and fitting",
+      "We recommend FDA-approved models from several makers, then fit and program them to your results, with custom earmolds if needed."
+     ],
+     [
+      "Ongoing support",
+      "Follow-up visits to fine-tune your devices, coaching while you adjust, and servicing, repairs and upgrades."
+     ]
+    ],
+    "note": "Coming in about dizziness or balance? Please fill out the Dizziness and Balance form as well as the Patient Intake form before your visit."
+   },
+   "team": {
+    "eyebrow": "Your audiology team",
+    "heading": "Doctors of audiology and hearing aid dispensers",
+    "members": [
+     "terri-gallagher-au-d",
+     "carey-philliposian-au-d",
+     "jeffrey-lampert-au-d",
+     "william-huson-au-d",
+     "michelle-griffin-au-d",
+     "nicole-schmidt-au-d",
+     "jenna-cullinan-au-d",
+     "rosana-amaro-au-d",
+     "ana-tejeda-au-d",
+     "isabel-leyritana-au-d",
+     "brooke-leonard-au-d",
+     "hannah-torok-au-d",
+     "chris-nicklo-had",
+     "robert-gilligan-had",
+     "pramoda-arachchige-had"
+    ]
+   },
+   "reviews": [],
+   "offices": [
+    "union",
+    "pac",
+    "castro",
+    "mateo",
+    "sunny",
+    "walnut",
+    "phill",
+    "brent",
+    "marin",
+    "sonoma"
+   ],
+   "officePhone": "(415) 362-2901",
+   "whereHeading": "Audiology in 10 Bay Area offices",
+   "whereNote": "Open Monday to Friday, 8am to 5pm. Telehealth visits are available for new and existing patients.",
+   "resources": [
+    {
+     "icon": "description",
+     "title": "Patient intake form",
+     "description": "Fill it out before your visit to speed up check-in."
+    },
+    {
+     "icon": "assignment",
+     "title": "Dizziness and balance form",
+     "description": "For appointments about dizziness or balance, alongside the intake form."
+    },
+    {
+     "icon": "video_call",
+     "title": "Telehealth visits",
+     "description": "Hearing aid troubleshooting and consultations, Bluetooth programming, and tinnitus and balance consultations."
+    },
+    {
+     "icon": "play_circle",
+     "title": "How-to videos",
+     "description": "Short videos on using and caring for your hearing aids."
+    },
+    {
+     "icon": "menu_book",
+     "title": "Patient education",
+     "description": "Articles from our team on hearing health."
+    },
+    {
+     "icon": "hearing",
+     "title": "Online hearing test",
+     "description": "Check your hearing at home in a few minutes."
+    },
+    {
+     "icon": "verified_user",
+     "title": "Insurance and billing",
+     "description": "Plans we accept and what to expect."
+    },
+    {
+     "icon": "lock",
+     "title": "Patient portal",
+     "description": "Messages, results and appointments in UCSF MyChart."
+    }
+   ],
+   "faq": [
+    {
+     "question": "What is the first sign of hearing loss?",
+     "answer": "Trouble understanding conversations in crowded places or on the phone, struggling to hear consonants, feeling tired after conversations, and ringing in the ears (tinnitus)."
+    },
+    {
+     "question": "How often should I have my hearing checked?",
+     "answer": "Healthy adults under 40 every three to five years. If you’re over 60, already have hearing loss or are regularly around loud noise, every year."
+    },
+    {
+     "question": "Can hearing loss be restored?",
+     "answer": "Only in limited cases. Conductive loss can sometimes be treated with surgery or medicine. Sensorineural loss is permanent, but hearing aids can reconnect you with the sounds you’ve been missing."
+    },
+    {
+     "question": "Will wearing a hearing aid make me look old?",
+     "answer": "Today’s hearing aids are small and discreet, and some are completely invisible. Asking people to repeat themselves is far more noticeable."
+    },
+    {
+     "question": "Is it better to get hearing aids early?",
+     "answer": "Yes. Even mild untreated hearing loss is linked to a two to three times higher risk of falls in older adults, more listening fatigue and loneliness. Hearing aids help memory and social life."
+    },
+    {
+     "question": "Do I need one hearing aid or two?",
+     "answer": "If only one ear has hearing loss, one aid. With loss in both ears, two help you hear in noise and tell where sounds come from."
+    },
+    {
+     "question": "What is it like to hear through a hearing aid?",
+     "answer": "New sounds can seem loud or overwhelming at first while your brain adjusts. Follow-up visits help you settle in."
+    },
+    {
+     "question": "What is an over-the-counter hearing aid?",
+     "answer": "An FDA-regulated device for adults with mild to moderate hearing loss that doesn’t need an exam or fitting. Prescription aids suit every level of hearing loss and are customized to you."
+    },
+    {
+     "question": "What is a cochlear implant?",
+     "answer": "An electronic device that turns sound into digital signals sent to the brain, for people with severe or profound hearing loss who don’t benefit from hearing aids."
+    },
+    {
+     "question": "Does tinnitus cause hearing loss?",
+     "answer": "No, though it can interfere with hearing. Many people with tinnitus also have hearing loss, because both can come from the same inner-ear conditions."
+    }
+   ],
+   "faqOpen": 2,
+   "ctaHeading": "Ready to hear more clearly?",
+   "tag": "Audiology"
+  },
+  {
+   "slug": "allergy",
+   "order": 2,
+   "name": "Allergy, asthma & immunology",
+   "brand": "SH Allergy, Asthma & Immunology",
+   "shortBrand": "SH Allergy",
+   "eyebrow": "SH Allergy, Asthma & Immunology",
+   "headline": "Breathe easier, *every season.*",
+   "intro": "Allergies and immune problems can affect every part of your day. Our allergists and immunologists find what’s triggering your symptoms and build a plan around your life, for children and adults.",
+   "phone": "(415) 362-2614",
+   "phoneLabel": "Allergy",
+   "bookLabel": "Book an allergy appointment",
+   "heroSecondary": null,
+   "logo": "b9bcb8435fc1cf16b6f3bb35944a65b0",
+   "photo": "82dce72d5223423d3374ef522c416a58",
+   "photoAlt": "A toddler smelling bright flowers in a garden",
+   "photoPosition": "center",
+   "facts": [
+    {
+     "big": "9 allergists",
+     "small": "Board-certified or board-eligible in allergy and immunology"
+    },
+    {
+     "big": "5 shot clinics",
+     "small": "Allergy shots across San Francisco, Marin and San Mateo"
+    },
+    {
+     "big": "Video visits",
+     "small": "Available for new and returning patients"
+    }
+   ],
+   "home": {
+    "short": "allergy care",
+    "summary": "Allergists for children and adults, with in-house testing and treatment plans tailored to asthma, eczema, food allergies and immune conditions.",
+    "chips": [
+     "Allergy testing",
+     "Asthma",
+     "Food allergy",
+     "Shot clinic"
+    ],
+    "photo": "82dce72d5223423d3374ef522c416a58",
+    "photoAlt": "A toddler smelling bright flowers in a garden",
+    "photoPosition": "center"
+   },
+   "overview": {
+    "eyebrow": "About SH Allergy",
+    "heading": "Care that builds lasting relationships",
+    "paras": [
+     "Our physicians, medical assistants and patient care coordinators are committed to comprehensive, state-of-the-art care for allergies, asthma and immune conditions, and to partnering with you and your family for years to come.",
+     "Our allergists trained in internal medicine or pediatrics, then spent two to three more years specializing in allergy and immunology. We work closely with our ENT colleagues on sinus and nasal problems, and with your gastroenterologist on conditions like eosinophilic esophagitis."
+    ],
+    "glance_title": "Testing we offer",
+    "glance": [
+     "Skin testing",
+     "Spirometry (lung function)",
+     "Medication testing and challenges, including penicillin",
+     "Food testing and oral challenges",
+     "Stinging insect allergy evaluation",
+     "Patch testing for allergic contact dermatitis"
+    ],
+    "note": "Allergists don’t treat brain fog, chronic fatigue, chemical sensitivity, dysautonomia, Ehlers-Danlos, POTS, dizziness, neuropathic pain, numbness or tingling, vertigo or hypertension, and we don’t offer testing for chemical sensitivity or mold toxicity."
+   },
+   "conditions": {
+    "eyebrow": "What we treat",
+    "heading": "Allergies, asthma and the immune system",
+    "lede": "An accurate diagnosis comes first: is it an allergy, and if so, what’s triggering it? Then we treat the cause as well as the symptoms.",
+    "items": [
+     [
+      "Environmental allergies",
+      "Hay fever, allergic rhinitis and allergic conjunctivitis from pollen, dust mites, pets and mold, with testing and immunotherapy."
+     ],
+     [
+      "Asthma",
+      "From mild intermittent to severe persistent. In-office spirometry, inhalers, nebulizers, tablets and biologic injections."
+     ],
+     [
+      "Food allergies",
+      "History, skin or blood tests and supervised oral challenges. We help you spot cross-reactive foods and expand your diet when possible."
+     ],
+     [
+      "Eczema (atopic dermatitis)",
+      "Bathing routines, topical medicines, trigger avoidance and, for moderate to severe eczema from age 6, Dupixent."
+     ],
+     [
+      "Hives (urticaria)",
+      "Red, itchy welts that can disrupt sleep, school and work. Chronic hives often have no outside cause, and we help you control them."
+     ],
+     [
+      "Anaphylaxis",
+      "The most severe allergic reaction. We identify the cause so you can avoid future reactions, and make a plan with you."
+     ],
+     [
+      "Medication allergies",
+      "Standardized testing, including penicillin, with an oral challenge when needed to find out whether you’re truly allergic."
+     ],
+     [
+      "Insect sting allergies",
+      "Testing, an avoidance plan and venom immunotherapy, so you can still enjoy the outdoors."
+     ],
+     [
+      "Immunodeficiency",
+      "Recurrent infections can be a sign of one of over 300 primary immunodeficiencies. Treatment can include immunoglobulin replacement."
+     ],
+     [
+      "Angioedema",
+      "Swelling of the lips, eyes, throat or gut, often triggered by allergens, medicines or foods. We find the cause and lower the risk of it returning."
+     ],
+     [
+      "Eosinophilic esophagitis",
+      "Inflammation of the esophagus linked to food and environmental allergies, managed with your gastroenterologist."
+     ],
+     [
+      "Sinusitis and nasal polyps",
+      "Chronic sinus symptoms and polyps, treated with nasal or oral medicines, biologics and our ENT team."
+     ]
+    ],
+    "navLabel": "Conditions"
+   },
+   "treatments": {
+    "tab": "Treatments",
+    "eyebrow": "Treatments",
+    "heading": "Treating the cause, not just the symptoms",
+    "lede": "Most people start on more medicine to bring symptoms under control, then step down once things are stable.",
+    "items": [
+     [
+      "Allergy shots (subcutaneous immunotherapy)",
+      "Regular injections that gradually train your immune system to tolerate your triggers, given at our five shot clinics."
+     ],
+     [
+      "Allergy tablets and drops",
+      "Sublingual immunotherapy you take at home, under the tongue."
+     ],
+     [
+      "Venom immunotherapy",
+      "Protection for people with serious reactions to insect stings."
+     ],
+     [
+      "Biologic medicines",
+      "Injections such as Xolair and Dupixent for severe asthma, nasal polyps, chronic hives and eczema when other treatments haven’t worked."
+     ],
+     [
+      "Inhalers and nebulizers",
+      "Reliever inhalers for symptoms, daily preventer inhalers to calm the airways, and nebulizers when inhalers are hard to use."
+     ],
+     [
+      "Asthma tablets",
+      "Leukotriene receptor antagonists, theophylline and, as a last resort, steroid tablets."
+     ],
+     [
+      "Immunoglobulin replacement",
+      "Intravenous or subcutaneous treatment for some immunodeficiencies."
+     ],
+     [
+      "Avoidance and diet plans",
+      "Practical steps to avoid triggers at home, and help reintroducing foods when it’s safe."
+     ]
+    ],
+    "navLabel": "Treatments"
+   },
+   "feature": {
+    "tab": "Shot clinic",
+    "eyebrow": "Allergy shot clinic",
+    "heading": "Shot clinic hours",
+    "paras": [
+     "Appointments are required; walk-ins aren’t accepted unless a provider has approved it. If you arrive more than 15 minutes late, we’ll ask you to reschedule. Cluster therapy, which builds up your dose faster, has its own hours."
+    ],
+    "bullets": [
+     "**Union Square**, 450 Sutter, Suite 1139 · Mon–Thu 8am–12pm and 1–3:30pm · cluster 9–11am and 2–3pm · closed Fri",
+     "**Pacific Heights**, 2100 Webster, Suite 202 · Mon and Wed 8–11:20am and 1–3:20pm · Tue and Fri 9–11:20am and 1–3:20pm",
+     "**Castro**, 45 Castro, Suite 325 · Mon–Fri 9am–12:10pm and 2–4:10pm · cluster 9–11am and 2–3pm",
+     "**San Rafael**, 899 Northgate, Suite 110 · Tue and Thu 1–4pm · cluster 2–3pm",
+     "**San Mateo**, 100 S. Ellsworth, Suite 707 · Mon–Thu 8–11:45am and 1:30–3pm · cluster 8–10am"
+    ],
+    "links": [
+     "Shot transfer request form",
+     "Bringing outside vials"
+    ],
+    "navLabel": "Shot clinic",
+    "image": null,
+    "onPatientsPage": false
+   },
+   "visit": {
+    "heading": "Your allergy visit",
+    "steps": [
+     [
+      "Book",
+      "Call (415) 362-2614 or use the online request form. Phone lines are open Monday to Friday, 8am to 5pm."
+     ],
+     [
+      "Forms and records",
+      "Complete registration and the adult or pediatric health history. If you’ve had allergy testing before, have your records sent or bring them."
+     ],
+     [
+      "Your evaluation",
+      "Your allergist reviews your symptoms and history, and orders the right tests, often skin testing or spirometry the same day."
+     ],
+     [
+      "Your plan",
+      "We agree a treatment plan with you, from avoidance and medicines to immunotherapy, and follow up in person or by video."
+     ]
+    ],
+    "note": "Patients under 18 must come with a parent or legal guardian to their first visit. Please cancel at least 24 hours ahead to avoid a fee."
+   },
+   "team": {
+    "eyebrow": "Your allergy team",
+    "heading": "Allergists and immunologists for children and adults",
+    "members": [
+     "opal-gupta-md-facaai-faaaai",
+     "michael-roberts-md",
+     "mike-main-md",
+     "angela-l-chang-md",
+     "stephanie-johannes-md",
+     "conny-lu-md",
+     "dean-kardassakis-ms-md-facaai-faaaai",
+     "steven-machtinger-md",
+     "bernard-a-feigenbaum-md"
+    ]
+   },
+   "reviews": [
+    {
+     "quote": "With her wisdom and care, my lungs are at a happy place. I have never breathed better!",
+     "attribution": "Patient of Dr. Gupta · April 2025"
+    },
+    {
+     "quote": "Dr. Main thoroughly reviewed my recent experiences with my allergy treatment. I felt that I was given all the time I needed.",
+     "attribution": "April 2025"
+    },
+    {
+     "quote": "Arianna and Rose are always prepared and upbeat! They make the allergy shot process about as easy as it could be.",
+     "attribution": "Shot clinic · February 2025"
+    }
+   ],
+   "offices": [
+    "union",
+    "pac",
+    "castro",
+    "marin",
+    "mateo"
+   ],
+   "officePhone": "(415) 362-2614",
+   "whereHeading": "Allergy care in 5 Bay Area offices",
+   "whereNote": "Phone lines are open Monday to Friday, 8am to 5pm. Office days vary by allergist.",
+   "resources": [
+    {
+     "icon": "description",
+     "title": "New patient forms",
+     "description": "Registration and adult or pediatric health history."
+    },
+    {
+     "icon": "forum",
+     "title": "Requests and inquiries",
+     "description": "Questions, refills, lab results and medical records."
+    },
+    {
+     "icon": "video_call",
+     "title": "Video visits",
+     "description": "Telemedicine for new and returning patients."
+    },
+    {
+     "icon": "vaccines",
+     "title": "Shot transfer form",
+     "description": "Move your allergy shots to another of our clinics."
+    },
+    {
+     "icon": "folder_open",
+     "title": "Medical records",
+     "description": "Release forms to send records to or from SH."
+    },
+    {
+     "icon": "verified_user",
+     "title": "Insurance and billing",
+     "description": "Most PPOs, Medicare and Brown & Toland, Hill and Meritage HMOs."
+    },
+    {
+     "icon": "handshake",
+     "title": "For physicians",
+     "description": "Refer a patient to our allergists."
+    },
+    {
+     "icon": "lock",
+     "title": "Patient portal",
+     "description": "Messages and results in UCSF MyChart."
+    }
+   ],
+   "faq": [
+    {
+     "question": "Are ENT doctors and allergists the same?",
+     "answer": "No. Our allergists are trained in internal medicine or pediatrics, then specialize in allergy and immunology. ENT physicians are surgeons for the ears, nose and throat. For children, food and skin allergies, breathing or immune concerns, we recommend a medical allergist."
+    },
+    {
+     "question": "I had allergy testing before. Should I bring the results?",
+     "answer": "Yes. Any earlier allergy records help. Have them sent to our office, or bring them to your appointment."
+    },
+    {
+     "question": "Can I transfer my allergy shots to your practice?",
+     "answer": "We accept outside vials case by case. Ask us for the outside vials letter and records release."
+    },
+    {
+     "question": "Can I change the office where I get my shots?",
+     "answer": "We ask you to choose one shot clinic, but we can move your vials in special circumstances. Use the shot transfer request form."
+    },
+    {
+     "question": "What if I need to cancel?",
+     "answer": "Please cancel at least 24 hours before your appointment. Late cancellations may be charged a fee."
+    },
+    {
+     "question": "Do you offer telemedicine?",
+     "answer": "Yes. Video visits are available; call us to schedule."
+    },
+    {
+     "question": "Can children come to appointments alone?",
+     "answer": "New patients under 18 must come with a parent or legal guardian."
+    }
+   ],
+   "faqOpen": 2,
+   "ctaHeading": "Ready to find your triggers?",
+   "tag": "Allergy"
+  },
+  {
+   "slug": "sleep",
+   "order": 3,
+   "name": "Sleep & snoring",
+   "brand": "SH Sleep & Snoring",
+   "shortBrand": "SH Sleep & Snoring",
+   "eyebrow": "SH Sleep & Snoring · formerly Bay Area Sleep",
+   "headline": "Sleep testing, *simplified.*",
+   "intro": "Snoring, gasping at night or waking up tired? Test for sleep apnea in your own bed, get results within two weeks, and choose the treatment that suits your life.",
+   "phone": "(415) 362-5443",
+   "phoneLabel": "Sleep",
+   "bookLabel": "Order a home sleep study",
+   "heroSecondary": [
+    "Take the sleep quiz",
+    "#visit"
+   ],
+   "logo": "874e46e49794acac840d8770f63e0ef1",
+   "photo": "933a26672de67ea1bcf48a18f599d9ba",
+   "photoAlt": "Someone sleeping peacefully under a soft blanket",
+   "photoPosition": "center",
+   "facts": [
+    {
+     "big": "$360",
+     "small": "Cash price per night for a home sleep study"
+    },
+    {
+     "big": "2 weeks",
+     "small": "Results and recommendations after your study"
+    },
+    {
+     "big": "Zoom or in person",
+     "small": "Consultations with a sleep specialist"
+    }
+   ],
+   "home": {
+    "short": "sleep care",
+    "summary": "Sleep testing made simple, including studies you can do at home, with treatment options from oral appliances to Inspire therapy for sleep apnea.",
+    "chips": [
+     "Snoring",
+     "Sleep apnea",
+     "Home sleep testing",
+     "Inspire therapy"
+    ],
+    "photo": "933a26672de67ea1bcf48a18f599d9ba",
+    "photoAlt": "Someone sleeping peacefully under a soft blanket",
+    "photoPosition": "center"
+   },
+   "overview": {
+    "eyebrow": "About SH Sleep & Snoring",
+    "heading": "Testing, diagnosis and treatment made easy",
+    "paras": [
+     "SH Sleep & Snoring is a sleep medicine clinic designed to make testing, diagnosis and treatment of sleep disorders easy to reach across the Bay Area, from Sonoma to the South Bay, with several offices in San Francisco and remote options too.",
+     "Our team of nurse practitioners, board-certified otolaryngologists and board-certified sleep physicians offers evidence-based care. We don’t believe in one treatment for everyone; we work with you to find what fits your health, lifestyle and preferences."
+    ],
+    "glance_title": "Signs it’s worth a test",
+    "glance": [
+     "Loud snoring, or pauses in breathing that others notice",
+     "Gasping, choking or coughing at night",
+     "Waking often, or insomnia",
+     "Morning headaches and daytime sleepiness",
+     "Waking at night to urinate",
+     "Persistent acid reflux",
+     "Low mood with poor sleep"
+    ],
+    "note": "Risk rises with a BMI over 30, high blood pressure that’s hard to control, a large neck, alcohol or sedatives, smoking, a family history, type 2 diabetes and heart disease."
+   },
+   "conditions": {
+    "eyebrow": "What we treat",
+    "heading": "Snoring and sleep-related breathing",
+    "lede": "In obstructive sleep apnea, relaxed muscles let the airway collapse during sleep. Oxygen can drop by 40% or more, and the brain wakes you briefly, sometimes hundreds of times a night.",
+    "items": [
+     [
+      "Obstructive sleep apnea",
+      "The most common type, when soft tissue blocks the upper airway during sleep. Untreated, it strains the heart and blood pressure."
+     ],
+     [
+      "Snoring",
+      "About 45% of adults snore sometimes and 25% regularly. It’s caused by tissues vibrating as you breathe, and can be a sign of sleep apnea."
+     ],
+     [
+      "Central and complex sleep apnea",
+      "When the brain doesn’t send the right signals to breathe, alone or combined with obstruction."
+     ],
+     [
+      "Nasal obstruction",
+      "A deviated septum, enlarged turbinates or collapsing nasal valves that make breathing at night harder."
+     ],
+     [
+      "Enlarged tonsils and adenoids",
+      "A common cause of snoring and apnea, especially in children."
+     ],
+     [
+      "CPAP intolerance",
+      "If a mask hasn’t worked for you, there are other options, including oral appliances and Inspire therapy."
+     ]
+    ],
+    "navLabel": "Conditions"
+   },
+   "treatments": {
+    "tab": "Treatments",
+    "eyebrow": "Treatment options",
+    "heading": "Every option, available through us",
+    "lede": "All of these treatments are available directly through SH Sleep & Snoring.",
+    "items": [
+     [
+      "CPAP, AutoPAP and BiPAP",
+      "The gold standard for sleep apnea: a nightly machine that keeps your airway open for uninterrupted, restorative sleep."
+     ],
+     [
+      "Oral appliance therapy",
+      "A custom mouthpiece made by a dentist that holds your jaw forward. Effective for mild to moderate sleep apnea."
+     ],
+     [
+      "Weight loss and lifestyle coaching",
+      "Losing 10% of body weight can lower your apnea-hypopnea index by as much as 46%."
+     ],
+     [
+      "Nasal procedures",
+      "Turbinate reduction, nasal valve repair, septoplasty, sinus surgery and functional rhinoplasty, some in the office."
+     ],
+     [
+      "Throat procedures",
+      "Tonsillectomy, adenoidectomy, uvulectomy and UPPP to reduce crowding at the back of the throat."
+     ],
+     [
+      "Tongue reduction",
+      "A minimally invasive in-office radiofrequency treatment that firms the base of the tongue."
+     ],
+     [
+      "Inspire therapy",
+      "An implant that stimulates the nerve controlling the tongue while you sleep, for moderate to severe sleep apnea when CPAP hasn’t worked."
+     ],
+     [
+      "Maxillomandibular advancement",
+      "Surgery that moves the upper and lower jaw forward to open the whole airway."
+     ]
+    ],
+    "navLabel": "Treatments"
+   },
+   "feature": {
+    "tab": "Home sleep test",
+    "eyebrow": "Home sleep testing",
+    "heading": "Test in the comfort of your own bed",
+    "paras": [
+     "We use the NOX-T3, an FDA-approved device for ages 2 and up, also used at local academic centers. It tracks oxygen, airflow, breathing interruptions, snoring and sleep position, and a board-certified sleep physician reads the results.",
+     "We bill insurance $600 a night, or you can pay $360 cash. We’re contracted with most insurers, including Medicare. Some patients choose not to use insurance because of a high deductible or privacy. The CPT code is 95806."
+    ],
+    "bullets": [
+     "Self-administered, with minimal sensors",
+     "Scheduled within a couple of weeks",
+     "Measures valid sleep time and arousals",
+     "Covered by insurance",
+     "Not suitable with heart failure, lung or neuromuscular disease, a past stroke or limb movement disorder: those need an in-lab study"
+    ],
+    "links": [
+     "Order your sleep study",
+     "Insurance we accept"
+    ],
+    "navLabel": "Home sleep test",
+    "image": null,
+    "onPatientsPage": false
+   },
+   "visit": {
+    "eyebrow": "Your patient journey",
+    "heading": "Four steps to better sleep",
+    "steps": [
+     [
+      "Consultation, or straight to testing",
+      "See a sleep specialist by Zoom or in person. Or fill out our questionnaire and we’ll call within 24 business hours to arrange your study."
+     ],
+     [
+      "Pick up your device",
+      "Free pickup and drop-off at our offices, with video and written instructions. Mail delivery is available if you live more than 30 miles away."
+     ],
+     [
+      "Your results",
+      "Results and recommendations arrive within two weeks. Review them with a sleep specialist in person or by Zoom, or with your own doctor."
+     ],
+     [
+      "Treatment",
+      "If you have sleep apnea, we help you choose: CPAP, an oral appliance, a procedure, or lifestyle changes."
+     ]
+    ],
+    "link": "Take the STOP-Bang sleep quiz →",
+    "note": "Do your study on a normal night: not when you have a cold or have been drinking, and when you can sleep at least four hours."
+   },
+   "team": {
+    "eyebrow": "Your sleep team",
+    "heading": "ENT physicians who see sleep patients [sleep physicians and nurse practitioners to add]",
+    "members": [
+     "jacob-johnson-md",
+     "gerald-kangelaris-md",
+     "andrea-h-yeung-md",
+     "lauren-luk-md-fars",
+     "daniel-flis-md",
+     "monica-lee-md"
+    ]
+   },
+   "reviews": [
+    {
+     "quote": "They offered me a wide array of options to help with my snoring and apnea. Since I’m not a fan of surgery, I opted to go with a mouthpiece.",
+     "attribution": "San Francisco"
+    },
+    {
+     "quote": "A home sleep study confirmed what I already knew: I’m sleeping better and the apnea is under control.",
+     "attribution": "San Francisco"
+    },
+    {
+     "quote": "Very professional and friendly. Had me in and out in 15 minutes. Highly recommend!",
+     "attribution": "San Francisco"
+    }
+   ],
+   "offices": [
+    "union",
+    "pac",
+    "castro",
+    "marin",
+    "sonoma"
+   ],
+   "officePhone": "(415) 362-5443",
+   "whereHeading": "Pick up your device near you",
+   "whereNote": "Device pickup and drop-off is free at these offices. The sleep site also lists 2504 Samaritan Drive, San Jose [to confirm].",
+   "resources": [
+    {
+     "icon": "quiz",
+     "title": "Sleep quiz (STOP-Bang)",
+     "description": "A quick screen for obstructive sleep apnea risk."
+    },
+    {
+     "icon": "checklist",
+     "title": "Sleep study questionnaire",
+     "description": "Skip the consultation and go straight to testing."
+    },
+    {
+     "icon": "verified_user",
+     "title": "Insurance we accept",
+     "description": "Aetna, Anthem Blue Cross, Blue Shield, Cigna, HealthNet, Meritain, Oxford, Sterling and UnitedHealth PPOs, and Medicare."
+    },
+    {
+     "icon": "handshake",
+     "title": "Provider referrals",
+     "description": "Fax the referral form to (415) 362-5444."
+    }
+   ],
+   "faq": [
+    {
+     "question": "Who should get a home sleep test?",
+     "answer": "Anyone with snoring or irregular breathing at night, insomnia or frequent waking, morning headaches, waking to urinate, persistent reflux, gasping or choking at night, or low mood with poor sleep."
+    },
+    {
+     "question": "Is a home test as good as a sleep lab?",
+     "answer": "For people likely to have moderate to severe sleep apnea, home tests are highly accurate, cheaper and quicker to book. A lab study is needed for heart failure, lung or neuromuscular disease, a past stroke, limb movement disorder or a suspected sleep disorder other than apnea."
+    },
+    {
+     "question": "How much does a home sleep study cost?",
+     "answer": "We bill insurance $600 a night, or the cash price is $360. For an exact estimate, ask your insurer about CPT code 95806. [The FAQ on the current site quotes $520.10 and $295; confirm which is current.]"
+    },
+    {
+     "question": "Why would I choose not to use insurance?",
+     "answer": "It’s up to you. Some patients have a high deductible, or prefer to keep this part of their records private."
+    },
+    {
+     "question": "What if I have sleep apnea and don’t treat it?",
+     "answer": "We strongly encourage treatment. It improves daily energy and sleep, and lowers the risk of health problems linked to untreated sleep apnea."
+    },
+    {
+     "question": "Who can have Inspire therapy?",
+     "answer": "Adults with moderate to severe obstructive sleep apnea who can’t get consistent benefit from CPAP. [The sleep site says age 22 and over; the ENT site says 18 and over. Confirm.]"
+    }
+   ],
+   "faqOpen": 2,
+   "ctaHeading": "Ready for a better night’s sleep?",
+   "tag": "Sleep"
+  },
+  {
+   "slug": "voice",
+   "order": 4,
+   "name": "Voice & swallowing",
+   "brand": "SH Voice & Swallowing",
+   "shortBrand": "SH Voice & Swallowing",
+   "eyebrow": "SH Voice & Swallowing · formerly San Francisco Voice & Swallowing",
+   "headline": "For every voice, from tenor to *teacher.*",
+   "intro": "Problems breathing, swallowing, speaking or singing can change your whole life. Whether you’re a world-renowned tenor, a karaoke fan or a nursery school teacher, we’re here to help you find relief.",
+   "phone": "(415) 839-8639",
+   "phoneLabel": "Voice",
+   "bookLabel": "Book a voice consultation",
+   "heroSecondary": null,
+   "logo": "0ad3d76b20cea21d8a4153181962ada5",
+   "photo": "535e560244f47047e050e80046777383",
+   "photoAlt": "A woman singing into a microphone in front of an audience",
+   "photoPosition": "center",
+   "facts": [
+    {
+     "big": "Laryngologists + SLPs",
+     "small": "Surgeons and speech-language pathologists in one clinic"
+    },
+    {
+     "big": "Passaggio",
+     "small": "The first trans-led gender-affirming voice program in the US"
+    },
+    {
+     "big": "Union Square",
+     "small": "450 Sutter Street [Suite 933 or 1139, to confirm]"
+    }
+   ],
+   "home": {
+    "short": "voice care",
+    "summary": "An interdisciplinary clinic for voice, swallowing and airway conditions, combining therapy and surgery — including Passaggio, our gender-affirming voice and communication program.",
+    "chips": [
+     "Voice therapy",
+     "Swallowing disorders",
+     "Airway conditions",
+     "Gender-affirming voice"
+    ],
+    "photo": "535e560244f47047e050e80046777383",
+    "photoAlt": "A woman singing into a microphone in front of an audience",
+    "photoPosition": "center"
+   },
+   "overview": {
+    "eyebrow": "About SH Voice & Swallowing",
+    "heading": "State-of-the-art care for voice, swallowing and airway",
+    "paras": [
+     "We specialize in care of the professional voice, transgender voice and communication, voice and swallowing disorders, and airway conditions. Every patient is carefully evaluated and tested before we diagnose and treat.",
+     "Our services run from advanced laryngeal testing and voice and swallowing therapy to office-based laryngeal surgery, minimally invasive microlaryngeal surgery, open laryngeal framework surgery, and gender-affirming voice therapy and surgery."
+    ],
+    "glance_title": "Our services",
+    "glance": [
+     "Videostroboscopy and laryngoscopy",
+     "Voice and swallowing therapy",
+     "Office-based laryngeal procedures",
+     "Microlaryngeal surgery",
+     "Laryngeal framework surgery",
+     "Gender-affirming voice therapy and pitch surgery",
+     "Baseline voice exams for performers"
+    ],
+    "note": "Fax (415) 839-8669. Parking at the Sutter-Stockton Garage, or the 450 Sutter garage beneath the building."
+   },
+   "conditions": {
+    "eyebrow": "What we treat",
+    "heading": "Voice, swallowing and airway conditions",
+    "lede": "Any hoarseness lasting more than two to three weeks should be checked by a laryngologist.",
+    "items": [
+     [
+      "Benign vocal fold lesions",
+      "Nodules, polyps, cysts, ulcers, granulomas and Reinke’s edema. Most nodules respond to voice therapy; fewer than 5% need surgery."
+     ],
+     [
+      "Early laryngeal cancer",
+      "Endoscopic surgery and radiation offer equally excellent results; we decide together after a long discussion."
+     ],
+     [
+      "Laryngopharyngeal reflux",
+      "Stomach contents irritating the throat: sore throat, hoarseness, throat clearing or a lump feeling."
+     ],
+     [
+      "Muscle tension dysphonia",
+      "Neck and throat muscles used inefficiently while speaking, causing voice changes, clearing or discomfort."
+     ],
+     [
+      "Vocal fold paralysis and paresis",
+      "Full or partial loss of vocal fold movement, treated with awake office procedures, surgery or therapy."
+     ],
+     [
+      "Spasmodic dysphonia and vocal tremor",
+      "Neurological conditions that make the voice break, strain or shake."
+     ],
+     [
+      "Recurrent respiratory papillomatosis",
+      "HPV-related warty growths on the vocal folds that can change the voice."
+     ],
+     [
+      "Aging voice",
+      "Thinning vocal folds that make the voice softer, weaker or breathier."
+     ],
+     [
+      "Swallowing difficulty (dysphagia)",
+      "Trouble swallowing involving the mouth and throat, assessed to lower the risk of aspiration."
+     ],
+     [
+      "Zenker’s diverticulum",
+      "A pouch above the esophagus causing trouble with solids, regurgitation and cough, usually treated endoscopically."
+     ],
+     [
+      "Airway stenosis",
+      "Narrowing of the larynx or trachea, treated with steroid injections or minimally invasive dilation."
+     ],
+     [
+      "Irritable larynx syndrome",
+      "Chronic throat clearing or cough, vocal cord dysfunction and laryngospasm, treated first with breathing and retraining therapy."
+     ]
+    ],
+    "navLabel": "Conditions"
+   },
+   "treatments": {
+    "tab": "Diagnosis & treatment",
+    "eyebrow": "How we diagnose and treat",
+    "heading": "Seeing the voice box in motion",
+    "lede": "A history and exam alone can’t tell lesion types apart, so we look directly at your vocal folds, then choose the least invasive treatment that works.",
+    "items": [
+     [
+      "Laryngoscopy",
+      "A thin flexible scope through the nose, or a rigid one through the mouth, to see the vocal folds and how they move."
+     ],
+     [
+      "Videostroboscopy",
+      "A strobe light synced to your voice shows the vocal folds in slow motion: the gold standard for professional voice users."
+     ],
+     [
+      "Voice therapy",
+      "Usually the first step, and used before and after surgery to protect results."
+     ],
+     [
+      "Swallowing evaluation",
+      "Pinpoints which part of swallowing is affected and the risk of food or liquid entering the airway."
+     ],
+     [
+      "Office-based procedures",
+      "Steroid and other injections and laryngeal procedures while you’re awake, with no general anesthesia."
+     ],
+     [
+      "Microlaryngeal and framework surgery",
+      "Precise surgery on the vocal folds or the cartilage around them, when therapy isn’t enough."
+     ]
+    ],
+    "navLabel": "Treatment"
+   },
+   "feature": {
+    "tab": "Passaggio",
+    "eyebrow": "Passaggio · gender-affirming voice",
+    "heading": "Find the voice that resonates with who you are",
+    "paras": [
+     "Passaggio [puh-sah-gee-oh] means a bridge or passageway, and the transition in a singer’s range. It’s our gender-affirming voice and communication program, and the first in the country led by trans and non-binary clinicians.",
+     "Pitch and resonance shape gender perception the most, and therapy can also work on other parts of communication, depending on your goals. Pitch elevation surgery is available with voice therapy, and virtual consultations are offered for patients outside California."
+    ],
+    "bullets": [
+     "Gender-affirming voice and speech therapy",
+     "Pitch elevation voice surgery, with therapy",
+     "Surgery to change the appearance of the neck",
+     "Virtual consultations for out-of-state patients",
+     "A share of proceeds supports trans community organizations",
+     "Shadowing and training for trans and non-binary SLP students"
+    ],
+    "navLabel": "Passaggio",
+    "image": null,
+    "onPatientsPage": false
+   },
+   "visit": {
+    "heading": "Your voice visit",
+    "steps": [
+     [
+      "Request an appointment",
+      "Use the online appointment request or call (415) 839-8639, Monday to Friday, 8am to 5pm."
+     ],
+     [
+      "Evaluation",
+      "We talk through your voice, swallowing or breathing concerns and how you use your voice day to day."
+     ],
+     [
+      "Testing",
+      "Laryngoscopy and videostroboscopy, and swallowing tests when needed, show exactly what’s happening."
+     ],
+     [
+      "Your plan",
+      "Medical treatment, voice therapy, an office procedure or surgery, built around your vocal demands and goals."
+     ]
+    ],
+    "note": "We accept most PPOs, Medicare and Brown & Toland HMOs, and all major credit cards and checks; we don’t accept cash. Early-career performers can book a baseline voice exam."
+   },
+   "team": {
+    "eyebrow": "Your voice team",
+    "heading": "Laryngologists and speech-language pathologists",
+    "members": [
+     "katherine-yung-md-facs",
+     "wendy-vastine-ma-ccc-slp",
+     "kristen-bond-mm-ms-ccc-slp",
+     "joshua-d-glasner-mm-ph-d-ccc-slp"
+    ]
+   },
+   "reviews": [],
+   "offices": [
+    "union"
+   ],
+   "officePhone": "(415) 839-8639",
+   "whereHeading": "Our Union Square clinic",
+   "whereNote": "450 Sutter Street, Monday to Friday, 8am to 5pm. The voice site gives Suite 933; sh.health lists the team in Suite 1139 [to confirm].",
+   "resources": [
+    {
+     "icon": "event_available",
+     "title": "Online appointment requests",
+     "description": "Request a visit any time."
+    },
+    {
+     "icon": "payments",
+     "title": "Pay your bill",
+     "description": "Credit cards and checks."
+    },
+    {
+     "icon": "video_call",
+     "title": "Virtual consultations",
+     "description": "For gender-affirming voice care outside California."
+    },
+    {
+     "icon": "verified_user",
+     "title": "Insurance",
+     "description": "Most PPOs, Medicare and Brown & Toland HMOs."
+    }
+   ],
+   "faq": [
+    {
+     "question": "When should I see someone about hoarseness?",
+     "answer": "If hoarseness lasts more than two to three weeks, have it checked by a laryngologist to rule out a serious cause."
+    },
+    {
+     "question": "Will I need surgery for a vocal fold lesion?",
+     "answer": "Often not. Our principle is conservation first. Nodules usually improve with voice therapy; polyps and cysts more often need surgery, with therapy before and after."
+    },
+    {
+     "question": "Who is most at risk of vocal fold lesions?",
+     "answer": "Singers, teachers, clergy, lawyers, call center workers, coaches, actors, parents of young children, children who yell a lot, and smokers."
+    },
+    {
+     "question": "Do I need surgery to change my voice for gender affirmation?",
+     "answer": "Not necessarily. Voice therapy works on pitch, resonance and more. Pitch elevation surgery is an option, and therapy then helps you adapt."
+    },
+    {
+     "question": "Can I get care if I live outside California?",
+     "answer": "Yes, we offer virtual consultations for gender-affirming voice care. Call us to discuss pitch elevation surgery."
+    }
+   ],
+   "faqOpen": 2,
+   "ctaHeading": "Let’s get your voice back.",
+   "tag": "Voice"
+  },
+  {
+   "slug": "balance",
+   "order": 5,
+   "name": "Balance & physical therapy",
+   "brand": "SH Balance & physical therapy",
+   "shortBrand": "SH Balance & PT",
+   "eyebrow": "Balance & physical therapy",
+   "headline": "Feel steady on your *feet* again.",
+   "intro": "Our balance specialist works with our hearing care providers to find what’s behind your dizziness, vertigo or unsteadiness, and builds a plan so you can move through your day with confidence.",
+   "phone": "(415) 362-2901",
+   "phoneLabel": "Balance & PT",
+   "bookLabel": "Book a balance evaluation",
+   "heroSecondary": null,
+   "logo": "b6152f904084ec24cd00b3740a3ba86a",
+   "photo": "9374c68fbc12c8776d83fed32df5343b",
+   "photoAlt": "A woman walks along a fallen log in a forest, arms outstretched",
+   "photoPosition": "center",
+   "facts": [
+    {
+     "big": "Testing + therapy",
+     "small": "Diagnosis and treatment in one team"
+    },
+    {
+     "big": "Since 1996",
+     "small": "Our physical therapist’s years in practice"
+    },
+    {
+     "big": "Union Square",
+     "small": "450 Sutter Street, Suite 936"
+    }
+   ],
+   "home": {
+    "short": "balance care",
+    "summary": "Diagnostic balance testing and specialized therapy for dizziness, vertigo and imbalance, so you can move through your day with confidence.",
+    "chips": [
+     "Dizziness",
+     "Vertigo",
+     "Balance testing",
+     "Physical therapy"
+    ],
+    "photo": "9374c68fbc12c8776d83fed32df5343b",
+    "photoAlt": "A woman walking along a fallen log in a forest, arms outstretched",
+    "photoPosition": "center"
+   },
+   "overview": {
+    "eyebrow": "About balance disorders",
+    "heading": "When the world won’t stay still",
+    "paras": [
+     "A balance disorder makes you feel unsteady or dizzy. Even while standing, sitting or lying still, you may feel as if you’re moving, spinning or floating, and when you walk you may feel as if you’re tipping over.",
+     "It can come from anything that affects the inner ear or the brain, such as medications, ear infections or head injuries, and the risk rises as we get older.",
+     "Your inner ear works with your eyes, muscles and sense of touch to keep you balanced. Vestibular testing finds the weakest part of that system, so treatment can target it."
+    ],
+    "glance_title": "Symptoms to watch for",
+    "glance": [
+     "Dizziness or a spinning feeling (vertigo)",
+     "Falling, or feeling you’re about to fall",
+     "Lightheadedness, faintness or a floating feeling",
+     "Blurred vision, confusion or disorientation",
+     "Nausea, vomiting, or changes in heart rate and blood pressure",
+     "Fear, anxiety or panic attacks"
+    ],
+    "note": "Even if your symptoms are mild today, they tend to worsen over time. Testing early makes the cause easier to treat."
+   },
+   "conditions": {
+    "eyebrow": "What we treat",
+    "heading": "Conditions we care for",
+    "lede": "We treat dizziness, vertigo and imbalance related to the inner ear and the brain, along with related joint and spine problems.",
+    "items": [
+     [
+      "Benign paroxysmal positional vertigo (BPPV)",
+      "Brief, intense spinning triggered by certain head movements, when tiny crystals in the inner ear move into the balance canals."
+     ],
+     [
+      "Ménière’s disease",
+      "Vertigo, tinnitus, ear fullness and fluctuating hearing loss, usually in one ear, possibly from fluid buildup in the inner ear."
+     ],
+     [
+      "Labyrinthitis",
+      "Inflammation of the inner ear, usually from an infection, causing vertigo, temporary hearing loss and tinnitus."
+     ],
+     [
+      "Vestibular dysfunction",
+      "Problems in the inner ear’s balance system that cause dizziness, vertigo and unsteadiness."
+     ],
+     [
+      "Vestibular migraine",
+      "Migraine that brings dizziness or vertigo, with or without a headache."
+     ],
+     [
+      "Concussion and brain injury",
+      "Post-concussion syndrome and other brain injuries that affect balance, including sports concussion testing."
+     ],
+     [
+      "TMJ disorders",
+      "Pain and dysfunction in the jaw joint, which can also be linked to ear symptoms."
+     ],
+     [
+      "Spinal and orthopedic problems",
+      "Physical therapy for spine, joint and movement problems."
+     ]
+    ],
+    "navLabel": "Conditions"
+   },
+   "treatments": {
+    "tab": "Balance testing",
+    "eyebrow": "Balance testing",
+    "heading": "Finding out why you feel unsteady",
+    "lede": "Your ears play a key part in balance, so testing often covers hearing too. Depending on your symptoms, we may use:",
+    "items": [
+     [
+      "Audiometry",
+      "Measures your ability to hear different sounds, pitches and frequencies."
+     ],
+     [
+      "Acoustic immittance measures",
+      "Evaluate the eardrum and middle ear to find which part of the ear is affected."
+     ],
+     [
+      "Auditory brainstem response",
+      "Records electrical activity along the hearing pathway between the inner ear and the brain."
+     ],
+     [
+      "Electronystagmography (ENG)",
+      "Electrodes around the eyes record involuntary eye movements that show how the vestibular system works."
+     ],
+     [
+      "Videonystagmography (VNG)",
+      "Tracks how your eyes respond to moving dots, head and body movements, and air or water in the ears."
+     ],
+     [
+      "Electrocochleography",
+      "An electrode in the ear measures the inner ear’s response to sound."
+     ],
+     [
+      "Otoacoustic emissions",
+      "A small probe checks how the hair cells of the inner ear respond."
+     ],
+     [
+      "Posturography",
+      "You stand on a platform while your posture and balance are measured under different conditions."
+     ],
+     [
+      "Sports concussion testing",
+      "The Balance Error Scoring System and the Sensory Organization Test help show whether an athlete has a concussion."
+     ]
+    ],
+    "navLabel": "Testing"
+   },
+   "feature": {
+    "tab": "Treatment",
+    "eyebrow": "Treatment",
+    "heading": "Treating the cause, easing the symptoms",
+    "paras": [
+     "Once we know what’s causing your symptoms, treatment targets that condition. Your plan may combine several of these."
+    ],
+    "bullets": [
+     "Repositioning exercises for BPPV",
+     "Vestibular retraining programs",
+     "Physical or occupational therapy",
+     "Medicines, such as antihistamines, sedatives, antibiotics or steroids",
+     "Lifestyle changes, such as diet and cutting out alcohol and nicotine",
+     "Surgery, when needed, with our ENT surgeons"
+    ],
+    "navLabel": "Therapy",
+    "image": null,
+    "onPatientsPage": false
+   },
+   "visit": {
+    "heading": "Your balance visit",
+    "steps": [
+     [
+      "Tell us about it",
+      "Fill out the Patient Intake and Dizziness and Balance forms so we understand your symptoms before you arrive."
+     ],
+     [
+      "Prepare for testing",
+      "No food or drink for three hours before; no caffeine, tobacco, makeup or face cream that day; and no non-essential medicines for 48 hours."
+     ],
+     [
+      "Testing",
+      "We find which part of your balance system is weakest, often alongside a hearing evaluation."
+     ],
+     [
+      "Your treatment plan",
+      "Treatment targets the underlying condition to reduce or eliminate your symptoms, with therapy sessions as needed."
+     ]
+    ],
+    "note": "Keep taking medicines for blood pressure, heart or circulation problems, diabetes and other life-sustaining conditions. Before testing, avoid anti-dizziness pills, sleeping pills, tranquilizers, antihistamines, narcotics, cold or allergy medicines and alcohol. If you’re unsure, ask your prescribing doctor."
+   },
+   "team": {
+    "eyebrow": "Your balance team",
+    "heading": "Specialized care for dizziness and vertigo",
+    "members": [
+     "angela-smith-pt-mspt"
+    ]
+   },
+   "reviews": [],
+   "offices": [
+    "union"
+   ],
+   "officePhone": null,
+   "whereHeading": "Balance care at Union Square",
+   "whereNote": "Suite 936, Monday to Friday, 8am to 5pm. Balance testing and consultations are also offered with SH Audiology, including by telehealth.",
+   "resources": [
+    {
+     "icon": "assignment",
+     "title": "Dizziness and balance form",
+     "description": "Please complete before your visit."
+    },
+    {
+     "icon": "description",
+     "title": "Patient intake form",
+     "description": "Speeds up check-in on the day."
+    },
+    {
+     "icon": "checklist",
+     "title": "Preparing for testing",
+     "description": "What to avoid eating, drinking and taking beforehand."
+    },
+    {
+     "icon": "video_call",
+     "title": "Telehealth balance consultations",
+     "description": "Talk through your symptoms by video."
+    }
+   ],
+   "faq": [
+    {
+     "question": "I sometimes feel dizzy. Should I be tested?",
+     "answer": "Yes. Even if dizziness or vertigo hasn’t affected your life yet, it’s likely to worsen, and imbalance can become a safety concern. Finding the cause early makes it easier to treat or manage."
+    },
+    {
+     "question": "Can I take my medication before vestibular testing?",
+     "answer": "Some medicines change the results. Don’t take medicine prescribed for dizziness, and stop non-essential medicines for 48 hours. Keep taking medicines for blood pressure, heart or circulation problems and diabetes. Avoid:\n- Anti-dizziness pills\n- Sleeping pills and tranquilizers\n- Antihistamines and over-the-counter cold or allergy medicines\n- Narcotics\n- Alcohol"
+    },
+    {
+     "question": "How do I prepare on the day?",
+     "answer": "Don’t eat or drink for three hours before the test, and don’t have caffeine, use tobacco, or wear makeup or face cream."
+    },
+    {
+     "question": "How does the inner ear keep me balanced?",
+     "answer": "The inner ear has three parts. The cochlea handles hearing. The vestibule senses how much you’re moving forward and back, and the semicircular canals track where your head is in space."
+    }
+   ],
+   "faqOpen": 2,
+   "ctaHeading": "Ready to feel steady again?",
+   "tag": "Balance & PT"
+  },
+  {
+   "slug": "facial-plastics",
+   "order": 6,
+   "name": "Facial plastics & aesthetics",
+   "brand": "SH Facial Plastics",
+   "shortBrand": "SH Facial Plastics",
+   "eyebrow": "SH Facial Plastics · formerly SF MedSpa",
+   "headline": "Natural results, *your way.*",
+   "intro": "Our estheticians and fellowship-trained facial plastic surgeons give compassionate, individualized care for the most natural-looking outcomes, so you can feel your most confident.",
+   "phone": "(415) 839-6639",
+   "phoneLabel": "Facial Plastics",
+   "bookLabel": "Book a consultation",
+   "heroSecondary": null,
+   "logo": "2476d1adc14658889e20cc6a350fb9dc",
+   "photo": "b9746209836ef397b43e555e4315c92a",
+   "photoAlt": "A smiling older woman outdoors",
+   "photoPosition": "center",
+   "facts": [
+    {
+     "big": "Fellowship-trained",
+     "small": "Facial plastic and reconstructive surgeons"
+    },
+    {
+     "big": "Injectables to surgery",
+     "small": "From Botox and fillers to rhinoplasty and face lifts"
+    },
+    {
+     "big": "Union Square",
+     "small": "450 Sutter Street, Suite 1139"
+    }
+   ],
+   "home": {
+    "short": "facial plastics",
+    "summary": "Fellowship-trained facial plastic surgeons and aesthetic specialists focused on natural-looking results, from reconstructive surgery to injectables.",
+    "chips": [
+     "Facial plastic surgery",
+     "Botox & fillers",
+     "Aesthetic treatments"
+    ],
+    "photo": "b9746209836ef397b43e555e4315c92a",
+    "photoAlt": "A smiling older woman outdoors",
+    "photoPosition": "center"
+   },
+   "overview": {
+    "eyebrow": "About SH Facial Plastics",
+    "heading": "Aesthetic and reconstructive care for the face",
+    "paras": [
+     "Facial plastics joined SH Medical in November 2024 with two board-certified head and neck surgeons who are also fellowship-trained facial plastic and reconstructive surgeons.",
+     "We start with injectables and skin care that rejuvenate without the risk and recovery time of surgery, and offer surgical options, including rhinoplasty, face and brow lifts, and reconstruction after skin cancer or injury, when they’re the right fit."
+    ],
+    "glance_title": "What we offer",
+    "glance": [
+     "Botox® and Dysport® for lines and wrinkles",
+     "Dermal fillers: Restylane®, Juvéderm®, Merz® and Sculptra®",
+     "SkinMedica® skin care regimens",
+     "Cosmetic and functional rhinoplasty",
+     "Face lift, brow lift and eyelid surgery",
+     "Fat transfer",
+     "Reconstruction after skin cancer and facial trauma"
+    ],
+    "note": "Parking at the Sutter-Stockton Garage, or the 450 Sutter garage beneath the building."
+   },
+   "conditions": {
+    "eyebrow": "Treatments",
+    "heading": "From a refresh to reconstruction",
+    "lede": "Every plan is individual, and we’ll always explain your options, including the least invasive ones.",
+    "items": [
+     [
+      "Smooth and effective",
+      "FDA-approved neuromodulators (Botox® or Dysport®) soften facial lines and wrinkles. Advanced techniques also treat neck bands, slim the face, lift brows and ease jaw clenching."
+     ],
+     [
+      "Lift and fill",
+      "Dermal fillers restore youthful volume without the risk and recovery time of surgery, using Restylane®, Juvéderm®, Merz® or Sculptra®, tailored to you."
+     ],
+     [
+      "Clear and toned",
+      "A personalized SkinMedica® regimen to protect, restore and rejuvenate your skin with scientifically formulated products."
+     ],
+     [
+      "Rhinoplasty",
+      "Cosmetic and functional nose surgery, to change the shape of the nose and help you breathe better."
+     ],
+     [
+      "Facial rejuvenation surgery",
+      "Face lift, brow lift, eyelid surgery (blepharoplasty) and fat transfer, for longer-lasting results."
+     ],
+     [
+      "Reconstruction",
+      "Rebuilding the face after skin cancer removal or injury, with head and neck surgical expertise."
+     ]
+    ],
+    "navLabel": "Treatments"
+   },
+   "treatments": null,
+   "feature": {
+    "tab": "Results",
+    "eyebrow": "Results",
+    "heading": "Before and after",
+    "paras": [
+     "The current site shows patient results for these treatments. [Before-and-after photos, with patient consent, to be supplied by SH Medical.]"
+    ],
+    "chips": [
+     "Lip augmentation",
+     "Liquid facelift",
+     "Under-eye rejuvenation"
+    ],
+    "navLabel": "Results",
+    "image": null,
+    "onPatientsPage": false
+   },
+   "visit": {
+    "heading": "Your consultation",
+    "steps": [
+     [
+      "Talk about your goals",
+      "Tell us what you’d like to change and what matters most to you. [Consultation details to confirm.]"
+     ],
+     [
+      "Your plan",
+      "We recommend treatments matched to your face, skin and lifestyle, with costs explained up front."
+     ],
+     [
+      "Treatment",
+      "Injectables often happen the same day. Surgery is scheduled at one of our partner surgery centers."
+     ],
+     [
+      "Follow-up",
+      "We check your results and fine-tune where needed."
+     ]
+    ]
+   },
+   "team": {
+    "eyebrow": "Your facial plastics team",
+    "heading": "Fellowship-trained facial plastic surgeons",
+    "members": [
+     "aasif-kazi-md-pharm-d",
+     "sai-challapalli-md"
+    ]
+   },
+   "reviews": [],
+   "offices": [
+    "union"
+   ],
+   "officePhone": "(415) 839-6639",
+   "whereHeading": "Facial plastics at Union Square",
+   "whereNote": "450 Sutter Street, Suite 1139. Our surgeons also see patients in San Mateo, Sunnyvale and Sonoma.",
+   "resources": [
+    {
+     "icon": "event_available",
+     "title": "Book a consultation",
+     "description": "Call (415) 839-6639 or request online."
+    },
+    {
+     "icon": "map",
+     "title": "Parking and directions",
+     "description": "Sutter-Stockton Garage or the 450 Sutter garage."
+    },
+    {
+     "icon": "surgical",
+     "title": "Surgery instructions",
+     "description": "Preparing for your procedure and recovery."
+    },
+    {
+     "icon": "payments",
+     "title": "Pricing",
+     "description": "[Price list for injectables to be supplied.]"
+    }
+   ],
+   "faq": [
+    {
+     "question": "Do fillers need recovery time like surgery?",
+     "answer": "No. Dermal fillers restore volume without the risk and recovery time of traditional surgery."
+    },
+    {
+     "question": "What else can Botox treat besides wrinkles?",
+     "answer": "With advanced techniques, neuromodulators can also treat neck bands, slim the face, lift the brows and reduce teeth grinding or jaw clenching."
+    }
+   ],
+   "faqOpen": 2,
+   "ctaHeading": "Ready to feel your most confident?",
+   "tag": "Facial plastics"
+  },
+  {
+   "slug": "dermatology",
+   "order": 7,
+   "name": "Dermatology",
+   "brand": "SH Dermatology",
+   "shortBrand": "SH Dermatology",
+   "eyebrow": "Dermatology · new at SH Medical",
+   "headline": "Healthy skin, *expert care.*",
+   "intro": "Our dermatology team is dedicated to the health and beauty of your skin. Whether you need treatment for a medical skin condition or want to explore cosmetic options, we provide expert, individualized care using the latest in dermatological science.",
+   "phone": "(415) 362-5443",
+   "phoneLabel": "SH Medical",
+   "bookLabel": "Book a dermatology visit",
+   "heroSecondary": null,
+   "logo": null,
+   "photo": "f64d922d965e10b735c2462d888b1236",
+   "photoAlt": "A smiling woman with freckled skin",
+   "photoPosition": "center 30%",
+   "facts": [
+    {
+     "big": "Medical + cosmetic",
+     "small": "Care for skin conditions and appearance"
+    },
+    {
+     "big": "One team",
+     "small": "Working with our allergy, ENT and facial plastics specialists"
+    },
+    {
+     "big": "[Opening date]",
+     "small": "To confirm with SH Medical"
+    }
+   ],
+   "home": {
+    "short": "dermatology",
+    "summary": "Expert, individualized care for medical skin conditions and cosmetic concerns, using the latest in dermatological science and technology.",
+    "chips": [
+     "Skin conditions",
+     "Cosmetic dermatology"
+    ],
+    "photo": "f64d922d965e10b735c2462d888b1236",
+    "photoAlt": "A smiling woman with freckled skin",
+    "photoPosition": "center 30%"
+   },
+   "overview": {
+    "eyebrow": "About dermatology",
+    "heading": "Medical and cosmetic skin care",
+    "paras": [
+     "Dermatology is the newest department at SH Medical. The current site page reads “Coming soon”, so this page is ready for the team’s own description, conditions and treatments.",
+     "Skin care already connects to other parts of SH Medical: our allergists treat eczema and hives, our head and neck surgeons treat skin cancers of the face and neck, and our facial plastics team offers injectables and skin care."
+    ],
+    "glance_title": "To supply before launch",
+    "glance": [
+     "Dermatologists and their bios",
+     "Conditions treated",
+     "Treatments and procedures",
+     "Offices and clinic days",
+     "Insurance and cosmetic pricing",
+     "Department logo"
+    ]
+   },
+   "conditions": {
+    "eyebrow": "What we treat",
+    "heading": "Skin care across SH Medical",
+    "lede": "Until the dermatology team’s list is ready, these are the skin conditions SH Medical already treats.",
+    "items": [
+     [
+      "Medical skin conditions",
+      "[Conditions treated by the dermatology team, to be supplied.]"
+     ],
+     [
+      "Cosmetic dermatology",
+      "[Cosmetic treatments offered, to be supplied.]"
+     ],
+     [
+      "Eczema and hives",
+      "Our allergists treat atopic dermatitis and chronic hives, and offer patch testing for allergic contact dermatitis."
+     ],
+     [
+      "Skin cancer of the head and neck",
+      "Our head and neck surgeons treat basal cell carcinoma, squamous cell carcinoma and melanoma, with reconstruction."
+     ],
+     [
+      "Injectables and skin care",
+      "Botox®, Dysport®, dermal fillers and SkinMedica® regimens with our facial plastics team."
+     ],
+     [
+      "Facial reconstruction",
+      "Rebuilding the face after skin cancer removal, with our facial plastic surgeons."
+     ]
+    ],
+    "navLabel": "Conditions"
+   },
+   "treatments": null,
+   "feature": null,
+   "visit": {
+    "heading": "Your dermatology visit",
+    "steps": [
+     [
+      "Book",
+      "Book online or call (415) 362-5443. [Dermatology phone line to confirm.]"
+     ],
+     [
+      "Forms",
+      "Complete registration and health history before your visit."
+     ],
+     [
+      "Your visit",
+      "[What happens at a first dermatology visit, to be supplied.]"
+     ],
+     [
+      "Your plan",
+      "Your dermatologist explains your options and next steps."
+     ]
+    ]
+   },
+   "team": {
+    "eyebrow": "Your dermatology team",
+    "heading": "Meet our dermatologists",
+    "empty": "[Dermatologists, portraits and bios to be supplied by SH Medical.]",
+    "members": []
+   },
+   "reviews": [],
+   "offices": [],
+   "officePhone": null,
+   "whereHeading": "Where we’ll see you",
+   "whereNote": "[Dermatology offices and clinic days to be confirmed.]",
+   "resources": [
+    {
+     "icon": "description",
+     "title": "New patient forms",
+     "description": "Registration and health history."
+    },
+    {
+     "icon": "verified_user",
+     "title": "Insurance",
+     "description": "Plans accepted for medical dermatology."
+    },
+    {
+     "icon": "payments",
+     "title": "Cosmetic pricing",
+     "description": "[To be supplied.]"
+    },
+    {
+     "icon": "lock",
+     "title": "Patient portal",
+     "description": "Messages and results in UCSF MyChart."
+    }
+   ],
+   "faq": [],
+   "faqOpen": 2,
+   "ctaHeading": "Care for the skin you’re in.",
+   "tag": "Dermatology"
+  },
+  {
+   "slug": "surgery",
+   "order": 8,
+   "name": "Surgery",
+   "brand": "SH Surgery",
+   "shortBrand": "SH Surgery",
+   "eyebrow": "Surgery at SH Medical",
+   "headline": "Safe, personal surgical care, *start to finish.*",
+   "intro": "Our surgical providers specialize in safe, compassionate and highly personalized care. From consultation to recovery, we focus on natural, confident results through innovative techniques and a patient-first approach.",
+   "phone": "(415) 362-5443",
+   "phoneLabel": "SH Medical",
+   "bookLabel": "Book a surgical consultation",
+   "heroSecondary": null,
+   "logo": null,
+   "photo": "17ce9ff97a79d3a0995f8e9fc4d7872b",
+   "photoAlt": "A smiling doctor going over notes with a patient in an exam room",
+   "photoPosition": "center 30%",
+   "facts": [
+    {
+     "big": "11 surgeons",
+     "small": "ENT, head and neck, facial plastic and laryngeal surgeons"
+    },
+    {
+     "big": "8 surgery sites",
+     "small": "Surgery centers and hospitals across the Bay Area"
+    },
+    {
+     "big": "Often same-day",
+     "small": "Many procedures are outpatient, or in our offices"
+    }
+   ],
+   "home": {
+    "short": "surgical care",
+    "summary": "Safe, personal surgical care from your first consultation through recovery. Our surgeons operate at trusted Bay Area surgery centers and focus on natural-looking results, with you at the center of every decision.",
+    "chips": [
+     "Head & neck surgery",
+     "Sinus & nasal surgery",
+     "Ear surgery",
+     "Preparing & recovering"
+    ],
+    "photo": "17ce9ff97a79d3a0995f8e9fc4d7872b",
+    "photoAlt": "A smiling doctor going over notes with a patient in an exam room",
+    "photoPosition": "center 30%"
+   },
+   "overview": {
+    "eyebrow": "About surgery at SH Medical",
+    "heading": "Increasingly less invasive",
+    "paras": [
+     "Our surgeons operate across ENT, head and neck, facial plastics, voice and sleep. Many procedures that once needed a hospital stay are now outpatient, and some happen in our offices under local anesthesia.",
+     "We always start with the least invasive option that will work. When surgery is right, the surgeon who sees you in clinic is the one who operates, and our team guides you through preparation and recovery."
+    ],
+    "glance_title": "In-office procedures",
+    "glance": [
+     "Balloon sinuplasty",
+     "ClariFix and LATERA",
+     "Tula ear tubes without general anesthesia",
+     "Tongue reduction for sleep apnea",
+     "Turbinate reduction and nasal valve repair",
+     "Awake laryngeal procedures",
+     "Fine needle aspiration biopsy"
+    ]
+   },
+   "conditions": {
+    "eyebrow": "Procedures",
+    "heading": "Surgery across our departments",
+    "lede": "Every procedure below is offered by our own surgeons. Tap through to the department for details.",
+    "programs": [
+     {
+      "title": "Sinus and nose",
+      "summary": "Opening blocked sinuses and nasal airways.",
+      "procedures": [
+       "Functional endoscopic sinus surgery",
+       "Image-guided sinus surgery",
+       "Balloon sinuplasty",
+       "PROPEL implants",
+       "Septoplasty",
+       "Turbinate reduction",
+       "Functional rhinoplasty",
+       "Nasal polypectomy",
+       "Nasal valve repair",
+       "Medial maxillectomy"
+      ],
+      "proc_label": "Procedures",
+      "more": "Ear, nose & throat →"
+     },
+     {
+      "title": "Ear",
+      "summary": "Restoring hearing and treating chronic ear disease.",
+      "procedures": [
+       "Ear tubes, including Tula",
+       "Tympanoplasty",
+       "Mastoidectomy",
+       "Stapedectomy",
+       "BAHA implants",
+       "Eustachian tube balloon dilation",
+       "Atresia repair"
+      ],
+      "proc_label": "Procedures",
+      "more": "Ear, nose & throat →"
+     },
+     {
+      "title": "Thyroid, head and neck",
+      "summary": "Thyroid, parathyroid, salivary glands and tumors of the head and neck.",
+      "procedures": [
+       "Thyroidectomy",
+       "Parathyroidectomy",
+       "Neck dissection",
+       "Tumor excision and reconstruction",
+       "Salivary gland surgery",
+       "Tonsillectomy and adenoidectomy"
+      ],
+      "proc_label": "Procedures",
+      "more": "Ear, nose & throat →"
+     },
+     {
+      "title": "Sleep and airway",
+      "summary": "Opening the airway when CPAP alone isn’t the answer.",
+      "procedures": [
+       "Inspire implant",
+       "UPPP",
+       "Uvulectomy",
+       "Tongue reduction",
+       "Maxillomandibular advancement",
+       "Airway dilation for stenosis"
+      ],
+      "proc_label": "Procedures",
+      "more": "Sleep & snoring →"
+     },
+     {
+      "title": "Voice",
+      "summary": "Precise surgery on the vocal folds and larynx.",
+      "procedures": [
+       "Microlaryngeal surgery",
+       "Removal of nodules, polyps and cysts",
+       "Vocal fold medialization",
+       "Laryngeal framework surgery",
+       "Gender-affirming pitch elevation",
+       "Endoscopic Zenker’s surgery"
+      ],
+      "proc_label": "Procedures",
+      "more": "Voice & swallowing →"
+     },
+     {
+      "title": "Facial plastics",
+      "summary": "Aesthetic and reconstructive surgery of the face.",
+      "procedures": [
+       "Cosmetic and functional rhinoplasty",
+       "Face lift",
+       "Brow lift",
+       "Eyelid surgery",
+       "Fat transfer",
+       "Reconstruction after skin cancer",
+       "Facial trauma repair"
+      ],
+      "proc_label": "Procedures",
+      "more": "Facial plastics →"
+     }
+    ],
+    "navLabel": "Procedures"
+   },
+   "treatments": {
+    "tab": "Where surgery happens",
+    "eyebrow": "Where surgery happens",
+    "heading": "Trusted surgery centers and hospitals",
+    "lede": "On the day, go directly to the campus where your surgery is scheduled.",
+    "cols": 2,
+    "items": [
+     [
+      "Campus Surgery Center",
+      "901 Campus Drive, Suite 102, Daly City · (650) 991-2000"
+     ],
+     [
+      "Pacific Heights Surgery Center",
+      "3000 California Street, 2nd floor, San Francisco · (415) 567-1171"
+     ],
+     [
+      "San Francisco Surgery Center",
+      "450 Sutter Street, Suite 500 · valet parking from Sutter Street, paid by the center"
+     ],
+     [
+      "Presidio Surgery Center",
+      "1635 Divisadero Street, Suite 200, San Francisco · (415) 346-1218"
+     ],
+     [
+      "California Pacific Medical Center",
+      "Van Ness campus, 1101 Van Ness Ave, and Davies campus, 45 Castro St · (415) 600-6000"
+     ],
+     [
+      "UCSF Medical Center at Mount Zion",
+      "1600 Divisadero Street, San Francisco · (415) 567-6600"
+     ],
+     [
+      "Saint Francis Memorial Hospital",
+      "900 Hyde Street at Bush, San Francisco · (415) 353-6000"
+     ],
+     [
+      "MarinHealth Medical Center",
+      "250 Bon Air Road, Greenbrae · (415) 925-7000"
+     ]
+    ],
+    "navLabel": "Surgery centers"
+   },
+   "feature": {
+    "tab": "Before surgery",
+    "eyebrow": "Before surgery",
+    "heading": "Your pre-surgery checklist",
+    "paras": [
+     "Undigested food or drink can cause problems and may mean your surgery has to be rescheduled. If you’ve eaten or drunk anything, tell your surgeon."
+    ],
+    "bullets": [
+     "Nothing to eat or drink for 8 hours before, including coffee, water, mints and gum, unless your surgeon says otherwise",
+     "Drink plenty of fluids until midnight the night before",
+     "Don’t smoke for a week, or drink alcohol for 24–48 hours, beforehand",
+     "Stop aspirin, Advil, Motrin and similar blood thinners 2 weeks before, or as directed; discuss Coumadin or Plavix with your doctor",
+     "Arrange childcare for at least 24 hours after you get home",
+     "Call your doctor if you develop a fever, bleeding, severe pain or trouble breathing, or may be pregnant"
+    ],
+    "links": [
+     "Discharge instructions",
+     "Silver Ride medical transport"
+    ],
+    "navLabel": "Before surgery",
+    "image": null,
+    "onPatientsPage": false
+   },
+   "visit": {
+    "heading": "Your surgery, step by step",
+    "steps": [
+     [
+      "Consultation",
+      "Your surgeon explains the options, including non-surgical ones, and what to expect from recovery."
+     ],
+     [
+      "Getting ready",
+      "Check with your doctor about a physical or lab tests. Call us the day before to confirm your surgery time."
+     ],
+     [
+      "Surgery day",
+      "Arrive 1½ hours early: for a 7–7:30am surgery, arrive at 6am. Have nothing to eat or drink for eight hours beforehand."
+     ],
+     [
+      "Going home",
+      "A designated driver must take you home, not a taxi or public transport, and someone should stay with you that night."
+     ]
+    ],
+    "note": "Downloadable discharge instructions cover ear surgery, sinus surgery, tonsillectomy and adenoidectomy, turbinate reduction, UPPP and thyroidectomy, plus a post-tonsillectomy diet."
+   },
+   "team": {
+    "eyebrow": "Your surgical team",
+    "heading": "Surgeons across ENT, head and neck, voice and facial plastics",
+    "members": [
+     "jacob-johnson-md",
+     "andrea-h-yeung-md",
+     "gerald-kangelaris-md",
+     "daniel-flis-md",
+     "lauren-luk-md-fars",
+     "monica-lee-md",
+     "christina-laane-md",
+     "jennifer-bock-hughes-md",
+     "aasif-kazi-md-pharm-d",
+     "sai-challapalli-md",
+     "katherine-yung-md-facs"
+    ]
+   },
+   "reviews": [],
+   "offices": [
+    "union",
+    "pac",
+    "castro",
+    "mateo",
+    "sunny",
+    "marin",
+    "sonoma"
+   ],
+   "officePhone": "(415) 362-5443",
+   "whereHeading": "Consultations in 7 offices",
+   "whereNote": "Surgical consultations happen in our offices, Monday to Friday, 8am to 5pm. Surgery takes place at the centers above.",
+   "resources": [
+    {
+     "icon": "surgical",
+     "title": "Surgery instructions",
+     "description": "The full checklist and fasting rules."
+    },
+    {
+     "icon": "description",
+     "title": "Discharge instructions",
+     "description": "Ear, sinus, tonsil, turbinate, UPPP and thyroid surgery."
+    },
+    {
+     "icon": "directions_car",
+     "title": "Getting home",
+     "description": "Arrange a designated driver; Silver Ride offers medical transport."
+    },
+    {
+     "icon": "verified_user",
+     "title": "Insurance and prior authorization",
+     "description": "We seek authorization; it doesn’t guarantee payment."
+    }
+   ],
+   "faq": [
+    {
+     "question": "What can my child eat before surgery (under 6 months)?",
+     "answer": "No formula for 6 hours and no breast milk for 4 hours before surgery. Clear liquids are fine until 3 hours before, then nothing by mouth."
+    },
+    {
+     "question": "And for children from 6 months to 2 years?",
+     "answer": "No solid food, full liquids or formula for 8 hours, and no breast milk for 6 hours. Clear liquids until 3 hours before, then nothing by mouth."
+    },
+    {
+     "question": "And for children over 2 and adults?",
+     "answer": "No solid food or full liquids for 8 hours. Clear liquids until 3 hours before, then nothing by mouth."
+    },
+    {
+     "question": "What counts as a clear liquid?",
+     "answer": "Clear apple juice, sugar water, water, 7-Up, Pedialyte and electrolyte drinks like Gatorade. Milk, formula, breast milk, juice with pulp, jello, gum, candy and mints are not clear liquids."
+    },
+    {
+     "question": "Can I take a taxi home?",
+     "answer": "No. You can’t go home alone by taxi or public transport. Arrange a designated driver, or ask us about Silver Ride medical transport."
+    }
+   ],
+   "faqOpen": 3,
+   "ctaHeading": "Talk to a surgeon about your options.",
+   "tag": "Surgery"
+  },
+  {
+   "slug": "wellness",
+   "order": 9,
+   "name": "Wellness",
+   "brand": "Sensational Wellness",
+   "shortBrand": "Sensational Wellness",
+   "eyebrow": "Sensational Wellness",
+   "headline": "Live your best life, *at any age.*",
+   "intro": "Wearable sensors track what your body is telling you, and a medical professional helps you turn that real-life data into lasting changes for your quality of life.",
+   "phone": "(415) 362-5443",
+   "phoneLabel": "SH Medical",
+   "bookLabel": "Book a wellness consultation",
+   "heroSecondary": null,
+   "logo": null,
+   "photo": "5bf9a8a03dcedcf7f237830c0bf3cb96",
+   "photoAlt": "A woman meditating on a yoga mat at home, wearing a heart-rate sensor",
+   "photoPosition": "center",
+   "facts": [
+    {
+     "big": "Wearable sensors",
+     "small": "Real-life data from your daily routine"
+    },
+    {
+     "big": "Medical guidance",
+     "small": "Reviewed with a medical professional"
+    },
+    {
+     "big": "[Program details]",
+     "small": "To confirm with SH Medical"
+    }
+   ],
+   "home": {
+    "short": "wellness",
+    "summary": "Through Sensational Wellness, wearable sensors track what your body is telling you, and a medical professional helps you turn that real-life data into lasting changes, at any age.",
+    "chips": [
+     "Wearable sensors",
+     "Your data, explained",
+     "Lasting lifestyle changes"
+    ],
+    "photo": "5bf9a8a03dcedcf7f237830c0bf3cb96",
+    "photoAlt": "A woman meditating on a yoga mat at home, wearing a heart-rate sensor",
+    "photoPosition": "center"
+   },
+   "overview": {
+    "eyebrow": "About Sensational Wellness",
+    "heading": "Your data, turned into lasting change",
+    "paras": [
+     "All of our providers strive to help you live your best life at any age. Sensational Wellness uses the latest advances in sensors to interpret what your body is saying, then a medical professional consults with you to use that real-life data to make lasting changes.",
+     "The current sensationalhealth.com site isn’t reachable and its archived pages are from 2016, so this page is ready for the program’s own description."
+    ],
+    "glance_title": "To supply before launch",
+    "glance": [
+     "Which sensors and what they measure",
+     "Who the program is for",
+     "How consultations work and how often",
+     "Providers and their bios",
+     "Where it’s offered, in person or remote",
+     "Cost and insurance",
+     "Program logo"
+    ]
+   },
+   "conditions": {
+    "eyebrow": "How it works",
+    "heading": "What Sensational Wellness offers",
+    "lede": "Based on the current description. [Services to be confirmed and expanded by SH Medical.]",
+    "items": [
+     [
+      "Wearable sensors",
+      "Advanced sensors that interpret what your body is saying through your daily life. [Devices and measures to confirm.]"
+     ],
+     [
+      "Your data, explained",
+      "A medical professional reviews your real-life data with you. [Consultation format to confirm.]"
+     ],
+     [
+      "Lasting changes",
+      "A plan to make lasting changes for your quality of life, at any age. [Program length to confirm.]"
+     ]
+    ],
+    "navLabel": "How it works"
+   },
+   "treatments": null,
+   "feature": null,
+   "visit": {
+    "heading": "Getting started",
+    "steps": [
+     [
+      "Book a consultation",
+      "Call (415) 362-5443 or book online. [Program phone line to confirm.]"
+     ],
+     [
+      "Wear your sensors",
+      "[How sensors are fitted and how long you wear them.]"
+     ],
+     [
+      "Review your data",
+      "Go through your results with a medical professional."
+     ],
+     [
+      "Make lasting changes",
+      "Put your plan into practice, with follow-up along the way."
+     ]
+    ]
+   },
+   "team": {
+    "eyebrow": "Your wellness team",
+    "heading": "Meet the team",
+    "empty": "[Sensational Wellness providers, portraits and bios to be supplied by SH Medical.]",
+    "members": []
+   },
+   "reviews": [],
+   "offices": [],
+   "officePhone": null,
+   "whereHeading": "Where we’ll see you",
+   "whereNote": "[Offices, or remote options, to be confirmed.]",
+   "resources": [
+    {
+     "icon": "description",
+     "title": "New patient forms",
+     "description": "Registration and health history."
+    },
+    {
+     "icon": "payments",
+     "title": "Cost",
+     "description": "[Program pricing to be supplied.]"
+    },
+    {
+     "icon": "lock",
+     "title": "Patient portal",
+     "description": "Messages and results in UCSF MyChart."
+    },
+    {
+     "icon": "forum",
+     "title": "Questions",
+     "description": "Ask our team about the program."
+    }
+   ],
+   "faq": [],
+   "faqOpen": 2,
+   "ctaHeading": "Ready to make lasting changes?",
+   "tag": "Wellness"
+  }
+ ],
+ "specialists": [
+  {
+   "slug": "jacob-johnson-md",
+   "name": "Jacob Johnson, MD",
+   "role": "Adult & pediatric ENT · Head & neck surgeon",
+   "title": "Adult and Pediatric ENT Specialist / Head and Neck Surgeon",
+   "offices": [
+    "union",
+    "pac",
+    "sonoma"
+   ],
+   "photo": "a3e784c2b58c6245fa5ea84facfea90c",
+   "bio": [
+    "Dr. Jacob Johnson joined San Francisco Otolaryngology Medical Group as an Otolaryngologist, head and neck surgeon in 2001. Dr. Johnson is a board certified physician and specializes in pediatric, sinus, ear, and thyroid patients. Dr. Johnson has been the Medical Director of InSound Medical Corporation since 2005 and is president of Union Square Hearing."
+   ],
+   "sections": [
+    {
+     "heading": "Teaching Experience",
+     "items": [
+      "University of California, SF- Assistant Clinical Professor",
+      "San Francisco General Hospital – Resident Surgical Training",
+      "Sponsor- Longitudinal Clinical Experience for 3 year medical student"
+     ]
+    },
+    {
+     "heading": "Education/Training",
+     "items": [
+      "University of California , SF-Resident Physician, Department of Otolaryngology-HNS 1997 – 2001",
+      "University of California, SF-Intern, Department of General Surgery 1996 – 1997",
+      "Baylor College of Medicine -Doctor of Medicine, honors 1992 – 1996",
+      "Trinity University -Bachelor of Sciences, summa cum laude (Biochemistry & Biology) 1988 – 1992"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "Alpha Omega Alpha Honor Medical Society",
+      "American Academy of Facial Plastic and Reconstructive Surgeons",
+      "UCSF Association of Clinical Faculty",
+      "San Francisco Medical Society",
+      "California Medical Association",
+      "American Medical Association",
+      "American Academy of Otolaryngology- Head and Neck Surgery",
+      "American Rhinology Society",
+      "Phi Beta Kappa"
+     ]
+    },
+    {
+     "heading": "Hospital Affiliations",
+     "items": [
+      "University of California, SF",
+      "San Francisco General Hospital",
+      "St. Francis Hospital",
+      "California Pacific Medical Center",
+      "San Francisco Surgery Center"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "andrea-h-yeung-md",
+   "name": "Andrea H. Yeung, MD",
+   "role": "Adult & pediatric ENT · Head & neck surgeon",
+   "title": "Adult and Pediatric ENT Specialist / Head and Neck Surgeon",
+   "offices": [
+    "union",
+    "pac"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Andrea Yeung is a board certified Otolaryngologist – head and neck surgeon – and an Assistant Clinical Professor at the University of California San Francisco. Dr. Yeung has been a partner with the San Francisco Otolaryngology Medical Group since 2007. Dr. Yeung is also certified as a San Francisco General Hospital interpreter in Spanish and Cantonese."
+   ],
+   "sections": [
+    {
+     "heading": "Teaching Positions in Otolaryngology",
+     "items": [
+      "University of California, SF- Assistant Clinical Professor",
+      "Sponsor- Longitudinal Clinical Experience for 3rd year medical students"
+     ]
+    },
+    {
+     "heading": "Education/Training",
+     "items": [
+      "University of California, SF- Resident Physician, Department of Otolaryngology-Head and Neck Surgery 2003 – 2007",
+      "University of California, SF- Intern, Department of General Surgery 2002 – 2003",
+      "University of California , Davis-Doctor of Medicine 1998 – 2002",
+      "University of California , Riverside-Bachelor of Science, summa cum laude (Biology) 1995 – 1998"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "Phi Beta Kappa",
+      "Alpha Omega Alpha Honors Medical Society",
+      "American Medical Association",
+      "American College of Surgeons",
+      "American Academy of Otolaryngology Head and Neck Surgery",
+      "San Francisco Medical Society",
+      "California Medical Association",
+      "American Academy of Facial Plastic and Reconstructive Surgery (AAFPS)"
+     ]
+    },
+    {
+     "heading": "Hospital Affiliations",
+     "items": [
+      "University of California, SF",
+      "San Francisco General Hospital",
+      "St. Francis Hospital",
+      "California Pacific Medical Center",
+      "San Francisco Surgery Center"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "gerald-kangelaris-md",
+   "name": "Gerald Kangelaris, MD",
+   "role": "Adult & pediatric ENT · Head & neck surgeon",
+   "title": "Adult and Pediatric ENT Specialist / Head and Neck Surgeon",
+   "offices": [
+    "union",
+    "pac"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Gerald Kangelaris is a board certified Otolaryngologist – head and neck surgeon and is the newest member of San Francisco Otolaryngology joining in October 2012. He completed his residency at the University of California San Francisco and holds a special interest in head and neck surgical oncology, thyroid and parathyroid disorders, and diseases of the sinuses and ear."
+   ],
+   "sections": [
+    {
+     "heading": "Prior Employment",
+     "items": [
+      "ICF Consulting, Fairfax, VA-Analyst 05/99 – 05/00",
+      "Princeton Review, Ann Arbor, MI-Instructor 09/01 – 06/03"
+     ]
+    },
+    {
+     "heading": "Current Positions",
+     "items": [
+      "San Francisco Otolaryngology Medical Group 10/12 – present",
+      "University of California, San Francisco 10/12 – present"
+     ]
+    },
+    {
+     "heading": "Education",
+     "items": [
+      "University of Michigan -B.A. in Economics and Germanic Languages and Literatures 08/94 – 12/98",
+      "Albert-Ludwigs-Universität Freiburg, Baden-Württemberg, Germany-Germanic studies during study abroad program 08/96 – 07/97",
+      "University of Michigan -Pre-medical post-baccalaureate 05/00 – 08/01",
+      "University of Michigan Medical School -M.D. 08/02 – 06/07",
+      "University of Michigan Ross School of Business -M.B.A. 08/05 – 06/07",
+      "University of California, San Francisco -Internship, Department of Otolaryngology – Head & Neck Surgery 07/07 – 06/08",
+      "University of California, San Francisco -Residency, Department of Otolaryngology – Head & Neck Surgery 07/08 – 06/12"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "American Medical Association , Member 07/08-present",
+      "The Triological Society , Member 07/08-present",
+      "American Academy of Otolaryngology – Head and Neck Surgery , Member 07/08-present",
+      "American Academy of Otolaryngic Allergy , Member 07/09-present"
+     ]
+    },
+    {
+     "heading": "Teaching Activities",
+     "items": [
+      "Teaching Conference, University of Michigan Department of Obstetrics & Gynecology “Is Residency an Ideal Time to be Pregnant in a Woman’s Career?” 08/04",
+      "Teaching Conference, University of Michigan Division of Surgical Oncology “An Overview of Characinoid Tumors” 03/05",
+      "Grand Rounds, University of Michigan Department of Urology “New Medical Therapies for Metastatic Renal Cell Carcinoma” 07/06",
+      "Teaching Conference, University of Michigan Surgical Intensive Care Unit “Use of Corticosteroids in Septic Shock: Indications, Evidence, and Controversies” 08/06",
+      "Teaching Conference, University of Michigan Department of Emergency Medicine “Maxillofacial Blunt Trauma” 10/06",
+      "Grand Rounds, UCSF Department of Otolaryngology – Head & Neck Surgery “Evaluation and Management of Facial Burns” 03/10",
+      "Resident Lecture Series, UCSF Department of Otolaryngology – Head & Neck Surgery “Airway Management” 08/10",
+      "Grand Rounds, UCSF Department of Otolaryngology – Head & Neck Surgery “Surgical Considerations in Graves’ Disease” 11/10",
+      "Schindler Endowed Lectureship, UCSF Department of Otolaryngology – Head & Neck Surgery-Case study, Temporal Bone Meningocele 11/11",
+      "Grand Rounds, UCSF Department of Otolaryngology – Head & Neck Surgery “Asymmetric Sensorinueral Hearing Loss: Diagnostic Options and Cost Implications of Investigations” 02/12",
+      "Morrison Endowed Lectureship, UCSF Department of Otolaryngology – Head & Neck Surgery Case study, Complications of Teflon Injection Laryngoplasty 03/12",
+      "Sooy Endowed Lectureship, UCSF Department of Otolaryngology – Head & Neck Surgery Case study, Paramedian Forehead Flap Nasal Reconstruction 06/12",
+      "Thyroid Treatment and Vitamin D Update, CPMC Multidisciplinary CME Event “Management of Thyroid Nodules: Review of ATA Guidelines” 10/12",
+      "Infectious Disease Update, CPMC Multidisciplinary CME Event “HPV in Head and Neck Carcinoma” 10/13"
+     ]
+    },
+    {
+     "heading": "Publications",
+     "items": [
+      "Shoo BA, Kangelaris GT, Callen PW, Kashani-Sabet M, Leong SPL. Detection of Occult Melanoma by Preoperative Positron Emission Tomography-Computed Tomography and Intraoperative Ultrasonography. J Cut Med and Surg. 2010 May-Jun;14(3):130-5.",
+      "Kangelaris GT, Yom SS, Huang K, Wang SJ. Limited Utility of Routine Surveillance MRI Following Chemoradiation for Advanced-Stage Oropharynx Carcinoma. Int J Otolaryngol. 2010;2010.pii:904297. Epub 2010 Aug 31.",
+      "Kangelaris GT, Kim TB, Orloff LA. Role of Ultrasound in Thyroid Disorders. Otolaryngol Clin North Am. 2010 Dec;43(6):1209-27.",
+      "Kangelaris GT, Kim TB, Orloff LA. Role of Ultrasound in Thyroid Disorders. Ultrasound Clinics. 2012 Apr;7(2):197-210.",
+      "Kangelaris GT, Lustig LR. Genetics of Adult Sensorineural Hearing Loss. Encyclopedia of Otolaryngology, Head and Neck Surgery. Ed. Kountakis, Stilianos. Springer, pending pub 2013.",
+      "Kangelaris GT, Lustig LR. Sensorineural Hearing Loss in Adults. Encyclopedia of Otolaryngology, Head and Neck Surgery. Ed. Kountakis, Stilianos. Springer, pending pub 2013.",
+      "Russell MD, Kangelaris GT. Comparison of L-strut preservation in endonasal and endoscopic septoplasty: a cadaveric study. Int Forum Allergy Rhinol. 2014 Feb;4(2):147-50."
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "daniel-flis-md",
+   "name": "Daniel Flis, MD",
+   "role": "Head & neck surgical oncology",
+   "title": "Adult and Pediatric ENT Specialist / Head and Neck Surgeon",
+   "offices": [
+    "castro",
+    "marin"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Daniel Flis is a board-certified Otolaryngologist-Head and Neck Surgeon . He completed his residency in Otolaryngology-Head and Neck Surgery in 2015. He completed a fellowship in Head and Neck Surgical Oncology and Endoscopic Skull Base Surgery at the University of California-San Francisco in 2016.",
+    "Dr. Daniel Flis treats a wide variety of adult and pediatric disorders of the head and neck. As a fellowship-trained head and neck cancer surgeon, his expertise includes treatment of benign and malignant tumors of the thyroid, salivary glands, oral cavity, oropharynx, sinonasal tract, skin, among other conditions of the head and neck."
+   ],
+   "sections": [
+    {
+     "heading": "Head and Neck Surgical Oncology Fellowship 7/2015-7/2016",
+     "items": [
+      "University of California, San Francisco , Fellow San Francisco, California"
+     ]
+    },
+    {
+     "heading": "Otolaryngology-Head & Neck Surgery Residency 6/2011-6/2015",
+     "items": [
+      "Tufts University School of Medicine , Resident Boston, Massachusetts"
+     ]
+    },
+    {
+     "heading": "General Surgery Internship 6/2010-6/2011",
+     "items": [
+      "Tufts University School of Medicine , Intern Boston, Massachusetts"
+     ]
+    },
+    {
+     "heading": "Doctor of Medicine 8/2005-5/2009",
+     "items": [
+      "Rutgers-Robert Wood Johnson Medical School Piscataway, New Jersey"
+     ]
+    },
+    {
+     "heading": "Post-baccalaureate Premedicine 9/2003-5/2005",
+     "items": [
+      "Columbia University New York, New York"
+     ]
+    },
+    {
+     "heading": "Bachelor of Arts with Distinction (Comparative Literature/Japanese) 9/2000-6/2003",
+     "items": [
+      "University of Washington Seattle, Washington",
+      "Tulane University 9/1999-5/2000 New Orleans, LA"
+     ]
+    },
+    {
+     "heading": "International Studies",
+     "items": [
+      "Aoyama Gakuin University 3/2002-3/2003 Tokyo, Japan"
+     ]
+    },
+    {
+     "heading": "Resident Research Project 4/2012-12/2014",
+     "items": [
+      "Tufts University School of Medicine, Schwob Laboratory",
+      "Mentors: Dr. James Schwob, Dr. Eric Holbrook",
+      "Project goal: establish a panel of immunohistochemical antibodies to reliably distinguish Esthesioneuroblastoma from other sinonasal tumors, such as Sinonasal Undifferentiated Carcinoma and Sinonasal Malignant Melanoma using a panel of human olfactory epithelium antibodies."
+     ]
+    },
+    {
+     "heading": "Post Doctoral Research Fellow 6/2009-6/2010",
+     "items": [
+      "Tufts University School of Medicine, Schwob Laboratory",
+      "Mentors: Dr. James Schwob, Dr. Eric Holbrook",
+      "Learned principles of stem cells, neural regeneration, and olfaction; used immunohistochemical and advanced microscopy techniques to study the basal cells and presumptive stem cells of the olfactory epithelium of rats; investigated patterning of receptor neurons in the olfactory bulb and epithelium of humans; attended seminars in the graduate programs in Cell, Molecular and Developmental Biology and Neuroscience; evaluated patients with disorders of the chemical senses."
+     ]
+    },
+    {
+     "heading": "Honors & Awards",
+     "items": [
+      "Tufts Medical Center, Resident Award for Excellence in Research 2013",
+      "Alpha Omega Alpha 2008",
+      "Robert Wood Johnson Medical School Summer Research Fellowship 2006"
+     ]
+    },
+    {
+     "heading": "Certification & Licenses",
+     "items": [
+      "California Medical License",
+      "American Board of Otolaryngology"
+     ]
+    },
+    {
+     "heading": "Publications",
+     "items": [
+      "Flis DW, Burke JF, Theodosopoulos P, Aghi M, El-Sayed IH. The endoscopic buccal fat pad flap for closure of skull base defects: a report of 5 cases. World Neurosurg. 2018 Feb;110:e42-e45.",
+      "Chan AK, Benet A, Ohya J, Zhang X, Vogel TD, Flis DW, El-Sayed IH, Mummaneni PV. The endoscopic transoral approach to the craniovertebral junction: an anatomic study with a clinical example. Neurosurg Focus. 2016 Feb;40(2):E11.",
+      "Flis DW, Shah AT, Tracy JC, Heilman CB, O’Leary MO. Metastatic breast carcinoma of the jugular foramen: a rare case of Villaret’s syndrome. Head Neck. 2015. Nov 37(11)E146-9.",
+      "England, MR, Schwartz MA, Flis D, Kelly B, Wein RO. Dysphagia, Hoarseness, and a Hypopharyngeal Mass. Anesthesia & Analgesia Care Case Reports. 2014 Nov1;3(9):123-5.",
+      "Mohan, S, Flis, DW, O’Leary MA. A case of trigemino-cardiac reflex during infrastructure maxillectomy. JAMA Otolaryngology. 2014;140(6):563-564.",
+      "Dagher W, Nasr VG, Patel AK, Flis, DW, Wein RO. Forestier’s Disease: An unusual and rare cause of acute airway obstruction in the elderly. The Journal of Emergency Medicine. 2014 May;46(5):617-9.",
+      "Aulet R, Flis DW, Sillman JS. Heroin induced sensorineural hearing loss. Case Reports in Otolaryngology. 2014: 962759.",
+      "Jang W, Chen X, Flis D, Harris M, Schwob JE. Label-retaining, quiescent cells are found among the globose basal cells of olfactory epithelium. J Comp Neurol. 2014 Mar;522(4):731-49.",
+      "Flis DW, Wein RO. Nasopharyngeal Branchial Cysts – Diagnosis & Management: A Case Series. J Neurol Surg B 2013; 74(01):50-53.",
+      "Sharma A, Groblewski JC, Flis D. In reference to Wire grill brush bristle as an unusual foreign body: Report of two pediatric cases. Laryngoscope. 2013 Feb;123(2):551."
+     ]
+    },
+    {
+     "heading": "Posters & Presentations",
+     "items": [
+      "Bay Area Resident Research Symposium. Moderator. June 3rd, 2016.",
+      "The endoscopic buccal fat pad flap for closure of skull base defects: a report of five cases. Flis DW, Benet A, El-Sayed IH. Poster. North American Skull Base Society annual meeting 2016.",
+      "Prevention of graft migration with tri-layer button fat graft: experience with 25 patients. Flis DW, Orloff M, Aghi M, Tehodosopoulos P, McDermott, M, El-Sayed IH. Presentation. North American Skull Base Society annual meeting 2016.",
+      "Metastatic breast carcinoma of the jugular foramen: a rare case of Villaret’s syndrome. Flis DW, Shah AT, Tracy JC, Heilman CB, O’Leary MO. Poster. North American Skull Base Society annual meeting 2014.",
+      "Endoscopic Management of Cholesteatoma. Presentation. New England Otolaryngology Society. Yale Medical School. December 2013. 3rd Place.",
+      "The Safety and Feasibility of Extended Endonasal Approaches to Orbital Cellulitis in Infants and Toddlers. Presentation. Flis DW, Vecchiotti MA, Scott AR. North American Skull Base Society annual meeting 2013.",
+      "Benign Pediatric Neck Masses. Grand Rounds Presentation. Tufts Medical Center-Boston Medical Center Combined Academic Curriculum. May 3, 2013.",
+      "Diagnosis and Management of Nasopharygneal Branchial Cysts. Poster. Flis DW, Wein RO. North American Skull Base Society annual meeting 2012.",
+      "Endoscopic Endonasal Pituitary Surgery: A 10-Year Experience. Poster. Flis DW, Heilman C, Rebeiz E. American Academy of Otolaryngology annual meeting 2010.",
+      "Characterization of human odorant receptor antibodies to map the human peripheral olfactory neural circuit in Alzheimer’s disease. Poster. Rickenbacher GT, Cao L, Flis DW, Camelo-Piragua SI, Schwob JE, Holbrook EH, Barnea G, Albers MW. Society for Neuroscience, 2010 meeting."
+     ]
+    },
+    {
+     "heading": "Professional Societies",
+     "items": [
+      "Candidate Fellow, American Head and Neck Society",
+      "Fellow Member, American Academy of Otolaryngology-Head and Neck Surgery"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "lauren-luk-md-fars",
+   "name": "Lauren Luk, MD, FARS",
+   "role": "Rhinology & sinus surgery",
+   "title": "Adult and Pediatric ENT Specialist / Head and Neck Surgeon",
+   "offices": [
+    "union",
+    "mateo",
+    "sunny"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Lauren Luk is a board-certified Otolaryngologist – head and neck surgeon with a specialization in rhinology and skull base surgery. She graduated from medical school at the University of California – San Francisco , and performed her residency at Oregon Health and Science University . She then completed an endoscopic skull base and rhinology fellowship at Emory University and is an active member and Fellow of the American Rhinologic Society . Prior to joining SFOMG, Dr. Luk taught University of California Irvine residents and served as a co-director of the Kaiser Permanente Rhinology and Skull Base Surgery fellowship program ."
+   ],
+   "sections": [
+    {
+     "heading": "Education/Training",
+     "items": [
+      "BA, Human Biology Stanford University, Palo Alto, CA, 2002 – 2006",
+      "Area of Concentration: Neurobiology and Neural Disease",
+      "MD with thesis. Univ. of California San Francisco (UCSF), San Francisco, CA, 2006 – 2011",
+      "Pathways to Discovery –Molecular Medicine, 1 year research fellowship",
+      "Internship and Residency in Otolaryngology. Oregon Health and Science Univ. (OHSU), Portland, OR, 2011 – 2016",
+      "Fellowship in Rhinology/Skull Base Surgery. Emory University, Atlanta, GA, 2016 – 2017"
+     ]
+    },
+    {
+     "heading": "Licensure/Board Certification",
+     "items": [
+      "Medical Board of California – Physician and Surgeon’s License",
+      "American Board of Otolaryngology – Diplomate – June 2017 – present",
+      "Fellow of American Rhinologic Society (FARS) – July 2019 – present"
+     ]
+    },
+    {
+     "heading": "Professional Society Memberships",
+     "items": [
+      "(2018 – 2021) Women in Rhinology – Executive Board – Member at Large",
+      "(2017 – present) American Journal of Rhinology and Allergy – Reviewer",
+      "(2017 – present) International Forum for Allergy and rhinology – Reviewer",
+      "(2016 – present) American Academy of Otolaryngology White Journal – Reviewer",
+      "(2013 – present) American Rhinologic Society – Committee of Residents and Fellows",
+      "(2012 – present) American Academy of Otolaryngology – Head and Neck Surgery, Member",
+      "(2009 – 2015) Association for Research in Otolaryngology"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "monica-lee-md",
+   "name": "Monica Lee, MD",
+   "role": "Adult & pediatric ENT · Head & neck surgeon",
+   "title": "Adult and Pediatric ENT Specialist / Head and Neck Surgeon",
+   "offices": [
+    "marin"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Monica Lee is a board-certified Otolaryngologist-Head and Neck surgeon. Originally from Boston, Massachusetts, she joined San Francisco Otolaryngology in January 2023. She completed her residency in Otolaryngology-Head and Neck surgery in 2012 and had been in practice for ten years in Massachusetts before moving to the Bay Area. She treats a wide variety of ear, nose, and throat disorders in both pediatric and adult patients. Dr. Lee is also fluent in Cantonese."
+   ],
+   "sections": [
+    {
+     "heading": "Teaching Positions in Otolaryngology",
+     "items": [
+      "Clinical Instructor of Otolaryngology, Harvard University (August 2012 – December 2022)"
+     ]
+    },
+    {
+     "heading": "Education and Training",
+     "items": [
+      "Boston Medical Center, Boston University School of Medicine, Boston, MA Department of Otolaryngology – Head and Neck Surgery Administrative Chief Resident (June 2011 – June 2012)",
+      "Boston Medical Center, Boston University School of Medicine, Boston, MA Department of Otolaryngology – Head and Neck Surgery Resident (June 2008 – June 2011)",
+      "Boston Medical Center, Boston University School of Medicine, Boston, MA Department of Surgery Intern (June 2007 – June 2008)",
+      "University of Massachusetts Medical School , Worcester, MA Doctor of Medicine (June 2007)",
+      "University of Pennsylvania , College of Arts & Sciences, Philadelphia, PA Bachelor of Arts in Biology, with Distinction in Biology, Minor in Chemistry (May 2002)"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "American Academy of Otolaryngology – Head and Neck Surgery , Member (June 2007 – Present) American Academy of Otolaryngic Allergy , Fellow (2012 – Present) Massachusetts Medical Society , Member (2003 – Present)"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "douglas-mann-md-mba",
+   "name": "Douglas Mann, MD, MBA",
+   "role": "Otolaryngologist",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": null,
+   "bio": [
+    "Mann, D.G., et . al. Tonsillectomy: Some Like It Hot. Laryngoscope 94:677, 1984",
+    "Mann, D.G. “Upper Lid Crease Approach to the Ethmoid Sinus” Am J. of Rhinology Aug-Sept 1991",
+    "Mann, D.G. “Alloplastic or Homograft Implantation for Nasal Reconstruction” in Controversies in Otolaryngology",
+    "Mann, D.G., “Supratarsal Approach to the Medial Orbit and Ethmoid Sinus”",
+    "Eighth International Symposium on Infection and Allergy in the Nose, Baltimore, MD, June 1989",
+    "Mann, D.G., “Transhelical Otoplasty” Presented to Eastern Section of American Academy of Facial Plastic and Reconstructive Surgery, Boca Raton, Fla. January 1992.",
+    "Mann, D.G., “Browpexy via Upper Lid Blepharoplasty”, Sixth International Symposium on Facial Plastic Surgery, June, 1992.",
+    "Mann, D.G. “Tip-Belt Concept in Aesthetic Rhinoplasty,” Seventh international symposium on infection and allergy in the nose, March, 1997",
+    "Visiting Professorships: Lecture series “Otolaryngology, Hearing, Balance, and Surgical Practices” Hahnemann University Masters Program in Audiology. 1981-1983",
+    "“Orbital Cellulitis” University of Pennsylvania Alumni Ophthalmological Association Scheie Eye Institute Philadelphia, PA. 1986",
+    "“Vertigo: Diagnosis and Management” Medical Grand Rounds Riddle Memorial Hospital, 1987 Media, PA",
+    "“Otitis Media in Children” Conference on Otolaryngology for Family Practitioners Philadelphia College of Osteopathic Medicine, 1984. Monthly to medical students and pediatric residents Crozer-Chester Medical Center Chester, PA “Rational Therapy of Head and Neck infections” Crozer-Chester Medical Center, 1988. “Sinusitis: The Endoscopic Approach” Riddle Memorial Hospital, 1989. Taylor Hospital, 1990 Crozer-Chester, 1991 “Facial Plastic Surgery Today” Taylor Hospital 1990 “The Natural Look in Facial Plastic Surgery” Media Rotary Club, 1991 “Facial Rejuvenation” Riddle Memorial Hospital Community Center, May 1996 “Pediatric Sinusitis” Pediatric Grand Rounds, Crozer-Chester Medical Center, March 1997 “What I Learned From 99 Noses: Rhinoplasty for the 90’s” Riddle Community Center, Nov 1996 “Not Just Another Pretty Nose” to weekly physician CME luncheon, Taylor Hospital, Jan 1997 “Erbium-YAG Laser Treatment for Facial Resurfacing” Riddle Memorial Hospital Community Education Center 1997",
+    "“Snoring and Sleep Apnea” Taylor Hospital 1998 “What Every Doctor Should Know About Hearing Loss” Paoli Memorial Hospital CME conference 1999 Sinusitis-Diagnosis and Management Paoli Memorial Hospital CME conference 2000 “Management of the Stuffy, Runny Nose” Schering pharmaceutical sponsored meeting 2000 “Doctor, I Have Sinus…Now what?” Riddle Medical Staff Grand Rounds 2000 “Minimally invasive Facial Plastic Surgery” Riddle Community Education Center 2000 “Antibiotic Usage in Sinusitis” 2000 Grand Rounds, Mercy Community Hospital 2000 “New Considerations in Antibiotic Resistance in Treatment of Sinusitis” 2001 “Antibiotics in Sinusitis: New Considerations” 2001 “Coping with Hearing Loss” Riddle Community Education Center 2003 “My Face Hurts” Falmouth Hospital Education Center 2004 “Management of Common ENT Emergencies” Falmouth Hospital ER staff 2004 “Vertigo, Diagnosis and Treatment” Falmouth Hospital Medical Staff 2007 “Acute Otitis Externa for Pediatricians” 2005 “Update on Pediatric Ear Disease” Falmouth Hospital Pediatrics 2009 What we need to know about the care of the tracheotomy patient: Respiratory therapy Department, Falmouth Hospital 2019 Douglas G. Mann,",
+    "L-Floxacin in Sinusitis, 1995 RW Johnson Pharmaceutical Research Institute Use of Floxin Otic for Treatment of Acute Otitis Externa, PPD Research and Daiichi Pharmaceuticals Use of Once Daily Floxin Otic for Acute Otitis Externa, PPD Research and Daiichi Pharmaceuticals",
+    "Education: 1968-1972 Brooklyn College, City University of New York BS, Chemistry, Summa Cum Laude",
+    "1997-1999 West Chester University , West Chester, PA MBA, Finance",
+    "1976-1978 Resident, General Surgery Montefiore Hospital Albert Einstein College of Medicine, Bronx, NY",
+    "1978-1981 Resident, Otolaryngology Yale-New Haven Hospital, New Haven, CT",
+    "1981-1983 Lieutenant Commander, Medical Corps United States Naval Reserves Naval Regional Medical Center Philadelphia, PA",
+    "1995 American Board of Facial Plastic and Reconstructive Surgery",
+    "1982-1998 Private practice, single specialty group practice Plastic Surgical, Ear, Nose and Throat Associates, PC Chester, PA 19013 Status: Shareholder",
+    "1998-2004 Private practice, Single specialty group practice Head and Neck Associates of Southeastern PA Havertown, PA 19083 Status: Partner",
+    "2004-2017 Private solo practice: Upper Cape Ear, Nose, & Throat, PC Falmouth, MA",
+    "1977 New York (131140, inactive) 1980 Connecticut (021912, inactive) 1981 Pennsylvania (024529E, inactive) 2004 Massachusetts (219845) 2022 California (G183283)",
+    "1980-1981 Instructor, Otolaryngology Yale University School of Medicine",
+    "1982-2004 Assistant Professor, Otolaryngology Thomas Jefferson University School of Medicine",
+    "1993-1998 Chairman, O.R. Committee Crozer Chester Medical Center Chester, PA",
+    "1989-1996 Chairman, Laser Committee Crozer Chester Medical Center Chester, PA",
+    "1988-1990 Executive Committee Taylor Hospital Ridley Park, PA",
+    "1986-1994 Chair, Surgical Case Review Committee Community Hospital, Chester, PA",
+    "2007-2009 Secretary treasurer, Falmouth Hospital medical Staff",
+    "2008-2018 Member, Board of Directors Cape Hospital Insurance Co.",
+    "2017-2019 Director and Secretary Cape Cod Preferred Physicians"
+   ],
+   "sections": []
+  },
+  {
+   "slug": "aasif-kazi-md-pharm-d",
+   "name": "Aasif Kazi, MD, Pharm.D.",
+   "role": "Head & neck surgeon · Facial plastics",
+   "title": null,
+   "offices": [
+    "union",
+    "sunny"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "christina-laane-md",
+   "name": "Christina Laane, MD",
+   "role": "Otolaryngologist · Head & neck surgeon",
+   "title": "Board Certified Otolaryngologist – Head and Neck Surgeon",
+   "offices": [
+    "mateo"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Christina Laane is a board certified Otolaryngologist – head and neck surgeon. Dr. Laane joined San Francisco Otolaryngology in 2024 but has been in practice since 2002. Dr. Laane was a partner physician at Ear, Nose, and Throat Associates of San Mateo from 2002 to 2024."
+   ],
+   "sections": [
+    {
+     "heading": "Teaching Experience",
+     "items": [
+      "UCSF Otolaryngology – Teaching Assistant, Department of Biology"
+     ]
+    },
+    {
+     "heading": "Education/Training",
+     "items": [
+      "Otolaryngology/Head and Neck Surgery Resident, University of California, San Francisco",
+      "1998 – 2002",
+      "Department of General Surgery Intern, University of California, San Francisco",
+      "1997 – 1998",
+      "Doctor of Medicine, Stanford University",
+      "1993 – 1997",
+      "Bachelor of Sciences in Biology , Stanford University",
+      "1989 – 1993"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "American Medical Association",
+      "California Medical Association",
+      "UCSF Association of Clinical Faculty",
+      "American Academy of Otolaryngology- Head and Neck Surgery",
+      "San Mateo County Medical Association"
+     ]
+    },
+    {
+     "heading": "Hospital Affiliations",
+     "items": [
+      "Mills Peninsula Medical Center",
+      "University of California San Francisco"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "jennifer-bock-hughes-md",
+   "name": "Jennifer Bock Hughes, MD",
+   "role": "Otolaryngologist · Head & neck surgeon",
+   "title": "Board Certified Otolaryngologist – Head and Neck Surgeon",
+   "offices": [
+    "mateo"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Jennifer Bock Hughes is a board certified Otolaryngologist – head and neck surgeon, and a volunteer clinical faculty member at UCSF. Dr. Bock Hughes joined San Francisco Otolaryngology in 2024 but has been in practice since 1994. Dr. Bock Hughes was the president of Ear, Nose, and Throat Associates of San Mateo from 1994 to 2024."
+   ],
+   "sections": [
+    {
+     "heading": "Teaching Experience",
+     "items": [
+      "UCSF Otolaryngology – Volunteer Clinical Faculty"
+     ]
+    },
+    {
+     "heading": "Education/Training",
+     "items": [
+      "Otolaryngology – Head and Neck Surgery Resident, University of California, San Francisco",
+      "1991 – 1994",
+      "General Surgery Intern, University of California, San Francisco",
+      "1989 – 1991",
+      "Doctor of Medicine, Yale University School of Medicine",
+      "1984 – 1989",
+      "A.B. Biological Sciences, Smith College",
+      "1980 – 1984"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "American Medical Association",
+      "California Medical Association",
+      "UCSF Association of Clinical Faculty",
+      "American Academy of Otolaryngology- Head and Neck Surgery",
+      "San Mateo County Medical Association"
+     ]
+    },
+    {
+     "heading": "Hospital Affiliations",
+     "items": [
+      "Mills Peninsula Medical Center",
+      "University of California San Francisco"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sai-challapalli-md",
+   "name": "Sai Challapalli, MD",
+   "role": "Head & neck surgeon · Facial plastics",
+   "title": "Otolaryngologist – Head and Neck Surgeon Fellowship Trained Facial Plastic",
+   "offices": [
+    "union",
+    "mateo",
+    "sonoma"
+   ],
+   "photo": null,
+   "bio": [
+    "Sai Challapalli (she/her) is an Otolaryngology/Head and Neck Surgeon and fellowship-trained Facial Plastic and Reconstructive surgeon. She completed residency at the University of Texas Health Sciences Center in Houston in 2023. She then completed a fellowship at the Washington University in St Louis in 2024 and subsequently joined San Francisco Otolaryngology.",
+    "She treats a wide variety of disorders of the head and neck. As a fellowship trained aesthetics and reconstructive surgeon, her clinical interests include cosmetic/functional rhinoplasty, facial rejuvenation (botox/filler, face lift, brow lift, blepharoplasty, fat transfer), facial reconstruction of skin cancer defects, and facial trauma."
+   ],
+   "sections": [
+    {
+     "heading": "Teaching Experience",
+     "items": [
+      "2015 Research Assistant at Knights of Columbus Pediatrics Center 2013 – 2014 Physics Lab Teaching Assistant 2013 – 2014 Chemistry Private Tutor 2012 General Chemistry Grading Assistant 2011-2012 Biology Lab Teaching Assistant"
+     ]
+    },
+    {
+     "heading": "Education/Training",
+     "items": [
+      "2023- 2024 Washington University in St Louis Fellow in Facial Plastics and Reconstructive Surgery",
+      "2018 – 2023 Otorhinolaryngology Head and Neck Surgery Residency University of Texas Health Science Center at Houston McGovern Medical School",
+      "2014-2018 Doctor of Medicine Saint Louis University School of Medicine, Saint Louis, Missouri Medical Scholars Program (Combined BS/MD program)",
+      "2010-2014 Bachelor of Sciences in Investigative Medical Sciences, Minor in Music and Biology Saint Louis University, Saint Louis, Missouri Medical Scholars Program (Combined BS/MD program)"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "American Academy of Facial Plastics and Reconstructive Surgery American Academy of Otolaryngology American Medical Association"
+     ]
+    },
+    {
+     "heading": "Hospital Affiliations",
+     "items": [
+      "University of California, SF"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "virginia-smith-bronstein-md",
+   "name": "Virginia Smith-Bronstein, MD",
+   "role": "Otolaryngologist",
+   "title": null,
+   "offices": [
+    "union",
+    "marin"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": [
+    {
+     "heading": "Education",
+     "items": [
+      "Swarthmore College – BA in Biology, minor in French, 2001-2005",
+      "Harvard Department of Stem Cell and Regenerative Biology- Lab assistant, 2007-2009",
+      "Keck School of Medicine of the University of Southern California- MD, 2009-2013",
+      "Northwestern University Department of Otolaryngology- Intern, 2013-2014",
+      "Northwestern University Department of Otolaryngology- ENT resident, 2014-2018",
+      "Northwestern University Department of Otolaryngology- Chief ENT resident, 2018-2019"
+     ]
+    },
+    {
+     "heading": "Honors",
+     "items": [
+      "Deans Recognition Junior/Senior Continuum 2011-2013",
+      "Alpha Omega Alpha Honor Society 2011- current",
+      "Merk Scholar : 2013- Awarded to the Top 5 Graduating Students",
+      "American Hearing Research Foundation Resident Grant Winner 2015-2016"
+     ]
+    },
+    {
+     "heading": "Publications",
+     "items": [
+      "Rosenthal L, Smith-Bronstein V, Cervantes S, Schroeder J. A Chronic Glottic Foreign Body Diagnosed by Radiograph After 9 Months of Symptoms. Case Reports in Pediatrics Accepted March 2018.",
+      "Ghadersohi S, Young N, Smith-Bronstein V, Hoff S, Billings K. Management of Acute Complicated Mastoiditis at an Urban, Tertiary Care Pediatric Hospital. The Laryngoscope October 31, 2016.",
+      "Richter C, Young H, Richter S, Smith-Bronstein V, Stock S, Xiao X, Whitlon D. Fluvastatin Protects Cochleae from Damage from High-Level Noise. Sci Rep. 2018 Feb 14."
+     ]
+    },
+    {
+     "heading": "Committees",
+     "items": [
+      "University of Chicago Advent Health Bolingbrook Hospital Credentialing Committee 1/2024-8/2025",
+      "Swarthmore College Alumni Admissions Interviewer 2015-2018",
+      "Northwestern McGaw Department of Otolaryngology Program Evaluation Committee 2015-2019",
+      "Northwestern Feinberg School of Medicine Faculty Instructor for Case Based Learning for GI and Head and Neck Systems 2015."
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "farshid-taghizadeh-md",
+   "name": "Farshid Taghizadeh, MD",
+   "role": "Otolaryngologist",
+   "title": null,
+   "offices": [
+    "union",
+    "mateo"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Farshid Taghizadeh is a comprehensive otolaryngologist who cares for children and adults with a wide range of ear, nose, and throat conditions. His clinical interests include ear disorders, sinus and nasal obstruction, laryngology and voice concerns, sleep disorders, salivary gland disease, and general pediatric ENT care.",
+    "Dr. Taghizadeh is dedicated to building long-term, meaningful relationships with his patients and their families. He believes deeply in improving quality of life, and helping patients reach their fullest potential through both preventative and therapeutic care. His practice style emphasizes evidence-based medicine, shared decision-making, and understanding each patient’s individual goals and priorities.",
+    "Dr. Taghizadeh completed his medical degree and otolaryngology training at Oregon Health & Science University, where he was recognized with multiple awards for clinical excellence, research, and surgical skill. Having worked within healthcare systems in different countries and in diverse roles—from physical therapy to research—he brings a broad perspective and a commitment to accessible, culturally sensitive care. He is also passionate about integrating innovative, modern technology into ENT practice to enhance patient outcomes.",
+    "Outside of medicine, Dr. Taghizadeh enjoys spending time with his family, cooking, music, calligraphy, and hands-on projects. He is fluent in English and Farsi."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "opal-gupta-md-facaai-faaaai",
+   "name": "Opal Gupta, MD, FACAAI, FAAAAI",
+   "role": "Allergist & immunologist",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Opal Gupta is a pediatric allergist and immunologist in San Francisco, CA. Originally from Chicago, Illinois, Dr. Gupta joined San Francisco Otolaryngology Medical Group in December 2018."
+   ],
+   "sections": [
+    {
+     "heading": "Education",
+     "items": [
+      "2016-2018 Rush University Medical Center, Chicago, IL Allergy/Immunology Fellowship",
+      "2013-2016 McGaw Medical Center of Northwestern University Ann & Robert H. Lurie Children’s Hospital of Chicago, Chicago, IL Pediatric Internship and Residency",
+      "2009-2013 University of Cincinnati College of Medicine, Cincinnati, OH Medical Doctorate, May 2013",
+      "2004-2008 University of California, Berkeley, Berkeley, CA Bachelor of Arts in Molecular & Cell Biology: Cell Developmental Biology, May 2008"
+     ]
+    },
+    {
+     "heading": "Honors",
+     "items": [
+      "2013 Child & Adolescent Health Medical Scholars Program University of Cincinnati COM, Cincinnati, OH"
+     ]
+    },
+    {
+     "heading": "Licensure & Certification",
+     "items": [
+      "2018 ABAI Board Eligible in 2018",
+      "2018 California Medical License #A154818, expires 3/21/2019",
+      "2017 Illinois Medical License #036.140728, expires 7/31/2020",
+      "2017 NIOSH Approved Spirometry Certification",
+      "2016 Neonatal Resuscitation Protocol (NRP)",
+      "2016 Pediatric Advanced Life Support (PALS)",
+      "2016 ABP Board Certified in General Pediatrics",
+      "2016 USMLE Step 3, passed",
+      "2012 USMLE Step 2, passed",
+      "2011 USMLE Step 1, passed"
+     ]
+    },
+    {
+     "heading": "Clinical Trials",
+     "items": [
+      "Title: An Open-Label Extension Study of Reslizumab 100-mg Fixed, Subcutaneous Dosing in Patients 12 Years of Age and Older with Severe Eosinophilic Asthma Role: Co-Investigator Agency: TEVA | ID#: 101,399"
+     ]
+    },
+    {
+     "heading": "Abstracts, Posters & Presentations",
+     "items": [
+      "Warren CM, Jiang J, Gupta O, Brewer AG, Gupta RS. Racial Differences in Food Allergy Outcomes Among Children in the United States. J Allergy Clin Immunol Feb 2019; 143(2): Supplement AB268.",
+      "Gupta O. Discrepancies between Self-Reported Healthy Care Utilization Data in Parents of Food-Allergic Children. Oral Presentation given at the Illinois Society of Allergy, Asthma and Immunology; 2018 Apr; Chicago, IL.",
+      "Gupta O, Andy-Nweye B, Jois S, Hackett AN, Gupta RS, Tobin M, Mahdavinia M. Discrepancies between Self-Reported Healthy Care Utilization Data in Parents of Food-Allergic Children. J Allergy Clin Immunol Feb 2018; 141(2): Supplement AB146.",
+      "Hackett AN, Kamdar OJ, Andy-Nweye B, Jois S, Gupta R, Tobin M, Mahdavinia M. Effect of Food Allergy on Asthma Control in Children. J Allergy Clin Immunol Feb 2018; 141(2): Supplement AB65.",
+      "Jois S, Andy-Nweye B, Hackett AN, Kamdar OJ, Jungles K, Gupta R, Tobin M, Mahdavinia M. Effect of Food Allergy on Asthma Control in Children. J Allergy Clin Immunol Feb 2018; 141(2): Supplement AB3.",
+      "Kamdar, O. An Interesting Case Presentation: Familial Mediterranean Fever Presenting as Mast Cell Activation Syndrome. Oral Presentation given at the Illinois Society of Allergy, Asthma and Immunology; 2017 Jan; Chicago, IL.",
+      "Kamdar O, Syed M, Erickson K, Olson A, Szychlinski C, Cai M, Singh AM. Using BAT As a Predictor for Baked Egg Oral Food Challenge Outcomes. J Allergy Clin Immunol Feb 2016; 137(2): Supplement AB138.",
+      "Marchisotto MJ, Harada L, Kamdar O, Smith BM, Waserman S, Sicherer S, Allen K, Muraro A, Taylor S, Gupta RS. Food Allergen Labeling and Purchasing Habits in the United States and Canada. J Allergy Clin Immunol Feb 2016; 137(2): Supplement AB81.",
+      "Dinakar C, Kamdar O, Yabrough MR, Gupta R. Asian Indian Food Allergy Survey: Unique Ethnic Food Allergens. Oral Presentation given at the American College of Allergy, Asthma & Immunology Annual Meeting; 2015 Nov; San Antonio, TX.",
+      "Kamdar O, Le W, Rosen GD, Upadhyay D. GSK-3 mediates nicotine-induced proliferation in endothelial cells. Am J Respir Crit Care Med 2009; 179: A5868.",
+      "Kamdar O, Zhang J, Wei L, Ghio AJ, Ahuja, R, Rosen GD, Upadhyay D. Air Pollution Induces Enhanced Mitochondrial Oxidative Stress In Cystic Fibrosis Lungs. American Thoracic Society International Conference 2008. Toronto, Canada.",
+      "Upadhyay D, Kamdar O, Ghio AJ, Chang WT, Wei K, Rosen GD. Bim mediates mitochondria-regulated particulate matter-induced apoptosis in alveolar epithelial cells. American Thoracic Society International Conference 2007; A184."
+     ]
+    },
+    {
+     "heading": "Publications",
+     "items": [
+      "Marchisotto MJ, Harada L, Kamdar O, Smith BM, Waserman S, Sicherer S, Allen K, Muraro A, Taylor S, Gupta RS. Food Allergen Labeling and Purchasing Habits in the United States and Canada. J Allergy Clin Immunol Pract 2016 Nov; J Allergy Clin Immunol Pract 2017 Mar-Apr; 5(2):345-351.e2.",
+      "Britto M, Hesse B, Kamdar O, Munafo J. How Patient Portals Help Parents Manage Their Child’s Chronic Illness: Parents’ Perspectives. J Pediatr 2013; 163(1): 280-1.e1-2.",
+      "Shen T, Le W, Yee A, Kamdar O, Hwang PH, Upadhyay D. Nicotine Induces Resistance to Chemotherapy in Nasopharyngeal Cancer. Am J Rhinol 2010; (24)2:e73-7.",
+      "Zhang J, Kamdar O, Le W, Rosen GD, Upadhyay D. Nicotine Induces Resistance to Chemotherapy by Modulating Mitochondrial Signaling in Lung Cancer. Am J Respir Cell Mol Biol 2009; 40(2): 135-46.",
+      "Kamdar O, Wei L, Zhang J, Ghio AJ, Rosen GD, Upadhyay D. Air Pollution Induces Enhanced Mitochondrial Oxidative Stress In Cystic Fibrosis Lungs. FEBS Letters 2008; 582(25- 26): 3601-06.",
+      "Zhang J, Ghio AJ, Chang W, Kamdar O, Rosen GD, Upadhyay D. Bim mediates mitochondria-regulated particulate matter-induced apoptosis in alveolar epithelial cells. FEBS Letters 2007; 581(22): 4148-52."
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "michael-roberts-md",
+   "name": "Michael Roberts, MD",
+   "role": "Allergist & immunologist",
+   "title": null,
+   "offices": [
+    "marin"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "mike-main-md",
+   "name": "Mike Main, MD",
+   "role": "Allergist & immunologist",
+   "title": null,
+   "offices": [
+    "castro"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "angela-l-chang-md",
+   "name": "Angela L. Chang, MD",
+   "role": "Allergist & immunologist",
+   "title": "Board-Certified Allergist & Immunologist in San Francisco, CA",
+   "offices": [
+    "pac"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Angela Chang is a board certified allergist and immunologist. She loves working with children and families and has interests in food allergy, eczema, asthma, allergic rhinitis, and hives. She has been practicing allergy and immunology in the Bay Area since 2017 and is thrilled to join the San Francisco Allergy, Asthma, and Immunology group.",
+    "Dr. Chang earned her undergraduate degree at Duke University with B.S. in Biological Sciences. She earned her medical degree at Case Western Reserve University. She completed a residency in Pediatrics at Northwestern University and a fellowship in allergy and immunology at UCSF.",
+    "Dr. Chang is a member of the American Academy of Pediatrics; American Academy of Allergy, Asthma & Immunology; and the American College of Allergy, Asthma, and Immunology.",
+    "In her free time, Dr. Chang enjoys spending time exploring San Francisco and eating sushi with her husband, daughter, son, and two pugs."
+   ],
+   "sections": [
+    {
+     "heading": "EDUCATION",
+     "items": [
+      "2004 – 2008 Duke University B.S. Biological Sciences 2008 – 2012 Case Western Reserve University M.D. 2012 – 2015 Northwestern University Resident Pediatrics 2015 – 2017 University of California, San Francisco Fellow Pediatric Allergy/Immunology"
+     ]
+    },
+    {
+     "heading": "LICENSES, CERTIFICATION",
+     "items": [
+      "2015 Medical License, California Medical Board, #135218 2015 American Board of Pediatrics, #112738 2015 DEA, #FC5137193 2017 American Board of Allergy and Immunology, #11572"
+     ]
+    },
+    {
+     "heading": "MEMBERSHIPS",
+     "items": [
+      "2012 – 2015 American Academy of Pediatrics 2015 – present American Academy of Allergy, Asthma, and Immunology 2015 – present American College of Allergy, Asthma, and Immunology 2017 – present Allergy Association of Northern California"
+     ]
+    },
+    {
+     "heading": "PEER REVIEWED PUBLICATIONS",
+     "items": [
+      "2010 Lin A, Kirshbom PM. Early and Delayed Atrioventricular Conduction Block Following Routine Congenital Heart Surgery. Journal of Thoracic and Cardiovascular Surgery. 2010 Jul;140(1): 158-160.",
+      "2010 Lin A, Kirshbom PM. Early and Delayed Atrioventricular Conduction Block Following Routine Congenital Heart Surgery. Journal of Thoracic and Cardiovascular Surgery. 2010 Jul;140(1): 158-160.",
+      "Prepared: September 4, 2024",
+      "2012 Lin A, Danziger-Isakov L. Assessment of Cytomegalovirus Hybrid Preventative Strategy in Pediatric Heart Transplant Patients. Journal of Pediatric Infectious Diseases. 2012 Dec;1(4): 278-283.",
+      "2012 Lin A, Danziger-Isakov L. Assessment of Cytomegalovirus Hybrid Preventative Strategy in Pediatric Heart Transplant Patients. Journal of Pediatric Infectious Diseases. 2012 Dec;1(4): 278-283.",
+      "2016 Chang A, Singh AM. Natural history of food triggered atopic dermatitis and development of immediate reactions in children. Journal of Allergy and Clinical Immunology: In Practice. Mar-Apr 2016;4(2): 229-236.",
+      "2016 Chang A, Singh AM. Natural history of food triggered atopic dermatitis and development of immediate reactions in children. Journal of Allergy and Clinical Immunology: In Practice. Mar-Apr 2016;4(2): 229-236.",
+      "2021 Chang A, Cabana M, LaFlam T, Patel S, Okumura M. Early Peanut Introduction and Testing: A Framework for General Pediatrician Beliefs and Practices. Pediatric Allergy, Immunology, and Pulmonology. 2021 Jun;34(2):53-59.",
+      "2021 Chang A, Cabana M, LaFlam T, Patel S, Okumura M. Early Peanut Introduction and Testing: A Framework for General Pediatrician Beliefs and Practices. Pediatric Allergy, Immunology, and Pulmonology. 2021 Jun;34(2):53-59.",
+      "2021 Cho E, Chang A. First reported allergic reaction in the United States to pili nut (Canarium ovatum). Journal of Allergy and Clinical Immunology: In Practice. 2021 Jan;9(1):537-538.",
+      "2021 Cho E, Chang A. First reported allergic reaction in the United States to pili nut (Canarium ovatum). Journal of Allergy and Clinical Immunology: In Practice. 2021 Jan;9(1):537-538."
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "stephanie-johannes-md",
+   "name": "Stephanie Johannes, MD",
+   "role": "Allergist & immunologist",
+   "title": "Allergist & Immunologist in San Francisco, CA",
+   "offices": [
+    "castro"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Stephanie Johannes is a board-certified allergist and immunologist in San Francisco, California. Dr. Johannes earned her medical degree at UCSF and completed residency in Pediatrics at Duke University. She completed fellowship in adult and pediatric Allergy and Immunology at the University of Colorado including training in cutting edge food allergy management at the Food Challenge and Research Unit at Children’s Hospital Colorado. Prior to medical training, Dr. Johannes earned a masters degree in molecular genetics and worked in translational immunology research at UCSF.",
+    "Dr. Johannes has a particular interest in working with infants, children, and families with food allergy, skin allergy, hives, eczema, and seasonal allergies. Additionally, she provides care for adults and children with asthma, chronic rhinosinusitis, and other allergic and immunologic disorders. Dr. Johannes emphasizes a collaborative approach, empowering patients to actively participate in their health and wellness. Outside of the clinic, Dr. Johannes loves biking, hiking, and traveling with her husband and three kids."
+   ],
+   "sections": [
+    {
+     "heading": "Education",
+     "items": [
+      "University of Colorado Fellowship in Adult and Pediatric Allergy and Immunology (Including training in food allergy management at the Food Challenge and Research Unit, Children’s Hospital Colorado)",
+      "Duke University Pediatrics Residency",
+      "University of California, San Francisco (UCSF) Medical Doctorate",
+      "University of California, San Francisco (UCSF) Master’s Degree in Molecular Genetics"
+     ]
+    },
+    {
+     "heading": "Publications",
+     "items": [
+      "Anagnostou A, Mack DP, Johannes S, Shaker M, Abrams EM, DeSanto K, Greenhawt M. The Safety and Efficacy of Baked Egg and Milk Dietary Advancement Therapy: A Systematic Review and Meta-Analysis. J Allergy Clin Immunol Pract. 2024 Sep;12(9):2468-2480. doi: 10.1016/j.jaip.2024.06.016",
+      "Patel L, Friedman E, Johannes SA, Lee SS, O’Brien HG, Schear SE. Air pollution as a social and structural determinant of health. The Journal of Climate Change and Health. 2021;3:100035. Doi: 10.1016/j.joclim.2021.100035",
+      "Fuhrman CA, Yeh WI, Seay HR, Saikumar LP, Chopra G, Zhang L, Perry DJ, McClymont SA, Yadav M, Lopez MC, Baker HV, Zhang Y, Li Y, Whitley M, von Schack D, Atkinson MA, Bluestone JA, Brusko TM. “Divergent Phenotypes of Human Regulatory T Cells Expressing the Receptors TIGIT and CD226.” J Immunol. 2015;195(1):145-55",
+      "McClymont SA, Putnam A, Lee M, Esensten JH, Liu W, Hulme M, Hoffmuller, U, Baron U, Olek S, Bluestone JA, Brusko TM. “Plasticity of human regulatory T cells in healthy subjects and patients with type 1 diabetes.” J. Immunol. 2011;186(7):3918-26",
+      "Brusko T, Koya R, Zhu S, Lee M, Putnam A, McClymont SA, Nishimura MI, Han S, Chang LJ, Atkinson MA, Ribas A, Bluestone JA. “Human antigen-specific regulatory T cells generated by T cell receptor gene transfer.” PLoS One. 2010;5(7):e11726",
+      "Corona D, Siriaco G, Armstrong JA, Snarskaya N, McClymont SA, Scott MP, Tamkun JW. “ISWI regulates higher-order chromatin structure and histone H1 assembly in vivo.” PLoS Biology. 2007;5(9):e232"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "conny-lu-md",
+   "name": "Conny Lu, MD",
+   "role": "Allergist & immunologist",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Conny Lu is a board certified allergist and immunologist who strives to integrate evidence-based medicine with patients’ preferences, lifestyle, and goals. Her aim is to provide the highest quality of care across the spectrum of allergy and immunology for patients of all ages.",
+    "She earned her undergraduate degree in Biology from Washington University in St. Louis before returning home to New York City to obtain her medical degree at SUNY Downstate. Her training then brought her to the West Coast, where she completed a residency in Pediatrics at Children’s Hospital Los Angeles. Most recently, she completed a fellowship in Allergy and Immunology at UCSF.",
+    "Dr. Lu is thrilled to join the team at SH Medical. Her professional interests include allergic rhinitis, food allergy, eczema, asthma, and hives. Outside of medicine, she enjoys traveling, exploring new restaurants, and playing tennis."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "dean-kardassakis-ms-md-facaai-faaaai",
+   "name": "Dean Kardassakis, MS, MD, FACAAI, FAAAAI",
+   "role": "Allergist & immunologist",
+   "title": null,
+   "offices": [
+    "mateo"
+   ],
+   "photo": null,
+   "bio": [
+    "Dr. Dean Kardassakis is a board-certified specialist in allergy, asthma, and immunology. He treats adults and children with several conditions including allergies involving the nose and eyes, asthma, atopic dermatitis (also called eczema), urticaria and angioedema (hives and swellings), food allergies, drug allergies, and recurrent infections.",
+    "Dean is a born and bred San Franciscan whose grandfather emigrated to San Francisco before the 1906 Earthquake. He attended U.C. Berkeley (Bachelor of Arts degree), Stanford University (Master of Science degree), and University of Nevada at Reno (Medical Degree and Residency in Internal Medicine). Dean completed his training with a two-year Fellowship in Allergy & Immunology at the University of California at San Francisco. He has worked in California ever since—with most of his time spent in San Mateo.",
+    "Dean has advanced to Fellowship in the American Board of Internal Medicine, the American College of Allergy, Asthma, and Immunology, and the American Academy of Allergy, Asthma, and Immunology. He is a past president of the Northern California Allergy Association.",
+    "When he is not seeing patients or reading medical journals, Dean enjoys spending time with his wife and two dogs."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "steven-machtinger-md",
+   "name": "Steven Machtinger, MD",
+   "role": "Allergist & immunologist",
+   "title": null,
+   "offices": [
+    "mateo"
+   ],
+   "photo": null,
+   "bio": [
+    "Born in Brooklyn, New York, Dr. Steven Machtinger received his MD degree at the University of Pittsburgh before he and his wife, Karen, headed west. Following pediatric internship at the University of California, Irvine he served as a general practitioner on the Warm Springs Reservation in central Oregon. Dr. Machtinger completed residency in pediatrics and fellowship in allergy, immunology, and respiratory diseases at Stanford. Since completion of training, he has been in private practice in the San Mateo County. He is a past-president of the Western Society of Allergy, Asthma and Immunology and current president of the Allergy, Asthma, and Immunology Foundation of Northern California. He is a clinical adjunct associate professor at Stanford where he mentors fellows in allergy and immunology. Away from medicine he enjoys walking his corgi, playing guitar and spending quality time with his wife, son, daughter, and their families."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "bernard-a-feigenbaum-md",
+   "name": "Bernard A. Feigenbaum, MD",
+   "role": "Allergist & immunologist · bio to come",
+   "title": null,
+   "offices": [
+    "marin"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "terri-gallagher-au-d",
+   "name": "Terri Gallagher, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "walnut",
+    "pac"
+   ],
+   "photo": "32c53d98f808f5112d20a4a8f7857f71",
+   "bio": [
+    "Terri Gallagher, Au.D., joined San Francisco Audiology in 1994, serving as its only audiologist for more than fifteen years. Dr. Gallagher specializes in diagnostic hearing evaluations and a complete spectrum of amplification options. Passionate about audiology, Dr. Gallagher has consistently been an advocate for the deaf and hard of hearing and an active participant in community health fairs and grand round lectures for various hospitals. She is also a member of various state and local audiology organizations. A San Francisco Bay Area native, Dr. Gallagher was awarded her B.A. and M.S. degrees from San Francisco State University and earned her Doctor of Audiology degree from Arizona School of Health Science."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "carey-philliposian-au-d",
+   "name": "Carey Philliposian, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "pac",
+    "union"
+   ],
+   "photo": "e7609a4b45af1c8c9afaf16bb478d94a",
+   "bio": [
+    "Carey Philliposian, Au.D., joined San Francisco Audiology in October of 2014. Dr. Philliposian has been passionate about the field of audiology for more than 20 years, spending the past 17 years practicing adult and pediatric audiology in the Bay Area. Her experience ranges from private practice, non-profit and hospital settings such as UCSF Medical Center. In addition to being well versed in clinical audiology, her professional interests include audiology research and developing the San Francisco Audiology Research Center at San Francisco Audiology. Dr. Philliposian received her B.S. degree at the University of Washington, her M.S. degree from San Francisco State University and her Doctor of Audiology degree from Salus University, Pennsylvania. Being a native San Franciscan, Dr. Philliposian is thrilled to be working in the city that she loves."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "jeffrey-lampert-au-d",
+   "name": "Jeffrey Lampert, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "castro"
+   ],
+   "photo": "75de41bc33d72ef283e375b426223495",
+   "bio": [
+    "Jeffrey Lampert, Au.D., joined San Francisco Audiology in April 2012. Dr. Lampert has more than 30 years of experience in the hearing healthcare field and is a member of the American Academy of Audiology and the California Academy of Audiology. Dr. Lampert earned his B.A. and Master of Audiology degrees from San Diego State University and his Doctor of Audiology from the Arizona School of Health Sciences (A.T. Still University). Prior to joining San Francisco Audiology Dr. Lampert worked in a number of otolaryngology practices and owned his own private audiology practice in San Mateo, California."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "william-huson-au-d",
+   "name": "William Huson, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "pac",
+    "castro"
+   ],
+   "photo": "f82d24667a15cac3738f6a42d20956e4",
+   "bio": [
+    "William Huson, Au.D., joined San Francisco Audiology at the start of 2017. After obtaining his B.A. in Linguistics and B.S. in Speech and Hearing Science from the University of Washington, he earned his Doctor of Audiology from the University of California–San Diego. Dr. Huson’s interests include the treatment of tinnitus, patient education and integrating the latest hearing aid technologies and research into his practice. With experience working in private practice, school districts and for major healthcare organizations, Dr. Huson enjoys delivering exceptional care to patients of all ages. To this day, Dr. Huson remains fascinated by hearing and language and is committed to helping every person reach their highest communication potential."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "michelle-griffin-au-d",
+   "name": "Michelle Griffin, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "union",
+    "castro"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "nicole-schmidt-au-d",
+   "name": "Nicole Schmidt, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "walnut"
+   ],
+   "photo": null,
+   "bio": [
+    "Nicole Schmidt, Au.D. completed her bachelor’s degree in speech-language pathology and audiology from the University of Akron and obtained her Doctorate of Audiology from Central Michigan University. Her interests include vestibular diagnostics, tinnitus management and adult amplification. Dr. Schmidt focusses on evaluating each patient thoroughly to determine where the problem stems from to provide each patient the best possible outcome. She is a member of the American Academy of Audiology and American Speech-Language-Hearing Association. She is excited to join a team that focuses on exceptional patient care."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "jenna-cullinan-au-d",
+   "name": "Jenna Cullinan, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": "e42bd22259756ea255f4efdcbaabf081",
+   "bio": [
+    "Jenna Cullinan joined San Francisco Audiology in August 2022. Dr. Cullinan is a San Francisco native and is excited to be working in the city and the greater Bay Area. She received her B.A. in Communication Disorders and Sciences from the University of Oregon in 2018 and went on to obtain her Doctor of Audiology from the University of the Pacific in 2022. Dr. Cullinan’s interests include diagnostic hearing evaluations, patient education and amplification for pediatric and adult patients. She is passionate about audiology and providing high-quality hearing health care."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "rosana-amaro-au-d",
+   "name": "Rosana Amaro, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "walnut",
+    "phill",
+    "brent",
+    "marin"
+   ],
+   "photo": "1dafc357e6c8ef3b7548c0ce46e6daee",
+   "bio": [
+    "Rosana Amaro, Au.D., joined SH Audiology in October 2022. She was inspired to enter the field of audiology due to growing up with severe bilateral hearing loss, and her own experience with wearing hearing aids since early childhood. She completed her B.S. in Speech Language Pathology and Audiology from Towson University and her Doctorate of Audiology from University of the Pacific San Francisco. Dr. Amaro’s interests include diagnostic hearing evaluations, tinnitus management, and amplification for pediatrics and adults. She provides patient-centered care and advocates for the deaf and hard of hearing community."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "ana-tejeda-au-d",
+   "name": "Ana Tejeda, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "marin"
+   ],
+   "photo": null,
+   "bio": [
+    "Ana Tejeda, Au.D., joined San Francisco Audiology in October 2023. She is returning to San Francisco Audiology after finishing her doctorate in audiology at the University of the Pacific and working in multiple hospital settings. Dr. Tejeda’s expertise includes hearing aid dispensing, comprehensive hearing evaluations and balance testing. Her mission is to provide personalized care, helping individuals of all ages rediscover the joy of clear and balanced sound. Dr. Tejeda is committed to staying current with the latest audiology advancements to offer the best solutions to her patients."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "isabel-leyritana-au-d",
+   "name": "Isabel Leyritana, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": null,
+   "bio": [
+    "Isabel joined San Francisco Audiology in February 2025. Originally from the Philippines, she is a dedicated healthcare professional with over a decade of experience in both audiology and nursing. She holds a Bachelor of Science in Nursing and a master’s in clinical audiology from the University of Santo Tomas.",
+    "Her career in audiology began in 2013 in the Philippines, where she honed her clinical skills. She later expanded her expertise as a research assistant in the National University of Singapore’s M.Sc. Audiology program, focusing on hearing research in the elderly. After relocating to the United States, Isabel worked as a hearing aid dispenser while pursuing her Doctor of Audiology through Salus University’s Au.D. Bridge Program, earning her doctorate in 2021."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "brooke-leonard-au-d",
+   "name": "Brooke Leonard, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "union",
+    "sunny"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "hannah-torok-au-d",
+   "name": "Hannah Torok, Au.D.",
+   "role": "Doctor of audiology",
+   "title": null,
+   "offices": [
+    "sunny"
+   ],
+   "photo": null,
+   "bio": [
+    "Hannah Torok, Au.D., joined San Francisco Audiology in May 2024. She is a native Texan and received both her B.S. in Communication Sciences and Disorders and Doctorate of Audiology at the University of Texas at Austin. Dr. Torok has been living and working in the Bay Area since May 2022. Her expertise includes comprehensive hearing evaluations, patient education and hearing aid dispensing. She is excited to join our team and provide excellent patient care."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "chris-nicklo-had",
+   "name": "Chris Nicklo, HAD",
+   "role": "Hearing aid dispenser",
+   "title": null,
+   "offices": [
+    "union",
+    "sonoma",
+    "marin"
+   ],
+   "photo": "edb0e9cfe836777dfa8d7ea7e92b457d",
+   "bio": [
+    "Chris Nicklo, HAD, joined San Francisco Audiology in 2018 after a career in business and marketing. Having worn hearing aids for twenty years, Chris knows firsthand how they can increase your confidence and make it easier to connect with family and friends. Chris received his Bachelor of Arts from Hampden-Sydney College in economics and French and his MBA from the University of Virginia’s Darden School of Business. He is a licensed hearing aid dispenser through the Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board of California."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "robert-gilligan-had",
+   "name": "Robert Gilligan, HAD",
+   "role": "Hearing aid dispenser",
+   "title": null,
+   "offices": [
+    "union",
+    "mateo"
+   ],
+   "photo": null,
+   "bio": [
+    "Robert Gilligan, HAD Joined San Francisco Audiology in May 2024. Robert grew up in New Zealand where he obtained his Masters of Audiology, and operates as a hearing aid dispenser in the US. Over his career he has worked in many different specialty areas, including neurodiagnostics, pediatrics and hearing aids. Most recently, he did a stint in hearing aid manufacturing."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "pramoda-arachchige-had",
+   "name": "Pramoda Arachchige, HAD",
+   "role": "Hearing aid dispenser",
+   "title": null,
+   "offices": [],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "angela-smith-pt-mspt",
+   "name": "Angela Smith, PT, MSPT",
+   "role": "Physical therapist · dizziness, vertigo & imbalance",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": "e453e73a04ebd22166370ec0a426d7a5",
+   "bio": [
+    "Angela Smith has been a physical therapist since 1996. She completed her Bachelor of Science in health sciences and Master of Science in physical therapy at Boston University. Angela specializes in the treatment of dizziness, vertigo and imbalance related to vestibular dysfunction, vestibular migraines, post-concussion syndrome and other brain injuries. She treats TMJ as well as spinal and orthopedic dysfunction."
+   ],
+   "sections": []
+  },
+  {
+   "slug": "katherine-yung-md-facs",
+   "name": "Katherine Yung, MD, FACS",
+   "role": "Laryngologist · Medical director",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "wendy-vastine-ma-ccc-slp",
+   "name": "Wendy Vastine, MA, CCC-SLP",
+   "role": "Director of Passaggio · gender-affirming voice",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "kristen-bond-mm-ms-ccc-slp",
+   "name": "Kristen Bond, MM, MS, CCC-SLP",
+   "role": "Director of speech-language pathology · singing voice",
+   "title": null,
+   "offices": [
+    "union"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  },
+  {
+   "slug": "joshua-d-glasner-mm-ph-d-ccc-slp",
+   "name": "Joshua D. Glasner, MM, Ph.D., CCC-SLP",
+   "role": "Speech-language pathologist · voice, airway & swallowing",
+   "title": null,
+   "offices": [
+    "union",
+    "mateo",
+    "marin"
+   ],
+   "photo": null,
+   "bio": [],
+   "sections": []
+  }
+ ],
+ "offices": [
+  {
+   "slug": "union",
+   "name": "Union Square",
+   "region": "San Francisco",
+   "street": "450 Sutter Street, Suites 933, 936, 1139 & 1400",
+   "city": "San Francisco, CA 94108",
+   "phone": "(415) 362-5443",
+   "note": "Our home since 1945 · a 1929 Art Deco landmark",
+   "photo": "office-union-square",
+   "photoAlt": "View over San Francisco toward the bay",
+   "lat": 37.7895826,
+   "lng": -122.4077718
+  },
+  {
+   "slug": "pac",
+   "name": "Pacific Heights",
+   "region": "San Francisco",
+   "street": "2100 Webster Street, Suite 202",
+   "city": "San Francisco, CA 94115",
+   "phone": "(415) 362-5443",
+   "lat": 37.790622,
+   "lng": -122.4321701
+  },
+  {
+   "slug": "castro",
+   "name": "Castro · Duboce Triangle",
+   "region": "San Francisco",
+   "street": "45 Castro Street, Suite 325",
+   "city": "San Francisco, CA 94114",
+   "phone": "(415) 362-5443",
+   "lat": 37.768847,
+   "lng": -122.4354438
+  },
+  {
+   "slug": "calst",
+   "name": "California Street",
+   "region": "San Francisco",
+   "street": "3000 California Street",
+   "city": "San Francisco, CA 94115",
+   "phone": null,
+   "lat": 37.787866,
+   "lng": -122.4440261
+  },
+  {
+   "slug": "mateo",
+   "name": "San Mateo",
+   "region": "Peninsula",
+   "street": "100 S. Ellsworth Ave., Suites 303, 308 & 707",
+   "city": "San Mateo, CA 94401",
+   "phone": "(415) 362-2901",
+   "lat": 37.5665509,
+   "lng": -122.3250044
+  },
+  {
+   "slug": "sunny",
+   "name": "Sunnyvale",
+   "region": "South Bay",
+   "street": "877 W Fremont Ave, Suite I4",
+   "city": "Sunnyvale, CA 94087",
+   "phone": "(415) 362-2901",
+   "lat": 37.3526784,
+   "lng": -122.0493413
+  },
+  {
+   "slug": "walnut",
+   "name": "Walnut Creek",
+   "region": "East Bay",
+   "street": "365 Lennon Lane, Suites 130 & 140",
+   "city": "Walnut Creek, CA 94598",
+   "phone": "(415) 362-2901",
+   "lat": 37.9273841,
+   "lng": -122.0310002
+  },
+  {
+   "slug": "phill",
+   "name": "Pleasant Hill",
+   "region": "East Bay",
+   "street": "400 Taylor Blvd, Suite 303",
+   "city": "Pleasant Hill, CA 94523",
+   "phone": "(415) 362-2901",
+   "lat": 37.9618221,
+   "lng": -122.0740431
+  },
+  {
+   "slug": "brent",
+   "name": "Brentwood",
+   "region": "East Bay",
+   "street": "6600 Lone Tree Way",
+   "city": "Brentwood, CA 94513",
+   "phone": "(415) 362-2901",
+   "lat": 37.9624294,
+   "lng": -121.7306337
+  },
+  {
+   "slug": "brent-sand-creek",
+   "name": "Brentwood · Sand Creek",
+   "region": "East Bay",
+   "street": "191 Sand Creek Road, Suite 125",
+   "city": "Brentwood, CA 94513",
+   "phone": "(415) 362-2901",
+   "lat": 37.9472317,
+   "lng": -121.7003244
+  },
+  {
+   "slug": "marin",
+   "name": "San Rafael · Marin",
+   "region": "North Bay",
+   "street": "899 Northgate Drive, Suite 110",
+   "city": "San Rafael, CA 94903",
+   "phone": "(415) 362-5443",
+   "lat": 38.0063274,
+   "lng": -122.546093
+  },
+  {
+   "slug": "sonoma",
+   "name": "Sonoma",
+   "region": "North Bay",
+   "street": "752 Broadway",
+   "city": "Sonoma, CA 95476",
+   "phone": "(415) 362-5443",
+   "photo": "office-sonoma",
+   "photoAlt": "Vineyard rows at sunrise in Sonoma",
+   "lat": 38.2873449,
+   "lng": -122.4582017
+  }
+ ]
+}
