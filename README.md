@@ -30,6 +30,20 @@ CMS collections (`src/collections`): **Departments** (everything on a department
 
 Seed content comes from the design work: `../design/export_content.py` writes `src/seed/content.json`; images are in `src/seed/media`. Re-running `npm run seed` replaces departments, specialists, offices and media.
 
+## Deploying to Vercel
+
+Locally the site uses the SQLite file `sh-medical.db`. On Vercel it uses Neon Postgres and Vercel Blob, chosen automatically from the environment variables.
+
+1. In the Vercel project, open **Storage** and connect a **Neon Postgres** database and a **Blob** store. They add `DATABASE_URL` (a `postgres://` URL) and `BLOB_READ_WRITE_TOKEN`.
+2. In **Settings → Environment Variables**, add `PAYLOAD_SECRET`: a long random string, different from the local one. One way to make it: `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`.
+3. Redeploy. Vercel runs `npm run vercel-build`, which:
+   - applies database migrations (`payload migrate`)
+   - loads the content and images, only if the database has no departments yet, so edits made in /admin are never overwritten
+   - builds the site
+4. Open `/admin` on the live site straight away and create the first user.
+
+Changing a collection's fields? Run `npm run payload migrate:create <name>` with `DATABASE_URL` set to any `postgres://` URL, and commit the new file in `src/migrations`.
+
 ## The booking form doesn't send anything yet
 
 Appointment requests contain health information, so they must only go to a HIPAA-compliant form service covered by a BAA. Until one is chosen, `/book` walks through all four steps but sends nothing, and the last step says so and gives the department's phone number. To switch it on, send the data to that service where `next()` in `src/app/(frontend)/book/BookingForm.tsx` has its TODO, and set `NEXT_PUBLIC_BOOKING_ENABLED=true`.
