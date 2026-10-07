@@ -23,6 +23,14 @@ const usePostgres = /^postgres(ql)?:\/\//.test(databaseUrl)
 export default buildConfig({
   admin: {
     user: Users.slug,
+    meta: {
+      titleSuffix: '· SH Medical',
+      icons: [
+        { rel: 'icon', type: 'image/x-icon', url: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', url: '/icon.png' },
+        { rel: 'apple-touch-icon', url: '/apple-icon.png' },
+      ],
+    },
     importMap: {
       baseDir: path.resolve(dirname),
     },
