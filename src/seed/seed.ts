@@ -23,7 +23,8 @@ const texts = (items?: string[]) => (items || []).map((text) => ({ text }))
 const payload = await getPayload({ config })
 
 // On Vercel the build runs this with SEED_ONLY_IF_EMPTY=true, so a fresh database gets the content once and editors' changes are never wiped.
-if (process.env.SEED_ONLY_IF_EMPTY === 'true') {
+// Setting RESEED=true in Vercel forces a full reload (content and images) on the next deploy; remove it afterwards.
+if (process.env.SEED_ONLY_IF_EMPTY === 'true' && process.env.RESEED !== 'true') {
   const { totalDocs } = await payload.count({ collection: 'departments' })
   if (totalDocs > 0) {
     payload.logger.info(`Database already has ${totalDocs} departments; skipping seed`)

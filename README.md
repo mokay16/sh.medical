@@ -42,6 +42,10 @@ Locally the site uses the SQLite file `sh-medical.db`. On Vercel it uses Neon Po
    - builds the site
 4. Open `/admin` on the live site straight away and create the first user.
 
+The build stops early with a list of what's missing if `DATABASE_URL`, `BLOB_READ_WRITE_TOKEN` or `PAYLOAD_SECRET` isn't set.
+
+To reload all content and images (for example after images went missing), add `RESEED=true` in Vercel, redeploy, then delete it. This wipes departments, specialists, offices and media, including any edits made in /admin; user accounts are kept.
+
 Changing a collection's fields? Run `npm run payload migrate:create <name>` with `DATABASE_URL` set to any `postgres://` URL, and commit the new file in `src/migrations`.
 
 ## The booking form doesn't send anything yet
