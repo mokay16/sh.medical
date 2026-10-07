@@ -46,7 +46,13 @@ The build stops early with a list of what's missing if `DATABASE_URL`, `BLOB_REA
 
 To reload all content and images (for example after images went missing), add `RESEED=true` in Vercel, redeploy, then delete it. This wipes departments, specialists, offices and media, including any edits made in /admin; user accounts are kept.
 
-Changing a collection's fields? Run `npm run payload migrate:create <name>` with `DATABASE_URL` set to any `postgres://` URL, and commit the new file in `src/migrations`.
+Changing a collection's fields? Create a migration with the Blob plugin switched on (it adds a column to Media), so the schema matches Vercel:
+
+```
+DATABASE_URL=postgres://u:p@127.0.0.1:5999/none BLOB_READ_WRITE_TOKEN=vercel_blob_rw_abc123_xyz npm run payload migrate:create <name>
+```
+
+No database connection is needed. Commit the new files in `src/migrations`.
 
 ## The booking form doesn't send anything yet
 

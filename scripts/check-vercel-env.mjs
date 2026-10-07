@@ -11,3 +11,6 @@ if (missing.length) {
   process.exit(1)
 }
 console.log('Vercel environment OK: Postgres, Blob and Payload secret are set')
+if (process.env.RESEED === 'true') console.log('RESEED=true: content and images will be wiped and reloaded. Remove RESEED after this deploy.')
+else if (process.env.RESEED !== undefined) console.log(`RESEED is set to "${process.env.RESEED}", not "true": content will not be reloaded`)
+else console.log('RESEED not set: existing content is kept')
