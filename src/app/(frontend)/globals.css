@@ -105,7 +105,6 @@ a:hover {
 .serif {
   font-family: var(--serif);
   font-optical-sizing: auto;
-  font-variation-settings: 'SOFT' 50;
   font-weight: 400;
 }
 .eyebrow {
@@ -121,7 +120,6 @@ a:hover {
 .h3 {
   font-family: var(--serif);
   font-optical-sizing: auto;
-  font-variation-settings: 'SOFT' 50;
   font-weight: 400;
   margin: 0;
   letter-spacing: -0.02em;
@@ -520,7 +518,6 @@ a:hover {
 }
 .dept-brand .name {
   font-family: var(--serif);
-  font-variation-settings: 'SOFT' 50;
   font-size: 22px;
   line-height: 1.1;
   color: #fff;
@@ -1021,7 +1018,6 @@ a.card:hover {
 }
 .person .name {
   font-family: var(--serif);
-  font-variation-settings: 'SOFT' 50;
   font-size: 22px;
   line-height: 1.2;
 }
@@ -1053,7 +1049,6 @@ a.card:hover {
 .review blockquote {
   margin: 0;
   font-family: var(--serif);
-  font-variation-settings: 'SOFT' 50;
   font-size: 21px;
   line-height: 1.4;
 }
