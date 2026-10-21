@@ -22,6 +22,8 @@
   --gutter: clamp(20px, 6.67vw, 96px);
   --section: clamp(64px, 7.8vw, 112px);
   --radius: 24px;
+  /* height of the sticky header, so anchors and sticky rails clear it */
+  --header-h: 89px;
   --serif: var(--font-serif), Georgia, serif;
   --sans: var(--font-sans), system-ui, sans-serif;
 }
@@ -33,6 +35,25 @@
 }
 html {
   -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 16px);
+}
+:root:has(.dept-header) {
+  --header-h: 96px;
+}
+@media (max-width: 1180px) {
+  :root:has(.dept-header) {
+    --header-h: 148px;
+  }
+}
+@media (max-width: 960px) {
+  :root {
+    --header-h: 119px;
+  }
+}
+@media (max-width: 560px) {
+  :root:has(.dept-header) {
+    --header-h: 114px;
+  }
 }
 body {
   margin: 0;
@@ -324,6 +345,26 @@ a:hover {
   gap: 8px 28px;
   flex-wrap: wrap;
 }
+.site-header,
+.dept-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+/* a soft shadow appears once the page has scrolled (where supported) */
+@supports (animation-timeline: scroll()) {
+  .site-header,
+  .dept-header {
+    animation: header-lift linear both;
+    animation-timeline: scroll();
+    animation-range: 0 64px;
+  }
+}
+@keyframes header-lift {
+  to {
+    box-shadow: 0 6px 20px -12px rgb(18 59 62 / 0.35);
+  }
+}
 .site-header {
   border-bottom: 1px solid var(--sand);
   background: var(--linen);
@@ -365,6 +406,10 @@ a:hover {
     overflow-x: auto;
     gap: 22px;
     padding-bottom: 12px;
+    scrollbar-width: none;
+    /* fade at the right edge says "this scrolls" */
+    mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+    padding-right: 40px;
   }
   .site-nav a {
     white-space: nowrap;
@@ -373,6 +418,10 @@ a:hover {
     min-height: 44px;
     padding: 0 18px;
     font-size: 15px;
+  }
+  .site-header .wrap > a:first-child img {
+    width: 56px;
+    height: 56px;
   }
 }
 
@@ -533,9 +582,35 @@ a:hover {
   .dept-brand .sub {
     display: none;
   }
+  /* keep the sticky header short on phones: brand and button share one row */
+  .dept-header .wrap {
+    padding-top: 10px;
+    gap: 4px 12px;
+  }
+  .dept-brand {
+    gap: 10px;
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  .dept-brand img,
+  .dept-brand .badge-placeholder {
+    width: 44px !important;
+    height: 44px !important;
+  }
+  .dept-brand .badge-placeholder span {
+    font-size: 15px !important;
+  }
+  .dept-brand .name {
+    font-size: 18px;
+    white-space: normal;
+  }
   .dept-header .btn {
-    min-height: 44px;
-    padding: 0 16px;
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+  .dept-nav {
+    min-height: 46px;
   }
 }
 
@@ -2168,7 +2243,7 @@ a.card:hover {
 }
 .profile-rail {
   position: sticky;
-  top: 24px;
+  top: calc(var(--header-h) + 24px);
   display: flex;
   flex-direction: column;
   gap: 16px;
