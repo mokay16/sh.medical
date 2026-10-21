@@ -104,7 +104,6 @@ a:hover {
 /* Type */
 .serif {
   font-family: var(--serif);
-  font-optical-sizing: auto;
   font-weight: 400;
 }
 .eyebrow {
@@ -119,7 +118,6 @@ a:hover {
 .h2,
 .h3 {
   font-family: var(--serif);
-  font-optical-sizing: auto;
   font-weight: 400;
   margin: 0;
   letter-spacing: -0.02em;

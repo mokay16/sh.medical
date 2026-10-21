@@ -1,11 +1,11 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import { Figtree, Newsreader } from 'next/font/google'
+import { DM_Serif_Text, Figtree } from 'next/font/google'
 import { getDepartments } from '@/lib/content'
 import { ICONS } from '@/components/ui'
 import './globals.css'
 
-const serif = Newsreader({ subsets: ['latin'], axes: ['opsz'], style: ['normal', 'italic'], variable: '--font-serif', display: 'swap' })
+const serif = DM_Serif_Text({ subsets: ['latin'], weight: '400', style: ['normal', 'italic'], variable: '--font-serif', display: 'swap' })
 const sans = Figtree({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
 
 /** Pages are pre-built, then refreshed from the CMS at most once a minute. */
