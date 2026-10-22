@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Department, Office, Specialist } from '@/payload-types'
 import { CtaBand } from '@/components/sections'
 import { Img, Initials } from '@/components/ui'
-import { docs, getDepartments, getSpecialists, media, tel } from '@/lib/content'
+import { MAIN_PHONE, docs, getDepartments, getSpecialists, media, tel } from '@/lib/content'
 
 /** Specialist profile, following the canvas artboard "Specialist profile". */
 
@@ -59,7 +59,7 @@ export default async function SpecialistProfile({ params }: Props) {
   const hospitals = find(sections, /hospital/i)
   const memberships = find(sections, /member|societ/i)
   const other = sections.filter((x) => ![...education, ...teaching, ...hospitals, ...memberships].includes(x))
-  const call = primary?.phone || '(415) 362-5443'
+  const call = primary?.phone || MAIN_PHONE
   const sn = shortName(s.name)
   const bookHref = `/book${primary ? `?care=${primary.slug}` : ''}`
 
@@ -237,7 +237,7 @@ export default async function SpecialistProfile({ params }: Props) {
 
       <CtaBand
         heading={`Book with ${sn}`}
-        text={primary ? `Book online, or call ${primary.phoneLabel} at ${primary.phone}, Monday to Friday, 8am to 5pm.` : 'Book online, or call (415) 362-5443.'}
+        text={primary ? `Book online, or call ${primary.phoneLabel} at ${primary.phone}, Monday to Friday, 8am to 5pm.` : `Book online, or call ${MAIN_PHONE}.`}
         primary={{ label: 'Book an appointment', href: bookHref }}
       />
     </>

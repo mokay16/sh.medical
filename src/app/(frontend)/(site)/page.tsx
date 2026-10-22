@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CtaBand } from '@/components/sections'
 import { Icon, Img } from '@/components/ui'
-import { MYCHART_URL, getDepartments, getSpecialists, media } from '@/lib/content'
+import { MAIN_PHONE, MYCHART_URL, getDepartments, getSpecialists, media, tel } from '@/lib/content'
 
 /** Home page, following the canvas artboards "Home · desktop" 1–3. */
 
@@ -21,11 +21,11 @@ const NEAR: [string, string][] = [
   ['East Bay', 'East Bay'],
   ['North Bay', 'North Bay'],
 ]
-const PILLARS: [string, string][] = [
+const PILLARS: [title: string, text: string, quote?: string][] = [
   ['One team around you', 'ENT physicians, audiologists and allergists practice together, so a hearing test, a sinus scan and an allergy plan become one connected plan.'],
-  ['Time to understand your options', 'We walk you through every treatment choice, so you decide with confidence. “I felt that I was given all the time I needed.”'],
+  ['Time to understand your options', 'We walk you through every treatment choice, so you decide with confidence.', '“I felt that I was given all the time I needed.”'],
   ['Close to home', 'Twelve offices across San Francisco, the Peninsula, the East Bay and the North Bay, open weekdays 8am–5pm.'],
-  ['Always advancing', 'As a clinical research affiliate, we bring emerging diagnostic and treatment options in hearing and ENT care to our patients.'],
+  ['Always advancing', 'As a clinical research affiliate, we bring emerging diagnostics and treatments in hearing and ENT care to our patients, and we pair the latest technology with integrated wellness care for the whole person.'],
 ]
 const REGIONS: [string, string][] = [
   ['San Francisco', 'Union Square · Pacific Heights · California Street · Castro'],
@@ -61,8 +61,8 @@ export default async function Home() {
           <h1 className="h1 home-h1">
             Care for the senses that <em>connect you</em> to life.
           </h1>
-          <p className="lede" style={{ fontSize: 20, maxWidth: 520 }}>
-            Hearing, breathing, speaking, sleeping, feeling steady. Since 1940, SH Medical’s Bay Area specialists have worked side by side to help
+          <p className="lede" style={{ fontSize: 22, maxWidth: 560 }}>
+            Hearing, breathing, speaking, sleeping &amp; feeling steady. Since 1940, SH Medical’s Bay Area specialists have worked side by side to help
             patients of every age live fully.
           </p>
           <div className="btn-row">
@@ -149,12 +149,18 @@ export default async function Home() {
             <Image src="/images/how-we-care.webp" alt="A woman walks along a fallen log in a redwood forest, arms outstretched" width={891} height={594} sizes="(max-width: 960px) 100vw, 560px" style={{ width: '100%', height: 'auto', borderRadius: 28 }} />
           </div>
           <ol className="pillars">
-            {PILLARS.map(([t, d], i) => (
+            {PILLARS.map(([t, d, quote], i) => (
               <li key={t}>
                 <span className="serif num">{String(i + 1).padStart(2, '0')}</span>
                 <div>
                   <h3 className="h3">{t}</h3>
                   <p>{d}</p>
+                  {quote ? (
+                    <figure className="pillar-quote">
+                      <blockquote className="serif">{quote}</blockquote>
+                      <figcaption>SH Medical patient</figcaption>
+                    </figure>
+                  ) : null}
                 </div>
               </li>
             ))}
@@ -163,7 +169,7 @@ export default async function Home() {
       </section>
 
       {/* Patient stories */}
-      <section className="section">
+      <section className="section" style={{ paddingBottom: 'clamp(24px, 3vw, 40px)' }}>
         <div className="wrap stories">
           <div className="stack" style={{ gap: 28 }}>
             <p className="eyebrow">Patient stories</p>
@@ -194,13 +200,13 @@ export default async function Home() {
       </section>
 
       {/* Departments */}
-      <section className="section" id="care" style={{ paddingTop: 'clamp(40px, 6vw, 80px)' }}>
+      <section className="section" id="care" style={{ paddingTop: 'clamp(32px, 4vw, 56px)' }}>
         <div className="wrap">
           <div className="section-head">
             <div>
               <p className="eyebrow">Our care</p>
               <h2 className="h2" style={{ fontSize: 'clamp(36px, 3.9vw, 56px)' }}>
-                Specialists for how you hear, breathe, speak and sleep.
+                Specialists for how you hear, breathe, speak, sleep &amp; more.
               </h2>
             </div>
             <p className="lede">Every department has its own specialists, and they all work as one team. Start anywhere and we’ll connect the rest.</p>
@@ -251,8 +257,8 @@ export default async function Home() {
               <Link className="btn btn--clay" href="/book?care=not-sure">
                 Get matched
               </Link>
-              <a className="btn btn--outline" href="tel:4153625443">
-                Call (415) 362-5443
+              <a className="btn btn--outline" href={tel(MAIN_PHONE)}>
+                Call {MAIN_PHONE}
               </a>
             </div>
           </div>
@@ -351,7 +357,7 @@ export default async function Home() {
       <section id="resources" className="section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <h2 className="h2" style={{ marginBottom: 40 }}>
-            Everything you need before your visit
+            Everything you need before and after your visit
           </h2>
           <div className="grid" style={{ ['--cols' as string]: 4 }}>
             {RESOURCES.map(([icon, t, d, href]) => (
@@ -371,7 +377,7 @@ export default async function Home() {
         heading="Ready when *you* are."
         text="Request an appointment online, or call us Monday to Friday, 8am to 5pm."
         primary={{ label: 'Book an appointment', href: '/book' }}
-        secondary={{ label: 'Call (415) 362-5443', href: 'tel:4153625443' }}
+        secondary={{ label: `Call ${MAIN_PHONE}`, href: tel(MAIN_PHONE)! }}
       />
     </>
   )

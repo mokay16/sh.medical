@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CtaBand } from '@/components/sections'
 import { Icon, Img } from '@/components/ui'
-import { getDepartments, getSpecialists, media } from '@/lib/content'
+import { MAIN_PHONE, getDepartments, getSpecialists, media, tel } from '@/lib/content'
 
 export const metadata: Metadata = { title: 'Our story' }
 
@@ -211,7 +211,7 @@ export default async function About() {
         heading="Ready when *you* are."
         text="Request an appointment online, or call us Monday to Friday, 8am to 5pm."
         primary={{ label: 'Book an appointment', href: '/book' }}
-        secondary={{ label: 'Call (415) 362-5443', href: 'tel:4153625443' }}
+        secondary={{ label: `Call ${MAIN_PHONE}`, href: tel(MAIN_PHONE)! }}
       />
     </>
   )

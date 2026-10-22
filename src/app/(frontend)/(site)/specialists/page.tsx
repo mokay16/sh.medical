@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import type { Office, Specialist } from '@/payload-types'
 import { TeamGrid } from '@/components/sections'
-import { docs, getDepartments, getSpecialists } from '@/lib/content'
+import { MAIN_PHONE, docs, getDepartments, getSpecialists, tel } from '@/lib/content'
 
 export const metadata: Metadata = { title: 'Find a specialist' }
 
@@ -128,14 +128,14 @@ export default async function Specialists({ searchParams }: Props) {
               <Link className="btn btn--light" href="/book?care=not-sure">
                 Get matched
               </Link>
-              <a className="btn btn--outline" href="tel:4153625443" style={{ color: 'var(--linen)', boxShadow: 'inset 0 0 0 1.5px var(--linen)' }}>
-                (415) 362-5443
+              <a className="btn btn--outline" href={tel(MAIN_PHONE)} style={{ color: 'var(--linen)', boxShadow: 'inset 0 0 0 1.5px var(--linen)' }}>
+                {MAIN_PHONE}
               </a>
             </div>
           </div>
           {!groups.length ? (
             <p className="lede">
-              No specialists match. <Link href="/specialists">Show everyone</Link>, or call (415) 362-5443 and we’ll match you with the right specialist.
+              No specialists match. <Link href="/specialists">Show everyone</Link>, or call {MAIN_PHONE} and we’ll match you with the right specialist.
             </p>
           ) : null}
         </div>

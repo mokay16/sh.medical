@@ -67,4 +67,6 @@ export function sitePages(d: Department): SitePage[] {
 
 export const tel = (phone?: string | null) => (phone ? `tel:${phone.replace(/\D/g, '')}` : undefined)
 
+export { MAIN_PHONE } from './phone'
+
 export const MYCHART_URL = 'https://ucsfmychart.ucsfmedicalcenter.org/ucsfmychart/Authentication/Login'

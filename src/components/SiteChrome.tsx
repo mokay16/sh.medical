@@ -11,7 +11,10 @@ export function SiteHeader() {
         <div className="wrap">
           <div className="utility-group">
             <span>
-              ENT &amp; Allergy <a href="tel:4153625443">(415) 362-5443</a>
+              ENT <a href="tel:4153625443">(415) 362-5443</a>
+            </span>
+            <span>
+              Allergy <a href="tel:4153622614">(415) 362-2614</a>
             </span>
             <span>
               Audiology <a href="tel:4153622901">(415) 362-2901</a>
@@ -27,8 +30,8 @@ export function SiteHeader() {
       <StickyHeader className="site-header">
         <div className="wrap">
           <Link className="site-logo" href="/" aria-label="SH Medical home">
-            <Image src="/brand/sh-medical-logo.png" alt="SH Medical" width={72} height={72} priority />
-            <Image className="site-logo-light" src="/brand/sh-medical-logo-white.png" alt="" width={72} height={72} />
+            <Image src="/brand/sh-medical-logo.png" alt="SH Medical" width={84} height={84} priority />
+            <Image className="site-logo-light" src="/brand/sh-medical-logo-white.png" alt="" width={84} height={84} />
           </Link>
           <NavLinks
             label="Main"
@@ -56,8 +59,8 @@ export async function SiteFooter() {
     <footer className="site-footer">
       <div className="wrap">
         <div className="footer-top">
-          <div className="stack" style={{ width: 320, gap: 14 }}>
-            <Image src="/brand/sh-medical-logo-white.png" alt="SH Medical" width={112} height={112} />
+          <div className="stack" style={{ width: 320, gap: 16 }}>
+            <Image src="/brand/sh-medical-logo-white.png" alt="SH Medical" width={144} height={144} />
             <p className="muted" style={{ color: 'var(--on-dark)', margin: 0, fontSize: 15 }}>
               Comprehensive care for the senses since 1940.
             </p>
@@ -83,7 +86,8 @@ export async function SiteFooter() {
               <Link href="/about">Our story</Link>
               <Link href="/specialists">Specialists</Link>
               <Link href="/locations">Locations</Link>
-              <a href="tel:4153625443">ENT &amp; Allergy · (415) 362-5443</a>
+              <a href="tel:4153625443">ENT · (415) 362-5443</a>
+              <a href="tel:4153622614">Allergy · (415) 362-2614</a>
               <a href="tel:4153622901">Audiology · (415) 362-2901</a>
             </div>
           </div>

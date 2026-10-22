@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
+import { MAIN_PHONE } from '@/lib/phone'
 
 export type OfficeView = {
   slug: string
@@ -65,7 +66,7 @@ export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = 
     if (zip) {
       const at = ZIP3[zip.slice(0, 3)]
       setOrigin(at ? { at, label: `ZIP ${zip}` } : null)
-      setStatus(at ? '' : `We couldn’t place ZIP ${zip}. Try a city name, or call (415) 362-5443.`)
+      setStatus(at ? '' : `We couldn’t place ZIP ${zip}. Try a city name, or call ${MAIN_PHONE}.`)
     } else {
       setOrigin(null)
       setStatus('')

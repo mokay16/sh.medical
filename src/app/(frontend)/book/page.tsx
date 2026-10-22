@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { BookingForm } from './BookingForm'
 import { Icon } from '@/components/ui'
-import { getDepartments, getOffices } from '@/lib/content'
+import { MAIN_PHONE, getDepartments, getOffices, tel } from '@/lib/content'
 
 export const metadata: Metadata = { title: 'Book an appointment' }
 
@@ -23,8 +23,8 @@ export default async function Book({ searchParams }: Props) {
           <div style={{ display: 'flex', alignItems: 'center', gap: 28, fontSize: 15 }}>
             <span className="muted">
               Prefer to talk?{' '}
-              <a href="tel:4153625443" style={{ fontWeight: 600, textDecoration: 'none' }}>
-                (415) 362-5443
+              <a href={tel(MAIN_PHONE)} style={{ fontWeight: 600, textDecoration: 'none' }}>
+                {MAIN_PHONE}
               </a>
             </span>
             <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: 'var(--ink)', fontWeight: 600, textDecoration: 'none' }}>
@@ -39,7 +39,7 @@ export default async function Book({ searchParams }: Props) {
           initialCare={care}
           cares={[
             ...departments.map((d) => ({ id: d.slug, label: d.name, hint: (d.home?.chips || []).slice(0, 3).join(', '), phone: d.phone })),
-            { id: 'not-sure', label: 'I’m not sure', hint: 'We’ll match you with the right specialist', phone: '(415) 362-5443' },
+            { id: 'not-sure', label: 'I’m not sure', hint: 'We’ll match you with the right specialist', phone: MAIN_PHONE },
           ]}
           offices={[
             ...offices.map((o) => ({ id: o.slug, label: o.name, hint: `${o.street}, ${o.city.split(',')[0]}` })),

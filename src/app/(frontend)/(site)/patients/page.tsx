@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Checks, CtaBand } from '@/components/sections'
 import { Icon } from '@/components/ui'
-import { MYCHART_URL, getDepartment } from '@/lib/content'
+import { MAIN_PHONE, MYCHART_URL, getDepartment, tel } from '@/lib/content'
 
 export const metadata: Metadata = { title: 'Patients' }
 
@@ -152,7 +152,7 @@ export default async function Patients() {
         heading="Ready when *you* are."
         text="Request an appointment online, or call us Monday to Friday, 8am to 5pm."
         primary={{ label: 'Book an appointment', href: '/book' }}
-        secondary={{ label: 'Call (415) 362-5443', href: 'tel:4153625443' }}
+        secondary={{ label: `Call ${MAIN_PHONE}`, href: tel(MAIN_PHONE)! }}
       />
     </>
   )
