@@ -1359,9 +1359,49 @@ a.card:hover {
   width: 44px;
   height: 44px;
 }
+.dept-btn {
+  transition:
+    transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+.dept-btn .arrow-dot {
+  transition:
+    transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+    background-color 0.25s ease;
+}
+.dept-btn .arrow-dot .ms {
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
 .dept-btn:hover {
-  background: var(--mist);
+  background: #fff;
   color: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.45);
+}
+.dept-btn:hover .arrow-dot {
+  background: var(--clay);
+  transform: scale(1.08);
+}
+.dept-btn:hover .arrow-dot .ms {
+  transform: translateX(3px);
+}
+.dept-btn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 4px 12px -8px rgb(0 0 0 / 0.45);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dept-btn,
+  .dept-btn .arrow-dot,
+  .dept-btn .arrow-dot .ms {
+    transition: none;
+  }
+  .dept-btn:hover,
+  .dept-btn:active,
+  .dept-btn:hover .arrow-dot,
+  .dept-btn:hover .arrow-dot .ms {
+    transform: none;
+  }
 }
 @media (max-width: 900px) {
   .dept-card,
