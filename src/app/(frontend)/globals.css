@@ -39,11 +39,11 @@ html {
   scroll-padding-top: calc(var(--header-h) + 16px);
 }
 :root:has(.dept-header) {
-  --header-h: 96px;
+  --header-h: 108px;
 }
 @media (max-width: 1180px) {
   :root:has(.dept-header) {
-    --header-h: 148px;
+    --header-h: 160px;
   }
 }
 @media (max-width: 960px) {
@@ -551,7 +551,7 @@ a:hover {
   background: var(--teal);
 }
 .dept-header .wrap {
-  min-height: 96px;
+  min-height: 108px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -566,15 +566,15 @@ a:hover {
 }
 .dept-brand .name {
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.1;
   color: #fff;
   white-space: nowrap;
 }
 .dept-brand .sub {
   display: block;
-  margin-top: 3px;
-  font-size: 12px;
+  margin-top: 4px;
+  font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--sea);
@@ -590,7 +590,7 @@ a:hover {
   align-items: center;
   color: var(--on-dark);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
 }

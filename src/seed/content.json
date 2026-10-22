@@ -1454,7 +1454,7 @@
     },
     {
      "big": "Union Square",
-     "small": "450 Sutter Street [Suite 933 or 1139, to confirm]"
+     "small": "450 Sutter Street, Suite 1404"
     }
    ],
    "home": {
@@ -1636,7 +1636,7 @@
    ],
    "officePhone": "(415) 839-8639",
    "whereHeading": "Our Union Square clinic",
-   "whereNote": "450 Sutter Street, Monday to Friday, 8am to 5pm. The voice site gives Suite 933; sh.health lists the team in Suite 1139 [to confirm].",
+   "whereNote": "450 Sutter Street, Suite 1404. Monday to Friday, 8am to 5pm.",
    "resources": [
     {
      "icon": "event_available",

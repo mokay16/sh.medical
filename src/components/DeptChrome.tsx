@@ -47,7 +47,7 @@ export function DeptHeader({ d }: { d: Department }) {
       <header className="dept-header">
         <div className="wrap">
           <Link className="dept-brand" href={`/care/${d.slug}`} aria-label={`${d.brand} home`}>
-            <DeptBadge d={d} size={64} />
+            <DeptBadge d={d} size={76} />
             <span>
               <span className="name">{d.shortBrand}</span>
               <span className="sub">{d.name}</span>
