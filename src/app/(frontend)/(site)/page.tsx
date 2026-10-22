@@ -138,67 +138,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* How we care */}
-      <section className="section section--dark">
-        <div className="wrap care-split">
-          <div className="stack" style={{ gap: 36 }}>
-            <p className="eyebrow">How we care for you</p>
-            <h2 className="h2" style={{ fontSize: 'clamp(36px, 3.9vw, 56px)' }}>
-              Specialist care that feels <em style={{ color: 'var(--sea)' }}>personal.</em>
-            </h2>
-            <Image src="/images/how-we-care.webp" alt="A woman walks along a fallen log in a redwood forest, arms outstretched" width={891} height={594} sizes="(max-width: 960px) 100vw, 560px" style={{ width: '100%', height: 'auto', borderRadius: 28 }} />
-          </div>
-          <ol className="pillars">
-            {PILLARS.map(([t, d, quote], i) => (
-              <li key={t}>
-                <span className="serif num">{String(i + 1).padStart(2, '0')}</span>
-                <div>
-                  <h3 className="h3">{t}</h3>
-                  <p>{d}</p>
-                  {quote ? (
-                    <figure className="pillar-quote">
-                      <blockquote className="serif">{quote}</blockquote>
-                      <figcaption>SH Medical patient</figcaption>
-                    </figure>
-                  ) : null}
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      {/* Patient stories */}
-      <section className="section" style={{ paddingBottom: 'clamp(24px, 3vw, 40px)' }}>
-        <div className="wrap stories">
-          <div className="stack" style={{ gap: 28 }}>
-            <p className="eyebrow">Patient stories</p>
-            <Icon name="format_quote" size={56} className="ms--fill quote-mark" />
-            <blockquote className="serif story-quote">One week later, after my splints were removed, I can breathe so well through both nostrils now.</blockquote>
-            <p className="muted" style={{ margin: 0, display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center' }}>
-              <Stars /> Patient of Dr. Andrea Yeung · deviated septum surgery · May 2025
-            </p>
-          </div>
-          <div className="stack" style={{ gap: 18, justifyContent: 'flex-end' }}>
-            {(
-              [
-                ['“I love the office staff and Dr. Gupta’s care team… With her wisdom and care, my lungs are at a happy place. I have never breathed better!”', 'Allergy & asthma patient · April 2025'],
-                ['“Best ENT in SF! Very thorough and takes great care in explaining everything.”', 'ENT patient · February 2025'],
-              ] as const
-            ).map(([q, who]) => (
-              <figure key={who} className="mini-review">
-                <Stars />
-                <blockquote>{q}</blockquote>
-                <figcaption>{who}</figcaption>
-              </figure>
-            ))}
-            <Link className="link-arrow" href="/about#reviews" style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
-              Read patient reviews <Icon name="arrow_forward" size={18} className="ms--sm" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Departments */}
       <section className="section" id="care" style={{ paddingTop: 'clamp(32px, 4vw, 56px)' }}>
         <div className="wrap">
@@ -261,6 +200,67 @@ export default async function Home() {
                 Call {MAIN_PHONE}
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How we care */}
+      <section className="section section--dark">
+        <div className="wrap care-split">
+          <div className="stack" style={{ gap: 36 }}>
+            <p className="eyebrow">How we care for you</p>
+            <h2 className="h2" style={{ fontSize: 'clamp(36px, 3.9vw, 56px)' }}>
+              Specialist care that feels <em style={{ color: 'var(--sea)' }}>personal.</em>
+            </h2>
+            <Image src="/images/how-we-care.webp" alt="A woman walks along a fallen log in a redwood forest, arms outstretched" width={891} height={594} sizes="(max-width: 960px) 100vw, 560px" style={{ width: '100%', height: 'auto', borderRadius: 28 }} />
+          </div>
+          <ol className="pillars">
+            {PILLARS.map(([t, d, quote], i) => (
+              <li key={t}>
+                <span className="serif num">{String(i + 1).padStart(2, '0')}</span>
+                <div>
+                  <h3 className="h3">{t}</h3>
+                  <p>{d}</p>
+                  {quote ? (
+                    <figure className="pillar-quote">
+                      <blockquote className="serif">{quote}</blockquote>
+                      <figcaption>SH Medical patient</figcaption>
+                    </figure>
+                  ) : null}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Patient stories */}
+      <section className="section" style={{ paddingBottom: 'clamp(24px, 3vw, 40px)' }}>
+        <div className="wrap stories">
+          <div className="stack" style={{ gap: 28 }}>
+            <p className="eyebrow">Patient stories</p>
+            <Icon name="format_quote" size={56} className="ms--fill quote-mark" />
+            <blockquote className="serif story-quote">One week later, after my splints were removed, I can breathe so well through both nostrils now.</blockquote>
+            <p className="muted" style={{ margin: 0, display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center' }}>
+              <Stars /> Patient of Dr. Andrea Yeung · deviated septum surgery · May 2025
+            </p>
+          </div>
+          <div className="stack" style={{ gap: 18, justifyContent: 'flex-end' }}>
+            {(
+              [
+                ['“I love the office staff and Dr. Gupta’s care team… With her wisdom and care, my lungs are at a happy place. I have never breathed better!”', 'Allergy & asthma patient · April 2025'],
+                ['“Best ENT in SF! Very thorough and takes great care in explaining everything.”', 'ENT patient · February 2025'],
+              ] as const
+            ).map(([q, who]) => (
+              <figure key={who} className="mini-review">
+                <Stars />
+                <blockquote>{q}</blockquote>
+                <figcaption>{who}</figcaption>
+              </figure>
+            ))}
+            <Link className="link-arrow" href="/about#reviews" style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
+              Read patient reviews <Icon name="arrow_forward" size={18} className="ms--sm" />
+            </Link>
           </div>
         </div>
       </section>
