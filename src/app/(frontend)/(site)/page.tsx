@@ -348,7 +348,7 @@ export default async function Home() {
                 </button>
               </form>
             </div>
-            <Image src="/images/east-bay-hills.webp" alt="Rolling green hills of the East Bay" width={1920} height={1140} sizes="(max-width: 960px) 100vw, 640px" className="loc-photo" />
+            <Image src="/images/golden-gate.webp" alt="The Golden Gate Bridge over the blue bay, with San Francisco beyond" width={1568} height={1046} sizes="(max-width: 960px) 100vw, 640px" style={{ objectPosition: '30% center' }} className="loc-photo" />
           </div>
         </div>
       </section>
