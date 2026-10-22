@@ -1077,6 +1077,7 @@ a.card:hover {
 }
 .person .portrait {
   width: 100%;
+  height: auto;
   aspect-ratio: 294 / 320;
   object-fit: cover;
   border-radius: 22px;
@@ -2316,6 +2317,7 @@ a.card:hover {
 }
 .portrait-frame img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 22px;

@@ -55,3 +55,6 @@ node_modules/
 /media
 .env
 *.db.bak*
+
+# raw team photos (processed copies live in src/seed/media)
+/public/SH_Health_Team_Photos/
