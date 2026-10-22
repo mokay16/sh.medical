@@ -1340,13 +1340,14 @@ a.card:hover {
   font-size: 14px;
   font-weight: 500;
 }
+/* the arrow starts on the left and slides to the right on hover */
 .dept-btn {
+  position: relative;
   align-self: flex-start;
   display: inline-flex;
   align-items: center;
-  gap: 18px;
   min-height: 60px;
-  padding: 0 8px 0 28px;
+  padding: 0 28px 0 70px;
   border-radius: 999px;
   background: var(--linen);
   color: var(--ink);
@@ -1354,37 +1355,33 @@ a.card:hover {
   font-size: 17px;
   text-decoration: none;
   margin-top: 10px;
+  transition:
+    padding 0.45s ease-in-out,
+    transform 0.45s ease-in-out,
+    box-shadow 0.45s ease-in-out,
+    background-color 0.3s ease;
 }
 .dept-btn .arrow-dot {
+  position: absolute;
   width: 44px;
   height: 44px;
-}
-.dept-btn {
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
   transition:
-    transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
-    box-shadow 0.25s ease,
-    background-color 0.25s ease;
-}
-.dept-btn .arrow-dot {
-  transition:
-    transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
-    background-color 0.25s ease;
-}
-.dept-btn .arrow-dot .ms {
-  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    left 0.45s ease-in-out,
+    background-color 0.3s ease;
 }
 .dept-btn:hover {
+  padding: 0 70px 0 28px;
   background: #fff;
   color: var(--ink);
   transform: translateY(-2px);
   box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.45);
 }
 .dept-btn:hover .arrow-dot {
+  left: calc(100% - 52px);
   background: var(--clay);
-  transform: scale(1.08);
-}
-.dept-btn:hover .arrow-dot .ms {
-  transform: translateX(3px);
 }
 .dept-btn:active {
   transform: translateY(0) scale(0.98);
@@ -1392,14 +1389,11 @@ a.card:hover {
 }
 @media (prefers-reduced-motion: reduce) {
   .dept-btn,
-  .dept-btn .arrow-dot,
-  .dept-btn .arrow-dot .ms {
+  .dept-btn .arrow-dot {
     transition: none;
   }
   .dept-btn:hover,
-  .dept-btn:active,
-  .dept-btn:hover .arrow-dot,
-  .dept-btn:hover .arrow-dot .ms {
+  .dept-btn:active {
     transform: none;
   }
 }
