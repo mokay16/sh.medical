@@ -281,7 +281,10 @@ a:hover {
   text-decoration: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn {
+  .btn,
+  .site-header,
+  .site-nav a,
+  .site-logo img {
     transition: none;
   }
   .btn:active {
@@ -349,7 +352,6 @@ a:hover {
 }
 /* a soft shadow appears once the page has scrolled (where supported) */
 @supports (animation-timeline: scroll()) {
-  .site-header,
   .dept-header {
     animation: header-lift linear both;
     animation-timeline: scroll();
@@ -364,6 +366,38 @@ a:hover {
 .site-header {
   border-bottom: 1px solid var(--sand);
   background: var(--linen);
+  transition:
+    background-color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+/* once pinned to the top, the bar turns teal (set by StickyHeader) */
+.site-header[data-stuck] {
+  background: var(--teal);
+  border-bottom-color: var(--teal);
+  box-shadow: 0 8px 24px -14px rgb(18 59 62 / 0.55);
+}
+.site-header[data-stuck] :focus-visible {
+  outline-color: #fff;
+}
+.site-logo {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+}
+.site-logo img {
+  transition: opacity 0.4s ease;
+}
+.site-logo .site-logo-light {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.site-header[data-stuck] .site-logo img {
+  opacity: 0;
+}
+.site-header[data-stuck] .site-logo .site-logo-light {
+  opacity: 1;
 }
 .site-header .wrap {
   min-height: 88px;
@@ -384,6 +418,21 @@ a:hover {
 }
 .site-nav a[aria-current='page'] {
   color: var(--teal);
+}
+.site-nav a {
+  transition: color 0.4s ease;
+}
+.site-header[data-stuck] .site-nav a {
+  color: #fff;
+}
+.site-header[data-stuck] .site-nav a:hover {
+  color: var(--mist);
+}
+.site-header[data-stuck] .site-nav a[aria-current='page'] {
+  text-decoration: underline;
+  text-decoration-color: var(--peach);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
 }
 .menu-toggle {
   display: none;
@@ -415,7 +464,7 @@ a:hover {
     padding: 0 18px;
     font-size: 15px;
   }
-  .site-header .wrap > a:first-child img {
+  .site-logo img {
     width: 56px;
     height: 56px;
   }

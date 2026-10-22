@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { NavLinks } from './NavLinks'
+import { StickyHeader } from './StickyHeader'
 import { MYCHART_URL, getDepartments } from '@/lib/content'
 
 export function SiteHeader() {
@@ -23,10 +24,11 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
-      <header className="site-header">
+      <StickyHeader className="site-header">
         <div className="wrap">
-          <Link href="/" aria-label="SH Medical home">
+          <Link className="site-logo" href="/" aria-label="SH Medical home">
             <Image src="/brand/sh-medical-logo.png" alt="SH Medical" width={72} height={72} priority />
+            <Image className="site-logo-light" src="/brand/sh-medical-logo-white.png" alt="" width={72} height={72} />
           </Link>
           <NavLinks
             label="Main"
@@ -43,7 +45,7 @@ export function SiteHeader() {
             Book an appointment
           </Link>
         </div>
-      </header>
+      </StickyHeader>
     </>
   )
 }
