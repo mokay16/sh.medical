@@ -4,11 +4,11 @@
   --paper: #fbf8f3;
   --white: #ffffff;
   --ink: #1c2a2a;
-  --muted: #4b5957;
-  --muted-2: #5e6a67;
+  /* secondary brand colour: supporting text, the utility strip, hover on teal */
+  --slate: #47596c;
+  --muted: var(--slate);
+  --muted-2: #5b6b7c;
   --teal: #28696d;
-  /* dark teal: now only the hover shade for teal links and buttons */
-  --bay: #123b3e;
   --mist: #ddeae6;
   --clay: #9e4a2e;
   --clay-tint: #f3e0d5;
@@ -73,7 +73,7 @@ a {
   color: var(--teal);
 }
 a:hover {
-  color: var(--bay);
+  color: var(--slate);
 }
 :focus-visible {
   outline: 3px solid var(--teal);
@@ -256,7 +256,7 @@ a:hover {
   color: #fff;
 }
 .btn--teal:hover {
-  background: var(--bay);
+  background: var(--slate);
   color: #fff;
 }
 .btn--outline {
@@ -318,7 +318,7 @@ a:hover {
 
 /* SH Medical header */
 .utility {
-  background: var(--teal);
+  background: var(--slate);
   color: #e7efec;
   font-size: 14px;
 }
