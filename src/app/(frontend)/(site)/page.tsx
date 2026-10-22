@@ -150,9 +150,9 @@ export default async function Home() {
             </div>
             <p className="lede">Every department has its own specialists, and they all work as one team. Start anywhere and we’ll connect the rest.</p>
           </div>
-          <nav aria-label="Jump to a department" className="chips" style={{ marginBottom: 40 }}>
+          <nav aria-label="Jump to a department" className="dept-jump">
             {departments.map((d) => (
-              <a key={d.slug} className="chip" href={`#dept-${d.slug}`} style={{ textDecoration: 'none', color: 'var(--ink)', fontWeight: 500, minHeight: 44 }}>
+              <a key={d.slug} className="chip" href={`#dept-${d.slug}`}>
                 {d.name}
               </a>
             ))}
