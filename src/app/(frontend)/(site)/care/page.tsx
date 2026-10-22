@@ -24,9 +24,9 @@ export default async function AllCare() {
         <div className="wrap grid">
           {departments.map((d) => (
             <Link key={d.slug} href={`/care/${d.slug}`} className="card" style={{ padding: 0, overflow: 'hidden' }}>
-              <div style={{ position: 'relative', aspectRatio: '16 / 10', background: 'var(--bay)' }}>
+              <div style={{ position: 'relative', aspectRatio: '16 / 10', background: 'var(--teal)' }}>
                 <Img media={media(d.home?.photo || d.photo)} sizes="(max-width: 680px) 100vw, 420px" position={d.home?.photoPosition} className="cover" />
-                <span style={{ position: 'absolute', left: 16, bottom: 16, background: 'var(--bay)', borderRadius: 16, padding: 8, display: 'flex' }}>
+                <span style={{ position: 'absolute', left: 16, bottom: 16, background: 'var(--teal)', borderRadius: 16, padding: 8, display: 'flex' }}>
                   <DeptBadge d={d} size={56} />
                 </span>
               </div>

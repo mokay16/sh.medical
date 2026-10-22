@@ -107,7 +107,7 @@ export function BookingForm({
                   className="dot"
                   style={{
                     background: done ? 'var(--sea)' : current ? 'var(--linen)' : 'transparent',
-                    color: done || current ? 'var(--bay)' : 'var(--sea)',
+                    color: done || current ? 'var(--teal)' : 'var(--sea)',
                     boxShadow: done || current ? 'none' : 'inset 0 0 0 1.5px rgba(169,209,203,0.6)',
                   }}
                 >

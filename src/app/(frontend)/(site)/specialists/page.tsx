@@ -117,7 +117,7 @@ export default async function Specialists({ searchParams }: Props) {
               <TeamGrid people={browsing ? people.slice(0, 4) : people} />
             </div>
           ))}
-          <div className="not-sure glance" style={{ background: 'var(--bay)', color: 'var(--linen)', border: 0 }}>
+          <div className="not-sure glance" style={{ background: 'var(--teal)', color: 'var(--linen)', border: 0 }}>
             <div className="stack" style={{ gap: 10 }}>
               <p className="serif" style={{ margin: 0, fontSize: 34, lineHeight: 1.1 }}>
                 Not sure who to see?
