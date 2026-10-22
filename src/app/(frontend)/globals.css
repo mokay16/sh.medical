@@ -6,7 +6,7 @@
   --ink: #1c2a2a;
   --muted: #4b5957;
   --muted-2: #5e6a67;
-  --teal: #24676b;
+  --teal: #28696d;
   /* dark teal: now only the hover shade for teal links and buttons */
   --bay: #123b3e;
   --mist: #ddeae6;
@@ -1261,12 +1261,12 @@ a.card:hover {
   content: '';
   position: absolute;
   inset: 0 46% 0 0;
-  background: linear-gradient(to left, var(--teal) 0%, rgba(36, 103, 107, 0.9) 16%, rgba(36, 103, 107, 0.35) 42%, rgba(36, 103, 107, 0) 64%);
+  background: linear-gradient(to left, var(--teal) 0%, rgba(40, 105, 109, 0.9) 16%, rgba(40, 105, 109, 0.35) 42%, rgba(40, 105, 109, 0) 64%);
   pointer-events: none;
 }
 .dept-card.flip::after {
   inset: 0 0 0 46%;
-  background: linear-gradient(to right, var(--teal) 0%, rgba(36, 103, 107, 0.9) 16%, rgba(36, 103, 107, 0.35) 42%, rgba(36, 103, 107, 0) 64%);
+  background: linear-gradient(to right, var(--teal) 0%, rgba(40, 105, 109, 0.9) 16%, rgba(40, 105, 109, 0.35) 42%, rgba(40, 105, 109, 0) 64%);
 }
 .dept-card .copy {
   position: relative;
@@ -1338,7 +1338,7 @@ a.card:hover {
   .dept-card.flip::after {
     inset: 0;
     height: 260px;
-    background: linear-gradient(to bottom, rgba(36, 103, 107, 0) 38%, rgba(36, 103, 107, 0.8) 78%, var(--teal) 100%);
+    background: linear-gradient(to bottom, rgba(40, 105, 109, 0) 38%, rgba(40, 105, 109, 0.8) 78%, var(--teal) 100%);
   }
   .dept-card .copy,
   .dept-card.flip .copy {
