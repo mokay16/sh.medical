@@ -142,8 +142,8 @@ export default async function SpecialistProfile({ params }: Props) {
                     (sec.items || []).map((item) => {
                       const { years, text } = dated(item)
                       return (
-                        <li key={item}>
-                          <span className="serif">{years}</span>
+                        <li key={item} className={years ? undefined : 'undated'}>
+                          {years ? <span className="serif">{years}</span> : null}
                           <span>{text}</span>
                         </li>
                       )

@@ -1622,9 +1622,10 @@
    },
    "team": {
     "eyebrow": "Your voice team",
-    "heading": "Laryngologists and speech-language pathologists",
+    "heading": "Speech-language pathologists",
     "members": [
-     "joshua-d-glasner-mm-ph-d-ccc-slp"
+     "joshua-d-glasner-mm-ph-d-ccc-slp",
+     "joseph-hitchcock-mm-ms"
     ]
    },
    "reviews": [],
@@ -3906,6 +3907,45 @@
    "photo": "specialist-joshua-d-glasner-mm-ph-d-ccc-slp",
    "bio": [],
    "sections": []
+  },
+  {
+   "slug": "joseph-hitchcock-mm-ms",
+   "name": "Joseph Hitchcock, M.M., M.S.",
+   "role": "Speech-language pathologist · voice, swallowing & upper airway",
+   "title": "Speech-Language Pathologist",
+   "offices": [
+    "union"
+   ],
+   "photo": "specialist-joseph-hitchcock-mm-ms",
+   "bio": [
+    "Joseph Hitchcock is a speech-language pathologist specializing in voice, swallowing, and upper airway disorders. Prior to becoming an SLP, Joseph obtained graduate degrees in vocal performance and voice pedagogy from New York University and worked as a performer and voice teacher for two decades. He received a Master of Science in Communication Disorders from Emerson College. During his graduate studies, he completed a clinical placement at the Grabscheid Voice and Swallowing Center at Mount Sinai Hospital in New York City, as well as placements at a neurogenic rehabilitation clinic and in/outpatient hospital settings. He completed his clinical fellowship in voice, swallowing, and upper airway disorders at Lakeshore Professional Voice Center outside of Detroit.",
+    "Joseph enjoys working with patients with a wide range of voice, swallowing, and upper airway complaints, including singers and other performers. He believes in working with his patients to develop evidence-based treatment plans that fit their lifestyle and help them to reach their goals for recovery. He lives with his wife, their young son, and two small dogs."
+   ],
+   "sections": [
+    {
+     "heading": "Education & Training",
+     "items": [
+      "M.M., Vocal Performance & Voice Pedagogy, New York University",
+      "M.S., Communication Disorders, Emerson College",
+      "Clinical Fellowship, Voice, Swallowing, and Upper Airway Disorders, Lakeshore Professional Voice Center"
+     ]
+    },
+    {
+     "heading": "Clinical placements",
+     "items": [
+      "Grabscheid Voice and Swallowing Center, Mount Sinai Hospital, New York City",
+      "Saco Bay Orthopaedics and Sport Physical Therapy – Outpatient Neurogenic Rehab Clinic, Portland, ME",
+      "Frisbie Memorial Hospital Voice and Speech Center, Rochester, NH"
+     ]
+    },
+    {
+     "heading": "Research",
+     "items": [
+      "Daşdöğen, Ü., Hitchcock, J., Ahn, S., Ng, B. B., & Verdolini-Abbott, K. (2026). Visual–Spatial Influences on Vocal Intensity: Effects of Speaker-to-Listener Distance and Room Size in Immersive Virtual Reality. Journal of Speech, Language, and Hearing Research, 1–9. https://doi.org/10.1044/2026_jslhr-25-00798",
+      "Daşdöğen, Ü., & Hitchcock, J. (2026). The Effects of Visual Input in Virtual Reality on Voice Production: Comparing Trained Singers and Untrained Speakers. Journal of Voice. https://doi.org/10.1016/j.jvoice.2026.01.001"
+     ]
+    }
+   ]
   }
  ],
  "offices": [

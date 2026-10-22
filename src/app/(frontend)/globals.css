@@ -2362,6 +2362,9 @@ a.card:hover {
   color: var(--teal);
   font-size: 18px;
 }
+.edu li.undated {
+  grid-template-columns: minmax(0, 1fr);
+}
 .two-lists {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
