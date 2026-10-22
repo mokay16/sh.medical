@@ -1624,9 +1624,6 @@
     "eyebrow": "Your voice team",
     "heading": "Laryngologists and speech-language pathologists",
     "members": [
-     "katherine-yung-md-facs",
-     "wendy-vastine-ma-ccc-slp",
-     "kristen-bond-mm-ms-ccc-slp",
      "joshua-d-glasner-mm-ph-d-ccc-slp"
     ]
    },
@@ -2527,8 +2524,7 @@
      "christina-laane-md",
      "jennifer-bock-hughes-md",
      "aasif-kazi-md-pharm-d",
-     "sai-challapalli-md",
-     "katherine-yung-md-facs"
+     "sai-challapalli-md"
     ]
    },
    "reviews": [],
@@ -3895,42 +3891,6 @@
    "bio": [
     "Angela Smith has been a physical therapist since 1996. She completed her Bachelor of Science in health sciences and Master of Science in physical therapy at Boston University. Angela specializes in the treatment of dizziness, vertigo and imbalance related to vestibular dysfunction, vestibular migraines, post-concussion syndrome and other brain injuries. She treats TMJ as well as spinal and orthopedic dysfunction."
    ],
-   "sections": []
-  },
-  {
-   "slug": "katherine-yung-md-facs",
-   "name": "Katherine Yung, MD, FACS",
-   "role": "Laryngologist · Medical director",
-   "title": null,
-   "offices": [
-    "union"
-   ],
-   "photo": null,
-   "bio": [],
-   "sections": []
-  },
-  {
-   "slug": "wendy-vastine-ma-ccc-slp",
-   "name": "Wendy Vastine, MA, CCC-SLP",
-   "role": "Director of Passaggio · gender-affirming voice",
-   "title": null,
-   "offices": [
-    "union"
-   ],
-   "photo": null,
-   "bio": [],
-   "sections": []
-  },
-  {
-   "slug": "kristen-bond-mm-ms-ccc-slp",
-   "name": "Kristen Bond, MM, MS, CCC-SLP",
-   "role": "Director of speech-language pathology · singing voice",
-   "title": null,
-   "offices": [
-    "union"
-   ],
-   "photo": null,
-   "bio": [],
    "sections": []
   },
   {
