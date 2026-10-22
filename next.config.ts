@@ -8,6 +8,8 @@ const dirname = path.dirname(__filename)
 
 const nextConfig: NextConfig = {
   images: {
+    // 90 is used for the home hero photo
+    qualities: [75, 90],
     localPatterns: [
       {
         pathname: '/api/media/file/**',

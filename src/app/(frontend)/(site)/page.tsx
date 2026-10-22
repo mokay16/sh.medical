@@ -75,7 +75,7 @@ export default async function Home() {
           </div>
         </div>
         <div className="home-hero-photo">
-          <Image src="/images/home-hero.webp" alt="A smiling older man in a wheelchair outdoors, his hand on the hand of the nurse beside him" fill priority sizes="(max-width: 900px) 100vw, 680px" style={{ objectFit: 'cover', objectPosition: '44% 35%' }} />
+          <Image src="/images/home-hero.webp" alt="Two women embracing and laughing outdoors" fill priority quality={90} sizes="(max-width: 900px) 100vw, 680px" style={{ objectFit: 'cover', objectPosition: '40% center' }} />
         </div>
         <div className="wrap">
           <form action="/specialists" className="finder">
