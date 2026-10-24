@@ -421,7 +421,7 @@ export function TeamGrid({ people, empty }: { people: Specialist[]; empty?: stri
         return (
           <Link key={p.id} href={`/specialists/${p.slug}`} className="person">
             {media(p.photo) ? (
-              <Img media={media(p.photo)} alt={p.name} className="portrait" sizes="(max-width: 680px) 50vw, 300px" />
+              <Img media={media(p.photo)} alt={p.name} className="portrait" quality={90} sizes="(max-width: 680px) 50vw, 300px" />
             ) : (
               <Initials name={p.name} />
             )}

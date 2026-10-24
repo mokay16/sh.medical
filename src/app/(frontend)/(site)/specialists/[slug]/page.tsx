@@ -83,7 +83,7 @@ export default async function SpecialistProfile({ params }: Props) {
           </nav>
           <div className="profile-hero">
             <div className="portrait-frame">
-              {media(s.photo) ? <Img media={media(s.photo)} alt={`Portrait of ${s.name}`} sizes="(max-width: 900px) 100vw, 400px" priority /> : <div className="person"><Initials name={s.name} /></div>}
+              {media(s.photo) ? <Img media={media(s.photo)} alt={`Portrait of ${s.name}`} quality={90} sizes="(max-width: 900px) 100vw, 400px" priority /> : <div className="person"><Initials name={s.name} /></div>}
             </div>
             <div className="stack" style={{ gap: 20 }}>
               {depts.length ? <p className="eyebrow">{depts.map((d) => d.name).join(' · ')}</p> : null}

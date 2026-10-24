@@ -282,7 +282,7 @@ export default async function Home() {
           <div className="spec-feature">
             {lead ? (
               <Link href={`/specialists/${lead.slug}`} className="spec-lead">
-                <Img media={media(lead.photo)} alt={lead.name} sizes="(max-width: 900px) 100vw, 620px" />
+                <Img media={media(lead.photo)} alt={lead.name} quality={90} sizes="(max-width: 900px) 100vw, 620px" />
                 <div className="stack" style={{ gap: 14, padding: 32 }}>
                   <p className="eyebrow">ENT · Head &amp; neck surgery</p>
                   <p className="serif" style={{ margin: 0, fontSize: 36, lineHeight: 1.08 }}>
@@ -304,7 +304,7 @@ export default async function Home() {
             <div className="spec-grid">
               {portraits.map((s) => (
                 <Link key={s!.id} href={`/specialists/${s!.slug}`} className="person">
-                  <Img media={media(s!.photo)} alt={s!.name} className="portrait" sizes="(max-width: 680px) 50vw, 240px" />
+                  <Img media={media(s!.photo)} alt={s!.name} className="portrait" quality={90} sizes="(max-width: 680px) 50vw, 240px" />
                   <span className="name" style={{ fontSize: 20 }}>
                     {s!.name}
                   </span>

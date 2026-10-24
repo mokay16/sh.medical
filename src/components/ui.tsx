@@ -20,6 +20,7 @@ export function Img({
   className,
   position,
   priority,
+  quality,
 }: {
   media: Media | null
   alt?: string
@@ -27,6 +28,7 @@ export function Img({
   className?: string
   position?: string | null
   priority?: boolean
+  quality?: number
 }) {
   if (!media?.url) return null
   return (
@@ -38,6 +40,7 @@ export function Img({
       sizes={sizes}
       className={className}
       priority={priority}
+      quality={quality}
       style={position ? { objectPosition: position } : undefined}
     />
   )
