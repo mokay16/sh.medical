@@ -238,6 +238,43 @@ export interface Department {
         }[]
       | null;
     /**
+     * Optional: image cards at the top of the page (e.g. Voice & Swallowing, Airway), each leading to a full write-up. Replaces the simple condition cards.
+     */
+    categories?:
+      | {
+          /**
+           * Shown on the image card, e.g. Airway
+           */
+          title: string;
+          image?: (number | null) | Media;
+          /**
+           * Section heading, e.g. Airway Stenosis & Laryngeal Conditions
+           */
+          heading?: string | null;
+          intro?: string | null;
+          groups?:
+            | {
+                /**
+                 * e.g. Voice Conditions (optional)
+                 */
+                heading?: string | null;
+                items?:
+                  | {
+                      title: string;
+                      /**
+                       * Separate paragraphs with a blank line.
+                       */
+                      body: string;
+                      id?: string | null;
+                    }[]
+                  | null;
+                id?: string | null;
+              }[]
+            | null;
+          id?: string | null;
+        }[]
+      | null;
+    /**
      * Optional sub-specialty panels (used by ENT and Surgery) instead of simple cards
      */
     programs?:
@@ -681,6 +718,28 @@ export interface DepartmentsSelect<T extends boolean = true> {
           | {
               title?: T;
               description?: T;
+              id?: T;
+            };
+        categories?:
+          | T
+          | {
+              title?: T;
+              image?: T;
+              heading?: T;
+              intro?: T;
+              groups?:
+                | T
+                | {
+                    heading?: T;
+                    items?:
+                      | T
+                      | {
+                          title?: T;
+                          body?: T;
+                          id?: T;
+                        };
+                    id?: T;
+                  };
               id?: T;
             };
         programs?:

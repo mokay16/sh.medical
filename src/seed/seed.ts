@@ -43,6 +43,7 @@ for (const d of content.departments) {
   if (d.photo) alts.set(d.photo, d.photoAlt)
   if (d.home?.photo) alts.set(d.home.photo, d.home.photoAlt)
   if (d.feature?.image) alts.set(d.feature.image, d.feature.img_alt || d.feature.heading)
+  for (const c of d.conditions?.categories || []) if (c.image) alts.set(c.image, c.imageAlt || c.title)
 }
 for (const s of content.specialists) if (s.photo) alts.set(s.photo, s.name)
 for (const o of content.offices) if (o.photo) alts.set(o.photo, o.photoAlt)
@@ -126,6 +127,13 @@ for (const d of content.departments) {
         heading: d.conditions.heading,
         lede: d.conditions.lede,
         items: pairs(d.conditions.items),
+        categories: (d.conditions.categories || []).map((c: Record<string, any>) => ({
+          title: c.title,
+          image: media(c.image),
+          heading: c.heading,
+          intro: c.intro,
+          groups: (c.groups || []).map((g: Record<string, any>) => ({ heading: g.heading || undefined, items: pairs(g.items).map((x) => ({ title: x.title, body: x.description })) })),
+        })),
         programs: (d.conditions.programs || []).map((p: Record<string, unknown>) => ({
           title: p.title,
           summary: p.summary,

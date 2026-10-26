@@ -1543,7 +1543,94 @@
       "Chronic throat clearing or cough, vocal cord dysfunction and laryngospasm, treated first with breathing and retraining therapy."
      ]
     ],
-    "navLabel": "Conditions"
+    "navLabel": "Conditions",
+    "categories": [
+     {
+      "title": "Voice & Swallowing",
+      "image": "voice-card-swallowing",
+      "imageAlt": "A woman reading at a desk microphone",
+      "heading": "Voice and Swallowing Care",
+      "intro": "Patients with wide-ranging voice and swallowing complaints are treated at SH Voice & Swallowing. Here are the most common disorders that we treat:",
+      "groups": [
+       {
+        "heading": "Voice Conditions",
+        "items": [
+         [
+          "Benign Vocal Fold Lesions",
+          "Benign vocal fold lesions are growths on the vocal folds that are non-cancerous and are typically caused extensive vocal demand or vocal fold trauma. These lesions include nodules, polyps, cysts, ulcers, and granulomas. Symptoms may include change in voice quality, increased vocal effort, vocal fatigue, decreased pitch range, pitch instability, or throat pain with voice use or even at rest. Recommended treatment is generally voice therapy, but some patients may require medications or even surgery."
+         ],
+         [
+          "Early Laryngeal Cancer",
+          "Patients with early stage laryngeal cancer generally have equally excellent curative results with either endoscopic surgery or definitive radiation. The decision of whether to undergo surgery or radiation is usually made after a long discussion with the patient weighing expected side effects of the treatments based on the location and size of the tumor and individual preferences. The overall goal is to eradicate the disease while maintaining voice and swallowing function."
+         ],
+         [
+          "Laryngopharyngeal Reflux",
+          "Laryngopharyngeal Reflux (LPR) or acid reflux refers to the backflow of stomach contents into the throat causing irritation. Symptoms of LPR include sore throat, a hoarse voice, chronic throat clearing, or the feeling of having a “lump” in your throat. LPR is typically treated with dietary and behavioral modifications (i.e., reducing foods and behaviors that trigger reflux), medications to reduce stomach acid, and in extreme cases, surgery to tighten the lower esophageal sphincter."
+         ],
+         [
+          "Muscle Tension Dysphonia",
+          "Muscle Tension Dysphonia (MTD) is a voice disorder that occurs when the muscles of the neck, throat, tongue, and/or larynx are improperly used during vocalizing. This abnormal muscle pattern may then lead to voice changes, chronic throat clearing or coughing, and/or throat discomfort. Voice therapy is the most common and effective treatment."
+         ],
+         [
+          "Vocal Fold Motion Impairment",
+          "Vocal fold motion can be impaired due to either neurologic or mechanical injury. Paralysis (absence of vocal fold motion) or paresis (partial impairment of vocal fold motion) are terms used when the cause of the vocal fold immobility is due to damage to its main nerve supply. Paralysis of the vocal folds can be either one-sided (unilateral) or on both sides (bilateral).\n\nTreatment for vocal fold motion impairment varies based on whether one or both vocal folds are involved, as well as symptom severity and timing of onset. Management may include awake office procedures, surgery, or voice therapy."
+         ],
+         [
+          "Recurrent Respiratory Papillomatosis",
+          "Recurrent respiratory papillomatosis is an infectious disorder caused by Human Papilloma Virus (HPV), which causes warty lesions to grow on the vocal folds. Patients often have voice changes and more rarely, breathing issues as a result of the papillomas. Surgery to remove the warty lesions is the “gold standard” treatment for this condition, but medications and in-office laser treatment can also provide relief for certain patients. Despite treatment, papillomas frequently recur."
+         ],
+         [
+          "Spasmodic Dysphonia",
+          "Spasmodic Dysphonia (SD) is a neurological disorder that causes the laryngeal musculature to spasm during voice production. There are two sub-types of SD. Adductor Spasmodic Dysphonia (ADSD) is when the vocal folds close together too tightly during voiced sounds and Abductor Spasmodic Dysphonia is when the vocal folds spasm open during voiceless sounds. The most common and reliable therapy is injection of botulinum toxin (Botox®) to weaken the vocal cords and limit the abnormal contractions."
+         ],
+         [
+          "Vocal Tremor",
+          "Vocal Tremor is a neurologic disorder in which there is an essential or rhythmic tremor in the vocal folds or other laryngeal/pharyngeal structures during voicing. Vocal tremor can happen in isolation or in conjunction with spasmodic dysphonia. Patients note a rhythmic shaking or breaking of the voice that is involuntary. Vocal tremor can be managed with medical treatment and/or behavioral intervention. Certain oral medications can help reduce the tremor. Some patients benefit from botulinum toxin injections into their vocal folds to reduce the tremor. Voice therapy can also be of benefit to teach management strategies and optimize voice given the presence of the tremor."
+         ],
+         [
+          "Vocal Fold Atrophy / Aging Voice",
+          "As we age, our vocal folds change along with the rest of our bodies. Typically this age-related change results in thinner vocal folds or vocal fold atrophy, which affects the ability of the vocal folds to close against each other. Symptoms of aging voice may include softer volume, a change in voice quality, increased effort to speak, and throat clearing or dry cough. Management options include voice therapy, in-office procedures, and surgery."
+         ]
+        ]
+       },
+       {
+        "heading": "Swallowing Conditions",
+        "items": [
+         [
+          "Oropharyngeal Dysphagia",
+          "Oropharyngeal Dysphagia is a broad term used to describe difficulty swallowing involving muscles in the mouth and throat.\n\nPatients with oropharyngeal dysphagia may be at higher risk for aspiration or aspiration pneumonia. Swallowing evaluations are used to assess swallowing function to identify specific deficits, determine risk of penetration and aspiration (abnormal entry of food/liquid into the airway), and explore strategies for safe swallowing. Recommendations for treatment are based on the swallowing evaluation and may include surgical procedures, medical therapies, and behavioral strategies or exercises."
+         ],
+         [
+          "Zenker’s Diverticulum",
+          "A Zenker’s diverticulum is an outpouching of the pharynx just above the upper sphincter of the esophagus. Patients with a Zenker’s diverticulum typically report difficulty swallowing solid food, regurgitation of undigested food, cough and bad breath. A Zenker’s diverticulum can put some patients at a greater risk of aspiration and subsequent pneumonia.\n\nThe traditional approach to a Zenker’s diverticulum is through an open approach where the diverticulum is removed. However, most patients benefit from the much less invasive endoscopic approach. Depending on the patient’s anatomy and the size of the diverticulum either a stapler or laser can be used to divide the pouch."
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "title": "Airway",
+      "image": "voice-card-airway",
+      "imageAlt": "A man touching his throat",
+      "heading": "Airway Stenosis & Laryngeal Conditions",
+      "intro": "The otolaryngologists at SH Voice & Swallowing specialize in the diagnosis and treatment of airway conditions related to the neck. If you are looking for a voice specialist in the Bay Area, call (415) 839-8639 to schedule a consultation.",
+      "groups": [
+       {
+        "heading": "",
+        "items": [
+         [
+          "Airway Stenosis",
+          "Laryngotracheal stenosis (LTS) is congenital or acquired restriction of the airway affecting the larynx and/or trachea. Subglottic stenosis (SGS) is also a term that is used to describe LTS that involves only the segment of trachea just below the vocal folds. Obstruction of the upper airway caused by LTS or SGS results in difficulty breathing that may even be life-threatening. Despite appropriate treatment, patients often experience recurrence of the stenosis as a result of the abnormal wound-healing process that is the initial cause of the disorder.\n\nMedical treatment includes oral systemic steroids or a series of in-office steroid injections into the airway. Surgical treatment typically entails minimally invasive surgery to dilate the narrowed airway. Unfortunately, the stenosis often recurs, necessitating additional procedures. In rare cases, the patient may not respond to endoscopic dilation and may require an open surgery (cricotracheal or tracheal resection).\n\nAirway stenosis can also result from immobility of the vocal folds, whether from nerve injury (bilateral vocal fold paralysis) or mechanical injury or scarring (posterior glottic stenosis). Treatment options for narrowing at the vocal fold level include tracheotomy or airway expanding surgeries."
+         ],
+         [
+          "Irritable Larynx Syndrome",
+          "Irritable Larynx Syndrome (ILS) refers to a continuum of disorders that include chronic throat clearing, chronic coughing, paradoxical vocal fold movement (PFVM) – also called vocal cord dysfunction (VCD), and laryngospasm. Patients with ILS have laryngeal and neurologic hypersensitivity, which may lead to episodes of unnecessary and counterproductive vocal fold closure (PVFM & laryngospasm).\n\nCommon triggers include environmental irritants (e.g., strong odors, dust, smoke or chemical exposure), weather changes, physical exertion, stress, or voice use.\n\nThe first line of treatment for ILS is typically behavioral intervention. Therapy will focus on respiratory restraining techniques, desensitizing the throat/larynx, and retraining the body’s response to triggers. Neuromodulator medications, laryngeal nerve block injections, and reflux medications may also be helpful for refractory cases"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
    },
    "treatments": {
     "tab": "Diagnosis & treatment",

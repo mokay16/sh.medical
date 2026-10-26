@@ -277,8 +277,61 @@ export function ReviewList({ reviews }: { reviews: Review[] }) {
   )
 }
 
+const anchor = (title: string) =>
+  title
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+
+/** Image cards (e.g. Voice & Swallowing, Airway) that jump to full write-ups further down the page. */
+function ConditionCategories({ d }: D) {
+  const cats = d.conditions?.categories || []
+  return (
+    <>
+      <section className="section" style={{ paddingTop: 72, paddingBottom: 24 }}>
+        <div className="wrap cat-cards">
+          {cats.map((c) => (
+            <a key={c.id} href={`#${anchor(c.title)}`} className="cat-card">
+              {media(c.image) ? <Img media={media(c.image)} sizes="(max-width: 760px) 100vw, 620px" unoptimized={!!d.originalImages} /> : null}
+              <span className="serif">{c.title}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+      {cats.map((c) => (
+        <section key={c.id} id={anchor(c.title)} className="section cat-section" style={{ scrollMarginTop: 'var(--header-h)' }}>
+          <div className="wrap">
+            <div className="stack" style={{ gap: 14, maxWidth: 820, marginBottom: 40 }}>
+              <p className="eyebrow">{c.title}</p>
+              <h2 className="h2">{c.heading || c.title}</h2>
+              {c.intro ? <p className="lede">{c.intro}</p> : null}
+            </div>
+            {(c.groups || []).map((g) => (
+              <div key={g.id} className="cat-group">
+                {g.heading ? <h3 className="cat-group-title">{g.heading}</h3> : null}
+                <div className="cat-items">
+                  {(g.items || []).map((it) => (
+                    <article key={it.id} className="cat-item">
+                      <h4 className="h3">{it.title}</h4>
+                      {it.body.split(/\n\s*\n/).map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))}
+                    </article>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </>
+  )
+}
+
 export function ConditionsBody({ d }: D) {
   const c = d.conditions
+  if (c?.categories?.length) return <ConditionCategories d={d} />
   if (c?.programs?.length) {
     return (
       <section className="section" style={{ paddingTop: 72 }}>

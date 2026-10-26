@@ -142,6 +142,34 @@ export const Departments: CollectionConfig = {
                 { name: 'lede', type: 'textarea' },
                 titleDescription('items', 'Condition'),
                 {
+                  name: 'categories',
+                  type: 'array',
+                  admin: {
+                    description: 'Optional: image cards at the top of the page (e.g. Voice & Swallowing, Airway), each leading to a full write-up. Replaces the simple condition cards.',
+                  },
+                  fields: [
+                    { name: 'title', type: 'text', required: true, admin: { description: 'Shown on the image card, e.g. Airway' } },
+                    { name: 'image', type: 'upload', relationTo: 'media' },
+                    { name: 'heading', type: 'text', admin: { description: 'Section heading, e.g. Airway Stenosis & Laryngeal Conditions' } },
+                    { name: 'intro', type: 'textarea' },
+                    {
+                      name: 'groups',
+                      type: 'array',
+                      fields: [
+                        { name: 'heading', type: 'text', admin: { description: 'e.g. Voice Conditions (optional)' } },
+                        {
+                          name: 'items',
+                          type: 'array',
+                          fields: [
+                            { name: 'title', type: 'text', required: true },
+                            { name: 'body', type: 'textarea', required: true, admin: { description: 'Separate paragraphs with a blank line.' } },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
                   name: 'programs',
                   type: 'array',
                   admin: { description: 'Optional sub-specialty panels (used by ENT and Surgery) instead of simple cards' },
