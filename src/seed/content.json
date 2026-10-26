@@ -2785,9 +2785,9 @@
      "Your data, explained",
      "Lasting lifestyle changes"
     ],
-    "photo": "card-wellness",
-    "photoAlt": "A woman meditating cross-legged on a mat in a leafy park",
-    "photoPosition": "60% center"
+    "photo": "card-wellness-park",
+    "photoAlt": "A woman meditating cross-legged on the grass in a sunny green park",
+    "photoPosition": "50% 20%"
    },
    "overview": {
     "eyebrow": "About Sensational Wellness",
