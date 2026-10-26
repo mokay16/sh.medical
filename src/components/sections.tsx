@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import type { Department, Office, Review, Specialist } from '@/payload-types'
 import { docs, media, sitePages, tel } from '@/lib/content'
@@ -596,9 +597,25 @@ export function OfficeGrid({ offices, phone }: { offices: Office[]; phone?: stri
   )
 }
 
-export function CtaBand({ heading, text, primary, secondary }: { heading: string; text: string; primary: { label: string; href: string }; secondary?: { label: string; href: string } }) {
+type CtaPhoto = { src: string; alt: string; position?: string }
+
+export function CtaBand({
+  heading,
+  text,
+  primary,
+  secondary,
+  photo,
+}: {
+  heading: string
+  text: string
+  primary: { label: string; href: string }
+  secondary?: { label: string; href: string }
+  /** Optional background photo, shown under a dark slate overlay with light text */
+  photo?: CtaPhoto
+}) {
   return (
-    <section className="cta-band">
+    <section className={photo ? 'cta-band cta-band--photo' : 'cta-band'}>
+      {photo ? <Image src={photo.src} alt={photo.alt} fill sizes="100vw" className="cta-band-photo" style={{ objectPosition: photo.position || 'center' }} /> : null}
       <div className="wrap">
         <div className="stack" style={{ gap: 14, maxWidth: 760 }}>
           <h2 className="h2">
@@ -621,9 +638,15 @@ export function CtaBand({ heading, text, primary, secondary }: { heading: string
   )
 }
 
+/** Departments whose closing call-to-action sits on a photo. */
+const CTA_PHOTOS: Record<string, CtaPhoto> = {
+  'facial-plastics': { src: '/images/golden-gate.jpg', alt: 'The Golden Gate Bridge over San Francisco Bay', position: '30% 45%' },
+}
+
 export function DeptCta({ d }: D) {
   return (
     <CtaBand
+      photo={CTA_PHOTOS[d.slug]}
       heading={d.ctaHeading}
       text={`Book online, or call ${d.phoneLabel} at ${d.phone}, Monday to Friday, 8am to 5pm.`}
       primary={{ label: d.bookLabel, href: `/book?care=${d.slug}` }}
