@@ -2785,9 +2785,9 @@
      "Your data, explained",
      "Lasting lifestyle changes"
     ],
-    "photo": "dept-wellness-hero",
-    "photoAlt": "A woman meditating on a yoga mat at home, wearing a heart-rate sensor",
-    "photoPosition": "center"
+    "photo": "card-wellness",
+    "photoAlt": "A woman meditating cross-legged on a mat in a leafy park",
+    "photoPosition": "60% center"
    },
    "overview": {
     "eyebrow": "About Sensational Wellness",
