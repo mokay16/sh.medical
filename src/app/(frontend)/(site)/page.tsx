@@ -75,7 +75,7 @@ export default async function Home() {
           </div>
         </div>
         <div className="home-hero-photo">
-          <Image src="/images/home-hero.webp" alt="Two women embracing and laughing outdoors" fill priority quality={90} sizes="(max-width: 900px) 100vw, 680px" style={{ objectFit: 'cover', objectPosition: '40% center' }} />
+          <Image src="/images/home-hero.jpg" alt="Two women embracing and laughing outdoors" fill priority quality={90} sizes="(max-width: 900px) 100vw, 680px" style={{ objectFit: 'cover', objectPosition: '40% center' }} />
         </div>
         <div className="wrap">
           <form action="/specialists" className="finder">
@@ -212,7 +212,7 @@ export default async function Home() {
             <h2 className="h2" style={{ fontSize: 'clamp(36px, 3.9vw, 56px)' }}>
               Specialist care that feels <em style={{ color: 'var(--sea)' }}>personal.</em>
             </h2>
-            <Image src="/images/how-we-care.webp" alt="A woman walks along a fallen log in a redwood forest, arms outstretched" width={891} height={594} sizes="(max-width: 960px) 100vw, 560px" style={{ width: '100%', height: 'auto', borderRadius: 28 }} />
+            <Image src="/images/how-we-care.jpg" alt="A woman walks along a fallen log in a redwood forest, arms outstretched" width={891} height={594} sizes="(max-width: 960px) 100vw, 560px" style={{ width: '100%', height: 'auto', borderRadius: 28 }} />
           </div>
           <ol className="pillars">
             {PILLARS.map(([t, d, quote], i) => (
@@ -348,7 +348,7 @@ export default async function Home() {
                 </button>
               </form>
             </div>
-            <Image src="/images/golden-gate.webp" alt="The Golden Gate Bridge over the blue bay, with San Francisco beyond" width={1568} height={1046} sizes="(max-width: 960px) 100vw, 640px" style={{ objectPosition: '30% center' }} className="loc-photo" />
+            <Image src="/images/golden-gate.jpg" alt="The Golden Gate Bridge over the blue bay, with San Francisco beyond" width={1568} height={1046} sizes="(max-width: 960px) 100vw, 640px" style={{ objectPosition: '30% center' }} className="loc-photo" />
           </div>
         </div>
       </section>

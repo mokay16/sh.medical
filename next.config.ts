@@ -8,7 +8,8 @@ const dirname = path.dirname(__filename)
 
 const nextConfig: NextConfig = {
   images: {
-    // 90 is used for the home hero photo
+    // Serve every photo as its original file (full-quality JPEG), never re-encoded to WebP.
+    unoptimized: true,
     qualities: [75, 90],
     localPatterns: [
       {

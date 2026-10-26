@@ -58,7 +58,7 @@ export default async function About() {
         </div>
       </section>
       <div className="wrap">
-        <Image src="/images/bay-area-hills-morning.webp" alt="Morning light over green Bay Area hills" width={1920} height={1080} sizes="(max-width: 1440px) 100vw, 1248px" priority className="about-photo" />
+        <Image src="/images/bay-area-hills-morning.jpg" alt="Morning light over green Bay Area hills" width={1920} height={1080} sizes="(max-width: 1440px) 100vw, 1248px" priority className="about-photo" />
       </div>
 
       <section className="section">

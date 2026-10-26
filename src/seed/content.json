@@ -14,7 +14,7 @@
    "bookLabel": "Book an ENT appointment",
    "heroSecondary": null,
    "logo": "26ff922bcabb15ea56c8012101ea8035",
-   "photo": "e92db3f85769f9f2b67bfe6252c8e1f4",
+   "photo": "dept-ent-hero",
    "photoAlt": "A father and his young daughter laughing together in warm sunlight",
    "photoPosition": "center 40%",
    "facts": [
@@ -40,7 +40,7 @@
      "Head & neck surgery",
      "Pediatric ENT"
     ],
-    "photo": "e92db3f85769f9f2b67bfe6252c8e1f4",
+    "photo": "dept-ent-hero",
     "photoAlt": "A father and his young daughter laughing together in warm sunlight",
     "photoPosition": "center 40%"
    },
@@ -848,7 +848,7 @@
    "bookLabel": "Book an allergy appointment",
    "heroSecondary": null,
    "logo": "b9bcb8435fc1cf16b6f3bb35944a65b0",
-   "photo": "82dce72d5223423d3374ef522c416a58",
+   "photo": "dept-allergy-hero",
    "photoAlt": "A toddler smelling bright flowers in a garden",
    "photoPosition": "center",
    "facts": [
@@ -874,7 +874,7 @@
      "Food allergy",
      "Shot clinic"
     ],
-    "photo": "82dce72d5223423d3374ef522c416a58",
+    "photo": "dept-allergy-hero",
     "photoAlt": "A toddler smelling bright flowers in a garden",
     "photoPosition": "center"
    },
@@ -1169,7 +1169,7 @@
     "#visit"
    ],
    "logo": "874e46e49794acac840d8770f63e0ef1",
-   "photo": "933a26672de67ea1bcf48a18f599d9ba",
+   "photo": "dept-sleep-hero",
    "photoAlt": "Someone sleeping peacefully under a soft blanket",
    "photoPosition": "center",
    "facts": [
@@ -1195,7 +1195,7 @@
      "Home sleep testing",
      "Inspire therapy"
     ],
-    "photo": "933a26672de67ea1bcf48a18f599d9ba",
+    "photo": "dept-sleep-hero",
     "photoAlt": "Someone sleeping peacefully under a soft blanket",
     "photoPosition": "center"
    },
@@ -1815,7 +1815,7 @@
      "Balance testing",
      "Physical therapy"
     ],
-    "photo": "balance-parallel-bars",
+    "photo": "card-balance",
     "photoAlt": "A patient practises walking between parallel bars while her physical therapist looks on",
     "photoPosition": "62% center"
    },
@@ -2039,7 +2039,7 @@
     "/care/facial-plastics/aesthetic-services"
    ],
    "logo": "2476d1adc14658889e20cc6a350fb9dc",
-   "photo": "b9746209836ef397b43e555e4315c92a",
+   "photo": "dept-facial-hero",
    "photoAlt": "A smiling older woman outdoors",
    "photoPosition": "center",
    "facts": [
@@ -2064,7 +2064,7 @@
      "Botox & fillers",
      "Aesthetic treatments"
     ],
-    "photo": "facial-clear-skin",
+    "photo": "card-facial",
     "photoAlt": "A smiling young woman with clear, glowing skin touches her cheek",
     "photoPosition": "58% center"
    },
@@ -2280,7 +2280,7 @@
    "bookLabel": "Book a dermatology visit",
    "heroSecondary": null,
    "logo": null,
-   "photo": "f64d922d965e10b735c2462d888b1236",
+   "photo": "dept-derm-hero",
    "photoAlt": "A smiling woman with freckled skin",
    "photoPosition": "center 30%",
    "facts": [
@@ -2304,7 +2304,7 @@
      "Skin conditions",
      "Cosmetic dermatology"
     ],
-    "photo": "f64d922d965e10b735c2462d888b1236",
+    "photo": "dept-derm-hero",
     "photoAlt": "A smiling woman with freckled skin",
     "photoPosition": "center 30%"
    },
@@ -2432,7 +2432,7 @@
    "bookLabel": "Book a surgical consultation",
    "heroSecondary": null,
    "logo": null,
-   "photo": "17ce9ff97a79d3a0995f8e9fc4d7872b",
+   "photo": "dept-surgery-hero",
    "photoAlt": "A smiling doctor going over notes with a patient in an exam room",
    "photoPosition": "center 30%",
    "facts": [
@@ -2458,7 +2458,7 @@
      "Ear surgery",
      "Preparing & recovering"
     ],
-    "photo": "surgery-loupes",
+    "photo": "card-surgery",
     "photoAlt": "Two surgeons wearing magnifying loupes operate under the surgical lights",
     "photoPosition": "center 40%"
    },
@@ -2756,7 +2756,7 @@
    "bookLabel": "Book a wellness consultation",
    "heroSecondary": null,
    "logo": null,
-   "photo": "5bf9a8a03dcedcf7f237830c0bf3cb96",
+   "photo": "dept-wellness-hero",
    "photoAlt": "A woman meditating on a yoga mat at home, wearing a heart-rate sensor",
    "photoPosition": "center",
    "facts": [
@@ -2781,7 +2781,7 @@
      "Your data, explained",
      "Lasting lifestyle changes"
     ],
-    "photo": "5bf9a8a03dcedcf7f237830c0bf3cb96",
+    "photo": "dept-wellness-hero",
     "photoAlt": "A woman meditating on a yoga mat at home, wearing a heart-rate sensor",
     "photoPosition": "center"
    },
