@@ -1311,7 +1311,7 @@ a.card:hover {
   overflow: hidden;
   background: var(--slate);
   color: #fff;
-  padding-block: clamp(80px, 9vw, 136px);
+  padding-block: clamp(48px, 5vw, 72px);
 }
 .cta-band-photo {
   object-fit: cover;
@@ -1322,7 +1322,7 @@ a.card:hover {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(90deg, rgb(71 89 108 / 0.92) 0%, rgb(71 89 108 / 0.88) 55%, rgb(71 89 108 / 0.84) 100%);
+  background: linear-gradient(90deg, rgb(71 89 108 / 0.95) 0%, rgb(71 89 108 / 0.92) 55%, rgb(71 89 108 / 0.9) 100%);
 }
 .cta-band--photo .h2 {
   color: #fff;
