@@ -5,6 +5,7 @@ import * as migration_20261026_111313_department_merge_pages from './20261026_11
 import * as migration_20261026_120323_reviews from './20261026_120323_reviews';
 import * as migration_20261026_121607_department_office_street from './20261026_121607_department_office_street';
 import * as migration_20261026_125247_condition_categories from './20261026_125247_condition_categories';
+import * as migration_20261026_222539_department_fax from './20261026_222539_department_fax';
 
 export const migrations = [
   {
@@ -40,6 +41,11 @@ export const migrations = [
   {
     up: migration_20261026_125247_condition_categories.up,
     down: migration_20261026_125247_condition_categories.down,
-    name: '20261026_125247_condition_categories'
+    name: '20261026_125247_condition_categories',
+  },
+  {
+    up: migration_20261026_222539_department_fax.up,
+    down: migration_20261026_222539_department_fax.down,
+    name: '20261026_222539_department_fax'
   },
 ];

@@ -55,6 +55,7 @@ export const Departments: CollectionConfig = {
               type: 'row',
               fields: [
                 { name: 'phone', type: 'text', required: true },
+                { name: 'fax', type: 'text', admin: { description: 'Shown in the department footer, e.g. (415) 362-2615' } },
                 { name: 'phoneLabel', type: 'text', required: true, admin: { description: 'e.g. Allergy' } },
                 { name: 'bookLabel', type: 'text', required: true, admin: { description: 'e.g. Book an allergy appointment' } },
               ],

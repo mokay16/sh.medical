@@ -10,7 +10,7 @@ export function Icon({ name, size = 20, className = '' }: { name: string; size?:
   )
 }
 
-export const ICONS = ['arrow_forward', 'call', 'check', 'close', 'description', 'expand_more', 'folder_open', 'format_quote', 'image', 'lock', 'menu', 'my_location', 'search', 'verified_user']
+export const ICONS = ['arrow_forward', 'call', 'check', 'close', 'description', 'expand_more', 'fax', 'folder_open', 'format_quote', 'image', 'lock', 'menu', 'my_location', 'search', 'verified_user']
 
 /** A Payload media document as a responsive image. */
 export function Img({

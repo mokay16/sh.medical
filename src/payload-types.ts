@@ -158,6 +158,10 @@ export interface Department {
   logo?: (number | null) | Media;
   phone: string;
   /**
+   * Shown in the department footer, e.g. (415) 362-2615
+   */
+  fax?: string | null;
+  /**
    * e.g. Allergy
    */
   phoneLabel: string;
@@ -658,6 +662,7 @@ export interface DepartmentsSelect<T extends boolean = true> {
   shortBrand?: T;
   logo?: T;
   phone?: T;
+  fax?: T;
   phoneLabel?: T;
   bookLabel?: T;
   eyebrow?: T;

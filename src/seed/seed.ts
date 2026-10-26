@@ -100,6 +100,7 @@ for (const d of content.departments) {
       shortBrand: d.shortBrand,
       logo: media(d.logo),
       phone: d.phone,
+      fax: d.fax,
       phoneLabel: d.phoneLabel,
       bookLabel: d.bookLabel,
       eyebrow: d.eyebrow,

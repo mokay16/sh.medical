@@ -2825,3 +2825,33 @@ a.pill {
     transition: none;
   }
 }
+
+/* Department footer: phone and fax with icons */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-phone,
+.footer-fax {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-fax {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--on-dark);
+}
+.footer-phone .ms,
+.footer-fax .ms {
+  color: var(--sea);
+}
+.footer-phone:hover {
+  color: var(--sea);
+}

@@ -4,6 +4,7 @@ import type { Department } from '@/payload-types'
 import { MYCHART_URL, deptOffices, media, sitePages, tel } from '@/lib/content'
 import type { Office } from '@/payload-types'
 import { NavLinks } from './NavLinks'
+import { Icon } from './ui'
 
 /** The department's logo, or a placeholder in the style of the SH department logos. */
 export function DeptBadge({ d, size }: { d: Department; size: number }) {
@@ -88,9 +89,20 @@ export function DeptFooter({ d }: { d: Department }) {
                 {first.city}
               </address>
             ) : null}
-            <a href={tel(d.phone)} style={{ fontSize: 18, fontWeight: 600, color: '#fff' }}>
-              {d.phone}
-            </a>
+            <div className="footer-contact">
+              <a href={tel(d.phone)} className="footer-phone">
+                <Icon name="call" size={20} />
+                <span className="visually-hidden">Phone: </span>
+                {d.phone}
+              </a>
+              {d.fax ? (
+                <p className="footer-fax">
+                  <Icon name="fax" size={20} />
+                  <span className="visually-hidden">Fax: </span>
+                  {d.fax}
+                </p>
+              ) : null}
+            </div>
           </div>
           <div className="footer-cols">
             <div className="footer-col">

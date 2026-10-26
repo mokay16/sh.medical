@@ -505,7 +505,8 @@
    ],
    "faqOpen": 2,
    "ctaHeading": "Breathe, hear and speak more easily.",
-   "tag": "ENT"
+   "tag": "ENT",
+   "fax": "(415) 362-5444"
   },
   {
    "slug": "audiology",
@@ -1150,7 +1151,8 @@
    ],
    "faqOpen": 2,
    "ctaHeading": "Ready to find your triggers?",
-   "tag": "Allergy"
+   "tag": "Allergy",
+   "fax": "(415) 362-2615"
   },
   {
    "slug": "sleep",
@@ -1424,7 +1426,8 @@
    ],
    "faqOpen": 2,
    "ctaHeading": "Ready for a better night’s sleep?",
-   "tag": "Sleep"
+   "tag": "Sleep",
+   "fax": "(415) 362-5444"
   },
   {
    "slug": "voice",
@@ -1773,7 +1776,8 @@
    "originalImages": true,
    "locationsOnTeamPage": true,
    "reviewsPage": true,
-   "officeStreet": "450 Sutter Street, Suite 1404"
+   "officeStreet": "450 Sutter Street, Suite 1404",
+   "fax": "(415) 839-8669"
   },
   {
    "slug": "balance",
