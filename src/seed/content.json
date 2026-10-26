@@ -1936,29 +1936,32 @@
    "name": "Facial plastics & aesthetics",
    "brand": "SH Facial Plastics",
    "shortBrand": "SH Facial Plastics",
-   "eyebrow": "SH Facial Plastics · formerly SF MedSpa",
-   "headline": "Natural results, *your way.*",
-   "intro": "Our estheticians and fellowship-trained facial plastic surgeons give compassionate, individualized care for the most natural-looking outcomes, so you can feel your most confident.",
-   "phone": "(415) 839-6639",
+   "eyebrow": "Fellowship-trained · Board-certified · San Francisco",
+   "headline": "Expert surgical care. *Exceptional* results.",
+   "intro": "Facial plastic & reconstructive surgery, head & neck oncology, and advanced cosmetic procedures, led by fellowship-trained surgeons at SH Medical.",
+   "phone": "(415) 362-5443",
    "phoneLabel": "Facial Plastics",
    "bookLabel": "Book a consultation",
-   "heroSecondary": null,
+   "heroSecondary": [
+    "Aesthetic services",
+    "/care/facial-plastics/aesthetic-services"
+   ],
    "logo": "2476d1adc14658889e20cc6a350fb9dc",
    "photo": "b9746209836ef397b43e555e4315c92a",
    "photoAlt": "A smiling older woman outdoors",
    "photoPosition": "center",
    "facts": [
     {
-     "big": "Fellowship-trained",
-     "small": "Facial plastic and reconstructive surgeons"
+     "big": "Dr. Challapalli · Dr. Kazi",
+     "small": "Fellowship-trained facial plastic surgeons · UCSF affiliated"
     },
     {
-     "big": "Injectables to surgery",
-     "small": "From Botox and fillers to rhinoplasty and face lifts"
+     "big": "Surgical & aesthetic",
+     "small": "From rhinoplasty and facelifts to neuromodulators and fillers"
     },
     {
      "big": "Union Square",
-     "small": "450 Sutter Street, Suite 1139"
+     "small": "450 Sutter Street, Suite 933"
     }
    ],
    "home": {
@@ -1974,63 +1977,126 @@
     "photoPosition": "58% center"
    },
    "overview": {
-    "eyebrow": "About SH Facial Plastics",
-    "heading": "Aesthetic and reconstructive care for the face",
+    "eyebrow": "Surgical services",
+    "heading": "What we treat & operate on",
     "paras": [
-     "Facial plastics joined SH Medical in November 2024 with two board-certified head and neck surgeons who are also fellowship-trained facial plastic and reconstructive surgeons.",
-     "We start with injectables and skin care that rejuvenate without the risk and recovery time of surgery, and offer surgical options, including rhinoplasty, face and brow lifts, and reconstruction after skin cancer or injury, when they’re the right fit."
+     "Our fellowship-trained surgeons perform a full spectrum of facial plastic, reconstructive, head & neck oncologic, and skull base procedures.",
+     "Outpatient surgery is performed at Campus Surgery Center, Pacific Heights, SF Surgery Center, Presidio Surgery Center, CPMC, UCSF, and MarinHealth."
     ],
-    "glance_title": "What we offer",
+    "glance_title": "Procedures",
     "glance": [
-     "Botox® and Dysport® for lines and wrinkles",
-     "Dermal fillers: Restylane®, Juvéderm®, Merz® and Sculptra®",
-     "SkinMedica® skin care regimens",
-     "Cosmetic and functional rhinoplasty",
-     "Face lift, brow lift and eyelid surgery",
-     "Fat transfer",
-     "Reconstruction after skin cancer and facial trauma"
+     "Rhinoplasty",
+     "Facelift",
+     "Blepharoplasty",
+     "Head & Neck Oncology",
+     "Skull Base Surgery",
+     "Free Flap Reconstruction",
+     "Facial Reanimation"
     ],
-    "note": "Parking at the Sutter-Stockton Garage, or the 450 Sutter garage beneath the building."
+    "note": "Available at Union Square, SF · San Mateo · Sunnyvale"
    },
    "conditions": {
-    "eyebrow": "Treatments",
-    "heading": "From a refresh to reconstruction",
-    "lede": "Every plan is individual, and we’ll always explain your options, including the least invasive ones.",
+    "navLabel": "Surgical services",
+    "eyebrow": "Full spectrum surgical care",
+    "heading": "Surgical services",
+    "lede": "Fellowship-trained surgeons performing cosmetic, reconstructive, oncologic, and skull base procedures across San Francisco and the Bay Area.",
     "items": [
      [
-      "Smooth and effective",
-      "FDA-approved neuromodulators (Botox® or Dysport®) soften facial lines and wrinkles. Advanced techniques also treat neck bands, slim the face, lift brows and ease jaw clenching."
-     ],
-     [
-      "Lift and fill",
-      "Dermal fillers restore youthful volume without the risk and recovery time of surgery, using Restylane®, Juvéderm®, Merz® or Sculptra®, tailored to you."
-     ],
-     [
-      "Clear and toned",
-      "A personalized SkinMedica® regimen to protect, restore and rejuvenate your skin with scientifically formulated products."
-     ],
-     [
       "Rhinoplasty",
-      "Cosmetic and functional nose surgery, to change the shape of the nose and help you breathe better."
+      "Cosmetic and functional nose surgery. Reshaping the nose for aesthetic goals and/or improving airway function. Septoplasty, tip refinement, dorsal reduction. Cosmetic · Dr. Challapalli / Dr. Kazi."
      ],
      [
-      "Facial rejuvenation surgery",
-      "Face lift, brow lift, eyelid surgery (blepharoplasty) and fat transfer, for longer-lasting results."
+      "Facelift",
+      "Surgical facial rejuvenation for skin laxity, jowling, and loss of facial definition. Natural-looking, lasting results from a fellowship-trained surgeon. Cosmetic · Dr. Challapalli."
      ],
      [
-      "Reconstruction",
-      "Rebuilding the face after skin cancer removal or injury, with head and neck surgical expertise."
+      "Brow Lift",
+      "Surgical elevation of the brow and forehead, restoring youthful openness and addressing heaviness or asymmetry around the eyes. Cosmetic · Dr. Challapalli."
+     ],
+     [
+      "Blepharoplasty",
+      "Upper and lower eyelid surgery removing excess skin and fat. Addresses functional visual obstruction and cosmetic concerns around the eyes. Cosmetic · Dr. Challapalli."
+     ],
+     [
+      "Fat Transfer",
+      "Surgical facial volume restoration using your own fat. Harvested, processed, and carefully reinjected, often combined with PRP for improved results. Cosmetic · Dr. Challapalli."
+     ],
+     [
+      "Ear Surgery (Otoplasty)",
+      "Surgical correction of prominent, asymmetric, or structurally abnormal ears, for both adult and pediatric patients. Cosmetic · Dr. Challapalli."
+     ],
+     [
+      "Free Flap Reconstruction",
+      "Complex microvascular reconstruction of the head and neck following tumor resection or trauma. Advanced subspecialty training at Loma Linda University. Reconstructive · Dr. Kazi."
+     ],
+     [
+      "Facial Reconstruction",
+      "Reconstruction of skin cancer defects, traumatic injuries, and other structural losses, restoring both form and function of the face. Reconstructive · Dr. Challapalli / Dr. Kazi."
+     ],
+     [
+      "Facial Reanimation",
+      "Surgical restoration of facial movement and symmetry for patients with facial nerve paralysis or paresis, a highly specialized reconstructive procedure. Reconstructive · Dr. Kazi."
+     ],
+     [
+      "Head & Neck Oncology",
+      "Surgical management of head and neck cancers including thyroid, salivary gland, sino-nasal tumors, and other malignant conditions. Oncologic · Dr. Kazi."
+     ],
+     [
+      "Skull Base Surgery",
+      "Endoscopic skull base surgery for tumors and complex lesions. Advanced subspecialty fellowship training at Loma Linda University. Oncologic · Dr. Kazi."
+     ],
+     [
+      "Thyroid & Parathyroid Surgery",
+      "Surgical management of thyroid nodules, cancer, and parathyroid disorders. Salivary gland tumors and benign and malignant conditions of the head and neck. Oncologic · Dr. Kazi."
      ]
-    ],
-    "navLabel": "Treatments"
+    ]
    },
-   "treatments": null,
+   "treatments": {
+    "navLabel": "Aesthetic services",
+    "eyebrow": "Non-surgical · Aesthetic services",
+    "heading": "Aesthetic services",
+    "lede": "Rejuvenation without surgery, from neuromodulators and fillers to laser, microneedling and medical-grade skin care.",
+    "items": [
+     [
+      "Neuromodulators",
+      "Botox®, Dysport®, and Xeomin® for lines, brows, slimming, and bruxism."
+     ],
+     [
+      "Dermal Fillers",
+      "Restylane®, Juvéderm®, Sculptra®: volume and contour without surgery."
+     ],
+     [
+      "PRP Therapy",
+      "Platelet-Rich Plasma for facial rejuvenation and scalp hair restoration."
+     ],
+     [
+      "SkinPen Microneedling",
+      "FDA-cleared microneedling for face, neck, and scalp."
+     ],
+     [
+      "Fotona4D® Laser",
+      "Non-invasive laser facelift: tightening from inside out, no needles."
+     ],
+     [
+      "Lip Augmentation",
+      "Precision filler for natural-looking volume and definition."
+     ],
+     [
+      "Fat Injections",
+      "Long-lasting facial volume, combined with PRP for best results."
+     ],
+     [
+      "Skin Care Regimens",
+      "Medical-grade SkinMedica® protocols for rejuvenation."
+     ]
+    ]
+   },
    "feature": {
     "tab": "Results",
     "eyebrow": "Results",
     "heading": "Before and after",
     "paras": [
-     "The current site shows patient results for these treatments. [Before-and-after photos, with patient consent, to be supplied by SH Medical.]"
+     "[Before-and-after photos, with patient consent, to be supplied by SH Medical.]"
     ],
     "chips": [
      "Lip augmentation",
@@ -2042,75 +2108,70 @@
     "onPatientsPage": false
    },
    "visit": {
-    "heading": "Your consultation",
+    "heading": "Request an appointment",
     "steps": [
      [
-      "Talk about your goals",
-      "Tell us what you’d like to change and what matters most to you. [Consultation details to confirm.]"
+      "Request an appointment",
+      "Complete the form and our team will reach out within one business day. Or call us directly at (415) 362-5443."
      ],
      [
-      "Your plan",
-      "We recommend treatments matched to your face, skin and lifestyle, with costs explained up front."
+      "Choose your surgeon and location",
+      "See Dr. Challapalli or Dr. Kazi at Union Square, San Mateo or Sunnyvale."
      ],
      [
-      "Treatment",
-      "Injectables often happen the same day. Surgery is scheduled at one of our partner surgery centers."
+      "Surgery instructions & pre-op checklist",
+      "Download your pre- and post-op instructions before your procedure."
      ],
      [
-      "Follow-up",
-      "We check your results and fine-tune where needed."
+      "Your surgery",
+      "Outpatient surgery is performed at Campus Surgery Center, Pacific Heights, SF Surgery Center, Presidio Surgery Center, CPMC, UCSF, and MarinHealth."
      ]
     ]
    },
    "team": {
-    "eyebrow": "Your facial plastics team",
-    "heading": "Fellowship-trained facial plastic surgeons",
+    "eyebrow": "Our surgeons",
+    "heading": "Fellowship-trained. Board-certified.",
     "members": [
-     "aasif-kazi-md-pharm-d",
-     "sai-challapalli-md"
+     "sai-challapalli-md",
+     "aasif-kazi-md-pharm-d"
     ]
    },
    "reviews": [],
    "offices": [
-    "union"
+    "union",
+    "mateo",
+    "sunny"
    ],
-   "officePhone": "(415) 839-6639",
-   "whereHeading": "Facial plastics at Union Square",
-   "whereNote": "450 Sutter Street, Suite 1139. Our surgeons also see patients in San Mateo, Sunnyvale and Sonoma.",
+   "officePhone": null,
+   "whereHeading": "Office & surgical locations",
+   "whereNote": "Union Square: 450 Sutter St., Suite 933 (Dr. Challapalli · Dr. Kazi). San Mateo: 100 S. Ellsworth Ave., Suite 303, (415) 362-2901 (Dr. Challapalli). Sunnyvale: Dr. Kazi. Surgery at Campus Surgery Center, Pacific Heights, SF Surgery Center, Presidio, CPMC, UCSF and MarinHealth.",
    "resources": [
     {
      "icon": "event_available",
      "title": "Book a consultation",
-     "description": "Call (415) 839-6639 or request online."
-    },
-    {
-     "icon": "map",
-     "title": "Parking and directions",
-     "description": "Sutter-Stockton Garage or the 450 Sutter garage."
+     "description": "Request an appointment online, or call (415) 362-5443.",
+     "href": "/book?care=facial-plastics"
     },
     {
      "icon": "surgical",
      "title": "Surgery instructions",
-     "description": "Preparing for your procedure and recovery."
+     "description": "Your pre-op checklist and post-op instructions."
     },
     {
-     "icon": "payments",
-     "title": "Pricing",
-     "description": "[Price list for injectables to be supplied.]"
-    }
-   ],
-   "faq": [
-    {
-     "question": "Do fillers need recovery time like surgery?",
-     "answer": "No. Dermal fillers restore volume without the risk and recovery time of traditional surgery."
+     "icon": "description",
+     "title": "Discharge forms",
+     "description": "Download your discharge forms after surgery."
     },
     {
-     "question": "What else can Botox treat besides wrinkles?",
-     "answer": "With advanced techniques, neuromodulators can also treat neck bands, slim the face, lift the brows and reduce teeth grinding or jaw clenching."
+     "icon": "lock",
+     "title": "Patient portal",
+     "description": "Messages, results and appointments in MyChart.",
+     "href": "https://ucsfmychart.ucsfmedicalcenter.org/ucsfmychart/Authentication/Login"
     }
    ],
+   "faq": [],
    "faqOpen": 2,
-   "ctaHeading": "Ready to feel your most confident?",
+   "ctaHeading": "Schedule your surgical consultation",
    "tag": "Facial plastics"
   },
   {
