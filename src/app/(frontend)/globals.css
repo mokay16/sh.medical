@@ -51,9 +51,22 @@ html {
     --header-h: 127px;
   }
 }
+:root:has(.dept-header--voice) {
+  --header-h: 128px;
+}
+@media (max-width: 1180px) {
+  :root:has(.dept-header--voice) {
+    --header-h: 184px;
+  }
+}
 @media (max-width: 560px) {
   :root:has(.dept-header) {
     --header-h: 114px;
+  }
+}
+@media (max-width: 560px) {
+  :root:has(.dept-header--voice) {
+    --header-h: 116px;
   }
 }
 body {
@@ -564,6 +577,15 @@ a:hover {
   text-decoration: none;
   flex-shrink: 0;
 }
+/* SH Voice & Swallowing shows its logo larger in the header */
+.dept-header--voice .wrap {
+  min-height: 128px;
+}
+.dept-header--voice .dept-brand img,
+.dept-header--voice .dept-brand .badge-placeholder {
+  width: 100px;
+  height: 100px;
+}
 .dept-brand .name {
   font-family: var(--serif);
   font-size: 26px;
@@ -641,6 +663,13 @@ a:hover {
   .dept-brand .badge-placeholder {
     width: 44px !important;
     height: 44px !important;
+  }
+  .dept-header--voice .dept-brand img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+  .dept-header--voice .wrap {
+    min-height: 0;
   }
   .dept-brand .badge-placeholder span {
     font-size: 15px !important;
