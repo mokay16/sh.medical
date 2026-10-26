@@ -14,7 +14,7 @@ import {
   TreatmentsBody,
   Visit,
 } from '@/components/sections'
-import { docs, getDepartment, getDepartments, getReviews, mergedPageHref, mergedTreatments, sitePages } from '@/lib/content'
+import { deptOffices, docs, getDepartment, getDepartments, getReviews, mergedPageHref, mergedTreatments, sitePages } from '@/lib/content'
 import { ReviewForm } from '@/components/ReviewForm'
 
 type Props = { params: Promise<{ dept: string; section: string }> }
@@ -157,7 +157,7 @@ export default async function DepartmentSection({ params }: Props) {
                   <h2 className="h2">{d.whereHeading}</h2>
                   {d.whereNote ? <p className="lede">{d.whereNote}</p> : null}
                 </div>
-                <OfficeGrid offices={docs<Office>(d.offices)} phone={d.officePhone} />
+                <OfficeGrid offices={deptOffices(d)} phone={d.officePhone} />
               </div>
             </section>
           ) : null}
@@ -171,7 +171,7 @@ export default async function DepartmentSection({ params }: Props) {
           <PageHeading d={d} label={page.label} eyebrow="Where to find us" title={d.whereHeading} lede={d.whereNote} />
           <section className="section section--paper" style={{ paddingTop: 72 }}>
             <div className="wrap">
-              <OfficeGrid offices={docs<Office>(d.offices)} phone={d.officePhone} />
+              <OfficeGrid offices={deptOffices(d)} phone={d.officePhone} />
             </div>
           </section>
           <DeptCta d={d} />

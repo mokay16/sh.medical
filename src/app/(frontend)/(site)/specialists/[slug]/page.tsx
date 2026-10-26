@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Department, Office, Specialist } from '@/payload-types'
 import { CtaBand } from '@/components/sections'
 import { Img, Initials } from '@/components/ui'
-import { MAIN_PHONE, docs, getDepartments, getSpecialists, media, tel } from '@/lib/content'
+import { MAIN_PHONE, deptOffices, docs, getDepartments, getSpecialists, media, tel } from '@/lib/content'
 
 /** Specialist profile, following the canvas artboard "Specialist profile". */
 
@@ -51,7 +51,9 @@ export default async function SpecialistProfile({ params }: Props) {
   const r = await load((await params).slug)
   if (!r) notFound()
   const { s, depts } = r
-  const offices = docs<Office>(s.offices)
+  // A department's own street line (e.g. its suite) wins over the shared office address.
+  const deptStreet = new Map(depts.filter((x) => x.officeStreet).map((x) => [deptOffices(x)[0]?.id, x.officeStreet!] as const))
+  const offices = docs<Office>(s.offices).map((o) => (deptStreet.has(o.id) ? { ...o, street: deptStreet.get(o.id)! } : o))
   const primary: Department | undefined = depts[0]
   const sections = s.sections || []
   const education = find(sections, /educ|training|residency|fellowship|post-graduate/i)

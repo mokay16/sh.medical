@@ -164,6 +164,7 @@ for (const d of content.departments) {
       },
       offices: offices(d.offices),
       officePhone: d.officePhone,
+      officeStreet: d.officeStreet,
       locationsOnTeamPage: d.locationsOnTeamPage ?? false,
       reviewsPage: d.reviewsPage ?? false,
       whereHeading: d.whereHeading,

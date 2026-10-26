@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Department } from '@/payload-types'
-import { MYCHART_URL, docs, media, sitePages, tel } from '@/lib/content'
+import { MYCHART_URL, deptOffices, media, sitePages, tel } from '@/lib/content'
 import type { Office } from '@/payload-types'
 import { NavLinks } from './NavLinks'
 
@@ -69,7 +69,7 @@ export function DeptHeader({ d }: { d: Department }) {
 
 export function DeptFooter({ d }: { d: Department }) {
   const pages = sitePages(d)
-  const first = docs<Office>(d.offices)[0]
+  const first = deptOffices(d)[0]
   return (
     <footer className="site-footer">
       <div className="wrap">

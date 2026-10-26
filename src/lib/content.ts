@@ -87,6 +87,11 @@ export function sitePages(d: Department): SitePage[] {
   return pages
 }
 
+/** The department's offices, with its own street line (e.g. its suite) on the first office when set. */
+export function deptOffices(d: Department): Office[] {
+  return docs<Office>(d.offices).map((o, i) => (i === 0 && d.officeStreet ? { ...o, street: d.officeStreet } : o))
+}
+
 /** Treatments shown on the Conditions page instead of their own page. */
 export const mergedTreatments = (d: Department) => Boolean(d.treatments?.enabled && d.treatments.onConditionsPage)
 

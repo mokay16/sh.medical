@@ -355,6 +355,10 @@ export interface Department {
    */
   officePhone?: string | null;
   /**
+   * Street line for this department’s first office, when it differs from the shared office address (e.g. 450 Sutter Street, Suite 1404)
+   */
+  officeStreet?: string | null;
+  /**
    * Add a Reviews page (published reviews and a “Leave a review” form) to this department’s menu
    */
   reviewsPage?: boolean | null;
@@ -774,6 +778,7 @@ export interface DepartmentsSelect<T extends boolean = true> {
       };
   offices?: T;
   officePhone?: T;
+  officeStreet?: T;
   reviewsPage?: T;
   locationsOnTeamPage?: T;
   whereHeading?: T;

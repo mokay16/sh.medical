@@ -255,6 +255,11 @@ export const Departments: CollectionConfig = {
             { name: 'offices', type: 'relationship', relationTo: 'offices', hasMany: true },
             { name: 'officePhone', type: 'text', admin: { description: 'Phone shown for every office on the department pages' } },
             {
+              name: 'officeStreet',
+              type: 'text',
+              admin: { description: 'Street line for this department’s first office, when it differs from the shared office address (e.g. 450 Sutter Street, Suite 1404)' },
+            },
+            {
               name: 'reviewsPage',
               type: 'checkbox',
               defaultValue: false,
