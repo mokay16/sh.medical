@@ -37,6 +37,8 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-padding-top: calc(var(--header-h) + 16px);
+  /* The site header shrinks as it sticks; don't let the browser nudge the scroll position to compensate (that caused flicker) */
+  overflow-anchor: none;
 }
 :root:has(.dept-header) {
   --header-h: 108px;
