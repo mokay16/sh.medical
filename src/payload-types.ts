@@ -253,6 +253,10 @@ export interface Department {
   treatments?: {
     enabled?: boolean | null;
     /**
+     * Show treatments on the Conditions page (one menu link, e.g. “Conditions & treatment”) instead of as their own page
+     */
+    onConditionsPage?: boolean | null;
+    /**
      * Name of this page in the department menu; the page address is made from it.
      */
     navLabel?: string | null;
@@ -348,6 +352,10 @@ export interface Department {
    * Phone shown for every office on the department pages
    */
   officePhone?: string | null;
+  /**
+   * Show the offices on the team page (one menu link, “Team & location”) instead of a separate Locations page
+   */
+  locationsOnTeamPage?: boolean | null;
   whereHeading: string;
   whereNote?: string | null;
   ctaHeading: string;
@@ -649,6 +657,7 @@ export interface DepartmentsSelect<T extends boolean = true> {
     | T
     | {
         enabled?: T;
+        onConditionsPage?: T;
         navLabel?: T;
         eyebrow?: T;
         heading?: T;
@@ -727,6 +736,7 @@ export interface DepartmentsSelect<T extends boolean = true> {
       };
   offices?: T;
   officePhone?: T;
+  locationsOnTeamPage?: T;
   whereHeading?: T;
   whereNote?: T;
   ctaHeading?: T;

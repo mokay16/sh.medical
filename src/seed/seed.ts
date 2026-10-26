@@ -136,7 +136,7 @@ for (const d of content.departments) {
         })),
       },
       treatments: t
-        ? { enabled: true, navLabel: t.navLabel, eyebrow: t.eyebrow, heading: t.heading, lede: t.lede, items: pairs(t.items) }
+        ? { enabled: true, onConditionsPage: t.onConditionsPage ?? false, navLabel: t.navLabel, eyebrow: t.eyebrow, heading: t.heading, lede: t.lede, items: pairs(t.items) }
         : { enabled: false },
       feature: f
         ? {
@@ -164,6 +164,7 @@ for (const d of content.departments) {
       },
       offices: offices(d.offices),
       officePhone: d.officePhone,
+      locationsOnTeamPage: d.locationsOnTeamPage ?? false,
       whereHeading: d.whereHeading,
       whereNote: d.whereNote,
       ctaHeading: d.ctaHeading,

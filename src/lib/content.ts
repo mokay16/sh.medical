@@ -56,13 +56,31 @@ export function sitePages(d: Department): SitePage[] {
   const pages: SitePage[] = [{ key: 'home', label: 'Overview', segment: null, href: base }]
   const add = (key: SitePageKey, label: string, segment = slugify(label)) =>
     pages.push({ key, label, segment, href: `${base}/${segment}` })
-  add('conditions', d.conditions?.navLabel || 'Conditions')
-  if (d.treatments?.enabled) add('treatments', d.treatments.navLabel || 'Treatments')
+  const conditions = d.conditions?.navLabel || 'Conditions'
+  const treatments = d.treatments?.navLabel || 'Treatments'
+  if (mergedTreatments(d)) add('conditions', `${conditions} & ${treatments.toLowerCase()}`, slugify(conditions))
+  else add('conditions', conditions)
+  if (d.treatments?.enabled && !mergedTreatments(d)) add('treatments', treatments)
   if (d.feature?.enabled && !d.feature.onPatientsPage && d.feature.navLabel) add('feature', d.feature.navLabel)
   add('patients', 'Patients')
-  add('team', 'Our team', 'team')
-  add('locations', 'Locations')
+  if (d.locationsOnTeamPage) {
+    add('team', d.offices?.length === 1 ? 'Team & location' : 'Team & locations', 'team')
+  } else {
+    add('team', 'Our team', 'team')
+    add('locations', 'Locations')
+  }
   return pages
+}
+
+/** Treatments shown on the Conditions page instead of their own page. */
+export const mergedTreatments = (d: Department) => Boolean(d.treatments?.enabled && d.treatments.onConditionsPage)
+
+/** Where an old page address now lives when it has been merged into another page. */
+export function mergedPageHref(d: Department, segment: string): string | null {
+  const base = `/care/${d.slug}`
+  if (mergedTreatments(d) && segment === slugify(d.treatments?.navLabel || 'Treatments')) return `${base}/${slugify(d.conditions?.navLabel || 'Conditions')}#treatment`
+  if (d.locationsOnTeamPage && segment === 'locations') return `${base}/team#locations`
+  return null
 }
 
 export const tel = (phone?: string | null) => (phone ? `tel:${phone.replace(/\D/g, '')}` : undefined)

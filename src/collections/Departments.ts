@@ -166,6 +166,12 @@ export const Departments: CollectionConfig = {
               type: 'group',
               fields: [
                 { name: 'enabled', type: 'checkbox', defaultValue: false },
+                {
+                  name: 'onConditionsPage',
+                  type: 'checkbox',
+                  defaultValue: false,
+                  admin: { description: 'Show treatments on the Conditions page (one menu link, e.g. “Conditions & treatment”) instead of as their own page' },
+                },
                 navLabel('Treatments'),
                 { name: 'eyebrow', type: 'text' },
                 { name: 'heading', type: 'text' },
@@ -248,6 +254,12 @@ export const Departments: CollectionConfig = {
             },
             { name: 'offices', type: 'relationship', relationTo: 'offices', hasMany: true },
             { name: 'officePhone', type: 'text', admin: { description: 'Phone shown for every office on the department pages' } },
+            {
+              name: 'locationsOnTeamPage',
+              type: 'checkbox',
+              defaultValue: false,
+              admin: { description: 'Show the offices on the team page (one menu link, “Team & location”) instead of a separate Locations page' },
+            },
             { name: 'whereHeading', type: 'text', required: true },
             { name: 'whereNote', type: 'textarea' },
             { name: 'ctaHeading', type: 'text', required: true },

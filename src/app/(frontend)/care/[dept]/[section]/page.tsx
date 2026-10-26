@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import type { Office, Specialist } from '@/payload-types'
 import {
   ConditionsBody,
@@ -13,7 +13,7 @@ import {
   TreatmentsBody,
   Visit,
 } from '@/components/sections'
-import { docs, getDepartment, getDepartments, sitePages } from '@/lib/content'
+import { docs, getDepartment, getDepartments, mergedPageHref, mergedTreatments, sitePages } from '@/lib/content'
 
 type Props = { params: Promise<{ dept: string; section: string }> }
 
@@ -39,7 +39,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function DepartmentSection({ params }: Props) {
   const r = await load(params)
-  if (!r) notFound()
+  if (!r) {
+    // A page merged into another one (e.g. Locations into Team) keeps working at its old address.
+    const { dept, section } = await params
+    const d = await getDepartment(dept)
+    const href = d && mergedPageHref(d, section)
+    if (href) redirect(href)
+    notFound()
+  }
   const { d, page } = r
 
   switch (page.key) {
@@ -48,6 +55,20 @@ export default async function DepartmentSection({ params }: Props) {
         <>
           <PageHeading d={d} label={page.label} eyebrow={d.conditions.eyebrow || page.label} title={d.conditions.heading} lede={d.conditions.lede} />
           <ConditionsBody d={d} />
+          {mergedTreatments(d) ? (
+            <div id="treatment" style={{ scrollMarginTop: 'var(--header-h)' }}>
+              <section className="section section--dark" style={{ paddingBottom: 0 }}>
+                <div className="wrap">
+                  <div className="stack" style={{ gap: 18, maxWidth: 820 }}>
+                    <p className="eyebrow">{d.treatments?.eyebrow || d.treatments?.navLabel}</p>
+                    <h2 className="h2">{d.treatments?.heading}</h2>
+                    {d.treatments?.lede ? <p className="lede">{d.treatments.lede}</p> : null}
+                  </div>
+                </div>
+              </section>
+              <TreatmentsBody d={d} />
+            </div>
+          ) : null}
           <DeptCta d={d} />
         </>
       )
@@ -95,6 +116,18 @@ export default async function DepartmentSection({ params }: Props) {
               <TeamGrid people={people} empty={d.team?.emptyNote} original={!!d.originalImages} />
             </div>
           </section>
+          {d.locationsOnTeamPage ? (
+            <section id="locations" className="section" style={{ scrollMarginTop: 'var(--header-h)' }}>
+              <div className="wrap stack" style={{ gap: 32 }}>
+                <div className="stack" style={{ gap: 14, maxWidth: 820 }}>
+                  <p className="eyebrow">Where to find us</p>
+                  <h2 className="h2">{d.whereHeading}</h2>
+                  {d.whereNote ? <p className="lede">{d.whereNote}</p> : null}
+                </div>
+                <OfficeGrid offices={docs<Office>(d.offices)} phone={d.officePhone} />
+              </div>
+            </section>
+          ) : null}
           <DeptCta d={d} />
         </>
       )

@@ -1576,7 +1576,8 @@
       "Precise surgery on the vocal folds or the cartilage around them, when therapy isn’t enough."
      ]
     ],
-    "navLabel": "Treatment"
+    "navLabel": "Treatment",
+    "onConditionsPage": true
    },
    "feature": {
     "tab": "Passaggio",
@@ -1682,7 +1683,8 @@
    "faqOpen": 2,
    "ctaHeading": "Let’s get your voice back.",
    "tag": "Voice",
-   "originalImages": true
+   "originalImages": true,
+   "locationsOnTeamPage": true
   },
   {
    "slug": "balance",
