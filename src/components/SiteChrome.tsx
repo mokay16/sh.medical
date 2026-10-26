@@ -30,8 +30,8 @@ export function SiteHeader() {
       <StickyHeader className="site-header">
         <div className="wrap">
           <Link className="site-logo" href="/" aria-label="SH Medical home">
-            <Image src="/brand/sh-medical-logo.png" alt="SH Medical" width={84} height={84} priority />
-            <Image className="site-logo-light" src="/brand/sh-medical-logo-white.png" alt="" width={84} height={84} />
+            <Image src="/brand/sh-medical-logo.png" alt="SH Medical" width={120} height={120} priority />
+            <Image className="site-logo-light" src="/brand/sh-medical-logo-white.png" alt="" width={120} height={120} />
           </Link>
           <NavLinks
             label="Main"

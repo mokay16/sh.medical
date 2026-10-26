@@ -48,7 +48,7 @@ html {
 }
 @media (max-width: 960px) {
   :root {
-    --header-h: 127px;
+    --header-h: 119px;
   }
 }
 :root:has(.dept-header--voice) {
@@ -298,7 +298,8 @@ a:hover {
   .btn,
   .site-header,
   .site-nav a,
-  .site-logo img {
+  .site-logo img,
+  .site-header .wrap {
     transition: none;
   }
   .btn:active {
@@ -400,7 +401,20 @@ a:hover {
   flex-shrink: 0;
 }
 .site-logo img {
-  transition: opacity 0.4s ease;
+  /* large at the top of the page, back to normal once the bar sticks */
+  width: 120px;
+  height: 120px;
+  transition:
+    opacity 0.4s ease,
+    width 0.35s ease,
+    height 0.35s ease;
+}
+.site-header[data-stuck] .site-logo img {
+  width: 72px;
+  height: 72px;
+}
+.site-header[data-stuck] .wrap {
+  min-height: 88px;
 }
 .site-logo .site-logo-light {
   position: absolute;
@@ -414,7 +428,8 @@ a:hover {
   opacity: 1;
 }
 .site-header .wrap {
-  min-height: 88px;
+  min-height: 136px;
+  transition: min-height 0.35s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -457,6 +472,9 @@ a:hover {
   }
   .site-header .wrap {
     flex-wrap: wrap;
+    min-height: 96px;
+  }
+  .site-header[data-stuck] .wrap {
     min-height: 72px;
   }
   .site-nav {
@@ -479,8 +497,12 @@ a:hover {
     font-size: 15px;
   }
   .site-logo img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
+  }
+  .site-header[data-stuck] .site-logo img {
+    width: 56px;
+    height: 56px;
   }
 }
 
