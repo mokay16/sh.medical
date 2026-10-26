@@ -9,11 +9,13 @@ import {
   OfficeGrid,
   PageHeading,
   Resources,
+  ReviewList,
   TeamGrid,
   TreatmentsBody,
   Visit,
 } from '@/components/sections'
-import { docs, getDepartment, getDepartments, mergedPageHref, mergedTreatments, sitePages } from '@/lib/content'
+import { docs, getDepartment, getDepartments, getReviews, mergedPageHref, mergedTreatments, sitePages } from '@/lib/content'
+import { ReviewForm } from '@/components/ReviewForm'
 
 type Props = { params: Promise<{ dept: string; section: string }> }
 
@@ -88,6 +90,37 @@ export default async function DepartmentSection({ params }: Props) {
           <DeptCta d={d} />
         </>
       )
+    case 'reviews': {
+      const reviews = await getReviews(d.id)
+      const avg = reviews.length ? reviews.reduce((n, r) => n + r.rating, 0) / reviews.length : 0
+      return (
+        <>
+          <PageHeading
+            d={d}
+            label={page.label}
+            eyebrow="Patient reviews"
+            title="What our patients say"
+            lede={reviews.length ? `${reviews.length} review${reviews.length === 1 ? '' : 's'} · Average rating ${avg.toFixed(1)} out of 5` : 'Share your experience with our team.'}
+          />
+          <section className="section section--paper" style={{ paddingTop: 72 }}>
+            <div className="wrap">
+              <ReviewList reviews={reviews} />
+            </div>
+          </section>
+          <section id="leave-a-review" className="section" style={{ scrollMarginTop: 'var(--header-h)' }}>
+            <div className="wrap review-form-layout">
+              <div className="stack" style={{ gap: 14 }}>
+                <p className="eyebrow">Leave a review</p>
+                <h2 className="h2">Tell us your story</h2>
+                <p className="lede">Are you a patient of {d.brand}? We’d love to hear how your care went. Reviews appear here once our team has checked them.</p>
+              </div>
+              <ReviewForm departmentId={d.id} brand={d.brand} />
+            </div>
+          </section>
+          <DeptCta d={d} />
+        </>
+      )
+    }
     case 'patients':
       return (
         <>

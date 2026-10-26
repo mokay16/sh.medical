@@ -70,6 +70,7 @@ export interface Config {
     departments: Department;
     specialists: Specialist;
     offices: Office;
+    reviews: Review;
     media: Media;
     users: User;
     'payload-kv': PayloadKv;
@@ -82,6 +83,7 @@ export interface Config {
     departments: DepartmentsSelect<false> | DepartmentsSelect<true>;
     specialists: SpecialistsSelect<false> | SpecialistsSelect<true>;
     offices: OfficesSelect<false> | OfficesSelect<true>;
+    reviews: ReviewsSelect<false> | ReviewsSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
@@ -353,6 +355,10 @@ export interface Department {
    */
   officePhone?: string | null;
   /**
+   * Add a Reviews page (published reviews and a “Leave a review” form) to this department’s menu
+   */
+  reviewsPage?: boolean | null;
+  /**
    * Show the offices on the team page (one menu link, “Team & location”) instead of a separate Locations page
    */
   locationsOnTeamPage?: boolean | null;
@@ -455,6 +461,34 @@ export interface Office {
   createdAt: string;
 }
 /**
+ * New reviews arrive as Pending. Set them to Published to show them on the site.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reviews".
+ */
+export interface Review {
+  id: number;
+  status: 'pending' | 'published' | 'rejected';
+  department: number | Department;
+  rating: number;
+  quote: string;
+  /**
+   * First name, as it should appear
+   */
+  name: string;
+  /**
+   * e.g. San Francisco, CA
+   */
+  location?: string | null;
+  date: string;
+  /**
+   * From the form, for follow-up only. Never shown on the site.
+   */
+  email?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users".
  */
@@ -515,6 +549,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'offices';
         value: number | Office;
+      } | null)
+    | ({
+        relationTo: 'reviews';
+        value: number | Review;
       } | null)
     | ({
         relationTo: 'media';
@@ -736,6 +774,7 @@ export interface DepartmentsSelect<T extends boolean = true> {
       };
   offices?: T;
   officePhone?: T;
+  reviewsPage?: T;
   locationsOnTeamPage?: T;
   whereHeading?: T;
   whereNote?: T;
@@ -787,6 +826,22 @@ export interface OfficesSelect<T extends boolean = true> {
   lat?: T;
   lng?: T;
   order?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reviews_select".
+ */
+export interface ReviewsSelect<T extends boolean = true> {
+  status?: T;
+  department?: T;
+  rating?: T;
+  quote?: T;
+  name?: T;
+  location?: T;
+  date?: T;
+  email?: T;
   updatedAt?: T;
   createdAt?: T;
 }

@@ -1,7 +1,7 @@
 import { cache } from 'react'
 import { getPayload } from 'payload'
 import config from '@payload-config'
-import type { Department, Media, Office, Specialist } from '@/payload-types'
+import type { Department, Media, Office, Review, Specialist } from '@/payload-types'
 
 export const getPayloadClient = cache(() => getPayload({ config }))
 
@@ -28,6 +28,20 @@ export const getOffices = cache(async (): Promise<Office[]> => {
   return res.docs
 })
 
+/** A department's published reviews, newest first (drafts and pending ones are never returned). */
+export const getReviews = cache(async (departmentId: number): Promise<Review[]> => {
+  const payload = await getPayloadClient()
+  const res = await payload.find({
+    collection: 'reviews',
+    where: { and: [{ department: { equals: departmentId } }, { status: { equals: 'published' } }] },
+    sort: '-date',
+    limit: 200,
+    depth: 0,
+    overrideAccess: false,
+  })
+  return res.docs
+})
+
 /** Narrow a populated relationship (depth ≥ 1) to its document. */
 export function doc<T extends { id: number | string }>(v: number | string | T | null | undefined): T | null {
   return v && typeof v === 'object' ? v : null
@@ -47,7 +61,7 @@ export function slugify(label: string) {
     .replace(/^-|-$/g, '')
 }
 
-export type SitePageKey = 'home' | 'conditions' | 'treatments' | 'feature' | 'patients' | 'team' | 'locations'
+export type SitePageKey = 'home' | 'conditions' | 'treatments' | 'feature' | 'reviews' | 'patients' | 'team' | 'locations'
 export type SitePage = { key: SitePageKey; label: string; segment: string | null; href: string }
 
 /** The pages of a department mini-site, in menu order. */
@@ -62,6 +76,7 @@ export function sitePages(d: Department): SitePage[] {
   else add('conditions', conditions)
   if (d.treatments?.enabled && !mergedTreatments(d)) add('treatments', treatments)
   if (d.feature?.enabled && !d.feature.onPatientsPage && d.feature.navLabel) add('feature', d.feature.navLabel)
+  if (d.reviewsPage) add('reviews', 'Reviews')
   add('patients', 'Patients')
   if (d.locationsOnTeamPage) {
     add('team', d.offices?.length === 1 ? 'Team & location' : 'Team & locations', 'team')

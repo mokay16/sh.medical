@@ -2549,3 +2549,128 @@ a.pill {
   gap: 6px;
   transform: translate(calc(-50%), -12px);
 }
+
+/* Reviews page */
+.review-list {
+  columns: 2 360px;
+  column-gap: 24px;
+}
+.review-list .mini-review {
+  break-inside: avoid;
+  margin-bottom: 24px;
+  background: var(--white);
+  border: 1px solid var(--sand);
+}
+.review-form-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(32px, 6vw, 88px);
+  align-items: start;
+}
+.review-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 20px;
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: clamp(24px, 3vw, 40px);
+}
+.review-form--done {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.review-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.review-form .field--full,
+.review-form .star-input {
+  grid-column: 1 / -1;
+}
+.review-form input:not([type='radio']):not([type='checkbox']),
+.review-form textarea {
+  font: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--field);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--ink);
+}
+.review-form textarea {
+  resize: vertical;
+}
+.star-input {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.star-input legend {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.star-row {
+  display: flex;
+  gap: 4px;
+}
+.star-row label {
+  cursor: pointer;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--line);
+  transition: color 0.15s ease;
+}
+.star-row label.on,
+.star-row:hover label:has(~ label:hover),
+.star-row label:hover {
+  color: var(--gold);
+}
+.star-row input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.star-row label:has(input:focus-visible) {
+  outline: 3px solid var(--teal);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: var(--muted);
+}
+.consent input {
+  margin-top: 3px;
+  accent-color: var(--teal);
+}
+.form-error {
+  margin: 0;
+  color: var(--clay);
+  font-weight: 600;
+  font-size: 15px;
+}
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .review-form-layout {
+    grid-template-columns: 1fr;
+  }
+  .review-form {
+    grid-template-columns: 1fr;
+  }
+}

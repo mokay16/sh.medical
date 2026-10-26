@@ -32,7 +32,7 @@ if (process.env.SEED_ONLY_IF_EMPTY === 'true' && process.env.RESEED !== 'true') 
   }
 }
 
-for (const collection of ['departments', 'specialists', 'offices', 'media'] as const) {
+for (const collection of ['reviews', 'departments', 'specialists', 'offices', 'media'] as const) {
   await payload.delete({ collection, where: { id: { exists: true } } })
 }
 
@@ -165,10 +165,22 @@ for (const d of content.departments) {
       offices: offices(d.offices),
       officePhone: d.officePhone,
       locationsOnTeamPage: d.locationsOnTeamPage ?? false,
+      reviewsPage: d.reviewsPage ?? false,
       whereHeading: d.whereHeading,
       whereNote: d.whereNote,
       ctaHeading: d.ctaHeading,
     },
+  })
+}
+
+// Published patient reviews, attached to their department.
+const { docs: seededDepts } = await payload.find({ collection: 'departments', limit: 100, depth: 0 })
+for (const r of content.patientReviews || []) {
+  const dept = seededDepts.find((x) => x.slug === r.department)
+  if (!dept) continue
+  await payload.create({
+    collection: 'reviews',
+    data: { department: dept.id, rating: r.rating, name: r.name, location: r.location, quote: r.quote, date: new Date(r.date).toISOString(), status: 'published' },
   })
 }
 

@@ -1684,7 +1684,8 @@
    "ctaHeading": "Let’s get your voice back.",
    "tag": "Voice",
    "originalImages": true,
-   "locationsOnTeamPage": true
+   "locationsOnTeamPage": true,
+   "reviewsPage": true
   },
   {
    "slug": "balance",
@@ -4137,6 +4138,40 @@
    "photoAlt": "Vineyard rows at sunrise in Sonoma",
    "lat": 38.2873449,
    "lng": -122.4582017
+  }
+ ],
+ "patientReviews": [
+  {
+   "department": "voice",
+   "rating": 5,
+   "date": "2021-11-05",
+   "name": "Mary",
+   "location": "San Francisco, CA",
+   "quote": "I cannot thank you enough for all your support and care this year in helping me address living with ISS [idiopathic subglottic stenosis]. You are an amazing doctor and even more amazing woman. The rapport you have with patients is evident in all you do and your care and concern is equally apparent. Thank you for taking time to help me be the best I can be and have more and more quality time with my family."
+  },
+  {
+   "department": "voice",
+   "rating": 5,
+   "date": "2021-11-05",
+   "name": "Raymond",
+   "location": "Cleveland, Ohio",
+   "quote": "As a professional opera singer, it is very important to me and to my career to have a doctor that understands the conditions and treatments for what many of us suffer from. Not only does Dr. Yung have that knowledge but knows how to treat them as well. She and her staff are caring and professional."
+  },
+  {
+   "department": "voice",
+   "rating": 5,
+   "date": "2019-05-07",
+   "name": "Ramona",
+   "location": "Chico, CA",
+   "quote": "One year ago today you gave me my voice and breath back. I want you to know how grateful I am and think about the miracle of it all so often. You are such a gifted surgeon. I have regained my strength and feel like a normal person again."
+  },
+  {
+   "department": "voice",
+   "rating": 5,
+   "date": "2019-05-07",
+   "name": "Brian",
+   "location": "Walnut Creek, CA",
+   "quote": "I truly feel that we are ‘partners’ in this battle against RRP [recurrent respiratory papillomatosis], and I simply can’t imagine having anyone other than you in the foxhole next to me. I have been impressed not only by your competence, but also by your caring and compassion. And while I can’t see you operate, from everything I’ve been able to piece together, I have no doubt you are a brilliantly skilled surgeon. You project a calm and quiet competence, and that competence gives me confidence. I sincerely appreciate all you have done for me and I feel blessed to have found my way into your care."
   }
  ]
 }

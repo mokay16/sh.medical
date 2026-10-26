@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import type { Department, Office, Specialist } from '@/payload-types'
+import type { Department, Office, Review, Specialist } from '@/payload-types'
 import { docs, media, sitePages, tel } from '@/lib/content'
 import { Inline, RichText } from '@/lib/format'
 import { DeptBadge } from './DeptChrome'
@@ -204,6 +204,76 @@ export function Reviews({ d }: D) {
         </div>
       </div>
     </section>
+  )
+}
+
+const reviewDate = (iso: string) => new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+const reviewWho = (r: Review) => (r.location ? `${r.name} (${r.location})` : r.name)
+
+function ReviewStars({ rating }: { rating: number }) {
+  const n = Math.round(rating)
+  return (
+    <span className="stars" aria-label={`${n} out of 5 stars`} style={{ letterSpacing: 2 }}>
+      {'★'.repeat(n)}
+      <span style={{ opacity: 0.25 }}>{'★'.repeat(5 - n)}</span>
+    </span>
+  )
+}
+
+/** The home page's "Patient stories" layout: one featured review beside smaller ones. */
+export function PatientStories({ d, reviews, allHref }: D & { reviews: Review[]; allHref?: string }) {
+  if (!reviews.length) return null
+  const [lead, ...rest] = reviews
+  return (
+    <section className="section">
+      <div className="wrap stories">
+        <div className="stack" style={{ gap: 28 }}>
+          <p className="eyebrow">Patient stories</p>
+          <Icon name="format_quote" size={56} className="ms--fill quote-mark" />
+          <blockquote className="serif story-quote">{lead.quote}</blockquote>
+          <p className="muted" style={{ margin: 0, display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center' }}>
+            <ReviewStars rating={lead.rating} /> {reviewWho(lead)} · {reviewDate(lead.date)}
+          </p>
+        </div>
+        <div className="stack" style={{ gap: 18, justifyContent: 'flex-end' }}>
+          {rest.slice(0, 2).map((r) => (
+            <figure key={r.id} className="mini-review">
+              <ReviewStars rating={r.rating} />
+              <blockquote>“{r.quote.length > 260 ? r.quote.slice(0, 257).replace(/\s+\S*$/, '') + '…' : r.quote}”</blockquote>
+              <figcaption>
+                {reviewWho(r)} · {reviewDate(r.date)}
+              </figcaption>
+            </figure>
+          ))}
+          {allHref ? (
+            <Link className="link-arrow" href={allHref} style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
+              Read all {reviews.length} reviews of {d.shortBrand} <Icon name="arrow_forward" size={18} className="ms--sm" />
+            </Link>
+          ) : null}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/** Every published review, for a department's Reviews page. */
+export function ReviewList({ reviews }: { reviews: Review[] }) {
+  if (!reviews.length) return <p className="muted">No reviews yet. Be the first to share your experience.</p>
+  return (
+    <div className="review-list">
+      {reviews.map((r) => (
+        <figure key={r.id} className="mini-review">
+          <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
+            <ReviewStars rating={r.rating} />
+            <span className="muted" style={{ fontSize: 14 }}>
+              {reviewDate(r.date)}
+            </span>
+          </div>
+          <blockquote>“{r.quote}”</blockquote>
+          <figcaption>{reviewWho(r)}</figcaption>
+        </figure>
+      ))}
+    </div>
   )
 }
 

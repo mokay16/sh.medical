@@ -255,6 +255,12 @@ export const Departments: CollectionConfig = {
             { name: 'offices', type: 'relationship', relationTo: 'offices', hasMany: true },
             { name: 'officePhone', type: 'text', admin: { description: 'Phone shown for every office on the department pages' } },
             {
+              name: 'reviewsPage',
+              type: 'checkbox',
+              defaultValue: false,
+              admin: { description: 'Add a Reviews page (published reviews and a “Leave a review” form) to this department’s menu' },
+            },
+            {
               name: 'locationsOnTeamPage',
               type: 'checkbox',
               defaultValue: false,
