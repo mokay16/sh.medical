@@ -21,6 +21,7 @@ export function Img({
   position,
   priority,
   quality,
+  unoptimized,
 }: {
   media: Media | null
   alt?: string
@@ -29,6 +30,8 @@ export function Img({
   position?: string | null
   priority?: boolean
   quality?: number
+  /** Serve the original file as-is (no resizing or WebP conversion) */
+  unoptimized?: boolean
 }) {
   if (!media?.url) return null
   return (
@@ -41,6 +44,7 @@ export function Img({
       className={className}
       priority={priority}
       quality={quality}
+      unoptimized={unoptimized}
       style={position ? { objectPosition: position } : undefined}
     />
   )

@@ -106,6 +106,7 @@ for (const d of content.departments) {
       intro: d.intro,
       photo: media(d.photo)!,
       photoPosition: d.photoPosition,
+      originalImages: d.originalImages ?? false,
       heroSecondaryLabel: d.heroSecondary?.[0],
       heroSecondaryHref: d.heroSecondary?.[1],
       facts: d.facts,

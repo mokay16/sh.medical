@@ -65,6 +65,12 @@ export const Departments: CollectionConfig = {
             { name: 'photo', type: 'upload', relationTo: 'media', required: true },
             { name: 'photoPosition', type: 'text', defaultValue: 'center', admin: { description: 'CSS object-position, e.g. center 30%' } },
             {
+              name: 'originalImages',
+              type: 'checkbox',
+              defaultValue: false,
+              admin: { description: 'Serve this department’s photos, logo and team portraits as the original files (e.g. full-quality JPEG) instead of converting them to WebP. Pages load more slowly.' },
+            },
+            {
               type: 'row',
               fields: [
                 { name: 'heroSecondaryLabel', type: 'text', admin: { description: 'Second hero button; defaults to calling the department' } },

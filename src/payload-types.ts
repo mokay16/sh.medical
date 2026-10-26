@@ -175,6 +175,10 @@ export interface Department {
    */
   photoPosition?: string | null;
   /**
+   * Serve this department’s photos, logo and team portraits as the original files (e.g. full-quality JPEG) instead of converting them to WebP. Pages load more slowly.
+   */
+  originalImages?: boolean | null;
+  /**
    * Second hero button; defaults to calling the department
    */
   heroSecondaryLabel?: string | null;
@@ -574,6 +578,7 @@ export interface DepartmentsSelect<T extends boolean = true> {
   intro?: T;
   photo?: T;
   photoPosition?: T;
+  originalImages?: T;
   heroSecondaryLabel?: T;
   heroSecondaryHref?: T;
   facts?:

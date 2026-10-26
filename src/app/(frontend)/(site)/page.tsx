@@ -160,7 +160,7 @@ export default async function Home() {
           <div className="stack" style={{ gap: 24 }}>
             {departments.map((d, i) => (
               <section key={d.slug} id={`dept-${d.slug}`} aria-labelledby={`dept-${d.slug}-h`} className={`dept-card${i % 2 ? ' flip' : ''}`}>
-                <Img media={media(d.home?.photo)} sizes="(max-width: 900px) 100vw, 680px" position={d.home?.photoPosition} />
+                <Img media={media(d.home?.photo)} sizes="(max-width: 900px) 100vw, 680px" position={d.home?.photoPosition} unoptimized={!!d.originalImages} />
                 <div className="copy">
                   <h3 id={`dept-${d.slug}-h`} className="h2">
                     {d.name}

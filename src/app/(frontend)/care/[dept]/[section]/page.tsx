@@ -92,7 +92,7 @@ export default async function DepartmentSection({ params }: Props) {
           <PageHeading d={d} label={page.label} eyebrow={(d.team?.eyebrow || 'Your care team') + count} title={d.team?.heading || 'Meet the team'} />
           <section className="section section--paper" style={{ paddingTop: 72 }}>
             <div className="wrap">
-              <TeamGrid people={people} empty={d.team?.emptyNote} />
+              <TeamGrid people={people} empty={d.team?.emptyNote} original={!!d.originalImages} />
             </div>
           </section>
           <DeptCta d={d} />

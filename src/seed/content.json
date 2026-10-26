@@ -1440,7 +1440,7 @@
    "bookLabel": "Book a voice consultation",
    "heroSecondary": null,
    "logo": "0ad3d76b20cea21d8a4153181962ada5",
-   "photo": "535e560244f47047e050e80046777383",
+   "photo": "voice-hero",
    "photoAlt": "A woman singing into a microphone in front of an audience",
    "photoPosition": "center",
    "facts": [
@@ -1466,7 +1466,7 @@
      "Airway conditions",
      "Gender-affirming voice"
     ],
-    "photo": "535e560244f47047e050e80046777383",
+    "photo": "voice-hero",
     "photoAlt": "A woman singing into a microphone in front of an audience",
     "photoPosition": "center"
    },
@@ -1681,7 +1681,8 @@
    ],
    "faqOpen": 2,
    "ctaHeading": "Let’s get your voice back.",
-   "tag": "Voice"
+   "tag": "Voice",
+   "originalImages": true
   },
   {
    "slug": "balance",

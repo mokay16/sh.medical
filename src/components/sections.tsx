@@ -51,7 +51,7 @@ export function DeptHero({ d }: D) {
           ) : null}
         </div>
         <div className="hero-photo">
-          <Img media={media(d.photo)} sizes="(max-width: 900px) 100vw, 520px" position={d.photoPosition} priority />
+          <Img media={media(d.photo)} sizes="(max-width: 900px) 100vw, 520px" position={d.photoPosition} priority unoptimized={!!d.originalImages} />
           {d.logo ? (
             <div className="logo-tile">
               <DeptBadge d={d} size={104} />
@@ -406,7 +406,7 @@ export function Faq({ d }: D) {
   )
 }
 
-export function TeamGrid({ people, empty }: { people: Specialist[]; empty?: string | null }) {
+export function TeamGrid({ people, empty, original }: { people: Specialist[]; empty?: string | null; original?: boolean }) {
   if (!people.length) {
     return (
       <div className="card" style={{ border: '1.5px dashed var(--field)', background: 'transparent' }}>
@@ -421,7 +421,7 @@ export function TeamGrid({ people, empty }: { people: Specialist[]; empty?: stri
         return (
           <Link key={p.id} href={`/specialists/${p.slug}`} className="person">
             {media(p.photo) ? (
-              <Img media={media(p.photo)} alt={p.name} className="portrait" quality={90} sizes="(max-width: 680px) 50vw, 300px" />
+              <Img media={media(p.photo)} alt={p.name} className="portrait" quality={90} sizes="(max-width: 680px) 50vw, 300px" unoptimized={original} />
             ) : (
               <Initials name={p.name} />
             )}

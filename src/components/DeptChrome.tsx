@@ -8,7 +8,7 @@ import { NavLinks } from './NavLinks'
 /** The department's logo, or a placeholder in the style of the SH department logos. */
 export function DeptBadge({ d, size }: { d: Department; size: number }) {
   const logo = media(d.logo)
-  if (logo?.url) return <Image src={logo.url} alt="" width={size} height={size} style={{ flexShrink: 0 }} />
+  if (logo?.url) return <Image src={logo.url} alt="" width={size} height={size} style={{ flexShrink: 0 }} unoptimized={!!d.originalImages} />
   return (
     <span className="badge-placeholder" style={{ width: size, height: size }} title="Logo to come" aria-hidden="true">
       <i />
