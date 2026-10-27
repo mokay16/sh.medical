@@ -55,13 +55,13 @@ export default async function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="home-hero">
+      <section className="home-hero home-hero--full">
         <div className="wrap home-hero-copy">
           <p className="eyebrow">ENT · Audiology · Allergy · Sleep · Voice</p>
           <h1 className="h1 home-h1">
             Care for the senses that <em>connect you</em> to life.
           </h1>
-          <p className="lede" style={{ fontSize: 22, maxWidth: 560 }}>
+          <p className="lede" style={{ fontSize: 22, maxWidth: 500 }}>
             Hearing, breathing, speaking, sleeping &amp; feeling steady. Since 1940, SH Medical’s Bay Area specialists have worked side by side to help
             patients of every age live fully.
           </p>
@@ -75,7 +75,7 @@ export default async function Home() {
           </div>
         </div>
         <div className="home-hero-photo">
-          <Image src="/images/home-hero.jpg" alt="Two women embracing and laughing outdoors" fill priority quality={90} sizes="(max-width: 900px) 100vw, 680px" style={{ objectFit: 'cover', objectPosition: '40% center' }} />
+          <Image src="/images/home-hero-park.jpg" alt="A nurse kneels on the grass to check the knee of an older woman in a wheelchair, in a leafy park" fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: '50% 45%' }} />
         </div>
         <div className="wrap">
           <form action="/specialists" className="finder">
