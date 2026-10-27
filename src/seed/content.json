@@ -833,7 +833,8 @@
    ],
    "faqOpen": 2,
    "ctaHeading": "Ready to hear more clearly?",
-   "tag": "Audiology"
+   "tag": "Audiology",
+   "fax": "(415) 839-6677"
   },
   {
    "slug": "allergy",
@@ -2744,7 +2745,8 @@
    ],
    "faqOpen": 3,
    "ctaHeading": "Talk to a surgeon about your options.",
-   "tag": "Surgery"
+   "tag": "Surgery",
+   "fax": "(415) 808-5444"
   },
   {
    "slug": "wellness",
