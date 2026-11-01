@@ -2880,18 +2880,6 @@ a.pill {
   color: var(--sea);
 }
 
-.footer-col-fax {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0;
-  font-size: 15px;
-  color: var(--on-dark);
-}
-.footer-col-fax .ms {
-  color: var(--sea);
-}
-
 
 /* Home hero, full-bleed photo running under the (see-through) header */
 :root {

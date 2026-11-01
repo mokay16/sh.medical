@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { NavLinks } from './NavLinks'
-import { Icon } from './ui'
 import { StickyHeader } from './StickyHeader'
 import { MYCHART_URL, getDepartments } from '@/lib/content'
 
@@ -81,21 +80,12 @@ export async function SiteFooter() {
               <a href={MYCHART_URL}>MyChart</a>
               <Link href="/patients#insurance">Insurance</Link>
               <Link href="/patients#records">Medical records</Link>
-              <p className="footer-col-fax">
-                <Icon name="fax" size={18} />
-                <span>
-                  Billing fax · (415) 621-3805
-                </span>
-              </p>
             </div>
             <div className="footer-col">
               <p className="eyebrow">About</p>
               <Link href="/about">Our story</Link>
               <Link href="/specialists">Specialists</Link>
               <Link href="/locations">Locations</Link>
-              <a href="tel:4153625443">ENT · (415) 362-5443</a>
-              <a href="tel:4153622614">Allergy · (415) 362-2614</a>
-              <a href="tel:4153622901">Audiology · (415) 362-2901</a>
             </div>
           </div>
         </div>
