@@ -3179,16 +3179,16 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
 
 /* Stethoscope resting on the card's top-right corner, in front of everything */
 .cta-3d {
-  padding-top: clamp(120px, 12vw, 176px);
+  padding-top: clamp(24px, 3vw, 40px);
 }
 .cta-3d-tool {
   position: absolute;
   z-index: 2;
   right: clamp(16px, 4vw, 64px);
-  top: -150px;
-  width: clamp(170px, 16vw, 210px);
+  top: -116px;
+  width: clamp(160px, 14vw, 186px);
   height: auto;
-  transform: translateZ(90px) rotate(-28deg);
+  transform: translateZ(90px) rotate(-38deg);
   filter: drop-shadow(0 18px 18px rgb(18 40 40 / 0.35)) drop-shadow(0 4px 4px rgb(18 40 40 / 0.2));
   pointer-events: none;
   animation: steth-float 6s ease-in-out infinite;
@@ -3199,7 +3199,7 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
 }
 @media (max-width: 760px) {
   .cta-3d {
-    padding-top: 88px;
+    padding-top: 56px;
   }
   .cta-3d-tool {
     width: 116px;
