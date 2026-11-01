@@ -4,7 +4,7 @@
   --paper: #fbf8f3;
   --white: #ffffff;
   --ink: #1c2a2a;
-  /* secondary brand colour: supporting text, the utility strip, hover on teal */
+  /* secondary brand colour: supporting text and hover on teal */
   --slate: #47596c;
   --muted: var(--slate);
   --muted-2: #5b6b7c;
@@ -334,7 +334,7 @@ a:hover {
 
 /* SH Medical header */
 .utility {
-  background: var(--slate);
+  background: var(--teal);
   color: #e7efec;
   font-size: 14px;
 }
@@ -2915,7 +2915,7 @@ a.pill {
   inset: 0;
   background:
     linear-gradient(180deg, rgb(28 42 42 / 0.5) 0, rgb(28 42 42 / 0) 240px),
-    linear-gradient(90deg, rgb(71 89 108 / 0.9) 0%, rgb(71 89 108 / 0.78) 30%, rgb(71 89 108 / 0.35) 46%, rgb(71 89 108 / 0) 58%);
+    linear-gradient(90deg, rgb(40 105 109 / 0.94) 0%, rgb(40 105 109 / 0.9) 32%, rgb(40 105 109 / 0.45) 46%, rgb(40 105 109 / 0) 58%);
 }
 .home-hero--full .home-hero-copy .eyebrow {
   color: var(--peach);
