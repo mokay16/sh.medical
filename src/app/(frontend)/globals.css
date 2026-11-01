@@ -3176,3 +3176,40 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
     transform: none;
   }
 }
+
+/* Stethoscope resting on the card's top-right corner, in front of everything */
+.cta-3d {
+  padding-top: clamp(120px, 12vw, 176px);
+}
+.cta-3d-tool {
+  position: absolute;
+  z-index: 2;
+  right: clamp(16px, 4vw, 64px);
+  top: -150px;
+  width: clamp(170px, 16vw, 210px);
+  height: auto;
+  transform: translateZ(90px) rotate(-28deg);
+  filter: drop-shadow(0 18px 18px rgb(18 40 40 / 0.35)) drop-shadow(0 4px 4px rgb(18 40 40 / 0.2));
+  pointer-events: none;
+  animation: steth-float 6s ease-in-out infinite;
+}
+@keyframes steth-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -6px; }
+}
+@media (max-width: 760px) {
+  .cta-3d {
+    padding-top: 88px;
+  }
+  .cta-3d-tool {
+    width: 116px;
+    top: -70px;
+    right: 6px;
+    transform: translateZ(90px) rotate(-20deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cta-3d-tool {
+    animation: none;
+  }
+}

@@ -6,6 +6,7 @@ import { Inline, RichText } from '@/lib/format'
 import { DeptBadge } from './DeptChrome'
 import { Icon, Img, Initials } from './ui'
 import { TiltCard } from './TiltCard'
+import { Stethoscope } from './Stethoscope'
 
 type D = { d: Department }
 
@@ -627,6 +628,7 @@ export function CtaBand({
             </div>
             <div className="cta-3d-shade" aria-hidden="true" />
           </div>
+          <Stethoscope className="cta-3d-tool" />
           <div className="cta-3d-content">
             <div className="stack" style={{ gap: 14, maxWidth: 640 }}>
               <h2 className="h2">
