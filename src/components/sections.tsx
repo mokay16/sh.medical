@@ -5,6 +5,7 @@ import { docs, media, sitePages, tel } from '@/lib/content'
 import { Inline, RichText } from '@/lib/format'
 import { DeptBadge } from './DeptChrome'
 import { Icon, Img, Initials } from './ui'
+import { TiltCard } from './TiltCard'
 
 type D = { d: Department }
 
@@ -599,54 +600,68 @@ export function OfficeGrid({ offices, phone }: { offices: Office[]; phone?: stri
 
 type CtaPhoto = { src: string; alt: string; position?: string }
 
+/** Photo for the main site's closing call to action. */
+const CTA_DEFAULT_PHOTO: CtaPhoto = { src: '/images/golden-gate.jpg', alt: 'The Golden Gate Bridge over San Francisco Bay', position: '30% 45%' }
+
+/** A 3D card: the photo sits deep inside, the words and buttons float in front, and it tilts toward the pointer. */
 export function CtaBand({
   heading,
   text,
   primary,
   secondary,
-  photo,
+  photo = CTA_DEFAULT_PHOTO,
 }: {
   heading: string
   text: string
   primary: { label: string; href: string }
   secondary?: { label: string; href: string }
-  /** Optional background photo, shown under a dark slate overlay with light text */
   photo?: CtaPhoto
 }) {
   return (
-    <section className={photo ? 'cta-band cta-band--photo' : 'cta-band'}>
-      {photo ? <Image src={photo.src} alt={photo.alt} fill sizes="100vw" className="cta-band-photo" style={{ objectPosition: photo.position || 'center' }} /> : null}
+    <section className="cta-3d">
       <div className="wrap">
-        <div className="stack" style={{ gap: 14, maxWidth: 760 }}>
-          <h2 className="h2">
-            <Inline text={heading} />
-          </h2>
-          <p className="lede">{text}</p>
-        </div>
-        <div className="btn-row">
-          <Link className="btn btn--clay" href={primary.href}>
-            {primary.label}
-          </Link>
-          {secondary ? (
-            <a className="btn btn--outline" href={secondary.href}>
-              {secondary.label}
-            </a>
-          ) : null}
-        </div>
+        <TiltCard className="cta-3d-card">
+          <div className="cta-3d-bg">
+            <div className="cta-3d-photo">
+              <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 1248px) 100vw, 1248px" style={{ objectFit: 'cover', objectPosition: photo.position || 'center' }} />
+            </div>
+            <div className="cta-3d-shade" aria-hidden="true" />
+          </div>
+          <div className="cta-3d-content">
+            <div className="stack" style={{ gap: 14, maxWidth: 640 }}>
+              <h2 className="h2">
+                <Inline text={heading} />
+              </h2>
+              <p className="lede">{text}</p>
+            </div>
+            <div className="btn-row">
+              <Link className="btn btn--clay" href={primary.href}>
+                {primary.label}
+              </Link>
+              {secondary ? (
+                <a className="btn btn--outline" href={secondary.href}>
+                  {secondary.label}
+                </a>
+              ) : null}
+            </div>
+          </div>
+        </TiltCard>
       </div>
     </section>
   )
 }
 
-/** Departments whose closing call-to-action sits on a photo. */
+/** Departments whose closing photo differs from their own hero photo. */
 const CTA_PHOTOS: Record<string, CtaPhoto> = {
   'facial-plastics': { src: '/images/golden-gate.jpg', alt: 'The Golden Gate Bridge over San Francisco Bay', position: '30% 45%' },
 }
 
 export function DeptCta({ d }: D) {
+  const hero = media(d.photo)
+  const photo = CTA_PHOTOS[d.slug] ?? (hero?.url ? { src: hero.url, alt: hero.alt || '', position: d.photoPosition || 'center' } : undefined)
   return (
     <CtaBand
-      photo={CTA_PHOTOS[d.slug]}
+      photo={photo}
       heading={d.ctaHeading}
       text={`Book online, or call ${d.phoneLabel} at ${d.phone}, Monday to Friday, 8am to 5pm.`}
       primary={{ label: d.bookLabel, href: `/book?care=${d.slug}` }}
