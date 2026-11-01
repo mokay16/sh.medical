@@ -5,13 +5,22 @@ import { StickyHeader } from './StickyHeader'
 import { MAIN_PHONE, MYCHART_URL, getDepartments, tel } from '@/lib/content'
 import { Icon } from './ui'
 
-/** SH Medical's own social accounts (department accounts are separate). */
-const SOCIAL = [
+export type SocialAccount = { name: 'Facebook' | 'Instagram' | 'X'; href: string }
+
+/** SH Medical's own social accounts. */
+export const SH_SOCIAL: SocialAccount[] = [
   { name: 'Facebook', href: 'https://www.facebook.com/people/SH-Medical/61576082266115' },
   { name: 'Instagram', href: 'https://www.instagram.com/sh__medical' },
-] as const
+]
 
-function SocialIcon({ name }: { name: (typeof SOCIAL)[number]['name'] }) {
+function SocialIcon({ name }: { name: SocialAccount['name'] }) {
+  if (name === 'X') {
+    return (
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z" />
+      </svg>
+    )
+  }
   if (name === 'Facebook') {
     return (
       <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
@@ -28,11 +37,11 @@ function SocialIcon({ name }: { name: (typeof SOCIAL)[number]['name'] }) {
   )
 }
 
-export function SocialLinks({ className }: { className?: string }) {
+export function SocialLinks({ className, accounts = SH_SOCIAL, owner = 'SH Medical' }: { className?: string; accounts?: SocialAccount[]; owner?: string }) {
   return (
-    <nav aria-label="SH Medical on social media" className={className}>
-      {SOCIAL.map((s) => (
-        <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={`SH Medical on ${s.name} (opens in a new tab)`}>
+    <nav aria-label={`${owner} on social media`} className={className}>
+      {accounts.map((s) => (
+        <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={`${owner} on ${s.name} (opens in a new tab)`}>
           <SocialIcon name={s.name} />
         </a>
       ))}

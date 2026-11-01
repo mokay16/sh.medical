@@ -3322,3 +3322,25 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
     inset: 8px 4px;
   }
 }
+
+/* Department strip: same layout as the main site's, a deeper teal so it reads apart from the teal header */
+.utility--dept {
+  background: color-mix(in srgb, var(--teal) 78%, #0b1e20);
+  border-bottom: 1px solid rgb(255 255 255 / 0.1);
+}
+.utility .utility-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.utility .utility-home img {
+  opacity: 0.9;
+}
+.utility .utility-phone {
+  white-space: nowrap;
+}
+@media (max-width: 960px) {
+  .utility .utility-home {
+    display: none;
+  }
+}

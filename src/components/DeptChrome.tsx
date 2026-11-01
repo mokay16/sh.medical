@@ -4,6 +4,7 @@ import type { Department } from '@/payload-types'
 import { MYCHART_URL, deptOffices, media, sitePages, tel } from '@/lib/content'
 import type { Office } from '@/payload-types'
 import { NavLinks } from './NavLinks'
+import { SH_SOCIAL, SocialLinks, type SocialAccount } from './SiteChrome'
 import { Icon } from './ui'
 
 /** The department's logo, or a placeholder in the style of the SH department logos. */
@@ -19,29 +20,51 @@ export function DeptBadge({ d, size }: { d: Department; size: number }) {
   )
 }
 
+/** Departments' own social accounts, from their former websites. Others show SH Medical's. */
+const DEPT_SOCIAL: Record<string, SocialAccount[]> = {
+  ent: [
+    { name: 'Facebook', href: 'https://www.facebook.com/sfotomed' },
+    { name: 'Instagram', href: 'https://www.instagram.com/sf_otolaryngology' },
+  ],
+  allergy: [
+    { name: 'Facebook', href: 'https://www.facebook.com/sfallergy' },
+    { name: 'Instagram', href: 'https://www.instagram.com/sfallergy' },
+  ],
+  audiology: [
+    { name: 'Facebook', href: 'https://www.facebook.com/sfaudiology' },
+    { name: 'X', href: 'https://x.com/sfaudiology' },
+  ],
+  voice: [
+    { name: 'Facebook', href: 'https://www.facebook.com/sfvoiceandswallowing' },
+    { name: 'Instagram', href: 'https://www.instagram.com/sfvoiceandswallowing' },
+  ],
+}
+
 export function DeptHeader({ d }: { d: Department }) {
   const pages = sitePages(d)
   return (
     <>
-      <div className="dept-bar">
+      <div className="utility utility--dept">
         <div className="wrap">
-          <div className="utility-group" style={{ gap: '6px 22px' }}>
-            <Link className="home-link" href="/">
-              <Image src="/brand/sh-medical-logo.png" alt="" width={26} height={26} />
+          <div className="utility-group utility-contact">
+            <a className="utility-phone" href={tel(d.phone)}>
+              <Icon name="call" size={18} />
+              <span className="visually-hidden">Call {d.brand}: </span>
+              {d.phone}
+            </a>
+            <span className="utility-hours">Mon–Fri 8am–5pm</span>
+            <span className="utility-divider" aria-hidden="true" />
+            <SocialLinks className="utility-social" accounts={DEPT_SOCIAL[d.slug] ?? SH_SOCIAL} owner={DEPT_SOCIAL[d.slug] ? d.brand : 'SH Medical'} />
+          </div>
+          <div className="utility-group utility-links">
+            <a href={MYCHART_URL}>
+              <span className="utility-long">Patient portal (MyChart)</span>
+              <span className="utility-short">MyChart</span>
+            </a>
+            <Link className="utility-extra utility-home" href="/">
+              <Image src="/brand/sh-medical-logo-white.png" alt="" width={22} height={22} />
               Part of SH Medical
             </Link>
-            <Link className="secondary" href="/care">All care</Link>
-            <Link className="secondary" href="/specialists">Find a specialist</Link>
-            <Link className="secondary" href="/locations">All locations</Link>
-          </div>
-          <div className="utility-group" style={{ gap: '6px 22px' }}>
-            <span>
-              {d.phoneLabel}{' '}
-              <strong>
-                <a href={tel(d.phone)}>{d.phone}</a>
-              </strong>
-            </span>
-            <a className="secondary" href={MYCHART_URL}>Patient portal (MyChart)</a>
           </div>
         </div>
       </div>
