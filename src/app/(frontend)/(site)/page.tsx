@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { CtaBand } from '@/components/sections'
+import { StoryCarousel, type Story } from '@/components/StoryCarousel'
 import { Icon, Img } from '@/components/ui'
 import { MAIN_PHONE, MYCHART_URL, getDepartments, getSpecialists, media, tel } from '@/lib/content'
 
@@ -39,14 +40,25 @@ const RESOURCES: [string, string, string, string][] = [
   ['folder_open', 'Medical records', 'Release forms to send records to us, or from us.', '/patients#records'],
   ['lock', 'Patient portal', 'Messages, results and appointments in MyChart.', MYCHART_URL],
 ]
-const Stars = () => (
-  <span className="stars" aria-label="5 out of 5 stars" style={{ letterSpacing: 2 }}>
-    ★★★★★
-  </span>
-)
 
 export default async function Home() {
   const [departments, specialists] = await Promise.all([getDepartments(), getSpecialists()])
+  // Featured stories first, then every department's patient reviews (skipping repeats).
+  const featured: Story[] = [
+    { id: 'yeung', quote: 'One week later, after my splints were removed, I can breathe so well through both nostrils now.', who: 'Patient of Dr. Andrea Yeung · deviated septum surgery · May 2025' },
+    { id: 'gupta', quote: 'I love the office staff and Dr. Gupta’s care team… With her wisdom and care, my lungs are at a happy place. I have never breathed better!', who: 'Allergy & asthma patient · April 2025' },
+    { id: 'best-ent', quote: 'Best ENT in SF! Very thorough and takes great care in explaining everything.', who: 'ENT patient · February 2025' },
+  ]
+  const key = (q: string) => q.replace(/[^a-z]/gi, '').toLowerCase().slice(0, 40)
+  const seen = new Set(featured.map((f) => key(f.quote)))
+  const stories: Story[] = [...featured]
+  for (const d of departments) {
+    for (const r of d.reviews || []) {
+      if (seen.has(key(r.quote))) continue
+      seen.add(key(r.quote))
+      stories.push({ id: r.id || `${d.slug}-${stories.length}`, quote: r.quote, who: [r.attribution, d.name].filter(Boolean).join(' · ') })
+    }
+  }
   const lead = specialists.find((s) => s.slug === 'jacob-johnson-md')
   const portraits = ['terri-gallagher-au-d', 'angela-smith-pt-mspt', 'carey-philliposian-au-d', 'jeffrey-lampert-au-d', 'jenna-cullinan-au-d']
     .map((slug) => specialists.find((s) => s.slug === slug))
@@ -236,33 +248,7 @@ export default async function Home() {
 
       {/* Patient stories */}
       <section className="section" style={{ paddingBottom: 'clamp(24px, 3vw, 40px)' }}>
-        <div className="wrap stories">
-          <div className="stack" style={{ gap: 28 }}>
-            <p className="eyebrow">Patient stories</p>
-            <Icon name="format_quote" size={56} className="ms--fill quote-mark" />
-            <blockquote className="serif story-quote">One week later, after my splints were removed, I can breathe so well through both nostrils now.</blockquote>
-            <p className="muted" style={{ margin: 0, display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center' }}>
-              <Stars /> Patient of Dr. Andrea Yeung · deviated septum surgery · May 2025
-            </p>
-          </div>
-          <div className="stack" style={{ gap: 18, justifyContent: 'flex-end' }}>
-            {(
-              [
-                ['“I love the office staff and Dr. Gupta’s care team… With her wisdom and care, my lungs are at a happy place. I have never breathed better!”', 'Allergy & asthma patient · April 2025'],
-                ['“Best ENT in SF! Very thorough and takes great care in explaining everything.”', 'ENT patient · February 2025'],
-              ] as const
-            ).map(([q, who]) => (
-              <figure key={who} className="mini-review">
-                <Stars />
-                <blockquote>{q}</blockquote>
-                <figcaption>{who}</figcaption>
-              </figure>
-            ))}
-            <Link className="link-arrow" href="/about#reviews" style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
-              Read patient reviews <Icon name="arrow_forward" size={18} className="ms--sm" />
-            </Link>
-          </div>
-        </div>
+        <StoryCarousel stories={stories} allHref="/about#reviews" />
       </section>
 
       {/* Specialists */}

@@ -3213,3 +3213,112 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
     animation: none;
   }
 }
+
+/* Patient stories carousel: every review stacked in one cell, crossfading */
+.story-stack {
+  display: grid;
+}
+.story-stack > .story-slide {
+  grid-area: 1 / 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+    visibility 0s linear 0.8s;
+}
+.story-stack > .story-slide[data-active] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition:
+    opacity 0.8s ease 0.15s,
+    transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.15s,
+    visibility 0s;
+}
+.story-slide .story-quote {
+  margin: 0 0 22px;
+}
+.story-meta {
+  margin: 0;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.story-stack > .mini-review {
+  height: 100%;
+}
+.story-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.story-pause {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--teal);
+  cursor: pointer;
+}
+.story-pause:hover {
+  border-color: var(--teal);
+}
+.story-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.story-dot {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.story-dot::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border-radius: 999px;
+  background: var(--line);
+  transition: background-color 0.3s ease, inset 0.3s ease;
+}
+.story-dot:hover::before {
+  background: var(--muted-2);
+}
+.story-dot[aria-current]::before {
+  background: var(--teal);
+  inset: 7px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .story-stack > .story-slide,
+  .story-stack > .story-slide[data-active] {
+    transition: none;
+    transform: none;
+  }
+}
+@media (max-width: 680px) {
+  /* phones: just the rotating featured review */
+  .story-carousel > .stack:last-child > .story-stack {
+    display: none;
+  }
+  .story-dot {
+    width: 18px;
+    height: 24px;
+  }
+  .story-dot::before {
+    inset: 9px 5px;
+  }
+  .story-dot[aria-current]::before {
+    inset: 8px 4px;
+  }
+}
