@@ -3325,17 +3325,43 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
 
 /* Department strip: same layout as the main site's, a deeper teal so it reads apart from the teal header */
 .utility--dept {
-  background: color-mix(in srgb, var(--teal) 78%, #0b1e20);
-  border-bottom: 1px solid rgb(255 255 255 / 0.1);
+  background: var(--paper);
+  border-bottom: 1px solid var(--sand);
+  color: var(--muted);
+}
+.utility--dept .utility-phone,
+.utility--dept a {
+  color: var(--ink);
+}
+.utility--dept .utility-links a {
+  color: var(--muted);
+}
+.utility--dept .utility-links a:hover,
+.utility--dept a.utility-phone:hover {
+  color: var(--teal);
+}
+.utility--dept .utility-phone .ms {
+  color: var(--teal);
+}
+.utility--dept .utility-hours {
+  color: var(--muted);
+}
+.utility--dept .utility-divider {
+  background: var(--line);
+}
+.utility--dept .utility-social a {
+  color: var(--muted);
+}
+.utility--dept .utility-social a:hover {
+  color: var(--teal);
+  background: var(--mist);
 }
 .utility .utility-home {
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
-.utility .utility-home img {
-  opacity: 0.9;
-}
+
 .utility .utility-phone {
   white-space: nowrap;
 }

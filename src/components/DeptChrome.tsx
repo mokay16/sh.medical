@@ -62,7 +62,7 @@ export function DeptHeader({ d }: { d: Department }) {
               <span className="utility-short">MyChart</span>
             </a>
             <Link className="utility-extra utility-home" href="/">
-              <Image src="/brand/sh-medical-logo-white.png" alt="" width={22} height={22} />
+              <Image src="/brand/sh-medical-logo.png" alt="" width={22} height={22} />
               Part of SH Medical
             </Link>
           </div>
