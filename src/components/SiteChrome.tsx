@@ -2,28 +2,70 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NavLinks } from './NavLinks'
 import { StickyHeader } from './StickyHeader'
-import { MYCHART_URL, getDepartments } from '@/lib/content'
+import { MAIN_PHONE, MYCHART_URL, getDepartments, tel } from '@/lib/content'
+import { Icon } from './ui'
+
+/** SH Medical's own social accounts (department accounts are separate). */
+const SOCIAL = [
+  { name: 'Facebook', href: 'https://www.facebook.com/people/SH-Medical/61576082266115' },
+  { name: 'Instagram', href: 'https://www.instagram.com/sh__medical' },
+] as const
+
+function SocialIcon({ name }: { name: (typeof SOCIAL)[number]['name'] }) {
+  if (name === 'Facebook') {
+    return (
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3V14h2.8v8z" />
+      </svg>
+    )
+  }
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" strokeWidth="2">
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
+
+export function SocialLinks({ className }: { className?: string }) {
+  return (
+    <nav aria-label="SH Medical on social media" className={className}>
+      {SOCIAL.map((s) => (
+        <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={`SH Medical on ${s.name} (opens in a new tab)`}>
+          <SocialIcon name={s.name} />
+        </a>
+      ))}
+    </nav>
+  )
+}
 
 export function SiteHeader() {
   return (
     <>
       <div className="utility">
         <div className="wrap">
-          <div className="utility-group">
-            <span>
-              ENT <a href="tel:4153625443">(415) 362-5443</a>
-            </span>
-            <span>
-              Allergy <a href="tel:4153622614">(415) 362-2614</a>
-            </span>
-            <span>
-              Audiology <a href="tel:4153622901">(415) 362-2901</a>
-            </span>
+          <div className="utility-group utility-contact">
+            <a className="utility-phone" href={tel(MAIN_PHONE)}>
+              <Icon name="call" size={18} />
+              <span className="visually-hidden">Call SH Medical: </span>
+              {MAIN_PHONE}
+            </a>
+            <span className="utility-hours">Mon–Fri 8am–5pm</span>
+            <span className="utility-divider" aria-hidden="true" />
+            <SocialLinks className="utility-social" />
           </div>
           <div className="utility-group utility-links">
-            <a href={MYCHART_URL}>Patient portal (MyChart)</a>
-            <Link href="/patients#records">Medical records</Link>
-            <Link href="/patients#insurance">Insurance</Link>
+            <a href={MYCHART_URL}>
+              <span className="utility-long">Patient portal (MyChart)</span>
+              <span className="utility-short">MyChart</span>
+            </a>
+            <Link className="utility-extra" href="/patients#records">
+              Medical records
+            </Link>
+            <Link className="utility-extra" href="/patients#insurance">
+              Insurance
+            </Link>
           </div>
         </div>
       </div>
@@ -64,6 +106,7 @@ export async function SiteFooter() {
             <p className="muted" style={{ color: 'var(--on-dark)', margin: 0, fontSize: 15 }}>
               Comprehensive care for the senses since 1940.
             </p>
+            <SocialLinks className="footer-social" />
           </div>
           <div className="footer-cols">
             <div className="footer-col">
