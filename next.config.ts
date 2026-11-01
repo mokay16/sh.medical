@@ -8,9 +8,11 @@ const dirname = path.dirname(__filename)
 
 const nextConfig: NextConfig = {
   images: {
-    // Serve every photo as its original file (full-quality JPEG), never re-encoded to WebP.
-    unoptimized: true,
-    qualities: [75, 90],
+    // Each device gets a copy resized for its screen by our /img route, in the original format
+    // (JPEG stays JPEG at quality 90, never WebP): light to load, same look.
+    loader: 'custom',
+    loaderFile: './src/lib/image-loader.ts',
+    qualities: [90],
     localPatterns: [
       {
         pathname: '/api/media/file/**',
