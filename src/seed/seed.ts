@@ -44,6 +44,9 @@ for (const d of content.departments) {
   if (d.home?.photo) alts.set(d.home.photo, d.home.photoAlt)
   if (d.feature?.image) alts.set(d.feature.image, d.feature.img_alt || d.feature.heading)
   for (const c of d.conditions?.categories || []) if (c.image) alts.set(c.image, c.imageAlt || c.title)
+  for (const g of d.gallery?.photos || []) alts.set(g.image, g.alt || g.caption)
+  if (d.conditions?.image) alts.set(d.conditions.image, d.conditions.imageAlt)
+  if (d.treatments?.image) alts.set(d.treatments.image, d.treatments.imageAlt)
 }
 for (const s of content.specialists) if (s.photo) alts.set(s.photo, s.name)
 for (const o of content.offices) if (o.photo) alts.set(o.photo, o.photoAlt)
@@ -121,12 +124,17 @@ for (const d of content.departments) {
         glance: d.overview.glance,
         note: d.overview.note,
       },
+      gallery: d.gallery
+        ? { eyebrow: d.gallery.eyebrow, heading: d.gallery.heading, photos: d.gallery.photos.map((g: Record<string, string>) => ({ image: media(g.image), caption: g.caption, position: g.position })) }
+        : undefined,
       reviews: d.reviews,
       conditions: {
         navLabel: d.conditions.navLabel,
         eyebrow: d.conditions.eyebrow,
         heading: d.conditions.heading,
         lede: d.conditions.lede,
+        image: media(d.conditions.image),
+        imagePosition: d.conditions.imagePosition,
         items: pairs(d.conditions.items),
         categories: (d.conditions.categories || []).map((c: Record<string, any>) => ({
           title: c.title,
@@ -145,7 +153,7 @@ for (const d of content.departments) {
         })),
       },
       treatments: t
-        ? { enabled: true, onConditionsPage: t.onConditionsPage ?? false, navLabel: t.navLabel, eyebrow: t.eyebrow, heading: t.heading, lede: t.lede, items: pairs(t.items) }
+        ? { enabled: true, onConditionsPage: t.onConditionsPage ?? false, navLabel: t.navLabel, eyebrow: t.eyebrow, heading: t.heading, lede: t.lede, image: media(t.image), imagePosition: t.imagePosition, items: pairs(t.items) }
         : { enabled: false },
       feature: f
         ? {
@@ -190,7 +198,7 @@ for (const r of content.patientReviews || []) {
   if (!dept) continue
   await payload.create({
     collection: 'reviews',
-    data: { department: dept.id, rating: r.rating, name: r.name, location: r.location, quote: r.quote, date: new Date(r.date).toISOString(), status: 'published' },
+    data: { department: dept.id, rating: r.rating, name: r.name, location: r.location, quote: r.quote, date: r.date ? new Date(r.date).toISOString() : null, status: 'published' },
   })
 }
 

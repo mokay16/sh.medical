@@ -39,7 +39,7 @@ export const Reviews: CollectionConfig = {
         { name: 'location', type: 'text', admin: { description: 'e.g. San Francisco, CA' } },
       ],
     },
-    { name: 'date', type: 'date', required: true, defaultValue: () => new Date().toISOString(), admin: { position: 'sidebar' } },
+    { name: 'date', type: 'date', defaultValue: () => new Date().toISOString(), admin: { position: 'sidebar', description: 'Leave empty if the date is unknown' } },
     { name: 'email', type: 'email', admin: { description: 'From the form, for follow-up only. Never shown on the site.' } },
   ],
 }

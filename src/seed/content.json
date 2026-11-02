@@ -401,20 +401,7 @@
      "farshid-taghizadeh-md"
     ]
    },
-   "reviews": [
-    {
-     "quote": "I was able to get an appointment within 2 days. Dr. Kangelaris was super friendly, heard me out, and explained my diagnosis with a lot of clarity.",
-     "attribution": "May 2025"
-    },
-    {
-     "quote": "Dr. Yeung is the best! She goes above and beyond when it comes to taking care of me. She is very knowledgeable about everything!",
-     "attribution": "May 2025"
-    },
-    {
-     "quote": "Dr. Johnson is delightful. He’s thorough, kind, polite and professional, and skilled.",
-     "attribution": "April 2025"
-    }
-   ],
+   "reviews": [],
    "offices": [
     "union",
     "pac",
@@ -506,7 +493,8 @@
    "faqOpen": 2,
    "ctaHeading": "Breathe, hear and speak more easily.",
    "tag": "ENT",
-   "fax": "(415) 362-5444"
+   "fax": "(415) 362-5444",
+   "reviewsPage": true
   },
   {
    "slug": "audiology",
@@ -834,7 +822,8 @@
    "faqOpen": 2,
    "ctaHeading": "Ready to hear more clearly?",
    "tag": "Audiology",
-   "fax": "(415) 839-6677"
+   "fax": "(415) 839-6677",
+   "reviewsPage": true
   },
   {
    "slug": "allergy",
@@ -1054,20 +1043,7 @@
      "bernard-a-feigenbaum-md"
     ]
    },
-   "reviews": [
-    {
-     "quote": "With her wisdom and care, my lungs are at a happy place. I have never breathed better!",
-     "attribution": "Patient of Dr. Gupta · April 2025"
-    },
-    {
-     "quote": "Dr. Main thoroughly reviewed my recent experiences with my allergy treatment. I felt that I was given all the time I needed.",
-     "attribution": "April 2025"
-    },
-    {
-     "quote": "Arianna and Rose are always prepared and upbeat! They make the allergy shot process about as easy as it could be.",
-     "attribution": "Shot clinic · February 2025"
-    }
-   ],
+   "reviews": [],
    "offices": [
     "union",
     "pac",
@@ -1153,7 +1129,8 @@
    "faqOpen": 2,
    "ctaHeading": "Ready to find your triggers?",
    "tag": "Allergy",
-   "fax": "(415) 362-2615"
+   "fax": "(415) 362-2615",
+   "reviewsPage": true
   },
   {
    "slug": "sleep",
@@ -1353,20 +1330,7 @@
      "monica-lee-md"
     ]
    },
-   "reviews": [
-    {
-     "quote": "They offered me a wide array of options to help with my snoring and apnea. Since I’m not a fan of surgery, I opted to go with a mouthpiece.",
-     "attribution": "San Francisco"
-    },
-    {
-     "quote": "A home sleep study confirmed what I already knew: I’m sleeping better and the apnea is under control.",
-     "attribution": "San Francisco"
-    },
-    {
-     "quote": "Very professional and friendly. Had me in and out in 15 minutes. Highly recommend!",
-     "attribution": "San Francisco"
-    }
-   ],
+   "reviews": [],
    "offices": [
     "union",
     "pac",
@@ -1428,7 +1392,8 @@
    "faqOpen": 2,
    "ctaHeading": "Ready for a better night’s sleep?",
    "tag": "Sleep",
-   "fax": "(415) 362-5444"
+   "fax": "(415) 362-5444",
+   "reviewsPage": true
   },
   {
    "slug": "voice",
@@ -2025,7 +1990,8 @@
    ],
    "faqOpen": 2,
    "ctaHeading": "Ready to feel steady again?",
-   "tag": "Balance & PT"
+   "tag": "Balance & PT",
+   "reviewsPage": true
   },
   {
    "slug": "facial-plastics",
@@ -2146,7 +2112,10 @@
       "Thyroid & Parathyroid Surgery",
       "Surgical management of thyroid nodules, cancer, and parathyroid disorders. Salivary gland tumors and benign and malignant conditions of the head and neck. Oncologic · Dr. Kazi."
      ]
-    ]
+    ],
+    "image": "fp-surgery-or",
+    "imageAlt": "Surgeons in scrubs operating under bright surgical lights",
+    "imagePosition": "center 45%"
    },
    "treatments": {
     "navLabel": "Aesthetic services",
@@ -2186,7 +2155,10 @@
       "Skin Care Regimens",
       "Medical-grade SkinMedica® protocols for rejuvenation."
      ]
-    ]
+    ],
+    "image": "fp-aesthetic",
+    "imageAlt": "A gloved practitioner gives a precise injectable treatment near a woman's brow",
+    "imagePosition": "center 30%"
    },
    "feature": {
     "tab": "Results",
@@ -2269,7 +2241,38 @@
    "faq": [],
    "faqOpen": 2,
    "ctaHeading": "Schedule your surgical consultation",
-   "tag": "Facial plastics"
+   "tag": "Facial plastics",
+   "reviewsPage": true,
+   "gallery": {
+    "eyebrow": "Inside SH Facial Plastics",
+    "heading": "Precise, natural-looking care",
+    "photos": [
+     {
+      "image": "fp-contour",
+      "alt": "A woman's face with outlines tracing the contours of the nose, cheek and jaw",
+      "caption": "Facial contouring",
+      "position": "center 30%"
+     },
+     {
+      "image": "fp-consult",
+      "alt": "A doctor in a white coat talks through options with a patient",
+      "caption": "Personal consultations",
+      "position": "center 30%"
+     },
+     {
+      "image": "fp-treatment",
+      "alt": "A practitioner in black gloves treats a reclining patient's jawline",
+      "caption": "Non-surgical treatments",
+      "position": "center"
+     },
+     {
+      "image": "fp-skincare",
+      "alt": "A woman applies cream to her cheek",
+      "caption": "Medical-grade skin care",
+      "position": "center 35%"
+     }
+    ]
+   }
   },
   {
    "slug": "dermatology",
@@ -2421,7 +2424,8 @@
    "faq": [],
    "faqOpen": 2,
    "ctaHeading": "Care for the skin you’re in.",
-   "tag": "Dermatology"
+   "tag": "Dermatology",
+   "reviewsPage": true
   },
   {
    "slug": "surgery",
@@ -2746,7 +2750,8 @@
    "faqOpen": 3,
    "ctaHeading": "Talk to a surgeon about your options.",
    "tag": "Surgery",
-   "fax": "(415) 808-5444"
+   "fax": "(415) 808-5444",
+   "reviewsPage": true
   },
   {
    "slug": "wellness",
@@ -2888,7 +2893,8 @@
    "faq": [],
    "faqOpen": 2,
    "ctaHeading": "Ready to make lasting changes?",
-   "tag": "Wellness"
+   "tag": "Wellness",
+   "reviewsPage": true
   }
  ],
  "specialists": [
@@ -4266,6 +4272,69 @@
    "name": "Brian",
    "location": "Walnut Creek, CA",
    "quote": "I truly feel that we are ‘partners’ in this battle against RRP [recurrent respiratory papillomatosis], and I simply can’t imagine having anyone other than you in the foxhole next to me. I have been impressed not only by your competence, but also by your caring and compassion. And while I can’t see you operate, from everything I’ve been able to piece together, I have no doubt you are a brilliantly skilled surgeon. You project a calm and quiet competence, and that competence gives me confidence. I sincerely appreciate all you have done for me and I feel blessed to have found my way into your care."
+  },
+  {
+   "department": "ent",
+   "rating": 5,
+   "name": "ENT patient",
+   "quote": "I was able to get an appointment within 2 days. Dr. Kangelaris was super friendly, heard me out, and explained my diagnosis with a lot of clarity.",
+   "date": "2025-05-01"
+  },
+  {
+   "department": "ent",
+   "rating": 5,
+   "name": "ENT patient",
+   "quote": "Dr. Yeung is the best! She goes above and beyond when it comes to taking care of me. She is very knowledgeable about everything!",
+   "date": "2025-05-01"
+  },
+  {
+   "department": "ent",
+   "rating": 5,
+   "name": "ENT patient",
+   "quote": "Dr. Johnson is delightful. He’s thorough, kind, polite and professional, and skilled.",
+   "date": "2025-04-01"
+  },
+  {
+   "department": "allergy",
+   "rating": 5,
+   "name": "Patient of Dr. Gupta",
+   "quote": "With her wisdom and care, my lungs are at a happy place. I have never breathed better!",
+   "date": "2025-04-01"
+  },
+  {
+   "department": "allergy",
+   "rating": 5,
+   "name": "Allergy patient",
+   "quote": "Dr. Main thoroughly reviewed my recent experiences with my allergy treatment. I felt that I was given all the time I needed.",
+   "date": "2025-04-01"
+  },
+  {
+   "department": "allergy",
+   "rating": 5,
+   "name": "Allergy patient · Shot clinic",
+   "quote": "Arianna and Rose are always prepared and upbeat! They make the allergy shot process about as easy as it could be.",
+   "date": "2025-02-01"
+  },
+  {
+   "department": "sleep",
+   "rating": 5,
+   "name": "Sleep patient",
+   "quote": "They offered me a wide array of options to help with my snoring and apnea. Since I’m not a fan of surgery, I opted to go with a mouthpiece.",
+   "location": "San Francisco, CA"
+  },
+  {
+   "department": "sleep",
+   "rating": 5,
+   "name": "Sleep patient",
+   "quote": "A home sleep study confirmed what I already knew: I’m sleeping better and the apnea is under control.",
+   "location": "San Francisco, CA"
+  },
+  {
+   "department": "sleep",
+   "rating": 5,
+   "name": "Sleep patient",
+   "quote": "Very professional and friendly. Had me in and out in 15 minutes. Highly recommend!",
+   "location": "San Francisco, CA"
   }
  ]
 }

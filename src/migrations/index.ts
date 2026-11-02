@@ -6,6 +6,8 @@ import * as migration_20261026_120323_reviews from './20261026_120323_reviews';
 import * as migration_20261026_121607_department_office_street from './20261026_121607_department_office_street';
 import * as migration_20261026_125247_condition_categories from './20261026_125247_condition_categories';
 import * as migration_20261026_222539_department_fax from './20261026_222539_department_fax';
+import * as migration_20261101_224759_review_date_optional from './20261101_224759_review_date_optional';
+import * as migration_20261101_230407_department_gallery_banners from './20261101_230407_department_gallery_banners';
 
 export const migrations = [
   {
@@ -46,6 +48,16 @@ export const migrations = [
   {
     up: migration_20261026_222539_department_fax.up,
     down: migration_20261026_222539_department_fax.down,
-    name: '20261026_222539_department_fax'
+    name: '20261026_222539_department_fax',
+  },
+  {
+    up: migration_20261101_224759_review_date_optional.up,
+    down: migration_20261101_224759_review_date_optional.down,
+    name: '20261101_224759_review_date_optional',
+  },
+  {
+    up: migration_20261101_230407_department_gallery_banners.up,
+    down: migration_20261101_230407_department_gallery_banners.down,
+    name: '20261101_230407_department_gallery_banners'
   },
 ];

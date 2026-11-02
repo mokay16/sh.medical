@@ -121,6 +121,25 @@ export const Departments: CollectionConfig = {
               ],
             },
             {
+              name: 'gallery',
+              type: 'group',
+              admin: { description: 'Optional photo mosaic on the overview (the first photo is shown largest)' },
+              fields: [
+                { name: 'eyebrow', type: 'text' },
+                { name: 'heading', type: 'text' },
+                {
+                  name: 'photos',
+                  type: 'array',
+                  maxRows: 5,
+                  fields: [
+                    { name: 'image', type: 'upload', relationTo: 'media', required: true },
+                    { name: 'caption', type: 'text' },
+                    { name: 'position', type: 'text', defaultValue: 'center' },
+                  ],
+                },
+              ],
+            },
+            {
               name: 'reviews',
               type: 'array',
               fields: [
@@ -141,6 +160,8 @@ export const Departments: CollectionConfig = {
                 { name: 'eyebrow', type: 'text' },
                 { name: 'heading', type: 'text', required: true },
                 { name: 'lede', type: 'textarea' },
+                { name: 'image', type: 'upload', relationTo: 'media', admin: { description: 'Optional wide photo shown under the page heading' } },
+                { name: 'imagePosition', type: 'text', defaultValue: 'center', admin: { description: 'CSS object-position, e.g. center 30%' } },
                 titleDescription('items', 'Condition'),
                 {
                   name: 'categories',
@@ -205,6 +226,8 @@ export const Departments: CollectionConfig = {
                 { name: 'eyebrow', type: 'text' },
                 { name: 'heading', type: 'text' },
                 { name: 'lede', type: 'textarea' },
+                { name: 'image', type: 'upload', relationTo: 'media', admin: { description: 'Optional wide photo shown under the page heading' } },
+                { name: 'imagePosition', type: 'text', defaultValue: 'center', admin: { description: 'CSS object-position, e.g. center 30%' } },
                 titleDescription('items', 'Treatment'),
               ],
             },

@@ -43,7 +43,7 @@ html {
 :root:has(.dept-header) {
   --header-h: 108px;
 }
-@media (max-width: 1180px) {
+@media (max-width: 1439px) {
   :root:has(.dept-header) {
     --header-h: 160px;
   }
@@ -56,7 +56,7 @@ html {
 :root:has(.dept-header--voice) {
   --header-h: 128px;
 }
-@media (max-width: 1180px) {
+@media (max-width: 1439px) {
   :root:has(.dept-header--voice) {
     --header-h: 184px;
   }
@@ -626,7 +626,7 @@ a:hover {
 .dept-nav {
   display: flex;
   align-self: stretch;
-  gap: 26px;
+  gap: 22px;
 }
 .dept-nav a {
   display: inline-flex;
@@ -636,6 +636,14 @@ a:hover {
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
+}
+@media (min-width: 1440px) {
+  .dept-nav {
+    gap: 18px;
+  }
+  .dept-nav a {
+    font-size: 15px;
+  }
 }
 .dept-nav a:hover {
   color: #fff;
@@ -647,7 +655,7 @@ a:hover {
 .dept-header .btn {
   min-height: 48px;
 }
-@media (max-width: 1180px) {
+@media (max-width: 1439px) {
   .dept-header .wrap {
     flex-wrap: wrap;
     padding-top: 16px;
@@ -924,7 +932,7 @@ a.card:hover {
 /* Overview */
 .overview {
   display: grid;
-  grid-template-columns: minmax(0, 700px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr);
   gap: clamp(40px, 6.7vw, 96px);
   align-items: start;
 }
@@ -3368,5 +3376,94 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
 @media (max-width: 960px) {
   .utility .utility-home {
     display: none;
+  }
+}
+
+/* Department overview: invitation to leave the first review */
+.first-review {
+  display: flex;
+  align-items: center;
+  gap: 20px 32px;
+  flex-wrap: wrap;
+  padding: 28px 32px;
+  border: 1px solid var(--sand);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.first-review > .stack {
+  flex: 1 1 280px;
+}
+
+/* Wide banner photo under a page heading */
+.page-banner {
+  padding-top: clamp(32px, 4vw, 56px);
+}
+.page-banner-img {
+  width: 100%;
+  height: clamp(220px, 32vw, 440px);
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.page-banner + .section {
+  padding-top: clamp(40px, 5vw, 64px) !important;
+}
+
+/* Overview photo mosaic: the first photo large, the rest beside it */
+.mosaic {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-rows: repeat(2, clamp(180px, 20vw, 280px));
+}
+.mosaic-item {
+  position: relative;
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--sand);
+}
+.mosaic-item:first-child {
+  grid-row: span 2;
+}
+.mosaic--4 .mosaic-item:nth-child(4) {
+  grid-column: span 2;
+}
+.mosaic-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.mosaic-item:hover img {
+  transform: scale(1.04);
+}
+.mosaic-item figcaption {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgb(251 248 243 / 0.92);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .mosaic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 200px;
+  }
+  .mosaic-item:first-child {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .mosaic--4 .mosaic-item:nth-child(4) {
+    grid-column: span 2;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mosaic-item img {
+    transition: none;
   }
 }

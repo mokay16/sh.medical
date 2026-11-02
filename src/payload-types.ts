@@ -219,6 +219,21 @@ export interface Department {
     glance?: string[] | null;
     note?: string | null;
   };
+  /**
+   * Optional photo mosaic on the overview (the first photo is shown largest)
+   */
+  gallery?: {
+    eyebrow?: string | null;
+    heading?: string | null;
+    photos?:
+      | {
+          image: number | Media;
+          caption?: string | null;
+          position?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+  };
   reviews?:
     | {
         quote: string;
@@ -234,6 +249,14 @@ export interface Department {
     eyebrow?: string | null;
     heading: string;
     lede?: string | null;
+    /**
+     * Optional wide photo shown under the page heading
+     */
+    image?: (number | null) | Media;
+    /**
+     * CSS object-position, e.g. center 30%
+     */
+    imagePosition?: string | null;
     items?:
       | {
           title: string;
@@ -306,6 +329,14 @@ export interface Department {
     eyebrow?: string | null;
     heading?: string | null;
     lede?: string | null;
+    /**
+     * Optional wide photo shown under the page heading
+     */
+    image?: (number | null) | Media;
+    /**
+     * CSS object-position, e.g. center 30%
+     */
+    imagePosition?: string | null;
     items?:
       | {
           title: string;
@@ -525,7 +556,10 @@ export interface Review {
    * e.g. San Francisco, CA
    */
   location?: string | null;
-  date: string;
+  /**
+   * Leave empty if the date is unknown
+   */
+  date?: string | null;
   /**
    * From the form, for follow-up only. Never shown on the site.
    */
@@ -704,6 +738,20 @@ export interface DepartmentsSelect<T extends boolean = true> {
         glance?: T;
         note?: T;
       };
+  gallery?:
+    | T
+    | {
+        eyebrow?: T;
+        heading?: T;
+        photos?:
+          | T
+          | {
+              image?: T;
+              caption?: T;
+              position?: T;
+              id?: T;
+            };
+      };
   reviews?:
     | T
     | {
@@ -718,6 +766,8 @@ export interface DepartmentsSelect<T extends boolean = true> {
         eyebrow?: T;
         heading?: T;
         lede?: T;
+        image?: T;
+        imagePosition?: T;
         items?:
           | T
           | {
@@ -768,6 +818,8 @@ export interface DepartmentsSelect<T extends boolean = true> {
         eyebrow?: T;
         heading?: T;
         lede?: T;
+        image?: T;
+        imagePosition?: T;
         items?:
           | T
           | {

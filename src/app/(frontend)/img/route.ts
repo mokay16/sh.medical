@@ -20,7 +20,7 @@ export async function GET(req: Request) {
     return new Response('Bad image request', { status: 400 })
   }
 
-  const source = await fetch(new URL(src, url.origin), { cache: 'force-cache' })
+  const source = await fetch(new URL(src, url.origin), { cache: 'no-store' })
   if (!source.ok) return new Response('Image not found', { status: 404 })
   const input = Buffer.from(await source.arrayBuffer())
 

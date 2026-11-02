@@ -7,6 +7,7 @@ import {
   Faq,
   FeatureBody,
   OfficeGrid,
+  PageBanner,
   PageHeading,
   Resources,
   ReviewList,
@@ -56,6 +57,7 @@ export default async function DepartmentSection({ params }: Props) {
       return (
         <>
           <PageHeading d={d} label={page.label} eyebrow={d.conditions.eyebrow || page.label} title={d.conditions.heading} lede={d.conditions.lede} />
+          <PageBanner image={d.conditions.image} position={d.conditions.imagePosition} />
           <ConditionsBody d={d} />
           {mergedTreatments(d) ? (
             <div id="treatment" style={{ scrollMarginTop: 'var(--header-h)' }}>
@@ -78,6 +80,7 @@ export default async function DepartmentSection({ params }: Props) {
       return (
         <>
           <PageHeading d={d} label={page.label} eyebrow={d.treatments?.eyebrow || page.label} title={d.treatments?.heading || page.label} lede={d.treatments?.lede} />
+          <PageBanner image={d.treatments?.image} position={d.treatments?.imagePosition} />
           <TreatmentsBody d={d} />
           <DeptCta d={d} />
         </>

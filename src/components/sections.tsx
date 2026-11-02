@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import type { Department, Office, Review, Specialist } from '@/payload-types'
+import type { Department, Media, Office, Review, Specialist } from '@/payload-types'
 import { docs, media, sitePages, tel } from '@/lib/content'
 import { Inline, RichText } from '@/lib/format'
 import { DeptBadge } from './DeptChrome'
@@ -211,7 +211,7 @@ export function Reviews({ d }: D) {
   )
 }
 
-const reviewDate = (iso: string) => new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+const reviewDate = (iso?: string | null) => (iso ? new Date(iso).toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' }) : '')
 const reviewWho = (r: Review) => (r.location ? `${r.name} (${r.location})` : r.name)
 
 function ReviewStars({ rating }: { rating: number }) {
@@ -225,9 +225,35 @@ function ReviewStars({ rating }: { rating: number }) {
 }
 
 /** The home page's "Patient stories" layout: one featured review beside smaller ones. */
+/** Shown on a department's overview until it has published reviews. */
+export function FirstReviewPrompt({ d, href }: D & { href: string }) {
+  return (
+    <section className="section" style={{ paddingTop: 0 }}>
+      <div className="wrap">
+        <div className="first-review">
+          <span className="stars" aria-hidden="true" style={{ fontSize: 22, letterSpacing: 3 }}>
+            ★★★★★
+          </span>
+          <div className="stack" style={{ gap: 6 }}>
+            <p className="serif" style={{ margin: 0, fontSize: 26, lineHeight: 1.15 }}>
+              Been a patient of {d.shortBrand}?
+            </p>
+            <p className="muted" style={{ margin: 0 }}>
+              Share your experience and help others find the right care.
+            </p>
+          </div>
+          <Link className="btn btn--outline" href={`${href}#leave-a-review`}>
+            Leave a review
+          </Link>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export function PatientStories({ d, reviews, allHref }: D & { reviews: Review[]; allHref?: string }) {
   if (!reviews.length) return null
-  const stories = reviews.map((r) => ({ id: r.id, quote: r.quote, rating: r.rating, who: `${reviewWho(r)} · ${reviewDate(r.date)}` }))
+  const stories = reviews.map((r) => ({ id: r.id, quote: r.quote, rating: r.rating, who: [reviewWho(r), reviewDate(r.date)].filter(Boolean).join(' · ') }))
   return (
     <section className="section">
       <StoryCarousel stories={stories} allHref={allHref} allLabel={`Read all ${reviews.length} reviews of ${d.shortBrand}`} />
@@ -305,6 +331,45 @@ function ConditionCategories({ d }: D) {
         </section>
       ))}
     </>
+  )
+}
+
+/** A wide photo under a page heading. */
+export function PageBanner({ image, position }: { image?: number | Media | null; position?: string | null }) {
+  const m = media(image)
+  if (!m?.url) return null
+  return (
+    <section className="page-banner">
+      <div className="wrap">
+        <Img media={m} sizes="(max-width: 1248px) 100vw, 1248px" position={position} className="page-banner-img" />
+      </div>
+    </section>
+  )
+}
+
+/** Photo mosaic on a department overview. */
+export function Gallery({ d }: D) {
+  const photos = (d.gallery?.photos || []).filter((p) => media(p.image)?.url)
+  if (!photos.length) return null
+  return (
+    <section className="section" style={{ paddingTop: 0 }}>
+      <div className="wrap stack" style={{ gap: 32 }}>
+        {d.gallery?.heading ? (
+          <div className="stack" style={{ gap: 10, maxWidth: 760 }}>
+            {d.gallery.eyebrow ? <p className="eyebrow">{d.gallery.eyebrow}</p> : null}
+            <h2 className="h2">{d.gallery.heading}</h2>
+          </div>
+        ) : null}
+        <div className={`mosaic mosaic--${Math.min(photos.length, 5)}`}>
+          {photos.map((p, i) => (
+            <figure key={p.id} className="mosaic-item">
+              <Img media={media(p.image)} sizes={i === 0 ? '(max-width: 900px) 100vw, 620px' : '(max-width: 900px) 50vw, 320px'} position={p.position} />
+              {p.caption ? <figcaption>{p.caption}</figcaption> : null}
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
