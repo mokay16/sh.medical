@@ -8,6 +8,8 @@ import * as migration_20261026_125247_condition_categories from './20261026_1252
 import * as migration_20261026_222539_department_fax from './20261026_222539_department_fax';
 import * as migration_20261101_224759_review_date_optional from './20261101_224759_review_date_optional';
 import * as migration_20261101_230407_department_gallery_banners from './20261101_230407_department_gallery_banners';
+import * as migration_20261103_020145_department_photo_optional from './20261103_020145_department_photo_optional';
+import * as migration_20261103_024101_fp_results_team_treatment_images from './20261103_024101_fp_results_team_treatment_images';
 
 export const migrations = [
   {
@@ -58,6 +60,16 @@ export const migrations = [
   {
     up: migration_20261101_230407_department_gallery_banners.up,
     down: migration_20261101_230407_department_gallery_banners.down,
-    name: '20261101_230407_department_gallery_banners'
+    name: '20261101_230407_department_gallery_banners',
+  },
+  {
+    up: migration_20261103_020145_department_photo_optional.up,
+    down: migration_20261103_020145_department_photo_optional.down,
+    name: '20261103_020145_department_photo_optional',
+  },
+  {
+    up: migration_20261103_024101_fp_results_team_treatment_images.up,
+    down: migration_20261103_024101_fp_results_team_treatment_images.down,
+    name: '20261103_024101_fp_results_team_treatment_images'
   },
 ];

@@ -5,6 +5,15 @@ import { useMemo, useRef, useState } from 'react'
 
 type Option = { id: string; label: string; hint: string; phone?: string }
 
+/** Hair and scalp concerns asked on Facial Plastics consultations (recommended by Dr. Challapalli and Hair Smart). */
+const HAIR_CONCERNS = [
+  'Thinning / hair loss / bald spots',
+  'Excess shedding',
+  'Breakage, dryness, or damage',
+  'Scalp issues (dandruff, itching, inflammation)',
+  'Hair loss after illness, medication, or treatment (chemo, thyroid, COVID, GLP-1, etc.)',
+]
+
 /**
  * Four-step appointment request. Nothing is sent yet: patient details must only
  * go to a HIPAA-compliant form service covered by a BAA, which hasn't been chosen.
@@ -48,6 +57,10 @@ export function BookingForm({
   const [office, setOffice] = useState('any')
   const [patient, setPatient] = useState<'new' | 'returning'>('new')
   const [insurance, setInsurance] = useState('')
+  const [concern, setConcern] = useState('')
+  const [hair, setHair] = useState<'' | 'yes' | 'no'>('')
+  const [hairIssues, setHairIssues] = useState<string[]>([])
+  const toggleHair = (h: string) => setHairIssues((xs) => (xs.includes(h) ? xs.filter((x) => x !== h) : [...xs, h]))
   const [values, setValues] = useState<Record<FieldId, string>>({ first: '', last: '', phone: '', email: '', dob: '' })
   const [errors, setErrors] = useState<Partial<Record<FieldId, string>>>({})
   const headingRef = useRef<HTMLHeadingElement>(null)
@@ -153,6 +166,51 @@ export function BookingForm({
               ))}
             </div>
           </fieldset>
+        ) : null}
+
+        {step === 1 && care === 'facial-plastics' ? (
+          <fieldset className="intake">
+            <legend>Do you have any hair or scalp concerns?</legend>
+            <div className="btn-row" style={{ gap: 12 }}>
+              {(
+                [
+                  ['yes', 'Yes'],
+                  ['no', 'No'],
+                ] as const
+              ).map(([id, label]) => (
+                <button key={id} type="button" className="tile tile--small" aria-pressed={hair === id} onClick={() => setHair(id)}>
+                  <b>{label}</b>
+                </button>
+              ))}
+            </div>
+            {hair === 'yes' ? (
+              <div className="stack" style={{ gap: 10 }}>
+                <p className="muted" style={{ margin: 0 }}>
+                  <i>Check all that apply:</i>
+                </p>
+                {HAIR_CONCERNS.map((h) => (
+                  <label key={h} className="check">
+                    <input type="checkbox" checked={hairIssues.includes(h)} onChange={() => toggleHair(h)} />
+                    <span>{h}</span>
+                  </label>
+                ))}
+              </div>
+            ) : null}
+          </fieldset>
+        ) : null}
+
+        {step === 1 ? (
+          <div className="field intake-concern">
+            <label htmlFor="bk-concern">Tell us about your concern (optional)</label>
+            <textarea
+              id="bk-concern"
+              rows={4}
+              maxLength={1000}
+              value={concern}
+              onChange={(e) => setConcern(e.target.value)}
+              placeholder="What would you like help with? Please don’t include sensitive medical details."
+            />
+          </div>
         ) : null}
 
         {step === 2 ? (

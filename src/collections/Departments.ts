@@ -3,13 +3,19 @@ import type { CollectionConfig, Field } from 'payload'
 /** Text fields accept *italic* and **bold** markers, rendered on the site. */
 const formattingHint = 'Use *asterisks* for italic and **double asterisks** for bold.'
 
-const titleDescription = (name: string, label?: string): Field => ({
+const titleDescription = (name: string, label?: string, withImage = false): Field => ({
   name,
   type: 'array',
   labels: label ? { singular: label, plural: `${label}s` } : undefined,
   fields: [
     { name: 'title', type: 'text', required: true },
     { name: 'description', type: 'textarea', required: true },
+    ...(withImage
+      ? ([
+          { name: 'image', type: 'upload', relationTo: 'media', admin: { description: 'Optional photo shown on the card' } },
+          { name: 'imagePosition', type: 'text', defaultValue: 'center' },
+        ] as Field[])
+      : []),
   ],
 })
 
@@ -63,7 +69,7 @@ export const Departments: CollectionConfig = {
             { name: 'eyebrow', type: 'text', required: true },
             { name: 'headline', type: 'text', required: true, admin: { description: formattingHint } },
             { name: 'intro', type: 'textarea', required: true },
-            { name: 'photo', type: 'upload', relationTo: 'media', required: true },
+            { name: 'photo', type: 'upload', relationTo: 'media', admin: { description: 'Hero photo (recommended)' } },
             { name: 'photoPosition', type: 'text', defaultValue: 'center', admin: { description: 'CSS object-position, e.g. center 30%' } },
             {
               name: 'originalImages',
@@ -228,7 +234,7 @@ export const Departments: CollectionConfig = {
                 { name: 'lede', type: 'textarea' },
                 { name: 'image', type: 'upload', relationTo: 'media', admin: { description: 'Optional wide photo shown under the page heading' } },
                 { name: 'imagePosition', type: 'text', defaultValue: 'center', admin: { description: 'CSS object-position, e.g. center 30%' } },
-                titleDescription('items', 'Treatment'),
+                titleDescription('items', 'Treatment', true),
               ],
             },
           ],
@@ -310,6 +316,32 @@ export const Departments: CollectionConfig = {
               name: 'officeStreet',
               type: 'text',
               admin: { description: 'Street line for this department’s first office, when it differs from the shared office address (e.g. 450 Sutter Street, Suite 1404)' },
+            },
+            {
+              name: 'teamOnOverview',
+              type: 'checkbox',
+              defaultValue: false,
+              admin: { description: 'Show the team (photos, names and their offices) on the overview page' },
+            },
+            {
+              name: 'results',
+              type: 'group',
+              admin: { description: 'Before-and-after section on the overview. Use only real patients’ photos, with their written consent.' },
+              fields: [
+                { name: 'eyebrow', type: 'text' },
+                { name: 'heading', type: 'text' },
+                { name: 'intro', type: 'textarea' },
+                {
+                  name: 'pairs',
+                  type: 'array',
+                  fields: [
+                    { name: 'before', type: 'upload', relationTo: 'media', required: true },
+                    { name: 'after', type: 'upload', relationTo: 'media', required: true },
+                    { name: 'caption', type: 'text', admin: { description: 'e.g. Rhinoplasty · 6 months after' } },
+                  ],
+                },
+                { name: 'pendingNote', type: 'textarea', admin: { description: 'Shown while there are no photo pairs yet' } },
+              ],
             },
             {
               name: 'reviewsPage',

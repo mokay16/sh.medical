@@ -175,7 +175,10 @@ export interface Department {
    */
   headline: string;
   intro: string;
-  photo: number | Media;
+  /**
+   * Hero photo (recommended)
+   */
+  photo?: (number | null) | Media;
   /**
    * CSS object-position, e.g. center 30%
    */
@@ -341,6 +344,11 @@ export interface Department {
       | {
           title: string;
           description: string;
+          /**
+           * Optional photo shown on the card
+           */
+          image?: (number | null) | Media;
+          imagePosition?: string | null;
           id?: string | null;
         }[]
       | null;
@@ -430,6 +438,33 @@ export interface Department {
    * Street line for this department’s first office, when it differs from the shared office address (e.g. 450 Sutter Street, Suite 1404)
    */
   officeStreet?: string | null;
+  /**
+   * Show the team (photos, names and their offices) on the overview page
+   */
+  teamOnOverview?: boolean | null;
+  /**
+   * Before-and-after section on the overview. Use only real patients’ photos, with their written consent.
+   */
+  results?: {
+    eyebrow?: string | null;
+    heading?: string | null;
+    intro?: string | null;
+    pairs?:
+      | {
+          before: number | Media;
+          after: number | Media;
+          /**
+           * e.g. Rhinoplasty · 6 months after
+           */
+          caption?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+    /**
+     * Shown while there are no photo pairs yet
+     */
+    pendingNote?: string | null;
+  };
   /**
    * Add a Reviews page (published reviews and a “Leave a review” form) to this department’s menu
    */
@@ -825,6 +860,8 @@ export interface DepartmentsSelect<T extends boolean = true> {
           | {
               title?: T;
               description?: T;
+              image?: T;
+              imagePosition?: T;
               id?: T;
             };
       };
@@ -895,6 +932,23 @@ export interface DepartmentsSelect<T extends boolean = true> {
   offices?: T;
   officePhone?: T;
   officeStreet?: T;
+  teamOnOverview?: T;
+  results?:
+    | T
+    | {
+        eyebrow?: T;
+        heading?: T;
+        intro?: T;
+        pairs?:
+          | T
+          | {
+              before?: T;
+              after?: T;
+              caption?: T;
+              id?: T;
+            };
+        pendingNote?: T;
+      };
   reviewsPage?: T;
   locationsOnTeamPage?: T;
   whereHeading?: T;

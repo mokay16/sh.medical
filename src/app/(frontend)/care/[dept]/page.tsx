@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { DeptCta, DeptHero, FirstReviewPrompt, Gallery, Overview, PatientStories, Quicklinks, Reviews } from '@/components/sections'
+import { DeptCta, DeptHero, FirstReviewPrompt, Gallery, Overview, PatientStories, Quicklinks, Results, Reviews, TeamPreview } from '@/components/sections'
 import { getDepartment, getReviews, sitePages } from '@/lib/content'
 
 type Props = { params: Promise<{ dept: string }> }
@@ -20,7 +20,9 @@ export default async function DepartmentOverview({ params }: Props) {
       <DeptHero d={d} />
       <Quicklinks d={d} />
       <Overview d={d} />
+      <TeamPreview d={d} teamHref={sitePages(d).find((p) => p.key === 'team')?.href} />
       <Gallery d={d} />
+      <Results d={d} />
       {reviews.length ? (
         <PatientStories d={d} reviews={reviews} allHref={reviewsPage?.href} />
       ) : reviewsPage ? (

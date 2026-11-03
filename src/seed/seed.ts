@@ -47,21 +47,30 @@ for (const d of content.departments) {
   for (const g of d.gallery?.photos || []) alts.set(g.image, g.alt || g.caption)
   if (d.conditions?.image) alts.set(d.conditions.image, d.conditions.imageAlt)
   if (d.treatments?.image) alts.set(d.treatments.image, d.treatments.imageAlt)
+  for (const it of d.treatments?.items || []) if (it[2]) alts.set(it[2], it[4] || it[0])
 }
 for (const s of content.specialists) if (s.photo) alts.set(s.photo, s.name)
 for (const o of content.offices) if (o.photo) alts.set(o.photo, o.photoAlt)
 
 const files = fs.readdirSync(mediaDir)
 const mediaIds = new Map<string, number>()
+let failedUploads = 0
 for (const [blob, alt] of alts) {
   const file = files.find((f) => f.startsWith(blob))
   if (!file) {
     payload.logger.warn(`missing image ${blob} (${alt})`)
     continue
   }
-  const doc = await payload.create({ collection: 'media', data: { alt }, filePath: path.join(mediaDir, file) })
-  mediaIds.set(blob, doc.id)
+  try {
+    const doc = await payload.create({ collection: 'media', data: { alt }, filePath: path.join(mediaDir, file) })
+    mediaIds.set(blob, doc.id)
+  } catch (err) {
+    // Keep going: a failed upload (e.g. a storage limit) must never leave the site without its text content.
+    failedUploads++
+    payload.logger.error(`image upload failed for ${file}: ${err instanceof Error ? err.message : String(err)}`)
+  }
 }
+if (failedUploads) payload.logger.error(`${failedUploads} of ${alts.size} images failed to upload; content is seeded without them`)
 const media = (blob?: string | null) => (blob ? mediaIds.get(blob) : undefined)
 
 const officeIds = new Map<string, number>()
@@ -109,7 +118,7 @@ for (const d of content.departments) {
       eyebrow: d.eyebrow,
       headline: d.headline,
       intro: d.intro,
-      photo: media(d.photo)!,
+      photo: media(d.photo),
       photoPosition: d.photoPosition,
       originalImages: d.originalImages ?? false,
       heroSecondaryLabel: d.heroSecondary?.[0],
@@ -153,11 +162,11 @@ for (const d of content.departments) {
         })),
       },
       treatments: t
-        ? { enabled: true, onConditionsPage: t.onConditionsPage ?? false, navLabel: t.navLabel, eyebrow: t.eyebrow, heading: t.heading, lede: t.lede, image: media(t.image), imagePosition: t.imagePosition, items: pairs(t.items) }
+        ? { enabled: true, onConditionsPage: t.onConditionsPage ?? false, navLabel: t.navLabel, eyebrow: t.eyebrow, heading: t.heading, lede: t.lede, image: media(t.image), imagePosition: t.imagePosition, items: (t.items || []).map(([title, description, image, imagePosition]: string[]) => ({ title, description, image: media(image), imagePosition })) }
         : { enabled: false },
       feature: f
         ? {
-            enabled: true,
+            enabled: f.enabled ?? true,
             onPatientsPage: f.onPatientsPage,
             navLabel: f.navLabel,
             eyebrow: f.eyebrow,
@@ -184,6 +193,8 @@ for (const d of content.departments) {
       officeStreet: d.officeStreet,
       locationsOnTeamPage: d.locationsOnTeamPage ?? false,
       reviewsPage: d.reviewsPage ?? false,
+      teamOnOverview: d.teamOnOverview ?? false,
+      results: d.results ? { eyebrow: d.results.eyebrow, heading: d.results.heading, intro: d.results.intro, pendingNote: d.results.pendingNote, pairs: [] } : undefined,
       whereHeading: d.whereHeading,
       whereNote: d.whereNote,
       ctaHeading: d.ctaHeading,

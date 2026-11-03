@@ -100,6 +100,7 @@ export function mergedPageHref(d: Department, segment: string): string | null {
   const base = `/care/${d.slug}`
   if (mergedTreatments(d) && segment === slugify(d.treatments?.navLabel || 'Treatments')) return `${base}/${slugify(d.conditions?.navLabel || 'Conditions')}#treatment`
   if (d.locationsOnTeamPage && segment === 'locations') return `${base}/team#locations`
+  if (!d.feature?.enabled && d.feature?.navLabel && segment === slugify(d.feature.navLabel)) return d.results?.heading ? `${base}#results` : base
   return null
 }
 

@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Department, Media, Office, Review, Specialist } from '@/payload-types'
-import { docs, media, sitePages, tel } from '@/lib/content'
+import { docs, media, sitePages, tel, deptOffices } from '@/lib/content'
 import { Inline, RichText } from '@/lib/format'
 import { DeptBadge } from './DeptChrome'
 import { Icon, Img, Initials } from './ui'
 import { TiltCard } from './TiltCard'
+import { BeforeAfter } from './BeforeAfter'
 import { StoryCarousel } from './StoryCarousel'
 import { Stethoscope } from './Stethoscope'
 
@@ -419,15 +420,123 @@ export function ConditionsBody({ d }: D) {
 }
 
 export function TreatmentsBody({ d }: D) {
+  const items = d.treatments?.items || []
+  const withPhotos = items.some((t) => media(t.image)?.url)
+  if (withPhotos) {
+    return (
+      <section className="section" style={{ paddingTop: 72 }}>
+        <div className="wrap tx-cards">
+          {items.map((t) => (
+            <article key={t.id} className="tx-card">
+              <div className="tx-card-img">{media(t.image)?.url ? <Img media={media(t.image)} sizes="(max-width: 680px) 100vw, (max-width: 1100px) 50vw, 300px" position={t.imagePosition} /> : null}</div>
+              <div className="tx-card-body">
+                <h2 className="h3">{t.title}</h2>
+                <p>{t.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )
+  }
   return (
     <section className="section section--dark" style={{ paddingTop: 96 }}>
       <div className="wrap tx-grid">
-        {d.treatments?.items?.map((t) => (
+        {items.map((t) => (
           <div key={t.id} className="tx">
             <h2 className="h3">{t.title}</h2>
             <p>{t.description}</p>
           </div>
         ))}
+      </div>
+    </section>
+  )
+}
+
+/** The department's team with photos, full names and every office they see patients at. */
+export function TeamPreview({ d, teamHref }: D & { teamHref?: string }) {
+  const people = docs<Specialist>(d.team?.members)
+  if (!d.teamOnOverview || !people.length) return null
+  return (
+    <section className="section" style={{ paddingTop: 0 }}>
+      <div className="wrap stack" style={{ gap: 32 }}>
+        <div className="section-head">
+          <div className="stack" style={{ gap: 10 }}>
+            <p className="eyebrow">{d.team?.eyebrow || 'Your care team'}</p>
+            <h2 className="h2">{d.team?.heading || 'Meet the team'}</h2>
+          </div>
+          {teamHref ? (
+            <Link className="link-arrow" href={teamHref} style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
+              Offices and directions <Icon name="arrow_forward" size={18} className="ms--sm" />
+            </Link>
+          ) : null}
+        </div>
+        <div className="team-preview">
+          {people.map((p) => {
+            const where = deptOffices({ ...d, offices: p.offices } as Department).map((o) => o.name)
+            return (
+              <Link key={p.id} href={`/specialists/${p.slug}`} className="team-card">
+                <div className="team-card-img">{media(p.photo) ? <Img media={media(p.photo)} alt={p.name} sizes="(max-width: 760px) 100vw, 260px" /> : <Initials name={p.name} />}</div>
+                <div className="team-card-body">
+                  <span className="serif team-card-name">{p.name}</span>
+                  <span className="meta">{p.role}</span>
+                  {where.length ? (
+                    <span className="team-card-where">
+                      <Icon name="location_on" size={18} />
+                      {where.join(' · ')}
+                    </span>
+                  ) : null}
+                  <span className="link-arrow" style={{ display: 'inline-flex', gap: 6, alignItems: 'center', color: 'var(--teal)' }}>
+                    View profile <Icon name="arrow_forward" size={16} className="ms--sm" />
+                  </span>
+                </div>
+              </Link>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/** Before-and-after results. Real, consented patient photos only; until then, a short note. */
+export function Results({ d }: D) {
+  const r = d.results
+  if (!r?.heading) return null
+  const pairs = (r.pairs || []).filter((p) => media(p.before)?.url && media(p.after)?.url)
+  const src = (m: Media) => ({ src: `/img?src=${encodeURIComponent(m.url!)}&w=1200`, width: m.width || 1200, height: m.height || 900 })
+  return (
+    <section id="results" className="section section--paper" style={{ scrollMarginTop: 'var(--header-h)' }}>
+      <div className="wrap stack" style={{ gap: 32 }}>
+        <div className="stack" style={{ gap: 12, maxWidth: 760 }}>
+          {r.eyebrow ? <p className="eyebrow">{r.eyebrow}</p> : null}
+          <h2 className="h2">{r.heading}</h2>
+          {r.intro ? <p className="lede">{r.intro}{pairs.length ? ' Drag the handle on each photo to compare.' : ''}</p> : null}
+        </div>
+        {pairs.length ? (
+          <div className="ba-grid">
+            {pairs.map((p) => (
+              <figure key={p.id} className="ba-figure">
+                <BeforeAfter before={src(media(p.before)!)} after={src(media(p.after)!)} alt={p.caption || 'treatment result'} />
+                {p.caption ? <figcaption>{p.caption}</figcaption> : null}
+              </figure>
+            ))}
+          </div>
+        ) : (
+          <div className="ba-pending">
+            <div className="ba-pending-demo" aria-hidden="true">
+              <span>Before</span>
+              <span className="ba-pending-line" />
+              <span>After</span>
+            </div>
+            <p style={{ margin: 0 }}>{r.pendingNote || 'Before-and-after photos are coming soon.'}</p>
+          </div>
+        )}
+        {pairs.length ? (
+          <p className="muted" style={{ margin: 0, fontSize: 14 }}>
+            Photos are of real SH patients, shared with their permission. Individual results vary.
+          </p>
+        ) : null}
       </div>
     </section>
   )

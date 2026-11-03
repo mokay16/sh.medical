@@ -494,7 +494,8 @@
    "ctaHeading": "Breathe, hear and speak more easily.",
    "tag": "ENT",
    "fax": "(415) 362-5444",
-   "reviewsPage": true
+   "reviewsPage": true,
+   "locationsOnTeamPage": true
   },
   {
    "slug": "audiology",
@@ -823,7 +824,8 @@
    "ctaHeading": "Ready to hear more clearly?",
    "tag": "Audiology",
    "fax": "(415) 839-6677",
-   "reviewsPage": true
+   "reviewsPage": true,
+   "locationsOnTeamPage": true
   },
   {
    "slug": "allergy",
@@ -1130,7 +1132,8 @@
    "ctaHeading": "Ready to find your triggers?",
    "tag": "Allergy",
    "fax": "(415) 362-2615",
-   "reviewsPage": true
+   "reviewsPage": true,
+   "locationsOnTeamPage": true
   },
   {
    "slug": "sleep",
@@ -1393,7 +1396,8 @@
    "ctaHeading": "Ready for a better night’s sleep?",
    "tag": "Sleep",
    "fax": "(415) 362-5444",
-   "reviewsPage": true
+   "reviewsPage": true,
+   "locationsOnTeamPage": true
   },
   {
    "slug": "voice",
@@ -1991,7 +1995,8 @@
    "faqOpen": 2,
    "ctaHeading": "Ready to feel steady again?",
    "tag": "Balance & PT",
-   "reviewsPage": true
+   "reviewsPage": true,
+   "locationsOnTeamPage": true
   },
   {
    "slug": "facial-plastics",
@@ -2015,7 +2020,7 @@
    "photoPosition": "36% center",
    "facts": [
     {
-     "big": "Dr. Challapalli · Dr. Kazi",
+     "big": "Dr. Sai Challapalli · Dr. Aasif Kazi",
      "small": "Fellowship-trained facial plastic surgeons · UCSF affiliated"
     },
     {
@@ -2023,8 +2028,8 @@
      "small": "From rhinoplasty and facelifts to neuromodulators and fillers"
     },
     {
-     "big": "Union Square",
-     "small": "450 Sutter Street, Suite 933"
+     "big": "3 locations",
+     "small": "Union Square · San Mateo · Sunnyvale"
     }
    ],
    "home": {
@@ -2041,7 +2046,7 @@
    },
    "overview": {
     "eyebrow": "Surgical services",
-    "heading": "What we treat & operate on",
+    "heading": "Procedures & Conditions We Treat",
     "paras": [
      "Our fellowship-trained surgeons perform a full spectrum of facial plastic, reconstructive, head & neck oncologic, and skull base procedures.",
      "Outpatient surgery is performed at Campus Surgery Center, Pacific Heights, SF Surgery Center, Presidio Surgery Center, CPMC, UCSF, and MarinHealth."
@@ -2125,35 +2130,59 @@
     "items": [
      [
       "Neuromodulators",
-      "Botox®, Dysport®, and Xeomin® for lines, brows, slimming, and bruxism."
+      "Botox®, Dysport®, and Xeomin® for lines, brows, slimming, and bruxism.",
+      "tx-neuromodulators",
+      "center 30%",
+      "A practitioner in black gloves gives a precise injection between a woman's brows"
      ],
      [
       "Dermal Fillers",
-      "Restylane®, Juvéderm®, Sculptra®: volume and contour without surgery."
+      "Restylane®, Juvéderm®, Sculptra®: volume and contour without surgery.",
+      "tx-fillers",
+      "center 40%",
+      "A gloved hand gives a filler injection at a marked point on a woman's cheek"
      ],
      [
       "PRP Therapy",
-      "Platelet-Rich Plasma for facial rejuvenation and scalp hair restoration."
+      "Platelet-Rich Plasma for facial rejuvenation and scalp hair restoration.",
+      "tx-prp",
+      "center",
+      "A gloved hand holds a syringe of golden platelet-rich plasma"
      ],
      [
       "SkinPen Microneedling",
-      "FDA-cleared microneedling for face, neck, and scalp."
+      "FDA-cleared microneedling for face, neck, and scalp.",
+      "tx-skinpen",
+      "center 35%",
+      "A microneedling pen is used on a relaxed patient's cheek"
      ],
      [
       "Fotona4D® Laser",
-      "Non-invasive laser facelift: tightening from inside out, no needles."
+      "Non-invasive laser facelift: tightening from inside out, no needles.",
+      "tx-laser",
+      "center 35%",
+      "Profile of a woman with smooth, glowing skin"
      ],
      [
       "Lip Augmentation",
-      "Precision filler for natural-looking volume and definition."
+      "Precision filler for natural-looking volume and definition.",
+      "tx-lips",
+      "center 40%",
+      "A precise lip filler injection"
      ],
      [
       "Fat Injections",
-      "Long-lasting facial volume, combined with PRP for best results."
+      "Long-lasting facial volume, combined with PRP for best results.",
+      "tx-fat",
+      "center 40%",
+      "A gloved practitioner treats a patient's cheek with an injection"
      ],
      [
-      "Skin Care Regimens",
-      "Medical-grade SkinMedica® protocols for rejuvenation."
+      "Medical-grade skin & hair care",
+      "SkinMedica® skin care protocols and Hair Smart products for healthier skin, hair and scalp.",
+      "tx-skincare",
+      "center 30%",
+      "A woman in a robe applies a skin care serum at the mirror"
      ]
     ],
     "image": "fp-aesthetic",
@@ -2174,7 +2203,8 @@
     ],
     "navLabel": "Results",
     "image": null,
-    "onPatientsPage": false
+    "onPatientsPage": false,
+    "enabled": false
    },
    "visit": {
     "heading": "Request an appointment",
@@ -2272,7 +2302,17 @@
       "position": "center 35%"
      }
     ]
-   }
+   },
+   "locationsOnTeamPage": true,
+   "teamOnOverview": true,
+   "results": {
+    "eyebrow": "Results",
+    "heading": "Before and after",
+    "intro": "Natural-looking results from rhinoplasty, facial rejuvenation and non-surgical treatments.",
+    "pendingNote": "We’re gathering before-and-after photos from our patients, shared with their written consent. Ask to see examples at your consultation.",
+    "pairs": []
+   },
+   "officeStreet": "450 Sutter Street, Suite 933"
   },
   {
    "slug": "dermatology",
@@ -2425,7 +2465,8 @@
    "faqOpen": 2,
    "ctaHeading": "Care for the skin you’re in.",
    "tag": "Dermatology",
-   "reviewsPage": true
+   "reviewsPage": true,
+   "locationsOnTeamPage": true
   },
   {
    "slug": "surgery",
@@ -2751,7 +2792,8 @@
    "ctaHeading": "Talk to a surgeon about your options.",
    "tag": "Surgery",
    "fax": "(415) 808-5444",
-   "reviewsPage": true
+   "reviewsPage": true,
+   "locationsOnTeamPage": true
   },
   {
    "slug": "wellness",
@@ -2894,7 +2936,8 @@
    "faqOpen": 2,
    "ctaHeading": "Ready to make lasting changes?",
    "tag": "Wellness",
-   "reviewsPage": true
+   "reviewsPage": true,
+   "locationsOnTeamPage": true
   }
  ],
  "specialists": [
