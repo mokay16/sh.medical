@@ -26,8 +26,7 @@ const payload = await getPayload({ config })
 // Setting RESEED=true in Vercel forces a full reload (content and images) on the next deploy; remove it afterwards.
 if (process.env.SEED_ONLY_IF_EMPTY === 'true' && process.env.RESEED !== 'true') {
   const { totalDocs } = await payload.count({ collection: 'departments' })
-  // A load that stopped part-way (fewer departments than the content has) is redone rather than kept.
-  if (totalDocs >= content.departments.length) {
+  if (totalDocs > 0) {
     payload.logger.info(`Database already has ${totalDocs} departments; skipping seed`)
     process.exit(0)
   }
@@ -135,7 +134,7 @@ for (const d of content.departments) {
         note: d.overview.note,
       },
       gallery: d.gallery
-        ? { eyebrow: d.gallery.eyebrow, heading: d.gallery.heading, photos: d.gallery.photos.map((g: Record<string, string>) => ({ image: media(g.image), caption: g.caption, position: g.position })).filter((g: { image?: number }) => g.image) }
+        ? { eyebrow: d.gallery.eyebrow, heading: d.gallery.heading, photos: d.gallery.photos.map((g: Record<string, string>) => ({ image: media(g.image), caption: g.caption, position: g.position })) }
         : undefined,
       reviews: d.reviews,
       conditions: {
