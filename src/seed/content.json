@@ -2308,9 +2308,25 @@
    "results": {
     "eyebrow": "Results",
     "heading": "Before and after",
-    "intro": "Natural-looking results from rhinoplasty, facial rejuvenation and non-surgical treatments.",
+    "intro": "Natural-looking results from our aesthetic treatments, from smoother skin around the eyes to fuller lips.",
     "pendingNote": "We’re gathering before-and-after photos from our patients, shared with their written consent. Ask to see examples at your consultation.",
-    "pairs": []
+    "pairs": [
+     {
+      "image": "ba-eye-area",
+      "caption": "Eye area",
+      "alt": "Before and after: a woman's eye area, with softer lines around the eyes after treatment"
+     },
+     {
+      "image": "ba-profile",
+      "caption": "Profile & jawline",
+      "alt": "Before and after: side profile of a woman, with a firmer cheek and jawline after treatment"
+     },
+     {
+      "image": "ba-lips",
+      "caption": "Lips",
+      "alt": "Before and after: a woman's lips, fuller and more defined after treatment"
+     }
+    ]
    },
    "officeStreet": "450 Sutter Street, Suite 933"
   },

@@ -451,8 +451,12 @@ export interface Department {
     intro?: string | null;
     pairs?:
       | {
-          before: number | Media;
-          after: number | Media;
+          /**
+           * One photo that already shows before and after side by side. Or leave empty and use the two below for a drag-to-compare slider.
+           */
+          image?: (number | null) | Media;
+          before?: (number | null) | Media;
+          after?: (number | null) | Media;
           /**
            * e.g. Rhinoplasty · 6 months after
            */
@@ -942,6 +946,7 @@ export interface DepartmentsSelect<T extends boolean = true> {
         pairs?:
           | T
           | {
+              image?: T;
               before?: T;
               after?: T;
               caption?: T;

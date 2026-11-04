@@ -10,6 +10,7 @@ import * as migration_20261101_224759_review_date_optional from './20261101_2247
 import * as migration_20261101_230407_department_gallery_banners from './20261101_230407_department_gallery_banners';
 import * as migration_20261103_020145_department_photo_optional from './20261103_020145_department_photo_optional';
 import * as migration_20261103_024101_fp_results_team_treatment_images from './20261103_024101_fp_results_team_treatment_images';
+import * as migration_20261104_133706_fp_results_single_photos from './20261104_133706_fp_results_single_photos';
 
 export const migrations = [
   {
@@ -70,6 +71,11 @@ export const migrations = [
   {
     up: migration_20261103_024101_fp_results_team_treatment_images.up,
     down: migration_20261103_024101_fp_results_team_treatment_images.down,
-    name: '20261103_024101_fp_results_team_treatment_images'
+    name: '20261103_024101_fp_results_team_treatment_images',
+  },
+  {
+    up: migration_20261104_133706_fp_results_single_photos.up,
+    down: migration_20261104_133706_fp_results_single_photos.down,
+    name: '20261104_133706_fp_results_single_photos'
   },
 ];

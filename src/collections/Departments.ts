@@ -335,8 +335,14 @@ export const Departments: CollectionConfig = {
                   name: 'pairs',
                   type: 'array',
                   fields: [
-                    { name: 'before', type: 'upload', relationTo: 'media', required: true },
-                    { name: 'after', type: 'upload', relationTo: 'media', required: true },
+                    {
+                      name: 'image',
+                      type: 'upload',
+                      relationTo: 'media',
+                      admin: { description: 'One photo that already shows before and after side by side. Or leave empty and use the two below for a drag-to-compare slider.' },
+                    },
+                    { name: 'before', type: 'upload', relationTo: 'media' },
+                    { name: 'after', type: 'upload', relationTo: 'media' },
                     { name: 'caption', type: 'text', admin: { description: 'e.g. Rhinoplasty · 6 months after' } },
                   ],
                 },

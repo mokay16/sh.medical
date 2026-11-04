@@ -3648,6 +3648,16 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
 .ba-figure figcaption {
   font-weight: 600;
 }
+.ba-still {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--sand);
+}
+.ba-still img {
+  width: 100%;
+  height: auto;
+}
 .ba {
   --pos: 50%;
   position: relative;

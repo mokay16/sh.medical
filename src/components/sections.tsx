@@ -503,7 +503,8 @@ export function TeamPreview({ d, teamHref }: D & { teamHref?: string }) {
 export function Results({ d }: D) {
   const r = d.results
   if (!r?.heading) return null
-  const pairs = (r.pairs || []).filter((p) => media(p.before)?.url && media(p.after)?.url)
+  const pairs = (r.pairs || []).filter((p) => media(p.image)?.url || (media(p.before)?.url && media(p.after)?.url))
+  const sliders = pairs.some((p) => !media(p.image)?.url)
   const src = (m: Media) => ({ src: `/img?src=${encodeURIComponent(m.url!)}&w=1200`, width: m.width || 1200, height: m.height || 900 })
   return (
     <section id="results" className="section section--paper" style={{ scrollMarginTop: 'var(--header-h)' }}>
@@ -511,13 +512,19 @@ export function Results({ d }: D) {
         <div className="stack" style={{ gap: 12, maxWidth: 760 }}>
           {r.eyebrow ? <p className="eyebrow">{r.eyebrow}</p> : null}
           <h2 className="h2">{r.heading}</h2>
-          {r.intro ? <p className="lede">{r.intro}{pairs.length ? ' Drag the handle on each photo to compare.' : ''}</p> : null}
+          {r.intro ? <p className="lede">{r.intro}{sliders ? ' Drag the handle on each photo to compare.' : ''}</p> : null}
         </div>
         {pairs.length ? (
           <div className="ba-grid">
             {pairs.map((p) => (
               <figure key={p.id} className="ba-figure">
-                <BeforeAfter before={src(media(p.before)!)} after={src(media(p.after)!)} alt={p.caption || 'treatment result'} />
+                {media(p.image)?.url ? (
+                  <div className="ba-still" style={{ aspectRatio: `${media(p.image)!.width || 1} / ${media(p.image)!.height || 1}` }}>
+                    <Img media={media(p.image)} sizes="(max-width: 680px) 100vw, (max-width: 1100px) 50vw, 400px" />
+                  </div>
+                ) : (
+                  <BeforeAfter before={src(media(p.before)!)} after={src(media(p.after)!)} alt={p.caption || 'treatment result'} />
+                )}
                 {p.caption ? <figcaption>{p.caption}</figcaption> : null}
               </figure>
             ))}

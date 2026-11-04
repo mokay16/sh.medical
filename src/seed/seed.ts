@@ -46,6 +46,7 @@ for (const d of content.departments) {
   if (d.feature?.image) alts.set(d.feature.image, d.feature.img_alt || d.feature.heading)
   for (const c of d.conditions?.categories || []) if (c.image) alts.set(c.image, c.imageAlt || c.title)
   for (const g of d.gallery?.photos || []) alts.set(g.image, g.alt || g.caption)
+  for (const p of d.results?.pairs || []) alts.set(p.image, p.alt || p.caption)
   if (d.conditions?.image) alts.set(d.conditions.image, d.conditions.imageAlt)
   if (d.treatments?.image) alts.set(d.treatments.image, d.treatments.imageAlt)
   for (const it of d.treatments?.items || []) if (it[2]) alts.set(it[2], it[4] || it[0])
@@ -195,7 +196,7 @@ for (const d of content.departments) {
       locationsOnTeamPage: d.locationsOnTeamPage ?? false,
       reviewsPage: d.reviewsPage ?? false,
       teamOnOverview: d.teamOnOverview ?? false,
-      results: d.results ? { eyebrow: d.results.eyebrow, heading: d.results.heading, intro: d.results.intro, pendingNote: d.results.pendingNote, pairs: [] } : undefined,
+      results: d.results ? { eyebrow: d.results.eyebrow, heading: d.results.heading, intro: d.results.intro, pendingNote: d.results.pendingNote, pairs: (d.results.pairs || []).map((p: Record<string, string>) => ({ image: media(p.image), caption: p.caption })).filter((p: { image?: number }) => p.image) } : undefined,
       whereHeading: d.whereHeading,
       whereNote: d.whereNote,
       ctaHeading: d.ctaHeading,
