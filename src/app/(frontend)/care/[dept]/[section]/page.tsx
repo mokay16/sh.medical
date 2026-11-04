@@ -142,7 +142,7 @@ export default async function DepartmentSection({ params }: Props) {
             title="Your visit, made simple"
             lede="Forms, what to bring, insurance and answers to the questions we hear most."
           />
-          <PageBanner image={PATIENTS_PHOTO} position="center 35%" />
+          <PageBanner image={PATIENTS_PHOTO} position="center 52%" />
           <Visit d={d} />
           {d.feature?.enabled && d.feature.onPatientsPage ? <FeatureBody d={d} withHeading /> : null}
           <Resources d={d} />
