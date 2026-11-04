@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound, redirect } from 'next/navigation'
-import type { Office, Specialist } from '@/payload-types'
+import type { Media, Office, Specialist } from '@/payload-types'
 import {
   ConditionsBody,
   DeptCta,
@@ -17,6 +17,14 @@ import {
 } from '@/components/sections'
 import { deptOffices, docs, getDepartment, getDepartments, getReviews, mergedPageHref, mergedTreatments, sitePages } from '@/lib/content'
 import { ReviewForm } from '@/components/ReviewForm'
+
+// The same welcoming photo on every department's Patients page; it ships with the site's files.
+const PATIENTS_PHOTO = {
+  url: '/images/patients-welcome.jpg',
+  alt: 'A nurse and an older patient share a laugh together',
+  width: 2000,
+  height: 1414,
+} as Media
 
 type Props = { params: Promise<{ dept: string; section: string }> }
 
@@ -134,6 +142,7 @@ export default async function DepartmentSection({ params }: Props) {
             title="Your visit, made simple"
             lede="Forms, what to bring, insurance and answers to the questions we hear most."
           />
+          <PageBanner image={PATIENTS_PHOTO} position="center 35%" />
           <Visit d={d} />
           {d.feature?.enabled && d.feature.onPatientsPage ? <FeatureBody d={d} withHeading /> : null}
           <Resources d={d} />

@@ -337,7 +337,7 @@ function ConditionCategories({ d }: D) {
 
 /** A wide photo under a page heading. */
 export function PageBanner({ image, position }: { image?: number | Media | null; position?: string | null }) {
-  const m = media(image)
+  const m = typeof image === 'object' ? image : media(image)
   if (!m?.url) return null
   return (
     <section className="page-banner">

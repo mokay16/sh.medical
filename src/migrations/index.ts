@@ -11,6 +11,7 @@ import * as migration_20261101_230407_department_gallery_banners from './2026110
 import * as migration_20261103_020145_department_photo_optional from './20261103_020145_department_photo_optional';
 import * as migration_20261103_024101_fp_results_team_treatment_images from './20261103_024101_fp_results_team_treatment_images';
 import * as migration_20261104_133706_fp_results_single_photos from './20261104_133706_fp_results_single_photos';
+import * as migration_20261104_140500_fp_providers_heading from './20261104_140500_fp_providers_heading';
 
 export const migrations = [
   {
@@ -77,5 +78,10 @@ export const migrations = [
     up: migration_20261104_133706_fp_results_single_photos.up,
     down: migration_20261104_133706_fp_results_single_photos.down,
     name: '20261104_133706_fp_results_single_photos'
+  },
+  {
+    up: migration_20261104_140500_fp_providers_heading.up,
+    down: migration_20261104_140500_fp_providers_heading.down,
+    name: '20261104_140500_fp_providers_heading',
   },
 ];
