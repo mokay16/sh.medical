@@ -14,7 +14,7 @@ import config from '@payload-config'
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 const content = JSON.parse(fs.readFileSync(path.join(dirname, 'content.json'), 'utf8'))
-const mediaDir = path.join(dirname, 'media')
+const mediaDir = path.join(dirname, '../../public/uploads')
 
 type TD = [string, string]
 const pairs = (items?: TD[]) => (items || []).map(([title, description]) => ({ title, description }))

@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url'
 import sharp from 'sharp'
 
 import { Users } from './collections/Users'
-import { Media } from './collections/Media'
+import { Media, mediaInBlob } from './collections/Media'
 import { Departments } from './collections/Departments'
 import { Specialists } from './collections/Specialists'
 import { Offices } from './collections/Offices'
@@ -56,9 +56,9 @@ export default buildConfig({
       }),
   sharp,
   plugins: [
-    // Uploads go to Vercel Blob when its token is set; locally they stay in ./media.
+    // Uploads go to Vercel Blob only with MEDIA_STORAGE=blob; otherwise photos come from public/uploads.
     vercelBlobStorage({
-      enabled: Boolean(process.env.BLOB_READ_WRITE_TOKEN),
+      enabled: mediaInBlob,
       collections: { media: true },
       token: process.env.BLOB_READ_WRITE_TOKEN,
     }),

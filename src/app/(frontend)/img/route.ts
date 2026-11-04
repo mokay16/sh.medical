@@ -9,7 +9,7 @@ import sharp from 'sharp'
 // next/image's default device and image sizes: the only widths the loader ever asks for.
 const WIDTHS = new Set([32, 48, 64, 96, 128, 256, 384, 640, 750, 828, 1080, 1200, 1920, 2048, 3840])
 // Only our own images, never arbitrary URLs.
-const ALLOWED = /^\/(api\/media\/file|images|brand)\/[^?#]+\.(jpe?g|png|webp)$/i
+const ALLOWED = /^\/(api\/media\/file|uploads|images|brand)\/[^?#]+\.(jpe?g|png|webp)$/i
 const CACHE = 'public, max-age=31536000, immutable'
 
 export async function GET(req: Request) {

@@ -56,5 +56,9 @@ node_modules/
 .env
 *.db.bak*
 
-# raw team photos (processed copies live in src/seed/media)
+# raw team photos (processed copies live in public/uploads)
 /public/SH_Health_Team_Photos/
+
+.vercel
+.env*
+!.env.example
