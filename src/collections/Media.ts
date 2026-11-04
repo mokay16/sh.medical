@@ -20,12 +20,12 @@ export const Media: CollectionConfig = {
       required: true,
     },
   ],
-  upload: mediaInBlob ? true : { staticDir: path.resolve(dirname, '../../public/uploads'), disableLocalStorage: true },
+  // Payload never touches public/uploads: it points at an empty folder, so deleting a photo record
+  // (as a reload does) can't delete the photo file, and names never get a "-1" added.
+  upload: mediaInBlob ? true : { staticDir: path.resolve(dirname, '../../.media-records-only'), disableLocalStorage: true },
   hooks: mediaInBlob
     ? undefined
     : {
-        // The file is already in public/uploads, so keep its own name (Payload would add "-1" to avoid a clash).
-        beforeChange: [({ data, req }) => (req.file?.name ? { ...data, filename: req.file.name } : data)],
         afterRead: [({ doc }) => (doc?.filename ? { ...doc, url: `/uploads/${doc.filename}` } : doc)],
       },
 }
