@@ -405,6 +405,7 @@ export function ConditionsBody({ d }: D) {
       </section>
     )
   }
+  if (c?.items?.some((it) => media(it.image)?.url)) return <PhotoCards items={c.items} />
   return (
     <section className="section" style={{ paddingTop: 72 }}>
       <div className="wrap grid">
@@ -419,26 +420,30 @@ export function ConditionsBody({ d }: D) {
   )
 }
 
+type PhotoItem = { id?: string | null; title: string; description: string; image?: number | Media | null; imagePosition?: string | null }
+
+/** Cards with a photo on top, for treatments or procedures that have photos. */
+function PhotoCards({ items }: { items: PhotoItem[] }) {
+  return (
+    <section className="section" style={{ paddingTop: 72 }}>
+      <div className="wrap tx-cards">
+        {items.map((t) => (
+          <article key={t.id} className="tx-card">
+            <div className="tx-card-img">{media(t.image)?.url ? <Img media={media(t.image)} sizes="(max-width: 680px) 100vw, (max-width: 1100px) 50vw, 300px" position={t.imagePosition} /> : null}</div>
+            <div className="tx-card-body">
+              <h2 className="h3">{t.title}</h2>
+              <p>{t.description}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 export function TreatmentsBody({ d }: D) {
   const items = d.treatments?.items || []
-  const withPhotos = items.some((t) => media(t.image)?.url)
-  if (withPhotos) {
-    return (
-      <section className="section" style={{ paddingTop: 72 }}>
-        <div className="wrap tx-cards">
-          {items.map((t) => (
-            <article key={t.id} className="tx-card">
-              <div className="tx-card-img">{media(t.image)?.url ? <Img media={media(t.image)} sizes="(max-width: 680px) 100vw, (max-width: 1100px) 50vw, 300px" position={t.imagePosition} /> : null}</div>
-              <div className="tx-card-body">
-                <h2 className="h3">{t.title}</h2>
-                <p>{t.description}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-    )
-  }
+  if (items.some((t) => media(t.image)?.url)) return <PhotoCards items={items} />
   return (
     <section className="section section--dark" style={{ paddingTop: 96 }}>
       <div className="wrap tx-grid">

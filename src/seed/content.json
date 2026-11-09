@@ -2071,56 +2071,92 @@
     "items": [
      [
       "Rhinoplasty",
-      "Cosmetic and functional nose surgery. Reshaping the nose for aesthetic goals and/or improving airway function. Septoplasty, tip refinement, dorsal reduction. Cosmetic · Dr. Challapalli / Dr. Kazi."
+      "Cosmetic and functional nose surgery. Reshaping the nose for aesthetic goals and/or improving airway function. Septoplasty, tip refinement, dorsal reduction. Cosmetic · Dr. Challapalli / Dr. Kazi.",
+      "fp-sx-rhinoplasty",
+      "center 40%",
+      "Close-up profile of a woman's nose against a clear blue sky"
      ],
      [
       "Facelift",
-      "Surgical facial rejuvenation for skin laxity, jowling, and loss of facial definition. Natural-looking, lasting results from a fellowship-trained surgeon. Cosmetic · Dr. Challapalli."
+      "Surgical facial rejuvenation for skin laxity, jowling, and loss of facial definition. Natural-looking, lasting results from a fellowship-trained surgeon. Cosmetic · Dr. Challapalli.",
+      "fp-sx-facelift",
+      "center 30%",
+      "An older woman with a warm, natural smile"
      ],
      [
       "Brow Lift",
-      "Surgical elevation of the brow and forehead, restoring youthful openness and addressing heaviness or asymmetry around the eyes. Cosmetic · Dr. Challapalli."
+      "Surgical elevation of the brow and forehead, restoring youthful openness and addressing heaviness or asymmetry around the eyes. Cosmetic · Dr. Challapalli.",
+      "fp-sx-browlift",
+      "center 35%",
+      "Close-up of a woman's brow and eyes in soft light"
      ],
      [
       "Blepharoplasty",
-      "Upper and lower eyelid surgery removing excess skin and fat. Addresses functional visual obstruction and cosmetic concerns around the eyes. Cosmetic · Dr. Challapalli."
+      "Upper and lower eyelid surgery removing excess skin and fat. Addresses functional visual obstruction and cosmetic concerns around the eyes. Cosmetic · Dr. Challapalli.",
+      "fp-sx-bleph",
+      "center 45%",
+      "Gloved hands with surgical markings around a woman's eyelid"
      ],
      [
       "Fat Transfer",
-      "Surgical facial volume restoration using your own fat. Harvested, processed, and carefully reinjected, often combined with PRP for improved results. Cosmetic · Dr. Challapalli."
+      "Surgical facial volume restoration using your own fat. Harvested, processed, and carefully reinjected, often combined with PRP for improved results. Cosmetic · Dr. Challapalli.",
+      "fp-sx-fat",
+      "center 22%",
+      "Portrait of a woman with full, natural cheeks"
      ],
      [
       "Ear Surgery (Otoplasty)",
-      "Surgical correction of prominent, asymmetric, or structurally abnormal ears, for both adult and pediatric patients. Cosmetic · Dr. Challapalli."
+      "Surgical correction of prominent, asymmetric, or structurally abnormal ears, for both adult and pediatric patients. Cosmetic · Dr. Challapalli.",
+      "fp-sx-ear",
+      "center 35%",
+      "Close-up of a woman's ear"
      ],
      [
       "Free Flap Reconstruction",
-      "Complex microvascular reconstruction of the head and neck following tumor resection or trauma. Advanced subspecialty training at Loma Linda University. Reconstructive · Dr. Kazi."
+      "Complex microvascular reconstruction of the head and neck following tumor resection or trauma. Advanced subspecialty training at Loma Linda University. Reconstructive · Dr. Kazi.",
+      "fp-sx-flap",
+      "center 40%",
+      "A surgical team operating with a microscope"
      ],
      [
       "Facial Reconstruction",
-      "Reconstruction of skin cancer defects, traumatic injuries, and other structural losses, restoring both form and function of the face. Reconstructive · Dr. Challapalli / Dr. Kazi."
+      "Reconstruction of skin cancer defects, traumatic injuries, and other structural losses, restoring both form and function of the face. Reconstructive · Dr. Challapalli / Dr. Kazi.",
+      "fp-sx-recon",
+      "center 35%",
+      "A surgeon in a cap and mask operating under bright lights"
      ],
      [
       "Facial Reanimation",
-      "Surgical restoration of facial movement and symmetry for patients with facial nerve paralysis or paresis, a highly specialized reconstructive procedure. Reconstructive · Dr. Kazi."
+      "Surgical restoration of facial movement and symmetry for patients with facial nerve paralysis or paresis, a highly specialized reconstructive procedure. Reconstructive · Dr. Kazi.",
+      "fp-sx-reanim",
+      "center 28%",
+      "A woman with a broad, even smile"
      ],
      [
       "Head & Neck Oncology",
-      "Surgical management of head and neck cancers including thyroid, salivary gland, sino-nasal tumors, and other malignant conditions. Oncologic · Dr. Kazi."
+      "Surgical management of head and neck cancers including thyroid, salivary gland, sino-nasal tumors, and other malignant conditions. Oncologic · Dr. Kazi.",
+      "fp-sx-onc",
+      "center 50%",
+      "A doctor reviewing scans on a tablet"
      ],
      [
       "Skull Base Surgery",
-      "Endoscopic skull base surgery for tumors and complex lesions. Advanced subspecialty fellowship training at Loma Linda University. Oncologic · Dr. Kazi."
+      "Endoscopic skull base surgery for tumors and complex lesions. Advanced subspecialty fellowship training at Loma Linda University. Oncologic · Dr. Kazi.",
+      "fp-sx-skull",
+      "center 22%",
+      "A surgeon holding an endoscope in the operating room"
      ],
      [
       "Thyroid & Parathyroid Surgery",
-      "Surgical management of thyroid nodules, cancer, and parathyroid disorders. Salivary gland tumors and benign and malignant conditions of the head and neck. Oncologic · Dr. Kazi."
+      "Surgical management of thyroid nodules, cancer, and parathyroid disorders. Salivary gland tumors and benign and malignant conditions of the head and neck. Oncologic · Dr. Kazi.",
+      "fp-sx-thyroid",
+      "center 35%",
+      "A woman gently touching the front of her neck"
      ]
     ],
-    "image": "fp-surgery-or",
-    "imageAlt": "Surgeons in scrubs operating under bright surgical lights",
-    "imagePosition": "center 45%"
+    "image": "fp-surgery-loupes",
+    "imageAlt": "A surgeon wearing magnifying loupes with a light, focused during surgery",
+    "imagePosition": "center 30%"
    },
    "treatments": {
     "navLabel": "Aesthetic services",

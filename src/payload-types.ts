@@ -264,6 +264,11 @@ export interface Department {
       | {
           title: string;
           description: string;
+          /**
+           * Optional photo shown on the card
+           */
+          image?: (number | null) | Media;
+          imagePosition?: string | null;
           id?: string | null;
         }[]
       | null;
@@ -812,6 +817,8 @@ export interface DepartmentsSelect<T extends boolean = true> {
           | {
               title?: T;
               description?: T;
+              image?: T;
+              imagePosition?: T;
               id?: T;
             };
         categories?:

@@ -50,6 +50,7 @@ for (const d of content.departments) {
   if (d.conditions?.image) alts.set(d.conditions.image, d.conditions.imageAlt)
   if (d.treatments?.image) alts.set(d.treatments.image, d.treatments.imageAlt)
   for (const it of d.treatments?.items || []) if (it[2]) alts.set(it[2], it[4] || it[0])
+  for (const it of d.conditions?.items || []) if (it[2]) alts.set(it[2], it[4] || it[0])
 }
 for (const s of content.specialists) if (s.photo) alts.set(s.photo, s.name)
 for (const o of content.offices) if (o.photo) alts.set(o.photo, o.photoAlt)
@@ -146,7 +147,7 @@ for (const d of content.departments) {
         lede: d.conditions.lede,
         image: media(d.conditions.image),
         imagePosition: d.conditions.imagePosition,
-        items: pairs(d.conditions.items),
+        items: (d.conditions.items || []).map(([title, description, image, imagePosition]: string[]) => ({ title, description, image: media(image), imagePosition })),
         categories: (d.conditions.categories || []).map((c: Record<string, any>) => ({
           title: c.title,
           image: media(c.image),

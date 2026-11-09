@@ -168,7 +168,7 @@ export const Departments: CollectionConfig = {
                 { name: 'lede', type: 'textarea' },
                 { name: 'image', type: 'upload', relationTo: 'media', admin: { description: 'Optional wide photo shown under the page heading' } },
                 { name: 'imagePosition', type: 'text', defaultValue: 'center', admin: { description: 'CSS object-position, e.g. center 30%' } },
-                titleDescription('items', 'Condition'),
+                titleDescription('items', 'Condition', true),
                 {
                   name: 'categories',
                   type: 'array',
