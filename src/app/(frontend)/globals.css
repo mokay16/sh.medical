@@ -2929,10 +2929,10 @@ a.pill {
     background: #173235;
   }
   .home-hero--full .home-hero-photo {
-    left: 50%;
+    left: 46%;
   }
   .home-hero--full .home-hero-photo img {
-    object-position: 45% 30%;
+    object-position: 62% 30%;
   }
   .home-hero--full .home-hero-photo::after {
     background:
@@ -2941,15 +2941,20 @@ a.pill {
       linear-gradient(0deg, rgb(10 22 24 / 0.8) 0%, rgb(10 22 24 / 0.4) 28%, rgb(10 22 24 / 0) 60%);
   }
 }
+/* the hero is taller than these screens, so the photo is scaled up: frame the child and the doctor,
+   then the whole group once there's room (1600px and up) */
 @media (min-width: 1400px) {
   .home-hero--full .home-hero-photo {
-    left: 40%;
+    left: 38%;
   }
   .home-hero--full .home-hero-photo img {
-    object-position: 31% 30%;
+    object-position: 55% 30%;
   }
 }
 @media (min-width: 1600px) {
+  .home-hero--full .home-hero-photo {
+    left: 40%;
+  }
   .home-hero--full .home-hero-photo img {
     object-position: 37% 30%;
   }
