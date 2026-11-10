@@ -2924,7 +2924,7 @@ a.pill {
     linear-gradient(0deg, rgb(15 45 48 / 0.88) 0%, rgb(15 45 48 / 0.6) 35%, rgb(15 45 48 / 0.35) 65%, rgb(15 45 48 / 0.2) 100%);
 }
 .home-hero--full .home-hero-photo img {
-  object-position: 60% 30%;
+  object-position: 60% 12%;
 }
 .home-hero--full .home-h1,
 .home-hero--full .home-hero-copy .lede,
