@@ -2998,7 +2998,7 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
   }
   /* the photo starts below the header so the whole family shows in the band */
   .home-hero--full .home-hero-photo {
-    background: #1d2a20;
+    background: #0f2d30;
   }
   .home-hero--full .home-hero-photo img {
     top: var(--hero-overlap) !important;
