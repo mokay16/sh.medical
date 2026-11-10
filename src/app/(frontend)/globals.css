@@ -2926,6 +2926,13 @@ a.pill {
 .home-hero--full .home-hero-photo img {
   object-position: 60% 12%;
 }
+/* desktop: zoomed in and shifted right so the people sit clear of the headline */
+@media (min-width: 901px) {
+  .home-hero--full .home-hero-photo img {
+    transform: scale(1.35) translateX(11%);
+    transform-origin: 50% 22%;
+  }
+}
 .home-hero--full .home-h1,
 .home-hero--full .home-hero-copy .lede,
 .home-hero--full .home-hero-copy .eyebrow {
