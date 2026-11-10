@@ -2903,7 +2903,7 @@ a.pill {
   isolation: isolate;
 }
 .home-hero--full .home-hero-photo {
-  /* behind the whole hero; from 1400px it moves right of the text (see below) */
+  /* edge to edge behind the whole hero */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2918,67 +2918,18 @@ a.pill {
   content: '';
   position: absolute;
   inset: 0;
-  /* a dark shade rising from the bottom, a little at the top for the header */
+  /* dark teal rising from the bottom, light at the top, a little extra under the header */
   background:
-    linear-gradient(180deg, rgb(10 22 24 / 0.45) 0, rgb(10 22 24 / 0) 220px),
-    linear-gradient(0deg, rgb(10 22 24 / 0.8) 0%, rgb(10 22 24 / 0.4) 28%, rgb(10 22 24 / 0) 60%);
+    linear-gradient(180deg, rgb(15 45 48 / 0.45) 0, rgb(15 45 48 / 0) 200px),
+    linear-gradient(0deg, rgb(15 45 48 / 0.88) 0%, rgb(15 45 48 / 0.6) 35%, rgb(15 45 48 / 0.35) 65%, rgb(15 45 48 / 0.2) 100%);
 }
-/* Desktop: text on deep teal, the photo to its right, its left edge fading into the teal */
-@media (min-width: 901px) {
-  .home-hero--full {
-    background: #173235;
-  }
-  .home-hero--full .home-hero-photo {
-    left: 46%;
-  }
-  .home-hero--full .home-hero-photo img {
-    object-position: 62% 30%;
-  }
-  .home-hero--full .home-hero-photo::after {
-    background:
-      linear-gradient(90deg, #173235 0%, rgb(23 50 53 / 0.75) 5%, rgb(23 50 53 / 0.35) 11%, rgb(23 50 53 / 0) 18%),
-      linear-gradient(180deg, rgb(10 22 24 / 0.45) 0, rgb(10 22 24 / 0) 220px),
-      linear-gradient(0deg, rgb(10 22 24 / 0.8) 0%, rgb(10 22 24 / 0.4) 28%, rgb(10 22 24 / 0) 60%);
-  }
-}
-/* small tablets: the headline runs wide, so the photo starts after it */
-@media (min-width: 901px) and (max-width: 1199px) {
-  .home-hero--full .home-hero-photo {
-    left: 64%;
-  }
-  .home-hero--full .home-hero-photo img {
-    object-position: 82% 30%;
-  }
-}
-/* the hero is taller than these screens, so the photo is scaled up: frame the child and the doctor,
-   then the whole group once there's room (1600px and up) */
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .home-hero--full .home-hero-photo {
-    left: 50%;
-  }
-  .home-hero--full .home-hero-photo img {
-    object-position: 64% 30%;
-  }
-}
-@media (min-width: 1400px) {
-  .home-hero--full .home-hero-photo {
-    left: 40%;
-  }
-  .home-hero--full .home-hero-photo img {
-    object-position: 58% 30%;
-  }
-}
-@media (min-width: 1600px) {
-  .home-hero--full .home-hero-photo {
-    left: 43%;
-  }
-  .home-hero--full .home-hero-photo img {
-    object-position: 36% 30%;
-  }
+.home-hero--full .home-hero-photo img {
+  object-position: 60% 30%;
 }
 .home-hero--full .home-h1,
-.home-hero--full .home-hero-copy .lede {
-  text-shadow: 0 1px 18px rgb(0 0 0 / 0.25);
+.home-hero--full .home-hero-copy .lede,
+.home-hero--full .home-hero-copy .eyebrow {
+  text-shadow: 0 1px 18px rgb(0 0 0 / 0.3);
 }
 .home-hero--full .home-hero-copy .eyebrow {
   color: var(--peach);
@@ -3058,7 +3009,8 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
     background: linear-gradient(180deg, rgb(28 42 42 / 0.55) 0, rgb(28 42 42 / 0) 200px);
   }
   .home-hero--full .home-h1,
-  .home-hero--full .home-hero-copy .lede {
+  .home-hero--full .home-hero-copy .lede,
+  .home-hero--full .home-hero-copy .eyebrow {
     text-shadow: none;
   }
   .home-hero--full .home-hero-copy .eyebrow {
