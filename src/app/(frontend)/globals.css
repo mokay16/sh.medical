@@ -1501,20 +1501,28 @@ a.card:hover {
     grid-template-columns: 1fr;
     min-height: 0;
   }
+  /* phones: the photo fills the card, the text sits on a teal shade rising from the bottom */
+  .dept-card,
+  .dept-card.flip {
+    min-height: 560px;
+    align-content: end;
+    background: #0f2d30;
+  }
   .dept-card > img,
   .dept-card.flip > img {
-    order: 0;
-    height: 220px;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    min-height: 0;
   }
   .dept-card::after,
   .dept-card.flip::after {
     inset: 0;
-    height: 220px;
-    background: linear-gradient(to bottom, rgba(40, 105, 109, 0) 38%, rgba(40, 105, 109, 0.8) 78%, var(--teal) 100%);
+    background: linear-gradient(to bottom, rgb(15 45 48 / 0) 22%, rgb(15 45 48 / 0.55) 45%, rgb(15 45 48 / 0.9) 68%, #0f2d30 100%);
   }
   .dept-card .copy,
   .dept-card.flip .copy {
-    padding: 0 24px 28px;
+    padding: 200px 24px 28px;
   }
 }
 
@@ -3583,6 +3591,37 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
   margin: 0;
   color: var(--muted);
   font-size: 15.5px;
+}
+/* phones: photo fills the card, text on a teal shade rising from the bottom */
+@media (max-width: 600px) {
+  .tx-card {
+    position: relative;
+    min-height: 400px;
+    justify-content: flex-end;
+    border: 0;
+    background: #0f2d30;
+  }
+  .tx-card-img {
+    position: absolute;
+    inset: 0;
+    aspect-ratio: auto;
+  }
+  .tx-card-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgb(15 45 48 / 0) 30%, rgb(15 45 48 / 0.6) 55%, rgb(15 45 48 / 0.92) 78%, #0f2d30 100%);
+  }
+  .tx-card-body {
+    position: relative;
+    padding: 24px 22px 26px;
+  }
+  .tx-card-body .h3 {
+    color: #fff;
+  }
+  .tx-card-body p {
+    color: var(--on-dark);
+  }
 }
 @media (max-width: 1100px) {
   .tx-cards {
