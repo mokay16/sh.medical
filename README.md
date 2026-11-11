@@ -69,7 +69,7 @@ Appointment requests contain health information, so they must only go to a HIPAA
 
 **Going live.** Every push to `main` deploys to Vercel: `npm run vercel-build` checks the settings, runs database migrations, loads the starting content only if the database is empty, then builds. If a migration or the build fails, the previous version stays live. GitHub also runs a type check and lint on every push (`.github/workflows/ci.yml`).
 
-**Changing content.** Staff edit text in `/admin`; the site refreshes as soon as they save. Specialists, offices and reviews keep their last 25 versions (the Versions tab) so a change can be undone. Photos live in `public/uploads` and ship with the code, so adding or replacing a photo is a code change until paid storage is connected (`MEDIA_STORAGE=blob`).
+**Changing content.** Staff edit text in `/admin`; the site refreshes as soon as they save. Specialists, offices and reviews keep their last 25 versions (the Versions tab) so a change can be undone. Photos are stored in Vercel Blob (`MEDIA_STORAGE=blob` in Vercel), so staff can upload and replace them in `/admin`. The starting photos also live in `public/uploads`; each deploy copies any that Blob is missing (`scripts/sync-blob.mjs`).
 
 **Changing the content model.** After editing a file in `src/collections`, run `npm run generate:types`, then create a migration:
 

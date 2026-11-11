@@ -4,8 +4,8 @@ import type { CollectionConfig } from 'payload'
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 
-// Photos are served straight from the site's code (public/uploads) unless MEDIA_STORAGE=blob:
-// Payload keeps each photo's details, the file itself ships with every deploy.
+// With MEDIA_STORAGE=blob (set in Vercel), photos are stored in and served from Vercel Blob, and uploads
+// in /admin are kept. Without it (local development), they're served from public/uploads.
 export const mediaInBlob = process.env.MEDIA_STORAGE === 'blob' && Boolean(process.env.BLOB_READ_WRITE_TOKEN)
 
 export const Media: CollectionConfig = {
