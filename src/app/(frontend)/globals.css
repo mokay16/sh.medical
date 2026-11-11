@@ -4049,6 +4049,11 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
   position: absolute;
   inset: 0;
 }
+/* Leaflet stacks its layers up to z-index 1000; keep them inside the map so the sticky header stays on top */
+.loc-map {
+  isolation: isolate;
+  z-index: 0;
+}
 .live-map {
   font-family: var(--sans);
   background: #ebe3d6;
