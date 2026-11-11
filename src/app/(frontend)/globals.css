@@ -2930,14 +2930,7 @@ a.pill {
     linear-gradient(0deg, rgb(15 45 48 / 0.88) 0%, rgb(15 45 48 / 0.6) 35%, rgb(15 45 48 / 0.35) 65%, rgb(15 45 48 / 0.2) 100%);
 }
 .home-hero--full .home-hero-photo img {
-  object-position: 60% 12%;
-}
-/* desktop: zoomed in and shifted right so the people sit clear of the headline */
-@media (min-width: 901px) {
-  .home-hero--full .home-hero-photo img {
-    transform: scale(1.35) translateX(11%);
-    transform-origin: 50% 22%;
-  }
+  object-position: 50% 30%;
 }
 .home-hero--full .home-h1,
 .home-hero--full .home-hero-copy .lede,

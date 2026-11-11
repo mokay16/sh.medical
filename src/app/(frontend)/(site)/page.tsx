@@ -104,7 +104,7 @@ export default async function Home() {
           </div>
         </div>
         <div className="home-hero-photo">
-          <Image src="/images/home-hero-hallway.jpg" alt="A doctor and a nurse share a laugh with a smiling older patient in a wheelchair in a bright clinic hallway" fill priority sizes="(max-width: 900px) 100vw, 135vw" style={{ objectFit: 'cover' }} />
+          <Image src="/images/home-hero-care.jpg" alt="A nurse leans in close and smiles warmly at an older patient" fill priority sizes="100vw" style={{ objectFit: 'cover' }} />
         </div>
         <div className="wrap">
           <form action="/specialists" className="finder">
