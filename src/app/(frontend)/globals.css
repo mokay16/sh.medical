@@ -2932,6 +2932,13 @@ a.pill {
 .home-hero--full .home-hero-photo img {
   object-position: 50% 30%;
 }
+/* desktop: the photo is shown mirrored so the two women sit to the right of the headline */
+@media (min-width: 901px) {
+  .home-hero--full .home-hero-photo img {
+    object-position: 25% 25%;
+    transform: scaleX(-1);
+  }
+}
 .home-hero--full .home-h1,
 .home-hero--full .home-hero-copy .lede,
 .home-hero--full .home-hero-copy .eyebrow {
