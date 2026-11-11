@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Checks, CtaBand } from '@/components/sections'
 import { Icon } from '@/components/ui'
@@ -19,6 +20,21 @@ const FORMS: [string, string, string][] = [
   ['Request records be sent to SH Medical', 'Ask another provider to send your records to us.', '/forms/medical-records-release-to-sh.pdf'],
   ['Notice of Privacy Practices', 'How we use and protect your health information.', '/forms/notice-of-privacy-practices.pdf'],
 ]
+
+/** A rounded photo that sits under a section's text. */
+function Photo({ src, alt, width, height, position }: { src: string; alt: string; width: number; height: number; position?: string }) {
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      sizes="(max-width: 960px) 100vw, 640px"
+      className="patients-photo"
+      style={position ? { objectPosition: position } : undefined}
+    />
+  )
+}
 
 export default async function Patients() {
   // Insurance details come from the ENT department, whose billing page lists the plans for the group.
@@ -58,6 +74,7 @@ export default async function Patients() {
               few minutes early, and if you need to cancel, let us know at least 24 hours ahead.
             </p>
             <p className="lede">Patients under 18 must come with a parent or legal guardian to their first visit.</p>
+            <Photo src="/images/patients-new.jpg" alt="A smiling patient talks with her doctor in a bright exam room" width={2400} height={1600} />
           </div>
           <aside className="glance">
             <h3 className="h3" style={{ fontSize: 26 }}>
@@ -79,6 +96,7 @@ export default async function Patients() {
               </p>
             ))}
             <p className="lede">We don’t participate with Medi-Cal or its managed care plans. Your department’s page lists any differences for its services.</p>
+            <Photo src="/images/patients-insurance.jpg" alt="A patient checks in with the receptionist at the front desk" width={2400} height={1594} />
           </div>
           <aside className="glance" style={{ background: 'var(--white)' }}>
             <h3 className="h3" style={{ fontSize: 26 }}>
@@ -90,14 +108,14 @@ export default async function Patients() {
       </section>
 
       <section id="records" className="section">
-        <div className="wrap">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Forms and records</p>
-              <h2 className="h2">Download a form</h2>
-            </div>
+        <div className="wrap overview">
+          <div className="stack">
+            <p className="eyebrow">Forms and records</p>
+            <h2 className="h2">Download a form</h2>
+            <p className="lede">Print, fill in and bring these with you, or send them to your department ahead of your visit.</p>
+            <Photo src="/images/patients-forms.jpg" alt="Medical forms and a pen on a desk" width={2400} height={1600} />
           </div>
-          <div className="grid">
+          <div className="grid" style={{ ['--cols' as string]: 1 }}>
             {FORMS.map(([t, d, href]) => (
               <a key={href} href={href} className="resource">
                 <Icon name="description" size={28} />
@@ -120,6 +138,7 @@ export default async function Patients() {
               Many visits can happen by video on your phone, tablet or computer, when no physical exam or testing is needed. Your care team will tell
               you if a video visit suits your appointment and send you a link and any forms beforehand.
             </p>
+            <Photo src="/images/patients-video.jpg" alt="A doctor at her desk talks with a patient on a video call" width={2400} height={1350} />
           </div>
           <aside className="glance" style={{ background: 'var(--white)' }}>
             <h3 className="h3" style={{ fontSize: 26 }}>
@@ -136,6 +155,7 @@ export default async function Patients() {
             <p className="eyebrow">Patient portal</p>
             <h2 className="h2">Messages, results and appointments in MyChart</h2>
             <p className="lede">SH Medical uses UCSF MyChart. Sign in to message your care team, see test results and manage appointments.</p>
+            <Photo src="/images/patients-portal.jpg" alt="A person checks a health app on their phone" width={2400} height={1600} />
           </div>
           <div className="btn-row">
             <a className="btn btn--teal" href={MYCHART_URL}>

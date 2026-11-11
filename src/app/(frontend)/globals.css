@@ -4115,3 +4115,13 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
     padding: 0 6px;
   }
 }
+
+.patients-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 28px;
+  margin-top: 12px;
+}
