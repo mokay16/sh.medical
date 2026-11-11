@@ -4219,7 +4219,9 @@
    "city": "San Francisco, CA 94115",
    "phone": "(415) 362-5443",
    "lat": 37.790622,
-   "lng": -122.4321701
+   "lng": -122.4321701,
+   "photo": "office-pac",
+   "photoAlt": "Grand painted houses on a sloping Pacific Heights street"
   },
   {
    "slug": "castro",
@@ -4229,7 +4231,9 @@
    "city": "San Francisco, CA 94114",
    "phone": "(415) 362-5443",
    "lat": 37.768847,
-   "lng": -122.4354438
+   "lng": -122.4354438,
+   "photo": "office-castro",
+   "photoAlt": "The Castro Theatre and shops along Castro Street"
   },
   {
    "slug": "calst",
@@ -4239,7 +4243,9 @@
    "city": "San Francisco, CA 94115",
    "phone": null,
    "lat": 37.787866,
-   "lng": -122.4440261
+   "lng": -122.4440261,
+   "photo": "office-calst",
+   "photoAlt": "Laurel Hill Playground lawn, with the Golden Gate Bridge in the distance"
   },
   {
    "slug": "mateo",
@@ -4249,7 +4255,9 @@
    "city": "San Mateo, CA 94401",
    "phone": "(415) 362-2901",
    "lat": 37.5665509,
-   "lng": -122.3250044
+   "lng": -122.3250044,
+   "photo": "office-mateo",
+   "photoAlt": "Gateway to Central Park in San Mateo"
   },
   {
    "slug": "walnut",
@@ -4259,7 +4267,9 @@
    "city": "Walnut Creek, CA 94598",
    "phone": "(415) 362-2901",
    "lat": 37.9273841,
-   "lng": -122.0310002
+   "lng": -122.0310002,
+   "photo": "office-walnut",
+   "photoAlt": "Mount Diablo rising above the Walnut Creek valley"
   },
   {
    "slug": "phill",
@@ -4269,7 +4279,9 @@
    "city": "Pleasant Hill, CA 94523",
    "phone": "(415) 362-2901",
    "lat": 37.9618221,
-   "lng": -122.0740431
+   "lng": -122.0740431,
+   "photo": "office-phill",
+   "photoAlt": "A trail through spring wildflowers on Mount Diablo"
   },
   {
    "slug": "marin",
@@ -4279,7 +4291,9 @@
    "city": "San Rafael, CA 94903",
    "phone": "(415) 362-5443",
    "lat": 38.0063274,
-   "lng": -122.546093
+   "lng": -122.546093,
+   "photo": "office-marin",
+   "photoAlt": "Mission San Rafael Arcángel among palm trees"
   },
   {
    "slug": "sonoma",

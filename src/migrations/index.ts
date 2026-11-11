@@ -17,6 +17,7 @@ import * as migration_20261111_003022_user_roles from './20261111_003022_user_ro
 import * as migration_20261111_004206_version_history_and_fields from './20261111_004206_version_history_and_fields';
 import * as migration_20261111_200000_kazi_portrait from './20261111_200000_kazi_portrait';
 import * as migration_20261112_090000_remove_sunnyvale_brentwood from './20261112_090000_remove_sunnyvale_brentwood';
+import * as migration_20261112_120000_office_photos from './20261112_120000_office_photos';
 
 export const migrations = [
   {
@@ -113,5 +114,10 @@ export const migrations = [
     up: migration_20261112_090000_remove_sunnyvale_brentwood.up,
     down: migration_20261112_090000_remove_sunnyvale_brentwood.down,
     name: '20261112_090000_remove_sunnyvale_brentwood',
+  },
+  {
+    up: migration_20261112_120000_office_photos.up,
+    down: migration_20261112_120000_office_photos.down,
+    name: '20261112_120000_office_photos',
   },
 ];
