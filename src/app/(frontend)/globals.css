@@ -2983,9 +2983,15 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
 }
 
 /* Phones and small tablets: photo band under the header, text below on the page colour */
-@media (max-width: 900px) {
+/* Small tablets: the header is a little taller here */
+@media (min-width: 901px) and (max-width: 960px) {
   :root {
     --hero-overlap: 143px;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --hero-overlap: 161px;
   }
   .home-hero--full {
     padding-top: 0;
