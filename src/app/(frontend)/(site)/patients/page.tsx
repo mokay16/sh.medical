@@ -96,7 +96,7 @@ export default async function Patients() {
               </p>
             ))}
             <p className="lede">We don’t participate with Medi-Cal or its managed care plans. Your department’s page lists any differences for its services.</p>
-            <Photo src="/images/patients-insurance.jpg" alt="A patient checks in with the receptionist at the front desk" width={2400} height={1594} />
+            <Photo src="/images/patients-insurance.jpg" alt="A smiling receptionist in scrubs checks in a patient at the front desk" width={2400} height={1600} />
           </div>
           <aside className="glance" style={{ background: 'var(--white)' }}>
             <h3 className="h3" style={{ fontSize: 26 }}>
