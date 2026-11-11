@@ -105,6 +105,13 @@ export default async function SpecialistProfile({ params }: Props) {
               {depts.length ? <p className="eyebrow">{depts.map((d) => d.name).join(' · ')}</p> : null}
               <h1 className="h1">{s.name}</h1>
               <p className="lede">{s.role}</p>
+              {s.newPatients || s.languages?.length ? (
+                <p className="muted" style={{ margin: 0 }}>
+                  {[s.newPatients === 'yes' ? 'Accepting new patients' : s.newPatients === 'no' ? 'Not accepting new patients' : null, s.languages?.length ? `Speaks ${s.languages.join(', ')}` : null]
+                    .filter(Boolean)
+                    .join(' · ')}
+                </p>
+              ) : null}
               {facts.length ? (
                 <dl className="profile-facts">
                   {facts.map(([k, v]) => (

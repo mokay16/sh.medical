@@ -17,6 +17,8 @@ export const Reviews: CollectionConfig = {
     delete: ({ req }) => Boolean(req.user),
   },
   hooks: refreshHooks,
+  // Keeps the last 25 saved versions of each entry, so a change can be compared or restored.
+  versions: { maxPerDoc: 25 },
   defaultSort: '-date',
   fields: [
     {

@@ -12,6 +12,8 @@ export type OfficeView = {
   street: string
   city: string
   phone: string | null
+  fax: string | null
+  parking: string | null
   note: string | null
   photo: { url: string; alt: string; width: number; height: number } | null
   lat: number | null
@@ -135,6 +137,8 @@ export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = 
         </address>
         {distance != null ? <span className="meta meta--teal">About {Math.round(distance * 0.621)} miles away</span> : null}
         {o.note ? <span className="meta">{o.note}</span> : null}
+        {o.parking ? <span className="meta">{o.parking}</span> : null}
+        {o.fax ? <span className="meta">Fax {o.fax}</span> : null}
         <div className="care-tags">
           {o.care.length ? o.care.map((c) => <span key={c.slug}>{c.tag}</span>) : <span className="tbc">Care offered: to confirm</span>}
         </div>

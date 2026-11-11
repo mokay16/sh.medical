@@ -14,6 +14,7 @@ import * as migration_20261104_133706_fp_results_single_photos from './20261104_
 import * as migration_20261104_140500_fp_providers_heading from './20261104_140500_fp_providers_heading';
 import * as migration_20261109_224344_fp_surgical_photos from './20261109_224344_fp_surgical_photos';
 import * as migration_20261111_003022_user_roles from './20261111_003022_user_roles';
+import * as migration_20261111_004206_version_history_and_fields from './20261111_004206_version_history_and_fields';
 
 export const migrations = [
   {
@@ -94,6 +95,11 @@ export const migrations = [
   {
     up: migration_20261111_003022_user_roles.up,
     down: migration_20261111_003022_user_roles.down,
-    name: '20261111_003022_user_roles'
+    name: '20261111_003022_user_roles',
+  },
+  {
+    up: migration_20261111_004206_version_history_and_fields.up,
+    down: migration_20261111_004206_version_history_and_fields.down,
+    name: '20261111_004206_version_history_and_fields'
   },
 ];

@@ -1504,25 +1504,23 @@ a.card:hover {
   /* phones: the photo fills the card, the text sits on a teal shade rising from the bottom */
   .dept-card,
   .dept-card.flip {
-    min-height: 560px;
-    align-content: end;
     background: #0f2d30;
   }
   .dept-card > img,
   .dept-card.flip > img {
     position: absolute;
-    inset: 0;
-    height: 100%;
+    inset: 0 0 auto;
+    height: 340px;
     min-height: 0;
   }
   .dept-card::after,
   .dept-card.flip::after {
     inset: 0;
-    background: linear-gradient(to bottom, rgb(15 45 48 / 0) 22%, rgb(15 45 48 / 0.55) 45%, rgb(15 45 48 / 0.9) 68%, #0f2d30 100%);
+    background: linear-gradient(to bottom, rgb(15 45 48 / 0) 110px, rgb(15 45 48 / 0.6) 230px, rgb(15 45 48 / 0.92) 300px, #0f2d30 340px);
   }
   .dept-card .copy,
   .dept-card.flip .copy {
-    padding: 200px 24px 28px;
+    padding: 236px 24px 28px;
   }
 }
 
@@ -3997,4 +3995,13 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
     content: ' (' attr(href) ')';
     font-size: 12px;
   }
+}
+
+.book-note {
+  margin: 0 0 20px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--sand);
+  font-size: 16px;
 }

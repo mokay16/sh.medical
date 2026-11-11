@@ -148,7 +148,9 @@ export async function SiteFooter() {
           </div>
         </div>
         <div className="footer-bottom">
-          <div>© {new Date().getFullYear()} SH Medical. If this is a medical emergency, call 911.</div>
+          <div>
+            © {new Date().getFullYear()} SH Medical. This site gives general information, not medical advice. If this is a medical emergency, call 911.
+          </div>
           <nav aria-label="Legal" className="footer-legal">
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>

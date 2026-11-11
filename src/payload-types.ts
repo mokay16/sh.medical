@@ -528,6 +528,14 @@ export interface Specialist {
   title?: string | null;
   photo?: (number | null) | Media;
   offices?: (number | Office)[] | null;
+  /**
+   * Languages spoken, e.g. English, Spanish. Shown on the profile when filled in.
+   */
+  languages?: string[] | null;
+  /**
+   * Leave empty if unknown; nothing is shown.
+   */
+  newPatients?: ('yes' | 'no') | null;
   bio?:
     | {
         text: string;
@@ -562,6 +570,11 @@ export interface Office {
    */
   city: string;
   phone?: string | null;
+  fax?: string | null;
+  /**
+   * Parking, transit or how to find the suite. Shown on the office card when filled in.
+   */
+  parking?: string | null;
   hours?: string | null;
   /**
    * One short line, e.g. Our home since 1945
@@ -983,6 +996,8 @@ export interface SpecialistsSelect<T extends boolean = true> {
   title?: T;
   photo?: T;
   offices?: T;
+  languages?: T;
+  newPatients?: T;
   bio?:
     | T
     | {
@@ -1010,6 +1025,8 @@ export interface OfficesSelect<T extends boolean = true> {
   street?: T;
   city?: T;
   phone?: T;
+  fax?: T;
+  parking?: T;
   hours?: T;
   note?: T;
   photo?: T;

@@ -11,6 +11,8 @@ export const Specialists: CollectionConfig = {
     read: () => true,
   },
   hooks: refreshHooks,
+  // Keeps the last 25 saved versions of each entry, so a change can be compared or restored.
+  versions: { maxPerDoc: 25 },
   defaultSort: 'name',
   fields: [
     { name: 'name', type: 'text', required: true, admin: { description: 'With credentials, e.g. Jacob Johnson, MD' } },
@@ -19,6 +21,16 @@ export const Specialists: CollectionConfig = {
     { name: 'title', type: 'text', admin: { description: 'Full professional title for the profile page' } },
     { name: 'photo', type: 'upload', relationTo: 'media' },
     { name: 'offices', type: 'relationship', relationTo: 'offices', hasMany: true },
+    { name: 'languages', type: 'text', hasMany: true, admin: { description: 'Languages spoken, e.g. English, Spanish. Shown on the profile when filled in.' } },
+    {
+      name: 'newPatients',
+      type: 'select',
+      options: [
+        { label: 'Accepting new patients', value: 'yes' },
+        { label: 'Not accepting new patients', value: 'no' },
+      ],
+      admin: { description: 'Leave empty if unknown; nothing is shown.' },
+    },
     {
       name: 'bio',
       type: 'array',

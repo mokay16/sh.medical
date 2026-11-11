@@ -23,6 +23,8 @@ export default async function Locations({ searchParams }: Props) {
       street: o.street,
       city: o.city,
       phone: o.phone ?? null,
+      fax: o.fax ?? null,
+      parking: o.parking ?? null,
       note: o.note ?? null,
       photo: photo?.url ? { url: photo.url, alt: photo.alt, width: photo.width || 1200, height: photo.height || 800 } : null,
       lat: o.lat ?? null,

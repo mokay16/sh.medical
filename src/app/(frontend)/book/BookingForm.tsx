@@ -147,6 +147,11 @@ export function BookingForm({
           next()
         }}
       >
+        {!SENDING_ENABLED && step < 4 ? (
+          <p className="book-note" role="note">
+            Online requests aren’t switched on yet. Answer three short questions and we’ll show you the right office and number to call.
+          </p>
+        ) : null}
         <div className="stack" style={{ gap: 10 }}>
           {step < 4 ? <p className="muted" style={{ margin: 0, fontSize: 14 }}>Step {step} of 4</p> : null}
           <h1 className="h1" style={{ fontSize: 'clamp(36px, 3.6vw, 52px)' }} tabIndex={-1} ref={headingRef}>

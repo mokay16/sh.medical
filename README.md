@@ -64,3 +64,25 @@ Appointment requests contain health information, so they must only go to a HIPAA
 - Replace stand-in photos (see `../design/stock/SOURCES.md`); department logos for Dermatology, Surgery and Wellness; Dermatology and Wellness content (bracketed placeholders on their pages).
 - Bios for 12 specialists, and the facts marked "[to confirm]" (listed in `../PLAN.md`).
 - 301 redirects from the old specialty domains and sh.health URLs.
+
+## Runbook
+
+**Going live.** Every push to `main` deploys to Vercel: `npm run vercel-build` checks the settings, runs database migrations, loads the starting content only if the database is empty, then builds. If a migration or the build fails, the previous version stays live. GitHub also runs a type check and lint on every push (`.github/workflows/ci.yml`).
+
+**Changing content.** Staff edit text in `/admin`; the site refreshes as soon as they save. Specialists, offices and reviews keep their last 25 versions (the Versions tab) so a change can be undone. Photos live in `public/uploads` and ship with the code, so adding or replacing a photo is a code change until paid storage is connected (`MEDIA_STORAGE=blob`).
+
+**Changing the content model.** After editing a file in `src/collections`, run `npm run generate:types`, then create a migration:
+
+```
+MEDIA_STORAGE=blob BLOB_READ_WRITE_TOKEN=vercel_blob_rw_abc123_xyz DATABASE_URL=postgres://u:p@127.0.0.1:5999/none npm run payload migrate:create <name>
+```
+
+To add content to the live database, add a data step to that migration; the seed doesn't run once content exists.
+
+**Never set `RESEED=true` in Vercel** unless you mean to wipe and reload all content. Remove it straight after.
+
+**Accounts.** Admins manage accounts; editors change content only. Five wrong passwords lock an account for ten minutes. Give each person their own account.
+
+**Restoring.** Turn on point-in-time restore for the Neon database and use it to roll content back; redeploy an earlier commit in Vercel to roll code back.
+
+**Settings in Vercel.** `DATABASE_URL`, `PAYLOAD_SECRET`; `NEXT_PUBLIC_SITE_URL` once the custom domain is live (it feeds the sitemap and share links); `NEXT_PUBLIC_BOOKING_ENABLED=true` only when the booking form is connected to a HIPAA-compliant service.
