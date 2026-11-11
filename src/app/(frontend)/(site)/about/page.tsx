@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CtaBand } from '@/components/sections'
-import { Icon, Img } from '@/components/ui'
+import { Img } from '@/components/ui'
 import { MAIN_PHONE, getDepartments, getSpecialists, media, tel } from '@/lib/content'
 
 export const metadata: Metadata = { title: 'Our story', description: 'SH Medical has cared for Bay Area patients since 1940. Read our story and how our specialists work as one team.' }
@@ -90,10 +90,20 @@ export default async function About() {
           <div className="stack" style={{ gap: 24 }}>
             <p className="eyebrow">Eight decades</p>
             <h2 className="h2">A family practice that kept growing.</h2>
-            <div className="archival">
-              <Icon name="image" size={32} />
-              <strong>Archival photograph</strong>
-              <span>Dr. Meyer Schindler, and 450 Sutter Street. Higher-resolution scans to be supplied by SH Medical.</span>
+            {/* Archive photos are small originals, so they're shown close to their real size. */}
+            <div className="archive">
+              <figure className="archive-photo">
+                <Image src="/images/archive-meyer-schindler-army.jpg" alt="Dr. Meyer Schindler in his Army uniform during the Second World War" width={164} height={192} unoptimized />
+                <figcaption>Dr. Meyer Schindler, US Army, 1940s</figcaption>
+              </figure>
+              <figure className="archive-photo">
+                <Image src="/images/archive-450-sutter.jpg" alt="The Art Deco facade of 450 Sutter Street, looking up from the entrance" width={154} height={183} unoptimized />
+                <figcaption>450 Sutter Street, our home since 1945</figcaption>
+              </figure>
+              <figure className="archive-photo archive-photo--wide">
+                <Image src="/images/archive-reunion.jpg" alt="Two smiling physicians in suits at a practice gathering" width={395} height={303} unoptimized />
+                <figcaption>Generations of the practice</figcaption>
+              </figure>
             </div>
           </div>
           <ol className="timeline">

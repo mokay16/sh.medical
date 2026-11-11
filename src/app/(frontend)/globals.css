@@ -4010,3 +4010,36 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
   border: 1px solid var(--sand);
   font-size: 16px;
 }
+
+/* About: archive photos in the history section */
+.archive {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.archive-photo {
+  margin: 0;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+.archive-photo--wide {
+  grid-column: 1 / -1;
+}
+.archive-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 0 0 6px rgb(244 239 231 / 0.08);
+}
+.archive-photo:not(.archive-photo--wide) img {
+  max-width: 164px;
+}
+.archive-photo--wide img {
+  max-width: 395px;
+}
+.archive-photo figcaption {
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--on-dark-2);
+}
