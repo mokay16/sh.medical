@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import { useMemo, useState } from 'react'
 import { MAIN_PHONE } from '@/lib/phone'
 
@@ -37,10 +38,6 @@ const ZIP3: Record<string, [number, number]> = {
   '951': [37.34, -121.89], '954': [38.4, -122.68],
 }
 
-const MAP = { minLat: 37.3, maxLat: 38.36, minLng: -122.72, maxLng: -121.62 }
-// Labels drawn to the left of the pin, where a right-hand label would run into a neighbour.
-const LABEL_LEFT = new Set(['Pleasant Hill'])
-const LABEL_BELOW = new Set(['Walnut Creek'])
 
 function km(a: [number, number], b: [number, number]) {
   const r = Math.PI / 180
@@ -50,7 +47,9 @@ function km(a: [number, number], b: [number, number]) {
   return 12742 * Math.asin(Math.sqrt(h))
 }
 
-const cityOf = (o: OfficeView) => o.city.split(',')[0]
+
+// The map needs the browser, so it loads after the page; the office list works without it.
+const LiveMap = dynamic(() => import('./LiveMap'), { ssr: false, loading: () => <div className="live-map live-map--loading">Loading map…</div> })
 
 export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = '' }: Props) {
   const [query, setQuery] = useState(initialQuery)
@@ -104,22 +103,6 @@ export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = 
       .sort((a, b) => a.d - b.d)
   }, [visible, origin])
 
-  // One map pin per city, so San Francisco's offices share a pin.
-  const pins = useMemo(() => {
-    const byCity = new Map<string, OfficeView[]>()
-    for (const o of visible) if (o.lat != null) byCity.set(cityOf(o), [...(byCity.get(cityOf(o)) || []), o])
-    return [...byCity.entries()].map(([city, list]) => {
-      const lat = list.reduce((s, o) => s + o.lat!, 0) / list.length
-      const lng = list.reduce((s, o) => s + o.lng!, 0) / list.length
-      return {
-        city,
-        count: list.length,
-        slug: list[0].slug,
-        x: ((lng - MAP.minLng) / (MAP.maxLng - MAP.minLng)) * 100,
-        y: ((MAP.maxLat - lat) / (MAP.maxLat - MAP.minLat)) * 100,
-      }
-    })
-  }, [visible])
 
   const card = (o: OfficeView, distance?: number) => (
     <article key={o.slug} id={o.slug} className={`loc-card${o.photo ? ' with-photo' : ''}`}>
@@ -201,17 +184,8 @@ export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = 
               </div>
             </div>
           </div>
-          <div className="loc-map" role="img" aria-label="Map of SH Medical offices across the San Francisco Bay Area">
-            {pins.map((p) => (
-              <a key={p.city} className={`pin${LABEL_BELOW.has(p.city) ? ' pin--below' : p.x > 72 || LABEL_LEFT.has(p.city) ? ' pin--left' : ''}`} href={`#${p.slug}`} style={{ left: `${p.x}%`, top: `${p.y}%` }}>
-                <i />
-                <span>
-                  {p.city}
-                  {p.count > 1 ? ` · ${p.count}` : ''}
-                </span>
-              </a>
-            ))}
-            <span className="map-note">Schematic map · select a pin to jump to the office</span>
+          <div className="loc-map">
+            <LiveMap offices={visible} origin={origin} />
           </div>
         </div>
       </section>

@@ -4043,3 +4043,61 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
   line-height: 1.35;
   color: var(--on-dark-2);
 }
+
+/* Locations: live map */
+.loc-map .live-map {
+  position: absolute;
+  inset: 0;
+}
+.live-map {
+  font-family: var(--sans);
+  background: #ebe3d6;
+}
+.live-map--loading {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 15px;
+}
+.live-map .leaflet-control-attribution {
+  font-size: 11px;
+}
+.live-pin i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--clay);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgb(158 74 46 / 0.25), 0 3px 8px rgb(28 42 42 / 0.3);
+}
+.live-pin:focus-visible i {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+.live-pin--you i {
+  width: 20px;
+  height: 20px;
+  background: var(--teal);
+  box-shadow: 0 0 0 6px rgb(40 105 109 / 0.25);
+}
+.live-map .leaflet-popup-content {
+  margin: 14px 18px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.live-map .leaflet-popup-content strong {
+  font-family: var(--font-serif), serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+.live-pop-acts {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+.live-map .leaflet-popup-content a {
+  color: var(--teal);
+  font-weight: 600;
+}
