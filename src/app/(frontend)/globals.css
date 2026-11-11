@@ -4106,3 +4106,22 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
   color: var(--teal);
   font-weight: 600;
 }
+
+/* Locations: the care filter as an even grid of equal-width buttons */
+.care-filter {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 560px;
+}
+.care-filter .pill {
+  justify-content: center;
+  padding: 0 10px;
+  text-align: center;
+}
+@media (max-width: 420px) {
+  .care-filter .pill {
+    font-size: 14px;
+    padding: 0 6px;
+  }
+}

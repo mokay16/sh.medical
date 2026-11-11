@@ -175,7 +175,7 @@ export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = 
             </form>
             <div className="stack" style={{ gap: 10 }}>
               <span style={{ fontSize: 14, fontWeight: 600 }}>Filter by care</span>
-              <div className="chips" role="group" aria-label="Filter by care">
+              <div className="chips care-filter" role="group" aria-label="Filter by care">
                 {[{ slug: '', tag: 'All care' }, ...cares].map((c) => (
                   <button key={c.slug || 'all'} type="button" className="pill" aria-pressed={care === c.slug} onClick={() => setCare(c.slug)}>
                     {c.tag}
