@@ -58,7 +58,7 @@ export default async function About() {
         </div>
       </section>
       <div className="wrap">
-        <Image src="/images/bay-area-hills-morning.jpg" alt="Morning light over green Bay Area hills" width={1920} height={1080} sizes="(max-width: 1440px) 100vw, 1248px" priority className="about-photo" />
+        <Image src="/images/golden-gate.jpg" alt="The Golden Gate Bridge over the blue bay, with San Francisco beyond" width={1568} height={1046} sizes="(max-width: 1440px) 100vw, 1248px" priority className="about-photo" style={{ objectPosition: '30% 45%' }} />
       </div>
 
       <section className="section">
