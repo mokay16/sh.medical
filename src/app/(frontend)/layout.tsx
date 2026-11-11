@@ -12,7 +12,7 @@ const sans = Figtree({ subsets: ['latin'], variable: '--font-sans', display: 'sw
 /** Pages are pre-built, then refreshed from the CMS at most once a minute. */
 export const revalidate = 60
 
-const DESCRIPTION = 'ENT, audiology, allergy, sleep, voice, balance, facial plastics, dermatology, surgery and wellness, in 12 Bay Area offices. Since 1940.'
+const DESCRIPTION = 'ENT, audiology, allergy, sleep, voice, balance, facial plastics, dermatology, surgery and wellness, in 9 Bay Area offices. Since 1940.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

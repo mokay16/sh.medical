@@ -5,7 +5,7 @@ import { OfficeFinder, type OfficeView } from './OfficeFinder'
 import { JsonLd } from '@/components/JsonLd'
 import { SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = { title: 'Locations', description: 'Find an SH Medical office near you: twelve locations across San Francisco, the Peninsula, the South Bay, the East Bay and the North Bay.' }
+export const metadata: Metadata = { title: 'Locations', description: 'Find an SH Medical office near you: nine locations across San Francisco, the Peninsula, the East Bay and the North Bay.' }
 
 type Props = { searchParams: Promise<{ q?: string; care?: string }> }
 

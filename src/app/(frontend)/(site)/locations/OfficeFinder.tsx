@@ -24,10 +24,10 @@ export type OfficeView = {
 
 type Props = { offices: OfficeView[]; cares: { slug: string; tag: string }[]; initialQuery?: string; initialCare?: string }
 
-// Design groups: San Francisco · Peninsula, South Bay & North Bay · East Bay
+// Groups: San Francisco · Peninsula & North Bay · East Bay
 const GROUPS: [string, string[]][] = [
   ['San Francisco', ['San Francisco']],
-  ['Peninsula, South Bay & North Bay', ['Peninsula', 'South Bay', 'North Bay']],
+  ['Peninsula & North Bay', ['Peninsula', 'North Bay']],
   ['East Bay', ['East Bay']],
 ]
 
@@ -143,9 +143,9 @@ export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = 
           <div className="stack" style={{ gap: 24 }}>
             <p className="eyebrow">Locations</p>
             <h1 className="h1">
-              Twelve offices, <em>close to home.</em>
+              Nine offices, <em>close to home.</em>
             </h1>
-            <p className="lede">From Sonoma to Sunnyvale. Every office is open Monday to Friday, 8am to 5pm.</p>
+            <p className="lede">From Sonoma to San Mateo. Every office is open Monday to Friday, 8am to 5pm.</p>
             <form
               className="stack"
               style={{ gap: 10 }}

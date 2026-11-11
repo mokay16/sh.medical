@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: 'Page not found', robots: { index: fa
 const LINKS = [
   ['/care', 'All care', 'Browse our ten departments'],
   ['/specialists', 'Find a specialist', 'Search our doctors and clinicians'],
-  ['/locations', 'Locations', 'Twelve offices across the Bay Area'],
+  ['/locations', 'Locations', 'Nine offices across the Bay Area'],
   ['/patients', 'Patients', 'Forms, insurance and medical records'],
 ]
 

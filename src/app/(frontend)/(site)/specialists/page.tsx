@@ -6,7 +6,7 @@ import { MAIN_PHONE, docs, getDepartments, getSpecialists, tel } from '@/lib/con
 
 export const metadata: Metadata = { title: 'Find a specialist', description: 'Meet SH Medical’s physicians, surgeons, audiologists and therapists, and find the right specialist for you.' }
 
-const REGIONS = ['San Francisco', 'Peninsula', 'South Bay', 'East Bay', 'North Bay']
+const REGIONS = ['San Francisco', 'Peninsula', 'East Bay', 'North Bay']
 
 type Props = { searchParams: Promise<{ care?: string; region?: string; q?: string }> }
 
@@ -47,7 +47,7 @@ export default async function Specialists({ searchParams }: Props) {
               The right specialist, <em>close to you.</em>
             </h1>
             <p className="lede" style={{ maxWidth: 380 }}>
-              {all.length} ENT physicians, audiologists, allergists, therapists and speech-language pathologists across 12 Bay Area offices.
+              {all.length} ENT physicians, audiologists, allergists, therapists and speech-language pathologists across 9 Bay Area offices.
             </p>
           </div>
           <form className="finder" action="/specialists" style={{ marginTop: 8, maxWidth: 'none' }}>

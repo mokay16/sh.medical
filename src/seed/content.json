@@ -407,7 +407,6 @@
     "pac",
     "castro",
     "mateo",
-    "sunny",
     "marin",
     "sonoma"
    ],
@@ -726,10 +725,8 @@
     "pac",
     "castro",
     "mateo",
-    "sunny",
     "walnut",
     "phill",
-    "brent",
     "marin",
     "sonoma"
    ],
@@ -1186,7 +1183,7 @@
     "eyebrow": "About SH Sleep & Snoring",
     "heading": "Testing, diagnosis and treatment made easy",
     "paras": [
-     "SH Sleep & Snoring is a sleep medicine clinic designed to make testing, diagnosis and treatment of sleep disorders easy to reach across the Bay Area, from Sonoma to the South Bay, with several offices in San Francisco and remote options too.",
+     "SH Sleep & Snoring is a sleep medicine clinic designed to make testing, diagnosis and treatment of sleep disorders easy to reach across the Bay Area, from Sonoma to the Peninsula, with several offices in San Francisco and remote options too.",
      "Our team of nurse practitioners, board-certified otolaryngologists and board-certified sleep physicians offers evidence-based care. We don’t believe in one treatment for everyone; we work with you to find what fits your health, lifestyle and preferences."
     ],
     "glance_title": "Signs it’s worth a test",
@@ -2028,8 +2025,8 @@
      "small": "From rhinoplasty and facelifts to neuromodulators and fillers"
     },
     {
-     "big": "3 locations",
-     "small": "Union Square · San Mateo · Sunnyvale"
+     "big": "2 locations",
+     "small": "Union Square · San Mateo"
     }
    ],
    "home": {
@@ -2061,7 +2058,7 @@
      "Free Flap Reconstruction",
      "Facial Reanimation"
     ],
-    "note": "Available at Union Square, SF · San Mateo · Sunnyvale"
+    "note": "Available at Union Square, SF · San Mateo"
    },
    "conditions": {
     "navLabel": "Surgical services",
@@ -2251,7 +2248,7 @@
      ],
      [
       "Choose your surgeon and location",
-      "See Dr. Challapalli or Dr. Kazi at Union Square, San Mateo or Sunnyvale."
+      "See Dr. Challapalli or Dr. Kazi at Union Square, or Dr. Challapalli in San Mateo."
      ],
      [
       "Surgery instructions & pre-op checklist",
@@ -2274,12 +2271,11 @@
    "reviews": [],
    "offices": [
     "union",
-    "mateo",
-    "sunny"
+    "mateo"
    ],
    "officePhone": null,
    "whereHeading": "Office & surgical locations",
-   "whereNote": "Union Square: 450 Sutter St., Suite 933 (Dr. Challapalli · Dr. Kazi). San Mateo: 100 S. Ellsworth Ave., Suite 303, (415) 362-2901 (Dr. Challapalli). Sunnyvale: Dr. Kazi. Surgery at Campus Surgery Center, Pacific Heights, SF Surgery Center, Presidio, CPMC, UCSF and MarinHealth.",
+   "whereNote": "Union Square: 450 Sutter St., Suite 933 (Dr. Challapalli · Dr. Kazi). San Mateo: 100 S. Ellsworth Ave., Suite 303, (415) 362-2901 (Dr. Challapalli). Surgery at Campus Surgery Center, Pacific Heights, SF Surgery Center, Presidio, CPMC, UCSF and MarinHealth.",
    "resources": [
     {
      "icon": "event_available",
@@ -2789,7 +2785,6 @@
     "pac",
     "castro",
     "mateo",
-    "sunny",
     "marin",
     "sonoma"
    ],
@@ -3323,8 +3318,7 @@
    "title": "Adult and Pediatric ENT Specialist / Head and Neck Surgeon",
    "offices": [
     "union",
-    "mateo",
-    "sunny"
+    "mateo"
    ],
    "photo": "specialist-lauren-luk-md-fars",
    "bio": [
@@ -3453,8 +3447,7 @@
    "role": "Head & neck surgeon · Facial plastics",
    "title": null,
    "offices": [
-    "union",
-    "sunny"
+    "union"
    ],
    "photo": "specialist-aasif-kazi-md-pharm-d-portrait",
    "bio": [],
@@ -4034,7 +4027,6 @@
    "offices": [
     "walnut",
     "phill",
-    "brent",
     "marin"
    ],
    "photo": "specialist-rosana-amaro-au-d",
@@ -4078,8 +4070,7 @@
    "role": "Doctor of audiology",
    "title": null,
    "offices": [
-    "union",
-    "sunny"
+    "union"
    ],
    "photo": "specialist-brooke-leonard-au-d",
    "bio": [],
@@ -4090,9 +4081,7 @@
    "name": "Hannah Torok, Au.D.",
    "role": "Doctor of audiology",
    "title": null,
-   "offices": [
-    "sunny"
-   ],
+   "offices": [],
    "photo": null,
    "bio": [
     "Hannah Torok, Au.D., joined San Francisco Audiology in May 2024. She is a native Texan and received both her B.S. in Communication Sciences and Disorders and Doctorate of Audiology at the University of Texas at Austin. Dr. Torok has been living and working in the Bay Area since May 2022. Her expertise includes comprehensive hearing evaluations, patient education and hearing aid dispensing. She is excited to join our team and provide excellent patient care."
@@ -4263,16 +4252,6 @@
    "lng": -122.3250044
   },
   {
-   "slug": "sunny",
-   "name": "Sunnyvale",
-   "region": "South Bay",
-   "street": "877 W Fremont Ave, Suite I4",
-   "city": "Sunnyvale, CA 94087",
-   "phone": "(415) 362-2901",
-   "lat": 37.3526784,
-   "lng": -122.0493413
-  },
-  {
    "slug": "walnut",
    "name": "Walnut Creek",
    "region": "East Bay",
@@ -4291,26 +4270,6 @@
    "phone": "(415) 362-2901",
    "lat": 37.9618221,
    "lng": -122.0740431
-  },
-  {
-   "slug": "brent",
-   "name": "Brentwood",
-   "region": "East Bay",
-   "street": "6600 Lone Tree Way",
-   "city": "Brentwood, CA 94513",
-   "phone": "(415) 362-2901",
-   "lat": 37.9624294,
-   "lng": -121.7306337
-  },
-  {
-   "slug": "brent-sand-creek",
-   "name": "Brentwood · Sand Creek",
-   "region": "East Bay",
-   "street": "191 Sand Creek Road, Suite 125",
-   "city": "Brentwood, CA 94513",
-   "phone": "(415) 362-2901",
-   "lat": 37.9472317,
-   "lng": -121.7003244
   },
   {
    "slug": "marin",
