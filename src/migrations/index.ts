@@ -13,6 +13,7 @@ import * as migration_20261103_024101_fp_results_team_treatment_images from './2
 import * as migration_20261104_133706_fp_results_single_photos from './20261104_133706_fp_results_single_photos';
 import * as migration_20261104_140500_fp_providers_heading from './20261104_140500_fp_providers_heading';
 import * as migration_20261109_224344_fp_surgical_photos from './20261109_224344_fp_surgical_photos';
+import * as migration_20261111_003022_user_roles from './20261111_003022_user_roles';
 
 export const migrations = [
   {
@@ -88,6 +89,11 @@ export const migrations = [
   {
     up: migration_20261109_224344_fp_surgical_photos.up,
     down: migration_20261109_224344_fp_surgical_photos.down,
-    name: '20261109_224344_fp_surgical_photos'
+    name: '20261109_224344_fp_surgical_photos',
+  },
+  {
+    up: migration_20261111_003022_user_roles.up,
+    down: migration_20261111_003022_user_roles.down,
+    name: '20261111_003022_user_roles'
   },
 ];

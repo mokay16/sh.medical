@@ -4,7 +4,7 @@ import type { Office, Specialist } from '@/payload-types'
 import { TeamGrid } from '@/components/sections'
 import { MAIN_PHONE, docs, getDepartments, getSpecialists, tel } from '@/lib/content'
 
-export const metadata: Metadata = { title: 'Find a specialist' }
+export const metadata: Metadata = { title: 'Find a specialist', description: 'Meet SH Medical’s physicians, surgeons, audiologists and therapists, and find the right specialist for you.' }
 
 const REGIONS = ['San Francisco', 'Peninsula', 'South Bay', 'East Bay', 'North Bay']
 

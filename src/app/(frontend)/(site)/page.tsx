@@ -4,6 +4,9 @@ import { CtaBand } from '@/components/sections'
 import { StoryCarousel, type Story } from '@/components/StoryCarousel'
 import { Icon, Img } from '@/components/ui'
 import { MAIN_PHONE, MYCHART_URL, getDepartments, getSpecialists, media, tel } from '@/lib/content'
+import { JsonLd } from '@/components/JsonLd'
+import { SH_SOCIAL } from '@/components/SiteChrome'
+import { SITE_URL } from '@/lib/site'
 
 /** Home page, following the canvas artboards "Home · desktop" 1–3. */
 
@@ -66,6 +69,20 @@ export default async function Home() {
 
   return (
     <>
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'MedicalOrganization',
+          name: 'SH Medical',
+          url: SITE_URL,
+          logo: `${SITE_URL}/brand/sh-medical-logo.png`,
+          telephone: MAIN_PHONE,
+          foundingDate: '1940',
+          areaServed: 'San Francisco Bay Area',
+          sameAs: SH_SOCIAL.map((s) => s.href),
+          department: departments.map((d) => ({ '@type': 'MedicalClinic', name: d.brand || d.name, url: `${SITE_URL}/care/${d.slug}`, telephone: d.phone || undefined })),
+        }}
+      />
       {/* Hero */}
       <section className="home-hero home-hero--full">
         <div className="wrap home-hero-copy">

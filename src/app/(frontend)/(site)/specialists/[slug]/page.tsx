@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Department, Office, Specialist } from '@/payload-types'
 import { CtaBand } from '@/components/sections'
+import { JsonLd } from '@/components/JsonLd'
+import { SITE_URL } from '@/lib/site'
 import { Img, Initials } from '@/components/ui'
 import { MAIN_PHONE, deptOffices, docs, getDepartments, getSpecialists, media, tel } from '@/lib/content'
 
@@ -74,6 +76,18 @@ export default async function SpecialistProfile({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': /\b(MD|M\.D\.|DO)\b/.test(s.name) ? 'Physician' : 'Person',
+          name: s.name,
+          url: `${SITE_URL}/specialists/${s.slug}`,
+          jobTitle: s.title || s.role,
+          description: s.bio?.[0]?.text || undefined,
+          image: media(s.photo)?.url ? `${SITE_URL}${media(s.photo)!.url}` : undefined,
+          worksFor: { '@type': 'MedicalOrganization', name: 'SH Medical', url: SITE_URL },
+        }}
+      />
       <section className="section" style={{ paddingTop: 32 }}>
         <div className="wrap">
           <nav aria-label="Breadcrumb" className="breadcrumb" style={{ marginBottom: 32 }}>

@@ -4,7 +4,7 @@ import { DeptBadge } from '@/components/DeptChrome'
 import { Icon, Img } from '@/components/ui'
 import { getDepartments, media } from '@/lib/content'
 
-export const metadata: Metadata = { title: 'All care' }
+export const metadata: Metadata = { title: 'All care', description: 'SH Medical’s ten departments: ENT, audiology, allergy, sleep, voice, balance, facial plastics, dermatology, surgery and wellness.' }
 
 export default async function AllCare() {
   const departments = await getDepartments()

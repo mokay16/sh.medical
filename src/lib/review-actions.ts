@@ -1,10 +1,31 @@
 'use server'
 
+import { headers } from 'next/headers'
 import { getPayloadClient } from './content'
 
 export type ReviewFormState = { ok: boolean; message: string }
 
 const text = (v: FormDataEntryValue | null, max: number) => String(v ?? '').trim().slice(0, max)
+
+// Spam limits: three reviews an hour from one address, and thirty an hour in total.
+const PER_VISITOR = 3
+const PER_HOUR = 30
+const HOUR = 60 * 60 * 1000
+const recent = new Map<string, number[]>()
+
+async function tooMany(): Promise<boolean> {
+  const ip = (await headers()).get('x-forwarded-for')?.split(',')[0].trim() || 'unknown'
+  const now = Date.now()
+  const times = (recent.get(ip) || []).filter((t) => now - t < HOUR)
+  if (times.length >= PER_VISITOR) return true
+  recent.set(ip, [...times, now])
+  const payload = await getPayloadClient()
+  const { totalDocs } = await payload.count({
+    collection: 'reviews',
+    where: { and: [{ status: { equals: 'pending' } }, { createdAt: { greater_than: new Date(now - HOUR).toISOString() } }] },
+  })
+  return totalDocs >= PER_HOUR
+}
 
 /** Saves a review from a department's Reviews page as Pending; staff publish it in /admin. */
 export async function submitReview(_prev: ReviewFormState, form: FormData): Promise<ReviewFormState> {
@@ -25,6 +46,7 @@ export async function submitReview(_prev: ReviewFormState, form: FormData): Prom
   if (form.get('consent') !== 'on') return { ok: false, message: 'Please confirm we may publish your review.' }
 
   try {
+    if (await tooMany()) return { ok: false, message: 'We’ve had a lot of reviews just now. Please try again in an hour.' }
     const payload = await getPayloadClient()
     await payload.create({
       collection: 'reviews',

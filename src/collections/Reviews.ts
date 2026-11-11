@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { refreshHooks } from '../lib/revalidate'
 
 /** Patient reviews. Visitors submit them from a department's Reviews page; they go live once staff publish them. */
 export const Reviews: CollectionConfig = {
@@ -15,6 +16,7 @@ export const Reviews: CollectionConfig = {
     update: ({ req }) => Boolean(req.user),
     delete: ({ req }) => Boolean(req.user),
   },
+  hooks: refreshHooks,
   defaultSort: '-date',
   fields: [
     {
@@ -40,6 +42,12 @@ export const Reviews: CollectionConfig = {
       ],
     },
     { name: 'date', type: 'date', defaultValue: () => new Date().toISOString(), admin: { position: 'sidebar', description: 'Leave empty if the date is unknown' } },
-    { name: 'email', type: 'email', admin: { description: 'From the form, for follow-up only. Never shown on the site.' } },
+    {
+      name: 'email',
+      type: 'email',
+      // Staff only: never returned to the public, even for published reviews.
+      access: { read: ({ req }) => Boolean(req.user) },
+      admin: { description: 'From the form, for follow-up only. Never shown on the site.' },
+    },
   ],
 }

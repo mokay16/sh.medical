@@ -1,8 +1,9 @@
 import React from 'react'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { DM_Serif_Text, Figtree } from 'next/font/google'
 import { getDepartments } from '@/lib/content'
 import { ICONS } from '@/components/ui'
+import { SITE_NAME, SITE_URL } from '@/lib/site'
 import './globals.css'
 
 const serif = DM_Serif_Text({ subsets: ['latin'], weight: '400', style: ['normal', 'italic'], variable: '--font-serif', display: 'swap' })
@@ -11,11 +12,19 @@ const sans = Figtree({ subsets: ['latin'], variable: '--font-sans', display: 'sw
 /** Pages are pre-built, then refreshed from the CMS at most once a minute. */
 export const revalidate = 60
 
+const DESCRIPTION = 'ENT, audiology, allergy, sleep, voice, balance, facial plastics, dermatology, surgery and wellness, in 12 Bay Area offices. Since 1940.'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: { default: 'SH Medical · Care for the senses since 1940', template: '%s · SH Medical' },
-  description:
-    'ENT, audiology, allergy, sleep, voice, balance, facial plastics, dermatology, surgery and wellness, in 12 Bay Area offices. Since 1940.',
+  description: DESCRIPTION,
+  // Each page's own address is its canonical one.
+  alternates: { canonical: './' },
+  openGraph: { type: 'website', siteName: SITE_NAME, locale: 'en_US', title: 'SH Medical · Care for the senses since 1940', description: DESCRIPTION },
+  twitter: { card: 'summary_large_image' },
 }
+
+export const viewport: Viewport = { themeColor: '#28696d' }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   // Load only the icons in use, including any an editor picks for a department's resources.

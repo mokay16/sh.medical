@@ -38,6 +38,8 @@ export default buildConfig({
   },
   collections: [Departments, Specialists, Offices, Reviews, Media, Users],
   editor: lexicalEditor(),
+  // The site reads content directly and the admin uses the REST API; GraphQL isn't needed.
+  graphQL: { disable: true },
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),

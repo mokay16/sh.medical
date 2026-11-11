@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { refreshHooks } from '../lib/revalidate'
 
 export const Offices: CollectionConfig = {
   slug: 'offices',
@@ -9,6 +10,7 @@ export const Offices: CollectionConfig = {
   access: {
     read: () => true,
   },
+  hooks: refreshHooks,
   defaultSort: 'order',
   fields: [
     { name: 'name', type: 'text', required: true },

@@ -5,7 +5,7 @@ import { BookingForm } from './BookingForm'
 import { Icon } from '@/components/ui'
 import { MAIN_PHONE, getDepartments, getOffices, tel } from '@/lib/content'
 
-export const metadata: Metadata = { title: 'Book an appointment' }
+export const metadata: Metadata = { title: 'Book an appointment', description: 'Request an appointment with an SH Medical specialist, or call the office nearest you.' }
 
 type Props = { searchParams: Promise<{ care?: string }> }
 

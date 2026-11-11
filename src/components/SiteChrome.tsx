@@ -65,6 +65,10 @@ export function SiteHeader() {
             <SocialLinks className="utility-social" />
           </div>
           <div className="utility-group utility-links">
+            <Link className="utility-search" href="/search">
+              <Icon name="search" size={18} />
+              Search
+            </Link>
             <a href={MYCHART_URL}>
               <span className="utility-long">Patient portal (MyChart)</span>
               <span className="utility-short">MyChart</span>
@@ -138,12 +142,18 @@ export async function SiteFooter() {
               <Link href="/about">Our story</Link>
               <Link href="/specialists">Specialists</Link>
               <Link href="/locations">Locations</Link>
+              <Link href="/contact">Contact us</Link>
+              <Link href="/search">Search</Link>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
           <div>© {new Date().getFullYear()} SH Medical. If this is a medical emergency, call 911.</div>
-          <div>Privacy · Non-discrimination · Accessibility</div>
+          <nav aria-label="Legal" className="footer-legal">
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
+            <Link href="/accessibility">Accessibility</Link>
+          </nav>
         </div>
       </div>
     </footer>

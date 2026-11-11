@@ -1,3 +1,4 @@
+import { refreshHooks } from '../lib/revalidate'
 import type { CollectionConfig, Field } from 'payload'
 
 /** Text fields accept *italic* and **bold** markers, rendered on the site. */
@@ -39,6 +40,7 @@ export const Departments: CollectionConfig = {
     useAsTitle: 'name',
     defaultColumns: ['name', 'brand', 'phone', 'order'],
   },
+  hooks: refreshHooks,
   access: {
     read: () => true,
   },

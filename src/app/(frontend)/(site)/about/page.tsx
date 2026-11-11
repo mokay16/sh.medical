@@ -5,7 +5,7 @@ import { CtaBand } from '@/components/sections'
 import { Icon, Img } from '@/components/ui'
 import { MAIN_PHONE, getDepartments, getSpecialists, media, tel } from '@/lib/content'
 
-export const metadata: Metadata = { title: 'Our story' }
+export const metadata: Metadata = { title: 'Our story', description: 'SH Medical has cared for Bay Area patients since 1940. Read our story and how our specialists work as one team.' }
 
 /** About, following the canvas artboard "About · Our story". */
 

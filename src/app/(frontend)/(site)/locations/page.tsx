@@ -2,8 +2,10 @@ import type { Metadata } from 'next'
 import type { Office } from '@/payload-types'
 import { docs, getDepartments, getOffices, media } from '@/lib/content'
 import { OfficeFinder, type OfficeView } from './OfficeFinder'
+import { JsonLd } from '@/components/JsonLd'
+import { SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = { title: 'Locations' }
+export const metadata: Metadata = { title: 'Locations', description: 'Find an SH Medical office near you: twelve locations across San Francisco, the Peninsula, the South Bay, the East Bay and the North Bay.' }
 
 type Props = { searchParams: Promise<{ q?: string; care?: string }> }
 
@@ -30,5 +32,22 @@ export default async function Locations({ searchParams }: Props) {
   })
   const cares = departments.filter((d) => d.offices?.length).map((d) => ({ slug: d.slug, tag: d.tag }))
 
-  return <OfficeFinder offices={view} cares={cares} initialQuery={q} initialCare={care} />
+  return (
+    <>
+      <JsonLd
+        data={offices.map((o) => ({
+          '@context': 'https://schema.org',
+          '@type': 'MedicalClinic',
+          name: `SH Medical ${o.name}`,
+          url: `${SITE_URL}/locations`,
+          telephone: o.phone || undefined,
+          address: { '@type': 'PostalAddress', streetAddress: o.street, addressLocality: o.city, addressCountry: 'US' },
+          geo: o.lat && o.lng ? { '@type': 'GeoCoordinates', latitude: o.lat, longitude: o.lng } : undefined,
+          openingHours: o.hours || undefined,
+          parentOrganization: { '@type': 'MedicalOrganization', name: 'SH Medical', url: SITE_URL },
+        }))}
+      />
+      <OfficeFinder offices={view} cares={cares} initialQuery={q} initialCare={care} />
+    </>
+  )
 }

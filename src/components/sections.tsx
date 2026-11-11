@@ -5,6 +5,7 @@ import { docs, media, sitePages, tel, deptOffices } from '@/lib/content'
 import { Inline, RichText } from '@/lib/format'
 import { DeptBadge } from './DeptChrome'
 import { Icon, Img, Initials } from './ui'
+import { JsonLd } from './JsonLd'
 import { TiltCard } from './TiltCard'
 import { BeforeAfter } from './BeforeAfter'
 import { StoryCarousel } from './StoryCarousel'
@@ -674,6 +675,13 @@ export function Faq({ d }: D) {
   const open = d.faqOpen ?? 2
   return (
     <section className="section">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: d.faq.map((q) => ({ '@type': 'Question', name: q.question, acceptedAnswer: { '@type': 'Answer', text: q.answer } })),
+        }}
+      />
       <div className="wrap faq-layout">
         <div className="stack" style={{ gap: 16 }}>
           <p className="eyebrow">FAQ</p>

@@ -4,7 +4,7 @@ import { Checks, CtaBand } from '@/components/sections'
 import { Icon } from '@/components/ui'
 import { MAIN_PHONE, MYCHART_URL, getDepartment, tel } from '@/lib/content'
 
-export const metadata: Metadata = { title: 'Patients' }
+export const metadata: Metadata = { title: 'Patients', description: 'For SH Medical patients: MyChart, insurance, medical records, forms and what to bring to your visit.' }
 
 const BRING = [
   'Your insurance card',

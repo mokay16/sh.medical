@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { refreshHooks } from '../lib/revalidate'
 
 export const Specialists: CollectionConfig = {
   slug: 'specialists',
@@ -9,6 +10,7 @@ export const Specialists: CollectionConfig = {
   access: {
     read: () => true,
   },
+  hooks: refreshHooks,
   defaultSort: 'name',
   fields: [
     { name: 'name', type: 'text', required: true, admin: { description: 'With credentials, e.g. Jacob Johnson, MD' } },
