@@ -108,7 +108,7 @@ export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = 
     <article key={o.slug} id={o.slug} className={`loc-card${o.photo ? ' with-photo' : ''}`}>
       {o.photo ? (
         <div className="loc-photo-box">
-          <Image src={o.photo.url} alt={o.photo.alt} fill sizes="(max-width: 680px) 100vw, 320px" style={{ objectFit: 'cover' }} />
+          <Image src={o.photo.url} alt={o.photo.alt} fill sizes="(max-width: 680px) 100vw, (max-width: 1080px) 50vw, 420px" style={{ objectFit: 'cover' }} />
         </div>
       ) : null}
       <div className="stack" style={{ gap: 10 }}>

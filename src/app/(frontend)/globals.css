@@ -2312,14 +2312,14 @@ a.card:hover {
   gap: 24px;
 }
 .loc-card.with-photo {
-  grid-column: span 2;
+  flex-direction: column;
   padding: 0;
   overflow: hidden;
 }
 .loc-photo-box {
   position: relative;
-  width: 42%;
-  min-height: 240px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
   flex-shrink: 0;
 }
 .loc-map .pin--left {
@@ -2327,7 +2327,8 @@ a.card:hover {
   transform: translate(calc(-100% + 12px), -12px);
 }
 .loc-card.with-photo > .stack {
-  padding: 26px 26px 26px 0;
+  flex: 1;
+  padding: 0 26px 26px;
 }
 .loc-card h3 {
   margin: 0;
@@ -2389,17 +2390,6 @@ a.card:hover {
 @media (max-width: 680px) {
   .loc-grid {
     grid-template-columns: 1fr;
-  }
-  .loc-card.with-photo {
-    grid-column: auto;
-    flex-direction: column;
-  }
-  .loc-photo-box {
-    width: 100%;
-    min-height: 200px;
-  }
-  .loc-card.with-photo > .stack {
-    padding: 0 26px 26px;
   }
   .loc-map .pin span {
     font-size: 11px;
