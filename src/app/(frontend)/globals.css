@@ -4415,3 +4415,7 @@ html.motion .reveal.is-in {
     translate: none;
   }
 }
+/* Sections focused by in-page links: no box around the whole section */
+[tabindex='-1']:focus:not(:focus-visible) {
+  outline: none;
+}

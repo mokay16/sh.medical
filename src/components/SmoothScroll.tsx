@@ -33,19 +33,40 @@ const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)')
 export function SmoothScroll() {
   const pathname = usePathname()
 
-  // Eased wheel scrolling and in-page links that glide to their target below the sticky header
+  // Eased wheel scrolling, and in-page links that land their target just below the sticky header
   useEffect(() => {
-    if (reduceMotion()) return
-    const header = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 88
-    const lenis = new Lenis({
-      autoRaf: true,
-      lerp: 0.1,
-      smoothWheel: true,
-      // Lists, menus and the map keep their own native scrolling
-      allowNestedScroll: true,
-      anchors: { offset: -(header + 16) },
-    })
-    return () => lenis.destroy()
+    const lenis = reduceMotion()
+      ? null
+      : new Lenis({
+          autoRaf: true,
+          lerp: 0.1,
+          smoothWheel: true,
+          // Lists, menus and the map keep their own native scrolling
+          allowNestedScroll: true,
+        })
+
+    const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+      const a = (e.target as Element | null)?.closest?.('a[href*="#"]') as HTMLAnchorElement | null
+      if (!a || a.target || a.origin !== location.origin || a.pathname !== location.pathname || !a.hash) return
+      const el = document.getElementById(decodeURIComponent(a.hash.slice(1)))
+      if (!el) return
+      e.preventDefault()
+      // The header shrinks once it sticks, so measure it now
+      const header = document.querySelector('header')?.getBoundingClientRect().height ?? 88
+      const top = el.getBoundingClientRect().top + window.scrollY - header - 16
+      if (lenis) lenis.scrollTo(top, { duration: 1.1 })
+      else window.scrollTo({ top })
+      history.pushState(null, '', a.hash)
+      // Move keyboard and screen-reader focus to the target, as a normal in-page link would
+      if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1')
+      el.focus({ preventScroll: true })
+    }
+    document.addEventListener('click', onClick)
+    return () => {
+      document.removeEventListener('click', onClick)
+      lenis?.destroy()
+    }
   }, [])
 
   // Fade-up on scroll; re-run on each page, since client navigation renders new content
