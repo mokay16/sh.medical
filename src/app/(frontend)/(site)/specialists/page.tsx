@@ -57,24 +57,28 @@ export default async function Specialists({ searchParams }: Props) {
     <>
       <section className="page-heading">
         <div className="wrap">
-          <p className="eyebrow">Find a specialist</p>
-          <div className="about-hero-row">
-            <h1 className="h1">
-              The right specialist, <em>close to you.</em>
-            </h1>
-            <p className="lede" style={{ maxWidth: 380 }}>
-              {all.length} ENT physicians, physician assistants, audiologists, allergists, therapists, speech-language pathologists and acupuncturists across 10 Bay Area offices.
-            </p>
-          </div>
-          <div className="sp-hero">
-            <Image
-              src="/images/specialists-hero.jpg"
-              alt="Two SH Medical specialists in white coats review a patient’s results on a tablet"
-              fill
-              priority
-              sizes="(max-width: 1440px) 100vw, 1248px"
-              style={{ objectFit: 'cover', objectPosition: '50% 30%' }}
-            />
+          <div className="sp-head">
+            <div className="stack" style={{ gap: 20 }}>
+              <p className="eyebrow" style={{ margin: 0 }}>
+                Find a specialist
+              </p>
+              <h1 className="h1" style={{ margin: 0 }}>
+                The right specialist, <em>close to you.</em>
+              </h1>
+              <p className="lede" style={{ maxWidth: 440, margin: 0 }}>
+                {all.length} ENT physicians, physician assistants, audiologists, allergists, therapists, speech-language pathologists and acupuncturists across 10 Bay Area offices.
+              </p>
+            </div>
+            <div className="sp-hero">
+              <Image
+                src="/images/specialists-hero.jpg"
+                alt="Two SH Medical specialists in white coats review a patient’s results on a tablet"
+                fill
+                priority
+                sizes="(max-width: 900px) 100vw, 640px"
+                style={{ objectFit: 'cover', objectPosition: '50% 35%' }}
+              />
+            </div>
           </div>
           <form className="finder sp-finder" action="/specialists" style={{ maxWidth: 'none' }}>
             <div className="finder-field" style={{ borderLeft: 0, paddingLeft: 0 }}>
