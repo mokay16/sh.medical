@@ -4455,3 +4455,149 @@ html.motion .reveal.is-in {
     padding: 6px 8px;
   }
 }
+
+/* Find a specialist: care slider (drag the knob along the track) */
+.care-dial {
+  margin-top: 18px;
+  padding: 24px 28px 14px;
+  border-radius: 24px;
+  background: var(--paper);
+  border: 1px solid var(--sand);
+  user-select: none;
+}
+.care-dial-readout {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.care-dial-label {
+  font-family: var(--serif);
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.1;
+  color: var(--ink);
+}
+.care-dial-count {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--teal);
+  white-space: nowrap;
+}
+.care-dial-track {
+  position: relative;
+  height: 6px;
+  margin: 0 14px;
+  border-radius: 999px;
+  background: var(--sand);
+  cursor: pointer;
+  touch-action: none;
+}
+/* bigger hit area than the thin line */
+.care-dial-track::before {
+  content: '';
+  position: absolute;
+  inset: -18px -14px;
+}
+.care-dial-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  background: var(--teal);
+  transition: width 0.25s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.care-dial-tick {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--field);
+  transform: translate(-50%, -50%);
+  transition: border-color 0.2s;
+}
+.care-dial-tick.on {
+  border-color: var(--teal);
+}
+.care-dial-knob {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--teal);
+  box-shadow: 0 4px 14px -4px rgb(15 45 48 / 0.45);
+  transform: translate(-50%, -50%);
+  transition: left 0.25s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.15s;
+  cursor: grab;
+}
+.care-dial-knob::after {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+.care-dial-track.is-dragging .care-dial-fill,
+.care-dial-track.is-dragging .care-dial-knob {
+  transition: none;
+}
+.care-dial-track.is-dragging .care-dial-knob,
+.care-dial-knob:hover {
+  transform: translate(-50%, -50%) scale(1.12);
+  cursor: grabbing;
+}
+.care-dial-knob:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+}
+.care-dial-stops {
+  position: relative;
+  list-style: none;
+  height: 34px;
+  margin: 14px 14px 0;
+  padding: 0;
+}
+.care-dial-stops li {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+.care-dial-stops li:first-child {
+  transform: none;
+}
+.care-dial-stops li:last-child {
+  transform: translateX(-100%);
+}
+.care-dial-stops button {
+  padding: 6px 4px;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.care-dial-stops button:hover,
+.care-dial-stops button.on {
+  color: var(--teal);
+  font-weight: 700;
+}
+@media (max-width: 760px) {
+  .care-dial {
+    padding: 20px 18px 22px;
+  }
+  /* too many to label on a phone: the readout above names the stop */
+  .care-dial-stops {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .care-dial-fill,
+  .care-dial-knob {
+    transition: none;
+  }
+}

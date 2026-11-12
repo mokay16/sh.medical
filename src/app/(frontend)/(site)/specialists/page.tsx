@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import type { Office, Specialist } from '@/payload-types'
 import { StaffGrid, TeamGrid } from '@/components/sections'
+import { CareDial, type CareStop } from '@/components/CareDial'
 import { MAIN_PHONE, docs, getDepartments, getSpecialists, getStaff, tel } from '@/lib/content'
 
 export const metadata: Metadata = { title: 'Find a specialist', description: 'Meet SH Medical’s physicians, surgeons, audiologists and therapists, and find the right specialist for you.' }
@@ -24,6 +25,16 @@ export default async function Specialists({ searchParams }: Props) {
   // Administrative staff: shown with "Staff" picked, or after the clinicians when browsing; they have no office to filter by
   const staffMode = care === 'staff'
   const staff = !region && (staffMode || !care) ? staffAll.filter((s) => !q || s.name.toLowerCase().includes(q.toLowerCase())) : []
+
+  // Stops on the care slider: everyone, each department with people, then administrative staff
+  const SHORT: Record<string, string> = { ent: 'ENT', audiology: 'Audiology', allergy: 'Allergy', sleep: 'Sleep', voice: 'Voice', balance: 'Balance', 'facial-plastics': 'Facial', dermatology: 'Derm', surgery: 'Surgery', wellness: 'Wellness' }
+  const stops: CareStop[] = [
+    { key: 'all', label: 'All care', short: 'All', count: all.length, href: href({ care: '' }) },
+    ...departments
+      .filter((d) => d.team?.members?.length)
+      .map((d) => ({ key: d.slug, label: d.name, short: SHORT[d.slug] || d.name.split(' ')[0], count: d.team?.members?.length || 0, href: href({ care: d.slug }) })),
+    ...(staffAll.length ? [{ key: 'staff', label: 'Administrative staff', short: 'Staff', count: staffAll.length, href: href({ care: 'staff', region: '' }) }] : []),
+  ]
 
   const groups = departments
     .filter((d) => !staffMode && (!care || d.slug === care))
@@ -83,23 +94,7 @@ export default async function Specialists({ searchParams }: Props) {
               Search
             </button>
           </form>
-          <nav aria-label="Filter by care" className="care-pills">
-            <Link className="pill" href={href({ care: '' })} aria-current={!care ? 'true' : undefined}>
-              All care <span className="count">{all.length}</span>
-            </Link>
-            {departments
-              .filter((d) => d.team?.members?.length)
-              .map((d) => (
-                <Link key={d.slug} className="pill" href={href({ care: d.slug })} aria-current={care === d.slug ? 'true' : undefined}>
-                  {d.name} <span className="count">{d.team?.members?.length}</span>
-                </Link>
-              ))}
-            {staffAll.length ? (
-              <Link className="pill" href={href({ care: 'staff', region: '' })} aria-current={staffMode ? 'true' : undefined}>
-                Administrative staff <span className="count">{staffAll.length}</span>
-              </Link>
-            ) : null}
-          </nav>
+          <CareDial stops={stops} current={care || 'all'} />
         </div>
       </section>
       <section className="section">
