@@ -4419,3 +4419,39 @@ html.motion .reveal.is-in {
 [tabindex='-1']:focus:not(:focus-visible) {
   outline: none;
 }
+
+/* Find a specialist: care filter as an even grid */
+.care-pills {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+@media (max-width: 1240px) {
+  .care-pills {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.care-pills .pill {
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 6px 14px;
+  text-align: center;
+  line-height: 1.25;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  .care-pills {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 680px) {
+  .care-pills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .care-pills .pill {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}

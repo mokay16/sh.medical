@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import type { Department, Media, Office, Review, Specialist } from '@/payload-types'
+import type { Department, Media, Office, Review, Specialist, Staff } from '@/payload-types'
 import { docs, media, sitePages, tel, deptOffices } from '@/lib/content'
 import { Inline, RichText } from '@/lib/format'
 import { DeptBadge } from './DeptChrome'
@@ -727,6 +727,29 @@ export function TeamGrid({ people, empty }: { people: Specialist[]; empty?: stri
           </Link>
         )
       })}
+    </div>
+  )
+}
+
+/** Administrative team cards: photo, name, job title and a "read more" bio. */
+export function StaffGrid({ people }: { people: Staff[] }) {
+  return (
+    <div className="grid team-grid" style={{ ['--cols' as string]: 4, gap: '40px 24px' }}>
+      {people.map((p) => (
+        <article key={p.id} className="person staff-card">
+          {media(p.photo) ? <Img media={media(p.photo)} alt={p.name} className="portrait" quality={90} sizes="(max-width: 680px) 50vw, 300px" /> : <Initials name={p.name} />}
+          <span className="name">{p.name}</span>
+          {p.jobTitle ? <span className="meta">{p.jobTitle}</span> : null}
+          {p.bio?.length ? (
+            <details className="staff-bio">
+              <summary>About {p.name.split(' ')[0]}</summary>
+              {p.bio.map((b) => (
+                <p key={b.id}>{b.text}</p>
+              ))}
+            </details>
+          ) : null}
+        </article>
+      ))}
     </div>
   )
 }

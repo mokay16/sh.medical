@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import type { Office, Specialist } from '@/payload-types'
-import { TeamGrid } from '@/components/sections'
-import { MAIN_PHONE, docs, getDepartments, getSpecialists, tel } from '@/lib/content'
+import { StaffGrid, TeamGrid } from '@/components/sections'
+import { MAIN_PHONE, docs, getDepartments, getSpecialists, getStaff, tel } from '@/lib/content'
 
 export const metadata: Metadata = { title: 'Find a specialist', description: 'Meet SH Medical’s physicians, surgeons, audiologists and therapists, and find the right specialist for you.' }
 
@@ -12,7 +12,7 @@ type Props = { searchParams: Promise<{ care?: string; region?: string; q?: strin
 
 export default async function Specialists({ searchParams }: Props) {
   const { care = '', region = '', q = '' } = await searchParams
-  const [departments, all] = await Promise.all([getDepartments(), getSpecialists()])
+  const [departments, all, staffAll] = await Promise.all([getDepartments(), getSpecialists(), getStaff()])
 
   const inRegion = (s: Specialist) => !region || docs<Office>(s.offices).some((o) => o.region === region)
   const matches = (s: Specialist) => !q || s.name.toLowerCase().includes(q.toLowerCase())
@@ -21,8 +21,12 @@ export default async function Specialists({ searchParams }: Props) {
     return `/specialists${sp.size ? `?${sp}` : ''}`
   }
 
+  // Administrative staff: shown with "Staff" picked, or after the clinicians when browsing; they have no office to filter by
+  const staffMode = care === 'staff'
+  const staff = !region && (staffMode || !care) ? staffAll.filter((s) => !q || s.name.toLowerCase().includes(q.toLowerCase())) : []
+
   const groups = departments
-    .filter((d) => !care || d.slug === care)
+    .filter((d) => !staffMode && (!care || d.slug === care))
     .map((d) => ({ d, people: docs<Specialist>(d.team?.members).filter((s) => inRegion(s) && matches(s)) }))
     .filter((g) => g.people.length)
   // With no filter, show a few people per department, and skip departments (Sleep, Surgery) whose people all appear above; filtering shows everyone.
@@ -79,7 +83,7 @@ export default async function Specialists({ searchParams }: Props) {
               Search
             </button>
           </form>
-          <nav aria-label="Filter by care" className="chips chips--scroll">
+          <nav aria-label="Filter by care" className="care-pills">
             <Link className="pill" href={href({ care: '' })} aria-current={!care ? 'true' : undefined}>
               All care <span className="count">{all.length}</span>
             </Link>
@@ -90,13 +94,18 @@ export default async function Specialists({ searchParams }: Props) {
                   {d.name} <span className="count">{d.team?.members?.length}</span>
                 </Link>
               ))}
+            {staffAll.length ? (
+              <Link className="pill" href={href({ care: 'staff', region: '' })} aria-current={staffMode ? 'true' : undefined}>
+                Administrative staff <span className="count">{staffAll.length}</span>
+              </Link>
+            ) : null}
           </nav>
         </div>
       </section>
       <section className="section">
         <div className="wrap stack" style={{ gap: 72 }}>
           <p className="muted" style={{ margin: 0 }} aria-live="polite">
-            {count} specialist{count === 1 ? '' : 's'} found
+            {staffMode ? `${staff.length} staff member${staff.length === 1 ? '' : 's'}` : `${count} specialist${count === 1 ? '' : 's'} found`}
           </p>
           {shown.map(({ d, people }) => (
             <div key={d.slug} className="stack" style={{ gap: 28 }}>
@@ -117,6 +126,21 @@ export default async function Specialists({ searchParams }: Props) {
               <TeamGrid people={browsing ? people.slice(0, 4) : people} />
             </div>
           ))}
+          {staff.length ? (
+            <div id="staff" className="stack" style={{ gap: 28 }}>
+              <div className="section-head" style={{ marginBottom: 0 }}>
+                <h2 className="h2" style={{ fontSize: 'clamp(28px, 2.6vw, 38px)' }}>
+                  Administrative staff
+                </h2>
+                {browsing && staff.length > 4 ? (
+                  <Link className="link-arrow" href={href({ care: 'staff' })}>
+                    See all {staff.length} →
+                  </Link>
+                ) : null}
+              </div>
+              <StaffGrid people={browsing ? staff.slice(0, 4) : staff} />
+            </div>
+          ) : null}
           <div className="not-sure glance" style={{ background: 'var(--teal)', color: 'var(--linen)', border: 0 }}>
             <div className="stack" style={{ gap: 10 }}>
               <p className="serif" style={{ margin: 0, fontSize: 34, lineHeight: 1.1 }}>
@@ -133,7 +157,7 @@ export default async function Specialists({ searchParams }: Props) {
               </a>
             </div>
           </div>
-          {!groups.length ? (
+          {!groups.length && !staff.length ? (
             <p className="lede">
               No specialists match. <Link href="/specialists">Show everyone</Link>, or call {MAIN_PHONE} and we’ll match you with the right specialist.
             </p>
