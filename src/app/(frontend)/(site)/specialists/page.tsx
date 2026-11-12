@@ -67,7 +67,8 @@ export default async function Specialists({ searchParams }: Props) {
         <div className="wrap sp-banner-text">
           <p className="eyebrow">Find a specialist</p>
           <h1 className="h1">
-            The right specialist, <em>close to you.</em>
+            The right specialist,
+            <br /> <em>close to you.</em>
           </h1>
           <p className="lede">
             {all.length} ENT physicians, physician assistants, audiologists, allergists, therapists, speech-language pathologists and acupuncturists across 10 Bay Area offices.
