@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import type { Office, Specialist } from '@/payload-types'
 import { StaffGrid, TeamGrid } from '@/components/sections'
@@ -65,7 +66,17 @@ export default async function Specialists({ searchParams }: Props) {
               {all.length} ENT physicians, physician assistants, audiologists, allergists, therapists, speech-language pathologists and acupuncturists across 10 Bay Area offices.
             </p>
           </div>
-          <form className="finder" action="/specialists" style={{ marginTop: 8, maxWidth: 'none' }}>
+          <div className="sp-hero">
+            <Image
+              src="/images/specialists-hero.jpg"
+              alt="Two SH Medical specialists in white coats review a patient’s results on a tablet"
+              fill
+              priority
+              sizes="(max-width: 1440px) 100vw, 1248px"
+              style={{ objectFit: 'cover', objectPosition: '50% 30%' }}
+            />
+          </div>
+          <form className="finder sp-finder" action="/specialists" style={{ maxWidth: 'none' }}>
             <div className="finder-field" style={{ borderLeft: 0, paddingLeft: 0 }}>
               <label htmlFor="sp-q">Name</label>
               <input id="sp-q" name="q" defaultValue={q} placeholder="Search by name" className="finder-input" />
