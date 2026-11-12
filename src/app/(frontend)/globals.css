@@ -2958,23 +2958,23 @@ a.pill {
 }
 
 /* The header sits on the photo until it sticks: see-through, light links and logo */
-body:has(.home-hero--full) .site-header:not([data-stuck]) {
+body:has(.home-hero--full, .sp-banner) .site-header:not([data-stuck]) {
   background: transparent;
   border-bottom-color: transparent;
 }
-body:has(.home-hero--full) .site-header:not([data-stuck]) .site-nav a {
+body:has(.home-hero--full, .sp-banner) .site-header:not([data-stuck]) .site-nav a {
   color: #fff;
 }
-body:has(.home-hero--full) .site-header:not([data-stuck]) .site-nav a[aria-current='page'] {
+body:has(.home-hero--full, .sp-banner) .site-header:not([data-stuck]) .site-nav a[aria-current='page'] {
   color: var(--sea);
 }
-body:has(.home-hero--full) .site-header:not([data-stuck]) .site-logo img {
+body:has(.home-hero--full, .sp-banner) .site-header:not([data-stuck]) .site-logo img {
   opacity: 0;
 }
-body:has(.home-hero--full) .site-header:not([data-stuck]) .site-logo .site-logo-light {
+body:has(.home-hero--full, .sp-banner) .site-header:not([data-stuck]) .site-logo .site-logo-light {
   opacity: 1;
 }
-body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
+body:has(.home-hero--full, .sp-banner) .site-header:not([data-stuck]) :focus-visible {
   outline-color: #fff;
 }
 
@@ -4749,8 +4749,10 @@ html.motion .reveal.is-in {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 400px;
-  height: min(50vh, 480px);
+  /* runs up under the see-through header, like the home hero */
+  margin-top: calc(-1 * var(--hero-overlap));
+  min-height: calc(400px + var(--hero-overlap));
+  height: calc(min(50vh, 480px) + var(--hero-overlap));
   overflow: hidden;
   background: #0f2d30;
   isolation: isolate;
@@ -4767,12 +4769,13 @@ html.motion .reveal.is-in {
   inset: 0;
   z-index: -1;
   background:
+    linear-gradient(180deg, rgb(15 45 48 / 0.55) 0, rgb(15 45 48 / 0) 220px),
     linear-gradient(90deg, rgb(15 45 48 / 0.88) 0%, rgb(15 45 48 / 0.62) 38%, rgb(15 45 48 / 0.1) 72%),
     linear-gradient(0deg, rgb(15 45 48 / 0.55) 0%, rgb(15 45 48 / 0) 45%);
 }
 .sp-banner-text {
   width: 100%;
-  padding-block: 48px 92px;
+  padding-block: calc(var(--hero-overlap) + 40px) 92px;
   color: #fff;
 }
 .sp-banner-text .eyebrow {
@@ -4815,7 +4818,7 @@ html.motion .reveal.is-in {
     background: linear-gradient(0deg, rgb(15 45 48 / 0.92) 0%, rgb(15 45 48 / 0.7) 55%, rgb(15 45 48 / 0.35) 100%);
   }
   .sp-banner-text {
-    padding-block: 64px 72px;
+    padding-block: calc(var(--hero-overlap) + 40px) 72px;
   }
   .sp-banner-text .lede {
     font-size: 16px;
