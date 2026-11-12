@@ -4456,148 +4456,153 @@ html.motion .reveal.is-in {
   }
 }
 
-/* Find a specialist: care slider (drag the knob along the track) */
-.care-dial {
+/* Find a specialist: care control knob (names slide left and right under a fixed pointer) */
+.care-knob {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-top: 18px;
-  padding: 24px 28px 14px;
-  border-radius: 24px;
+  padding: 10px;
+  border-radius: 999px;
   background: var(--paper);
   border: 1px solid var(--sand);
-  user-select: none;
+  box-shadow: inset 0 2px 10px -6px rgb(15 45 48 / 0.25);
 }
-.care-dial-readout {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 22px;
-}
-.care-dial-label {
-  font-family: var(--serif);
-  font-size: clamp(24px, 2.4vw, 32px);
-  line-height: 1.1;
-  color: var(--ink);
-}
-.care-dial-count {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--teal);
-  white-space: nowrap;
-}
-.care-dial-track {
-  position: relative;
-  height: 6px;
-  margin: 0 14px;
-  border-radius: 999px;
-  background: var(--sand);
-  cursor: pointer;
-  touch-action: none;
-}
-/* bigger hit area than the thin line */
-.care-dial-track::before {
-  content: '';
-  position: absolute;
-  inset: -18px -14px;
-}
-.care-dial-fill {
-  position: absolute;
-  inset: 0 auto 0 0;
-  border-radius: inherit;
-  background: var(--teal);
-  transition: width 0.25s cubic-bezier(0.2, 0.7, 0.2, 1);
-}
-.care-dial-tick {
-  position: absolute;
-  top: 50%;
-  width: 10px;
-  height: 10px;
+.care-knob-arrow {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: var(--paper);
-  border: 2px solid var(--field);
-  transform: translate(-50%, -50%);
-  transition: border-color 0.2s;
-}
-.care-dial-tick.on {
-  border-color: var(--teal);
-}
-.care-dial-knob {
-  position: absolute;
-  top: 50%;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  border: 1px solid var(--sand);
   background: var(--white);
-  border: 3px solid var(--teal);
-  box-shadow: 0 4px 14px -4px rgb(15 45 48 / 0.45);
-  transform: translate(-50%, -50%);
-  transition: left 0.25s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.15s;
-  cursor: grab;
+  color: var(--teal);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, opacity 0.15s;
 }
-.care-dial-knob::after {
-  content: '';
-  position: absolute;
-  inset: 7px;
-  border-radius: 50%;
+.care-knob-arrow:hover:not(:disabled) {
   background: var(--teal);
+  color: #fff;
 }
-.care-dial-track.is-dragging .care-dial-fill,
-.care-dial-track.is-dragging .care-dial-knob {
-  transition: none;
+.care-knob-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
 }
-.care-dial-track.is-dragging .care-dial-knob,
-.care-dial-knob:hover {
-  transform: translate(-50%, -50%) scale(1.12);
+.care-knob-view {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 64px;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  border-radius: 999px;
+  /* names fade out towards the edges */
+  mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent);
+}
+.care-knob-view:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 2px;
+}
+.care-knob-view.is-dragging {
   cursor: grabbing;
 }
-.care-dial-knob:focus-visible {
-  outline: 3px solid var(--teal);
-  outline-offset: 4px;
-}
-.care-dial-stops {
-  position: relative;
-  list-style: none;
-  height: 34px;
-  margin: 14px 14px 0;
-  padding: 0;
-}
-.care-dial-stops li {
+/* the pointer: a teal capsule fixed in the middle */
+.care-knob-pointer {
   position: absolute;
-  top: 0;
+  top: 6px;
+  bottom: 6px;
+  left: 50%;
+  width: 220px;
+  max-width: 100%;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: var(--teal);
+  transition: width 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 6px 18px -8px rgb(15 45 48 / 0.6);
+}
+.care-knob-pointer::before,
+.care-knob-pointer::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
   transform: translateX(-50%);
 }
-.care-dial-stops li:first-child {
-  transform: none;
+.care-knob-pointer::before {
+  top: -6px;
+  border-top-color: var(--teal);
+  border-bottom: 0;
 }
-.care-dial-stops li:last-child {
-  transform: translateX(-100%);
+.care-knob-pointer::after {
+  bottom: -6px;
+  border-bottom-color: var(--teal);
+  border-top: 0;
 }
-.care-dial-stops button {
-  padding: 6px 4px;
+.care-knob-strip {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
+}
+.care-knob-view.is-dragging .care-knob-strip {
+  transition: none;
+}
+.care-knob-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 26px;
   border: 0;
   background: none;
   font: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: inherit;
+  transition: color 0.2s, opacity 0.2s, transform 0.2s;
+}
+.care-knob-item .count {
   font-size: 13px;
+  font-weight: 600;
   color: var(--muted);
-  cursor: pointer;
-  white-space: nowrap;
 }
-.care-dial-stops button:hover,
-.care-dial-stops button.on {
-  color: var(--teal);
-  font-weight: 700;
+.care-knob-item.on {
+  color: #fff;
 }
-@media (max-width: 760px) {
-  .care-dial {
-    padding: 20px 18px 22px;
+.care-knob-item.on .count {
+  color: rgb(255 255 255 / 0.8);
+}
+@media (max-width: 680px) {
+  .care-knob {
+    gap: 6px;
+    padding: 6px;
   }
-  /* too many to label on a phone: the readout above names the stop */
-  .care-dial-stops {
-    display: none;
+  .care-knob-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .care-knob-view {
+    height: 56px;
+  }
+  .care-knob-item {
+    font-size: 15px;
+    padding: 8px 18px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .care-dial-fill,
-  .care-dial-knob {
+  .care-knob-strip,
+  .care-knob-item {
     transition: none;
   }
 }
