@@ -4125,3 +4125,31 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
   border-radius: 28px;
   margin-top: 12px;
 }
+
+/* About: administrative team */
+#team + #reviews {
+  padding-top: var(--section) !important;
+}
+.staff-bio summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--teal);
+  list-style: none;
+  min-height: 24px;
+}
+.staff-bio summary::-webkit-details-marker {
+  display: none;
+}
+.staff-bio summary::after {
+  content: ' +';
+}
+.staff-bio[open] summary::after {
+  content: ' –';
+}
+.staff-bio p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}

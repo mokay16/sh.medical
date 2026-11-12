@@ -397,8 +397,9 @@
      "christina-laane-md",
      "jennifer-bock-hughes-md",
      "sai-challapalli-md",
-     "virginia-smith-bronstein-md",
-     "farshid-taghizadeh-md"
+     "farshid-taghizadeh-md",
+     "james-c-wu-md",
+     "alexis-gandarilla-pa-c"
     ]
    },
    "reviews": [],
@@ -408,7 +409,8 @@
     "castro",
     "mateo",
     "marin",
-    "sonoma"
+    "sonoma",
+    "mtnview"
    ],
    "officePhone": "(415) 362-5443",
    "whereHeading": "ENT care in 7 Bay Area offices",
@@ -706,16 +708,11 @@
      "carey-philliposian-au-d",
      "jeffrey-lampert-au-d",
      "william-huson-au-d",
-     "michelle-griffin-au-d",
-     "nicole-schmidt-au-d",
      "jenna-cullinan-au-d",
      "rosana-amaro-au-d",
      "ana-tejeda-au-d",
-     "isabel-leyritana-au-d",
      "brooke-leonard-au-d",
-     "hannah-torok-au-d",
      "chris-nicklo-had",
-     "robert-gilligan-had",
      "pramoda-arachchige-had"
     ]
    },
@@ -728,7 +725,8 @@
     "walnut",
     "phill",
     "marin",
-    "sonoma"
+    "sonoma",
+    "mtnview"
    ],
    "officePhone": "(415) 362-2901",
    "whereHeading": "Audiology in 10 Bay Area offices",
@@ -2265,13 +2263,15 @@
     "heading": "Meet your providers",
     "members": [
      "sai-challapalli-md",
-     "aasif-kazi-md-pharm-d"
+     "aasif-kazi-md-pharm-d",
+     "james-c-wu-md"
     ]
    },
    "reviews": [],
    "offices": [
     "union",
-    "mateo"
+    "mateo",
+    "mtnview"
    ],
    "officePhone": null,
    "whereHeading": "Office & surgical locations",
@@ -2776,7 +2776,8 @@
      "christina-laane-md",
      "jennifer-bock-hughes-md",
      "aasif-kazi-md-pharm-d",
-     "sai-challapalli-md"
+     "sai-challapalli-md",
+     "james-c-wu-md"
     ]
    },
    "reviews": [],
@@ -2949,8 +2950,9 @@
    "team": {
     "eyebrow": "Your wellness team",
     "heading": "Meet the team",
-    "empty": "[Sensational Wellness providers, portraits and bios to be supplied by SH Medical.]",
-    "members": []
+    "members": [
+     "felix-meier-l-ac"
+    ]
    },
    "reviews": [],
    "offices": [],
@@ -3099,6 +3101,11 @@
       "San Francisco Surgery Center"
      ]
     }
+   ],
+   "languages": [
+    "English",
+    "Cantonese",
+    "Spanish"
    ]
   },
   {
@@ -3318,7 +3325,8 @@
    "title": "Adult and Pediatric ENT Specialist / Head and Neck Surgeon",
    "offices": [
     "union",
-    "mateo"
+    "mateo",
+    "mtnview"
    ],
    "photo": "specialist-lauren-luk-md-fars",
    "bio": [
@@ -3380,19 +3388,33 @@
     {
      "heading": "Education and Training",
      "items": [
-      "Boston Medical Center, Boston University School of Medicine, Boston, MA Department of Otolaryngology – Head and Neck Surgery Administrative Chief Resident (June 2011 – June 2012)",
-      "Boston Medical Center, Boston University School of Medicine, Boston, MA Department of Otolaryngology – Head and Neck Surgery Resident (June 2008 – June 2011)",
-      "Boston Medical Center, Boston University School of Medicine, Boston, MA Department of Surgery Intern (June 2007 – June 2008)",
-      "University of Massachusetts Medical School , Worcester, MA Doctor of Medicine (June 2007)",
-      "University of Pennsylvania , College of Arts & Sciences, Philadelphia, PA Bachelor of Arts in Biology, with Distinction in Biology, Minor in Chemistry (May 2002)"
+      "Boston Medical Center, Boston University School of Medicine, Boston, MA",
+      "Department of Otolaryngology – Head and Neck Surgery",
+      "Administrative Chief Resident (June 2011 – June 2012)",
+      "Boston Medical Center, Boston University School of Medicine, Boston, MA",
+      "Department of Otolaryngology – Head and Neck Surgery",
+      "Resident (June 2008 – June 2011)",
+      "Boston Medical Center, Boston University School of Medicine, Boston, MA",
+      "Department of Surgery",
+      "Intern (June 2007 – June 2008)",
+      "University of Massachusetts Medical School , Worcester, MA",
+      "Doctor of Medicine (June 2007)",
+      "University of Pennsylvania , College of Arts & Sciences, Philadelphia, PA",
+      "Bachelor of Arts in Biology, with Distinction in Biology, Minor in Chemistry (May 2002)"
      ]
     },
     {
      "heading": "Memberships",
      "items": [
-      "American Academy of Otolaryngology – Head and Neck Surgery , Member (June 2007 – Present) American Academy of Otolaryngic Allergy , Fellow (2012 – Present) Massachusetts Medical Society , Member (2003 – Present)"
+      "American Academy of Otolaryngology – Head and Neck Surgery , Member (June 2007 – Present)",
+      "American Academy of Otolaryngic Allergy , Fellow (2012 – Present)",
+      "Massachusetts Medical Society , Member (2003 – Present)"
      ]
     }
+   ],
+   "languages": [
+    "English",
+    "Cantonese"
    ]
   },
   {
@@ -3404,54 +3426,131 @@
     "union"
    ],
    "photo": "specialist-douglas-mann-md-mba",
-   "bio": [
-    "Mann, D.G., et . al. Tonsillectomy: Some Like It Hot. Laryngoscope 94:677, 1984",
-    "Mann, D.G. “Upper Lid Crease Approach to the Ethmoid Sinus” Am J. of Rhinology Aug-Sept 1991",
-    "Mann, D.G. “Alloplastic or Homograft Implantation for Nasal Reconstruction” in Controversies in Otolaryngology",
-    "Mann, D.G., “Supratarsal Approach to the Medial Orbit and Ethmoid Sinus”",
-    "Eighth International Symposium on Infection and Allergy in the Nose, Baltimore, MD, June 1989",
-    "Mann, D.G., “Transhelical Otoplasty” Presented to Eastern Section of American Academy of Facial Plastic and Reconstructive Surgery, Boca Raton, Fla. January 1992.",
-    "Mann, D.G., “Browpexy via Upper Lid Blepharoplasty”, Sixth International Symposium on Facial Plastic Surgery, June, 1992.",
-    "Mann, D.G. “Tip-Belt Concept in Aesthetic Rhinoplasty,” Seventh international symposium on infection and allergy in the nose, March, 1997",
-    "Visiting Professorships: Lecture series “Otolaryngology, Hearing, Balance, and Surgical Practices” Hahnemann University Masters Program in Audiology. 1981-1983",
-    "“Orbital Cellulitis” University of Pennsylvania Alumni Ophthalmological Association Scheie Eye Institute Philadelphia, PA. 1986",
-    "“Vertigo: Diagnosis and Management” Medical Grand Rounds Riddle Memorial Hospital, 1987 Media, PA",
-    "“Otitis Media in Children” Conference on Otolaryngology for Family Practitioners Philadelphia College of Osteopathic Medicine, 1984. Monthly to medical students and pediatric residents Crozer-Chester Medical Center Chester, PA “Rational Therapy of Head and Neck infections” Crozer-Chester Medical Center, 1988. “Sinusitis: The Endoscopic Approach” Riddle Memorial Hospital, 1989. Taylor Hospital, 1990 Crozer-Chester, 1991 “Facial Plastic Surgery Today” Taylor Hospital 1990 “The Natural Look in Facial Plastic Surgery” Media Rotary Club, 1991 “Facial Rejuvenation” Riddle Memorial Hospital Community Center, May 1996 “Pediatric Sinusitis” Pediatric Grand Rounds, Crozer-Chester Medical Center, March 1997 “What I Learned From 99 Noses: Rhinoplasty for the 90’s” Riddle Community Center, Nov 1996 “Not Just Another Pretty Nose” to weekly physician CME luncheon, Taylor Hospital, Jan 1997 “Erbium-YAG Laser Treatment for Facial Resurfacing” Riddle Memorial Hospital Community Education Center 1997",
-    "“Snoring and Sleep Apnea” Taylor Hospital 1998 “What Every Doctor Should Know About Hearing Loss” Paoli Memorial Hospital CME conference 1999 Sinusitis-Diagnosis and Management Paoli Memorial Hospital CME conference 2000 “Management of the Stuffy, Runny Nose” Schering pharmaceutical sponsored meeting 2000 “Doctor, I Have Sinus…Now what?” Riddle Medical Staff Grand Rounds 2000 “Minimally invasive Facial Plastic Surgery” Riddle Community Education Center 2000 “Antibiotic Usage in Sinusitis” 2000 Grand Rounds, Mercy Community Hospital 2000 “New Considerations in Antibiotic Resistance in Treatment of Sinusitis” 2001 “Antibiotics in Sinusitis: New Considerations” 2001 “Coping with Hearing Loss” Riddle Community Education Center 2003 “My Face Hurts” Falmouth Hospital Education Center 2004 “Management of Common ENT Emergencies” Falmouth Hospital ER staff 2004 “Vertigo, Diagnosis and Treatment” Falmouth Hospital Medical Staff 2007 “Acute Otitis Externa for Pediatricians” 2005 “Update on Pediatric Ear Disease” Falmouth Hospital Pediatrics 2009 What we need to know about the care of the tracheotomy patient: Respiratory therapy Department, Falmouth Hospital 2019 Douglas G. Mann,",
-    "L-Floxacin in Sinusitis, 1995 RW Johnson Pharmaceutical Research Institute Use of Floxin Otic for Treatment of Acute Otitis Externa, PPD Research and Daiichi Pharmaceuticals Use of Once Daily Floxin Otic for Acute Otitis Externa, PPD Research and Daiichi Pharmaceuticals",
-    "Education: 1968-1972 Brooklyn College, City University of New York BS, Chemistry, Summa Cum Laude",
-    "1997-1999 West Chester University , West Chester, PA MBA, Finance",
-    "1976-1978 Resident, General Surgery Montefiore Hospital Albert Einstein College of Medicine, Bronx, NY",
-    "1978-1981 Resident, Otolaryngology Yale-New Haven Hospital, New Haven, CT",
-    "1981-1983 Lieutenant Commander, Medical Corps United States Naval Reserves Naval Regional Medical Center Philadelphia, PA",
-    "1995 American Board of Facial Plastic and Reconstructive Surgery",
-    "1982-1998 Private practice, single specialty group practice Plastic Surgical, Ear, Nose and Throat Associates, PC Chester, PA 19013 Status: Shareholder",
-    "1998-2004 Private practice, Single specialty group practice Head and Neck Associates of Southeastern PA Havertown, PA 19083 Status: Partner",
-    "2004-2017 Private solo practice: Upper Cape Ear, Nose, & Throat, PC Falmouth, MA",
-    "1977 New York (131140, inactive) 1980 Connecticut (021912, inactive) 1981 Pennsylvania (024529E, inactive) 2004 Massachusetts (219845) 2022 California (G183283)",
-    "1980-1981 Instructor, Otolaryngology Yale University School of Medicine",
-    "1982-2004 Assistant Professor, Otolaryngology Thomas Jefferson University School of Medicine",
-    "1993-1998 Chairman, O.R. Committee Crozer Chester Medical Center Chester, PA",
-    "1989-1996 Chairman, Laser Committee Crozer Chester Medical Center Chester, PA",
-    "1988-1990 Executive Committee Taylor Hospital Ridley Park, PA",
-    "1986-1994 Chair, Surgical Case Review Committee Community Hospital, Chester, PA",
-    "2007-2009 Secretary treasurer, Falmouth Hospital medical Staff",
-    "2008-2018 Member, Board of Directors Cape Hospital Insurance Co.",
-    "2017-2019 Director and Secretary Cape Cod Preferred Physicians"
-   ],
-   "sections": []
+   "bio": [],
+   "sections": [
+    {
+     "heading": "Education",
+     "items": [
+      "1968-1972: Brooklyn College, City University of New York BS, Chemistry, Summa Cum Laude",
+      "1972-1976: Yale University School of Medicine, New Haven, CT, MD",
+      "1997-1999: West Chester University , West Chester, PA, MBA, Finance"
+     ]
+    },
+    {
+     "heading": "Postgraduate Training",
+     "items": [
+      "1976-1978: Resident, General Surgery Montefiore Hospital, Albert Einstein College of Medicine, Bronx, NY",
+      "1978-1981: Resident, Otolaryngology, Yale-New Haven Hospital, New Haven, CT"
+     ]
+    },
+    {
+     "heading": "Military Service",
+     "items": [
+      "1981-1983: Lieutenant Commander, Medical Corps United States Naval Reserves, Naval Regional Medical Center Philadelphia, PA"
+     ]
+    },
+    {
+     "heading": "Board Certification",
+     "items": [
+      "1981: American Board of Otolaryngology (lifetime)",
+      "1995: American Board of Facial Plastic and Reconstructive Surgery"
+     ]
+    },
+    {
+     "heading": "Professional Experience",
+     "items": [
+      "1982-1998: Private practice, single specialty group practice Plastic Surgical, Ear, Nose and Throat Associates, PC, Chester, PA 19013, Status: Shareholder",
+      "1998-2004: Private practice, Single specialty group practice Head and Neck Associates of Southeastern PA, Havertown, PA 19083, Status: Partner",
+      "2004-2017: Private solo practice: Upper Cape Ear, Nose, & Throat, PC, Falmouth, MA",
+      "2017-Present: Hospital owned practice, Falmouth, MA"
+     ]
+    },
+    {
+     "heading": "Licensure",
+     "items": [
+      "1977 New York (131140, inactive)",
+      "1980 Connecticut (021912, inactive)",
+      "1981 Pennsylvania (024529E, inactive)",
+      "2004 Massachusetts (219845)",
+      "2022 California (G183283)"
+     ]
+    },
+    {
+     "heading": "Faculty Appointments",
+     "items": [
+      "1980-1981: Instructor, Otolaryngology, Yale University School of Medicine",
+      "1982-2004: Assistant Professor, Otolaryngology, Thomas Jefferson University School of Medicine"
+     ]
+    },
+    {
+     "heading": "Committee Memberships",
+     "items": [
+      "1993-1998: Chairman, O.R. Committee, Crozer Chester Medical Center, Chester, PA",
+      "1989-1996: Chairman, Laser Committee, Crozer Chester Medical Center, Chester, PA",
+      "1988-1990: Executive Committee, Taylor Hospital, Ridley Park, PA",
+      "1986-1994: Chair, Surgical Case Review Committee, Community Hospital, Chester, PA",
+      "2003-2004: OR Committee Riddle Memorial Hospital, Media, PA.",
+      "2006-2009: OR Committee Falmouth Hospital, Falmouth, MA",
+      "2006-2014: Member, med exec committee, Falmouth hospital",
+      "2011-2013: President of Medical staff, Falmouth Hospital",
+      "2009-2011: Vice President of Medical staff, Falmouth Hospital",
+      "2007-2009: Secretary treasurer, Falmouth Hospital medical, Staff",
+      "2010-2011: Chairman Bylaws Committee Falmouth Hospital",
+      "2008-2018: Member, Board of Directors, Cape Hospital Insurance Co.",
+      "2017-2019: Director and Secretary, Cape Cod Preferred Physicians",
+      "2019-2021: Vice President, Cape Cod Preferred Physicians"
+     ]
+    }
+   ]
   },
   {
    "slug": "aasif-kazi-md-pharm-d",
    "name": "Aasif Kazi, MD, Pharm.D.",
    "role": "Head & neck surgeon · Facial plastics",
-   "title": null,
+   "title": "Board Certified Otolaryngologist / Head and Neck Surgeon · Facial Plastic and Reconstructive Surgeon · Head and Neck Oncologic Surgeon · Skull Base Surgeon",
    "offices": [
-    "union"
+    "union",
+    "mtnview"
    ],
    "photo": "specialist-aasif-kazi-md-pharm-d-portrait",
-   "bio": [],
-   "sections": []
+   "bio": [
+    "Aasif Kazi is a board certified otolaryngologist / head and neck surgeon. After obtaining his Doctor of Pharmacy, he completed medical school at the Medical College of Georgia. He went on to complete his residency in otolaryngology / head and neck at Virginia Commonwealth University. He is one of the few otolaryngologists to have undergone further specialization in endoscopic skull base surgery, facial plastic and reconstructive surgery, and advanced head and neck oncology with microvascular reconstruction at Loma Linda University. He treats a wide variety of adult and pediatric disorders including tumors of the thyroid and parathyroid glands, salivary gland tumors, sino-nasal tumors as well as other benign and malignant conditions of the head and neck. His expertise lies in complex head and neck reconstruction including free flap reconstruction of the head and neck, cosmetic and functional rhinoplasty, facial reanimation, and skull base reconstruction."
+   ],
+   "sections": [
+    {
+     "heading": "Education/Training",
+     "items": [
+      "Loma Linda University Medical Center 2023-2024",
+      "Advanced Head and Neck Oncologic and Microvascular Reconstructive Surgery Fellow",
+      "Loma Linda University Medical Center 2022-2023",
+      "Facial Plastic and Reconstructive Surgery Fellow",
+      "Skull Base Surgery Fellow",
+      "Virginia Commonwealth University Health System 2017-2021",
+      "Resident, Department of Otolaryngology / Head and Neck Surgery",
+      "Medical College of Georgia 2010-2014",
+      "Doctor of Medicine"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "American Head and Neck Society",
+      "American Academy of Facial Plastic Surgery",
+      "American Academy of Otolaryngology – Head and Neck Surgery",
+      "California Medical Association"
+     ]
+    },
+    {
+     "heading": "Hospital Affiliations",
+     "items": [
+      "UCSF",
+      "CPMC",
+      "Campus Surgery Center",
+      "Pacific Heights Surgery Center",
+      "El Camino Health"
+     ]
+    }
+   ]
   },
   {
    "slug": "christina-laane-md",
@@ -3574,22 +3673,28 @@
     {
      "heading": "Teaching Experience",
      "items": [
-      "2015 Research Assistant at Knights of Columbus Pediatrics Center 2013 – 2014 Physics Lab Teaching Assistant 2013 – 2014 Chemistry Private Tutor 2012 General Chemistry Grading Assistant 2011-2012 Biology Lab Teaching Assistant"
+      "2015 Research Assistant at Knights of Columbus Pediatrics Center",
+      "2013 – 2014 Physics Lab Teaching Assistant",
+      "2013 – 2014 Chemistry Private Tutor",
+      "2012 General Chemistry Grading Assistant",
+      "2011-2012 Biology Lab Teaching Assistant"
      ]
     },
     {
      "heading": "Education/Training",
      "items": [
-      "2023- 2024 Washington University in St Louis Fellow in Facial Plastics and Reconstructive Surgery",
-      "2018 – 2023 Otorhinolaryngology Head and Neck Surgery Residency University of Texas Health Science Center at Houston McGovern Medical School",
-      "2014-2018 Doctor of Medicine Saint Louis University School of Medicine, Saint Louis, Missouri Medical Scholars Program (Combined BS/MD program)",
-      "2010-2014 Bachelor of Sciences in Investigative Medical Sciences, Minor in Music and Biology Saint Louis University, Saint Louis, Missouri Medical Scholars Program (Combined BS/MD program)"
+      "2023- 2024 Washington University in St Louis, Fellow in Facial Plastics and Reconstructive Surgery",
+      "2018 – 2023 Otorhinolaryngology Head and Neck Surgery Residency, University of Texas Health Science Center at Houston, McGovern Medical School",
+      "2014-2018 Doctor of Medicine, Saint Louis University School of Medicine, Saint Louis, Missouri, Medical Scholars Program (Combined BS/MD program)",
+      "2010-2014 Bachelor of Sciences in Investigative Medical Sciences, Minor in, Music and Biology, Saint Louis University, Saint Louis, Missouri, Medical Scholars Program (Combined BS/MD program)"
      ]
     },
     {
      "heading": "Memberships",
      "items": [
-      "American Academy of Facial Plastics and Reconstructive Surgery American Academy of Otolaryngology American Medical Association"
+      "American Academy of Facial Plastics and Reconstructive Surgery",
+      "American Academy of Otolaryngology",
+      "American Medical Association"
      ]
     },
     {
@@ -3601,61 +3706,10 @@
    ]
   },
   {
-   "slug": "virginia-smith-bronstein-md",
-   "name": "Virginia Smith-Bronstein, MD",
-   "role": "Otolaryngologist",
-   "title": null,
-   "offices": [
-    "union",
-    "marin"
-   ],
-   "photo": null,
-   "bio": [],
-   "sections": [
-    {
-     "heading": "Education",
-     "items": [
-      "Swarthmore College – BA in Biology, minor in French, 2001-2005",
-      "Harvard Department of Stem Cell and Regenerative Biology- Lab assistant, 2007-2009",
-      "Keck School of Medicine of the University of Southern California- MD, 2009-2013",
-      "Northwestern University Department of Otolaryngology- Intern, 2013-2014",
-      "Northwestern University Department of Otolaryngology- ENT resident, 2014-2018",
-      "Northwestern University Department of Otolaryngology- Chief ENT resident, 2018-2019"
-     ]
-    },
-    {
-     "heading": "Honors",
-     "items": [
-      "Deans Recognition Junior/Senior Continuum 2011-2013",
-      "Alpha Omega Alpha Honor Society 2011- current",
-      "Merk Scholar : 2013- Awarded to the Top 5 Graduating Students",
-      "American Hearing Research Foundation Resident Grant Winner 2015-2016"
-     ]
-    },
-    {
-     "heading": "Publications",
-     "items": [
-      "Rosenthal L, Smith-Bronstein V, Cervantes S, Schroeder J. A Chronic Glottic Foreign Body Diagnosed by Radiograph After 9 Months of Symptoms. Case Reports in Pediatrics Accepted March 2018.",
-      "Ghadersohi S, Young N, Smith-Bronstein V, Hoff S, Billings K. Management of Acute Complicated Mastoiditis at an Urban, Tertiary Care Pediatric Hospital. The Laryngoscope October 31, 2016.",
-      "Richter C, Young H, Richter S, Smith-Bronstein V, Stock S, Xiao X, Whitlon D. Fluvastatin Protects Cochleae from Damage from High-Level Noise. Sci Rep. 2018 Feb 14."
-     ]
-    },
-    {
-     "heading": "Committees",
-     "items": [
-      "University of Chicago Advent Health Bolingbrook Hospital Credentialing Committee 1/2024-8/2025",
-      "Swarthmore College Alumni Admissions Interviewer 2015-2018",
-      "Northwestern McGaw Department of Otolaryngology Program Evaluation Committee 2015-2019",
-      "Northwestern Feinberg School of Medicine Faculty Instructor for Case Based Learning for GI and Head and Neck Systems 2015."
-     ]
-    }
-   ]
-  },
-  {
    "slug": "farshid-taghizadeh-md",
    "name": "Farshid Taghizadeh, MD",
    "role": "Otolaryngologist",
-   "title": null,
+   "title": "Otolaryngologist",
    "offices": [
     "union",
     "mateo"
@@ -3764,13 +3818,32 @@
    "slug": "mike-main-md",
    "name": "Mike Main, MD",
    "role": "Allergist & immunologist",
-   "title": null,
+   "title": "Allergist & Immunologist in San Francisco, CA",
    "offices": [
     "castro"
    ],
    "photo": "specialist-mike-main-md",
-   "bio": [],
-   "sections": []
+   "bio": [
+    "My name is Dr. Mike Main, an allergist and immunologist located in San Francisco, California. I am a recent graduate of the Stanford University Allergy and Immunology fellowship, having previously completed my medical school education at the New York University Grossman School of Medicine and internal medicine residency at Vanderbilt University Medical Center, where I also earned a certification in LGBTQ+ healthcare. I am thrilled to be part of San Francisco Allergy, Asthma and Immunology and to take care of conditions that can significantly hamper your quality of life, including asthma, food allergies, eczema, seasonal allergies, and chronic rhinosinusitis."
+   ],
+   "sections": [
+    {
+     "heading": "Education",
+     "items": [
+      "2022-2024 Stanford University, Allergy and Immunology Fellowship",
+      "2019-2022 Vanderbilt University Medical Center, Internal Medicine Residency",
+      "2015-2019 New York University Grossman School of Medicine, Medical Doctorate, May 2019",
+      "2009-2015 University of Nevada, Las Vegas, Bachelor of Science in Biological Sciences"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "American Academy of Allergy, Asthma and Immunology",
+      "American College of Allergy, Asthma and Immunology"
+     ]
+    }
+   ]
   },
   {
    "slug": "angela-l-chang-md",
@@ -3791,34 +3864,37 @@
     {
      "heading": "EDUCATION",
      "items": [
-      "2004 – 2008 Duke University B.S. Biological Sciences 2008 – 2012 Case Western Reserve University M.D. 2012 – 2015 Northwestern University Resident Pediatrics 2015 – 2017 University of California, San Francisco Fellow Pediatric Allergy/Immunology"
+      "2004 – 2008 Duke University B.S. Biological Sciences",
+      "2008 – 2012 Case Western Reserve University M.D.",
+      "2012 – 2015 Northwestern University Resident Pediatrics",
+      "2015 – 2017 University of California, San Francisco Fellow Pediatric Allergy/Immunology"
      ]
     },
     {
      "heading": "LICENSES, CERTIFICATION",
      "items": [
-      "2015 Medical License, California Medical Board, #135218 2015 American Board of Pediatrics, #112738 2015 DEA, #FC5137193 2017 American Board of Allergy and Immunology, #11572"
+      "2015 Medical License, California Medical Board, #135218",
+      "2015 American Board of Pediatrics, #112738",
+      "2015 DEA, #FC5137193",
+      "2017 American Board of Allergy and Immunology, #11572"
      ]
     },
     {
      "heading": "MEMBERSHIPS",
      "items": [
-      "2012 – 2015 American Academy of Pediatrics 2015 – present American Academy of Allergy, Asthma, and Immunology 2015 – present American College of Allergy, Asthma, and Immunology 2017 – present Allergy Association of Northern California"
+      "2012 – 2015 American Academy of Pediatrics",
+      "2015 – present American Academy of Allergy, Asthma, and Immunology",
+      "2015 – present American College of Allergy, Asthma, and Immunology",
+      "2017 – present Allergy Association of Northern California"
      ]
     },
     {
      "heading": "PEER REVIEWED PUBLICATIONS",
      "items": [
-      "2010 Lin A, Kirshbom PM. Early and Delayed Atrioventricular Conduction Block Following Routine Congenital Heart Surgery. Journal of Thoracic and Cardiovascular Surgery. 2010 Jul;140(1): 158-160.",
-      "2010 Lin A, Kirshbom PM. Early and Delayed Atrioventricular Conduction Block Following Routine Congenital Heart Surgery. Journal of Thoracic and Cardiovascular Surgery. 2010 Jul;140(1): 158-160.",
-      "Prepared: September 4, 2024",
-      "2012 Lin A, Danziger-Isakov L. Assessment of Cytomegalovirus Hybrid Preventative Strategy in Pediatric Heart Transplant Patients. Journal of Pediatric Infectious Diseases. 2012 Dec;1(4): 278-283.",
+      "2010 Lin A, Kirshbom PM. Early and Delayed Atrioventricular Conduction Block Following Routine Congenital Heart Surgery. Journal of Thoracic and Cardiovascular Surgery. 2010 Jul;140(1): 158-160., Prepared: September 4, 2024",
       "2012 Lin A, Danziger-Isakov L. Assessment of Cytomegalovirus Hybrid Preventative Strategy in Pediatric Heart Transplant Patients. Journal of Pediatric Infectious Diseases. 2012 Dec;1(4): 278-283.",
       "2016 Chang A, Singh AM. Natural history of food triggered atopic dermatitis and development of immediate reactions in children. Journal of Allergy and Clinical Immunology: In Practice. Mar-Apr 2016;4(2): 229-236.",
-      "2016 Chang A, Singh AM. Natural history of food triggered atopic dermatitis and development of immediate reactions in children. Journal of Allergy and Clinical Immunology: In Practice. Mar-Apr 2016;4(2): 229-236.",
       "2021 Chang A, Cabana M, LaFlam T, Patel S, Okumura M. Early Peanut Introduction and Testing: A Framework for General Pediatrician Beliefs and Practices. Pediatric Allergy, Immunology, and Pulmonology. 2021 Jun;34(2):53-59.",
-      "2021 Chang A, Cabana M, LaFlam T, Patel S, Okumura M. Early Peanut Introduction and Testing: A Framework for General Pediatrician Beliefs and Practices. Pediatric Allergy, Immunology, and Pulmonology. 2021 Jun;34(2):53-59.",
-      "2021 Cho E, Chang A. First reported allergic reaction in the United States to pili nut (Canarium ovatum). Journal of Allergy and Clinical Immunology: In Practice. 2021 Jan;9(1):537-538.",
       "2021 Cho E, Chang A. First reported allergic reaction in the United States to pili nut (Canarium ovatum). Journal of Allergy and Clinical Immunology: In Practice. 2021 Jan;9(1):537-538."
      ]
     }
@@ -3830,7 +3906,8 @@
    "role": "Allergist & immunologist",
    "title": "Allergist & Immunologist in San Francisco, CA",
    "offices": [
-    "castro"
+    "castro",
+    "pac"
    ],
    "photo": "specialist-stephanie-johannes-md",
    "bio": [
@@ -3913,11 +3990,60 @@
    "role": "Allergist & immunologist · bio to come",
    "title": null,
    "offices": [
-    "marin"
+    "marin",
+    "union"
    ],
    "photo": "specialist-bernard-a-feigenbaum-md",
-   "bio": [],
-   "sections": []
+   "bio": [
+    "Bernard A. Feigenbaum, M.D. attended the Boston University 6-year accelerated medical program and received his B.A. and M.D. in 1989. He is a Voluntary Assistant Clinical Professor at UCSD School of Medicine, and was formerly on the clinical faculty at Yale University School of Medicine and NYU School of Medicine. He is Board-Certified, and has over 30 years of clinical and teaching experience as an adult and pediatric Allergy & Immunology specialist.",
+    "He has experience with a wide range of conditions including eczema/dermatitis, food allergy, allergic nasal and sinus issues, asthma, vocal cord dysfunction, drug reactions as well as a wide range of allergy testing and procedures in the clinic and hospital.",
+    "Dr. Feigenbaum is passionate about providing evidence-based Allergy & Immunology medical care with the goal of identifying root causes and minimizing the need for medication. He is known for his friendly, caring manner, professionalism, and his teaching and communication.",
+    "He recently moved from San Diego and loves exploring SF and the Marin Headlands and jamming on his acoustic."
+   ],
+   "sections": [
+    {
+     "heading": "Education and Training",
+     "items": [
+      "1989 MD Boston University School of Medicine (Accelerated 6 Year Medical Program. Combined BA/MD 1983 to 1989), Residency & Fellowship",
+      "1989-1992 Internal Medicine Intern and Resident, (Scripps) Mercy Hospital",
+      "1992-1993 Chief Resident, (Scripps) Mercy Hospital",
+      "1993-1995 Clinical Fellow in Allergy & Immunology, Scripps Clinic"
+     ]
+    },
+    {
+     "heading": "Publications",
+     "items": [
+      "Lieberman SM, Jacobs JB, Lebowitz RA, Fitzgerald MB, Crawford J, Feigenbaum BA.Measurement of",
+      "Mycotoxins in Patients with Chronic Rhinosinusitis. Otolaryngol Head Neck Surg, 2011;145(2): 327–29",
+      "Romanos-Sirakis, E, Feigenbaum BA. Immediate Hypersensitivity Reaction and Successful Rapid Desensitization",
+      "to Rituximab Followed by Serum Sickness in a 4 Year Old. (Abstract) J Allergy Clin Immunol, 2011; 127: Supp,",
+      "AB198.",
+      "Mathew A, Ballas M, Gorsky M, Miro K, Feigenbaum BA. Rapid Desensitization Does Not Prevent",
+      "“Idiosyncratic” Reaction with Fever to Oxaliplatin. (Abstract) J Allergy Clin Immunol, 2011; 127: Supplement,",
+      "AB195.",
+      "Sutaria M, Miro K, Kister I, Herbert J, Mathew A, Feigenbaum BA. Special Considerations for Rapid Drug",
+      "Desensitization with Natalizumab. (Abstract) J Allergy Clin Immunol, 2011; 127:Supp, AB196.",
+      "Mathew A, Feigenbaum BA, Miro K, Weinfeld JN. Iatrogenic Hypogammaglobulinemia Resembling Common",
+      "Variable Immunodeficiency. (Abstract) Ann Allergy Asthma Immunol 2010; 105; A101.",
+      "Miro K, Feigenbaum BA, Mathew A, Weinfeld JN. Successful Oxaliplatin Desensitization After Unsuccessful",
+      "Infusion Using A Hypersensitivity Protocol. (Abstract) Ann Allergy Asthma Immunol 2010; 105; A27.",
+      "Feigenbaum BA. Fractional exhaled nitric oxide in subjects with atopic asthma: Correct Definitions",
+      "of the Terms Atopy and Asthma. (Correspondence) Ann Allergy Asthma Immunol 2008; 101; 110.",
+      "Feigenbaum BA, Simon RA. Remission of Steroid Dependent Asthma Following Fundoplication for",
+      "Asymptomatic Reflux. J Allergy Clin Immunol, 1995; 95:202.",
+      "Feigenbaum BA. Insect-sting challenges-all risk and no benefit? (Letter) J Allergy Clin Immunol 1995;",
+      "96:704-705.",
+      "Feigenbaum BA, Stevenson DD, Simon RA. Hydrocortisone Sodium Succinate Does Not Cross-react",
+      "With Aspirin in Aspirin Sensitive Asthmatics. J Allergy Clin Immunol 1995; 96:545-8.",
+      "Feigenbaum BA, Simon RA. A Case of Vocal Cord Dysfunction Mimicking Asthma. Ann Allergy, 1995; 74:92.",
+      "Feigenbaum BA, Stevenson DD, Simon RA. Respiratory Succinate Sensitivity That Does Not Cross-react",
+      "In An Aspirin Sensitive Asthmatic. Ann Allergy, 1994; 72:94.",
+      "Feigenbaum BA, Simon RA, Stevenson DD. Aspirin Intolerance. (Letter) Ann Allergy, 1994; 73:455-56.",
+      "Feigenbaum BA, Stevenson DD, Simon RA. Lack of Cross-Sensitivity To IV Hydrocortisone in",
+      "Aspirin-Sensitive Subjects With Asthma. J Allergy Clin Immunol 1994; 93:242."
+     ]
+    }
+   ]
   },
   {
    "slug": "terri-gallagher-au-d",
@@ -3979,33 +4105,6 @@
    "sections": []
   },
   {
-   "slug": "michelle-griffin-au-d",
-   "name": "Michelle Griffin, Au.D.",
-   "role": "Doctor of audiology",
-   "title": null,
-   "offices": [
-    "union",
-    "castro"
-   ],
-   "photo": null,
-   "bio": [],
-   "sections": []
-  },
-  {
-   "slug": "nicole-schmidt-au-d",
-   "name": "Nicole Schmidt, Au.D.",
-   "role": "Doctor of audiology",
-   "title": null,
-   "offices": [
-    "walnut"
-   ],
-   "photo": null,
-   "bio": [
-    "Nicole Schmidt, Au.D. completed her bachelor’s degree in speech-language pathology and audiology from the University of Akron and obtained her Doctorate of Audiology from Central Michigan University. Her interests include vestibular diagnostics, tinnitus management and adult amplification. Dr. Schmidt focusses on evaluating each patient thoroughly to determine where the problem stems from to provide each patient the best possible outcome. She is a member of the American Academy of Audiology and American Speech-Language-Hearing Association. She is excited to join a team that focuses on exceptional patient care."
-   ],
-   "sections": []
-  },
-  {
    "slug": "jenna-cullinan-au-d",
    "name": "Jenna Cullinan, Au.D.",
    "role": "Doctor of audiology",
@@ -4025,9 +4124,8 @@
    "role": "Doctor of audiology",
    "title": null,
    "offices": [
-    "walnut",
-    "phill",
-    "marin"
+    "marin",
+    "phill"
    ],
    "photo": "specialist-rosana-amaro-au-d",
    "bio": [
@@ -4050,41 +4148,18 @@
    "sections": []
   },
   {
-   "slug": "isabel-leyritana-au-d",
-   "name": "Isabel Leyritana, Au.D.",
-   "role": "Doctor of audiology",
-   "title": null,
-   "offices": [
-    "union"
-   ],
-   "photo": null,
-   "bio": [
-    "Isabel joined San Francisco Audiology in February 2025. Originally from the Philippines, she is a dedicated healthcare professional with over a decade of experience in both audiology and nursing. She holds a Bachelor of Science in Nursing and a master’s in clinical audiology from the University of Santo Tomas.",
-    "Her career in audiology began in 2013 in the Philippines, where she honed her clinical skills. She later expanded her expertise as a research assistant in the National University of Singapore’s M.Sc. Audiology program, focusing on hearing research in the elderly. After relocating to the United States, Isabel worked as a hearing aid dispenser while pursuing her Doctor of Audiology through Salus University’s Au.D. Bridge Program, earning her doctorate in 2021."
-   ],
-   "sections": []
-  },
-  {
    "slug": "brooke-leonard-au-d",
    "name": "Brooke Leonard, Au.D.",
    "role": "Doctor of audiology",
    "title": null,
    "offices": [
-    "union"
+    "union",
+    "mtnview"
    ],
    "photo": "specialist-brooke-leonard-au-d",
-   "bio": [],
-   "sections": []
-  },
-  {
-   "slug": "hannah-torok-au-d",
-   "name": "Hannah Torok, Au.D.",
-   "role": "Doctor of audiology",
-   "title": null,
-   "offices": [],
-   "photo": null,
    "bio": [
-    "Hannah Torok, Au.D., joined San Francisco Audiology in May 2024. She is a native Texan and received both her B.S. in Communication Sciences and Disorders and Doctorate of Audiology at the University of Texas at Austin. Dr. Torok has been living and working in the Bay Area since May 2022. Her expertise includes comprehensive hearing evaluations, patient education and hearing aid dispensing. She is excited to join our team and provide excellent patient care."
+    "Brooke Leonard, Au.D., joined SH Audiology in August 2025. She received her bachelor’s in linguistics with a specialization in speech and language sciences from the University of California, San Diego. After completing her residency at UCSF Medical Center, Dr. Leonard obtained her doctorate in audiology from the University of Colorado Boulder. A Sacramento native, she was delighted to return to Northern California for residency and is grateful for the opportunity to continue to serve the Bay Area community.",
+    "Dr. Leonard’s clinical interests include adult and pediatric diagnostic hearing evaluations, hearing aids, vestibular and balance evaluations, tinnitus management and implantable hearing technology. She is passionate about utilizing audiologic best practices to deliver comprehensive, compassionate and person-centered care."
    ],
    "sections": []
   },
@@ -4105,28 +4180,19 @@
    "sections": []
   },
   {
-   "slug": "robert-gilligan-had",
-   "name": "Robert Gilligan, HAD",
-   "role": "Hearing aid dispenser",
-   "title": null,
-   "offices": [
-    "union",
-    "mateo"
-   ],
-   "photo": null,
-   "bio": [
-    "Robert Gilligan, HAD Joined San Francisco Audiology in May 2024. Robert grew up in New Zealand where he obtained his Masters of Audiology, and operates as a hearing aid dispenser in the US. Over his career he has worked in many different specialty areas, including neurodiagnostics, pediatrics and hearing aids. Most recently, he did a stint in hearing aid manufacturing."
-   ],
-   "sections": []
-  },
-  {
    "slug": "pramoda-arachchige-had",
    "name": "Pramoda Arachchige, HAD",
    "role": "Hearing aid dispenser",
    "title": null,
-   "offices": [],
+   "offices": [
+    "walnut"
+   ],
    "photo": "specialist-pramoda-arachchige-had",
-   "bio": [],
+   "bio": [
+    "Pramoda joined San Francisco Audiology in October 2024. After growing up in Sri Lanka and earning her bachelor’s in business administration and psychology from Galilee College, she studied diagnostic testing and hearing aid amplification at Nova South Eastern University, Florida.",
+    "Pramoda has over 10 years of experience in hearing aid fitting and has helped improve the lives of many individuals with hearing loss. She is a licensed hearing aid dispenser through the Speech-Language Pathology and Audiology and Hearing Aid Dispensers Board of California.",
+    "Pramoda is excited to be part of our team and provide excellent patient care."
+   ],
    "sections": []
   },
   {
@@ -4154,8 +4220,61 @@
     "marin"
    ],
    "photo": "specialist-joshua-d-glasner-mm-ph-d-ccc-slp",
-   "bio": [],
-   "sections": []
+   "bio": [
+    "Dr. Glasner is a voice, upper airway, and swallowing-specialized speech-language pathologist. He received his clinical graduate training at Delaware Valley University. He completed clinical externships at the Johns Hopkins Voice Center and the Duke Voice Care Center, and completed a voice and upper airway clinical fellowship at the Lions Voice Clinic at the University of Minnesota. Prior to becoming a speech-language pathologist, he held academic positions in music and speech-language pathology, and taught singers all around the world—including singers at the Metropolitan Opera and on Broadway—for over a decade.",
+    "Dr. Glasner enjoys collaboratively and empathetically helping patients and clients with a variety of voice, upper airway, and swallowing conditions through their rehabilitation journey. His clinical interests include singing voice rehabilitation (all styles), chronic throat pain, gender affirming voice care, the aging voice, and neurodegenerative voice disorders."
+   ],
+   "sections": [
+    {
+     "heading": "Teaching Experience",
+     "items": [
+      "New York University, School of Professional Studies (Certificate in Vocology)- Adjunct Professor (2023-Present)",
+      "Delaware Valley University, School of Graduate Studies (Speech-Language Pathology)- Assistant Professor (2022-2024)",
+      "Clarke University (Music)- Assistant Professor (2020-2022)",
+      "Coastal Carolina University (Music)- Visiting Assistant Professor (2019-2020)",
+      "New York University, Steinhardt School of Culture, Education, and Human Development (Music)- Adjunct Professor (2013-2019)"
+     ]
+    },
+    {
+     "heading": "Education/Training",
+     "items": [
+      "University of Minnesota, Lions Voice Clinic, Clinical Fellowship in Voice and Upper Airway Speech-Language Pathology (2024-2025)",
+      "Delaware Valley University, Master of Science in Speech-Language Pathology (2023-2024)",
+      "New York University, Doctor of Philosophy in Voice Pedagogy (2013-2019)",
+      "National Center for Voice and Speech, Certificate in Vocology (2016)",
+      "Westminster Choir College, Master of Music in Voice Pedagogy and Performance, Voice Pedagogy Emphasis-Degree with Distinction (2011-2013)",
+      "University of Delaware, Bachelor of Music in Voice Performance-Degree with Distinction (2007-2011)"
+     ]
+    },
+    {
+     "heading": "Memberships",
+     "items": [
+      "American Speech-Language-Hearing Association (ASHA)",
+      "The Voice Foundation",
+      "The National Association of Teachers of Singing (NATS)",
+      "Pan-American Vocology Association (PAVA)",
+      "Acoustical Society of America"
+     ]
+    },
+    {
+     "heading": "Peer-reviewed papers",
+     "items": [
+      "1. Glasner, J.D. & Johnson, A. M. (2020). Effects of Historical Recording Technology on Vibrato in Modern-Day Opera Singers. Journal of Voice, 36(4), 464-478. DOI: https://doi.org/10.1016/j.jvoice.2020.07.022.",
+      "2. Bottalico, P., Łastowiecka, N., Glasner, J.D., & Redman, Y.G. (2022). Singing in different performance spaces: The effects of room acoustics on vibrato and pitch inaccuracy. Journal of the Acoustical Society of America, 151(6), 4131-4139. DOI: https://doi.org/10.1121/10.0011675.",
+      "3. Redman, Y.G., Glasner, J.D., D’Orazio, D. & Bottalico, P. (2023). Singing in different performance spaces: The effect of room acoustics on singers’ perception. Journal of the Acoustical Society of America, 154(4): 2256-2264. DOI: https://doi.org/10.1121/10.0021331",
+      "4. Perna, N., Redman, Y.G., & Glasner, J.D. (Nov/Dec 2024). Flipping the Voice Pedagogy Frame: Background, Foundation, and Framework. Journal of Singing, 81(2).",
+      "5. Glasner, J.D. & Nix, J. (In Press). Perception of vibrato by professional voice teachers: A pilot study. Journal of Voice. DOI: 10.1016/j.jvoice.2023.10.032",
+      "Non-peer-reviewed papers/essays",
+      "1. Howell, I.L., Gautereaux, K.J., Glasner, J.D., Perna, N., Ballantyne, C., & Nestorova, T. (March 2020). “Preliminary report: Comparing the audio quality of classical music lessons over Zoom, Microsoft Teams, VoiceLessonsApp, and Apple FaceTime.” Special Report of the New England Conservatory of Music Voice and Sound Analysis Laboratory.",
+      "2. Glasner, J.D. (October 2020). “Can you hear me now? : Evolving best practice for connecting with our clients.” PAVA InFormant, 1(3).",
+      "3. Nestorova, T. & Glasner, J.D. (September 2021). “What about extent: Examining current vibrato extent metrics.” PAVA InFormant, 2(3).",
+      "4. Bottalico, P., Glasner, J.D., & Redman, Y.G. (Feb. 2023). “The effect of room acoustics on singers’ vibrato.” Voice Foundation Newsletter, 28(1).",
+      "5. Bottalico, P., Wingfield, C., Nudelman, C., Glasner, J., & Redman, Y.G. (May 2025). “Does virtual reality match reality? Vocal performance across environments.” 188th Meeting, Architectural Acoustics, Lay Language Paper, Musical Acoustics, Signal Processing, Speech Communication. https://acoustics.org/does-virtual-reality-match-reality-vocal-performance-across-environments/",
+      "Invited Book Chapters",
+      "1. Perna, N., & Glasner, J.D. (commissioned). Online Teaching of Voice. In J. Nix & L. Scearce (Eds.), The Oxford Handbook of Vocal Pedagogy. Oxford University Press."
+     ]
+    }
+   ]
   },
   {
    "slug": "joseph-hitchcock-mm-ms",
@@ -4163,7 +4282,8 @@
    "role": "Speech-language pathologist · voice, swallowing & upper airway",
    "title": "Speech-Language Pathologist",
    "offices": [
-    "union"
+    "union",
+    "mateo"
    ],
    "photo": "specialist-joseph-hitchcock-mm-ms",
    "bio": [
@@ -4180,7 +4300,7 @@
      ]
     },
     {
-     "heading": "Clinical placements",
+     "heading": "Clinical Training",
      "items": [
       "Grabscheid Voice and Swallowing Center, Mount Sinai Hospital, New York City",
       "Saco Bay Orthopaedics and Sport Physical Therapy – Outpatient Neurogenic Rehab Clinic, Portland, ME",
@@ -4190,11 +4310,88 @@
     {
      "heading": "Research",
      "items": [
-      "Daşdöğen, Ü., Hitchcock, J., Ahn, S., Ng, B. B., & Verdolini-Abbott, K. (2026). Visual–Spatial Influences on Vocal Intensity: Effects of Speaker-to-Listener Distance and Room Size in Immersive Virtual Reality. Journal of Speech, Language, and Hearing Research, 1–9. https://doi.org/10.1044/2026_jslhr-25-00798",
-      "Daşdöğen, Ü., & Hitchcock, J. (2026). The Effects of Visual Input in Virtual Reality on Voice Production: Comparing Trained Singers and Untrained Speakers. Journal of Voice. https://doi.org/10.1016/j.jvoice.2026.01.001"
+      "Daşdöğen, Ü., Hitchcock, J., Ahn, S., Ng, B. B., & Verdolini-Abbott, K. (2026). Visual–Spatial Influences on Vocal Intensity: Effects of Speaker-to-Listener Distance and Room Size in Immersive Virtual Reality. Journal of Speech, Language, and Hearing Research , 1–9. https://doi.org/10.1044/2026_jslhr-25-00798",
+      "Daşdöğen, Ü., & Hitchcock, J. (2026). The Effects of Visual Input in Virtual Reality on Voice Production: Comparing Trained Singers and Untrained Speakers. Journal of Voice . https://doi.org/10.1016/j.jvoice.2026.01.001"
      ]
     }
    ]
+  },
+  {
+   "slug": "james-c-wu-md",
+   "name": "James C. Wu, MD",
+   "role": "ENT · Facial plastic surgeon",
+   "title": "Otolaryngologist – Head and Neck / Facial Plastic Surgeon",
+   "offices": [
+    "mateo"
+   ],
+   "photo": "specialist-james-c-wu-md",
+   "bio": [
+    "Dr. James C. Wu is a double board-certified otolaryngologist and facial plastic and reconstructive surgeon with more than 25 years of experience. He has a special interest in helping patients breathe better and focuses on the comprehensive evaluation and surgical treatment of nasal obstruction. By combining his expertise in nasal function with advanced training in facial plastic surgery, Dr. Wu carefully considers both breathing and appearance when developing an individualized treatment plan. He performs procedures such as septoplasty, turbinate reduction, nasal valve repair, functional rhinoplasty, and minimally invasive treatments for nasal obstruction and rhinorrhea. Dr. Wu’s goal is simple: to help each patient breathe more comfortably, sleep better, and improve their quality of life."
+   ],
+   "sections": [
+    {
+     "heading": "Board Certifications",
+     "items": [
+      "American Board of Otolaryngology – Head and Neck Surgery",
+      "American Board of Facial Plastic & Reconstructive Surgery"
+     ]
+    },
+    {
+     "heading": "Education & Training",
+     "items": [
+      "M.D., University of Illinois at Chicago",
+      "Residency, Otolaryngology – Head and Neck Surgery, State University of New York at Stony Brook",
+      "Fellowship, Facial Plastic and Reconstructive Surgery / Craniomaxillofacial and Skull Base Surgery, St. Luke’s Roosevelt Hospital Center for Cranial Base Surgery, Columbia University College of Physicians and Surgeons"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "alexis-gandarilla-pa-c",
+   "name": "Alexis Gandarilla, PA-C",
+   "role": "Physician assistant · ENT",
+   "title": "Board-Certified Physician Assistant",
+   "offices": [
+    "marin"
+   ],
+   "photo": "specialist-alexis-gandarilla-pa-c",
+   "bio": [
+    "Alexis Gandarilla, PA-C is a board-certified Physician Assistant specializing in Otolaryngology. She joined SH Medical in April 2026 and brings more than seven years of clinical experience in Internal Medicine and Primary Care, with a focused background in ENT care.",
+    "Alexis treats adult patients with a wide range of ear, nose, and throat conditions, including sinus disease, hearing concerns, cerumen impaction, and throat-related disorders. She is committed to providing compassionate, patient-centered care and values helping patients better understand their diagnoses and treatment options."
+   ],
+   "sections": [
+    {
+     "heading": "Education & Training",
+     "items": [
+      "Master of Science in Biomedical Sciences in Physician Assistant Studies — University of Toledo",
+      "Bachelor of Science — Santa Clara University"
+     ]
+    },
+    {
+     "heading": "Certifications & Licensure",
+     "items": [
+      "Board Certified Physician Assistant — National Commission on Certification of Physician Assistants (NCCPA)",
+      "California State Physician Assistant License"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "felix-meier-l-ac",
+   "name": "Felix Meier, L.Ac.",
+   "role": "Licensed acupuncturist",
+   "title": "Licensed Acupuncturist",
+   "offices": [
+    "union"
+   ],
+   "photo": "specialist-felix-meier-l-ac",
+   "bio": [
+    "Felix is a licensed acupuncturist at SH Medical, specializing in orthopedic, sports, and community-based care. He earned his Master of Science in Traditional Chinese Medicine from the Acupuncture & Integrative Medicine College, Berkeley (AIMC Berkeley), where he trained in classical Five Element and channel-based diagnosis alongside contemporary biomedical science.",
+    "Felix’s clinical background includes work with UC Berkeley Athletics Orthopedics and the Santa Rosa Community Clinic, in addition to maintaining his own private practice. This experience has shaped a treatment approach that draws equally on classical TCM theory and modern musculoskeletal science.",
+    "A competitive masters rower, Felix also coaches adult novice and middle school development rowers at the Marin Rowing Association. Combined with earlier experience as a personal trainer, this gives him a practical, movement-first perspective on musculoskeletal care that informs how he works with patients recovering from injury or managing chronic pain.",
+    "Felix believes that community, movement, and education are among the most powerful tools for healing, and he brings that philosophy to every patient interaction."
+   ],
+   "sections": []
   }
  ],
  "offices": [
@@ -4258,6 +4455,18 @@
    "lng": -122.3250044,
    "photo": "office-mateo",
    "photoAlt": "Gateway to Central Park in San Mateo"
+  },
+  {
+   "slug": "mtnview",
+   "name": "Mountain View",
+   "region": "Peninsula",
+   "street": "2500 Hospital Drive, Building 2, Suite A",
+   "city": "Mountain View, CA 94040",
+   "phone": "(415) 362-2901",
+   "lat": 37.3675483,
+   "lng": -122.0821822,
+   "photo": "office-mtnview",
+   "photoAlt": "Mountain View City Hall and the Center for the Performing Arts"
   },
   {
    "slug": "walnut",
@@ -4403,6 +4612,181 @@
    "name": "Sleep patient",
    "quote": "Very professional and friendly. Had me in and out in 15 minutes. Highly recommend!",
    "location": "San Francisco, CA"
+  }
+ ],
+ "staff": [
+  {
+   "slug": "alex-aruliah",
+   "name": "Alex Aruliah",
+   "jobTitle": "Chief Administrative Officer",
+   "photo": "staff-alex-aruliah",
+   "bio": [
+    "Alex Aruliah is a distinguished healthcare executive with over two decades of comprehensive experience spanning executive leadership, healthcare operations, and medical billing. With a Master’s in Business Administration, Alex has successfully led strategic and operational functions across multiple healthcare organizations, including serving as Director of Operations in prior roles.",
+    "In his current position as Chief Administrative Officer at SH Medical, Alex provides exceptional leadership across the organization. He oversees a multidisciplinary team, driving the alignment of administrative functions with clinical operations to ensure operational excellence, patient satisfaction, and sustainable growth. His deep expertise in medical billing and revenue cycle management continues to be a critical asset in ensuring financial precision and strengthening the organization’s fiscal health.",
+    "Under Alex’s strategic leadership, SH Medical has achieved a fivefold expansion—an outcome fueled by his ability to scale systems, lead change, and build high-performing teams. His approach to executive leadership combines data-driven decision-making with a deep commitment to patient-centered care.",
+    "Alex’s role transcends traditional administration; he is a catalyst for innovation and continuous improvement across the organization. With a strong foundation in both strategic planning and hands-on execution, he remains at the forefront of driving organizational success in today’s complex healthcare environment."
+   ],
+   "order": 1
+  },
+  {
+   "slug": "wendy-zhu",
+   "name": "Wendy Zhu",
+   "jobTitle": "Physician Assistant · Clinical Research",
+   "photo": "staff-wendy-zhu",
+   "bio": [
+    "Wendy’s journey with SH Medical began as a dedicated medical assistant and scribe, where she showcased her passion for healthcare. Wendy pursued her degree at the University of Washington, and returned to SH Medical in 2023 after graduating her PA program. Wendy has seamlessly transitioned into her new role, blending her past experiences with newfound knowledge.",
+    "Wendy’s contributions extend far and wide within our practice. Her involvement in managing clinical research trials has been instrumental in obtaining FDA approval for various medical devices, showcasing her commitment to advancing healthcare. Additionally, Wendy spearheaded our Nightlase program, a short in-office procedure proven to reduce snoring.",
+    "Beyond her administrative and research roles, Wendy is deeply invested in patient care. She takes pride in establishing meaningful connections with our patients through offering compassionate and personalized treatment plans. With her diverse skill set and unwavering dedication, Wendy embodies the spirit of SH Medical, continuously striving to elevate the standard of care for all. Wendy is also fluent in Cantonese."
+   ],
+   "order": 2
+  },
+  {
+   "slug": "sally-weiss",
+   "name": "Sally Weiss",
+   "jobTitle": "Patient Care Concierge, Audiology",
+   "photo": "staff-sally-weiss",
+   "bio": [
+    "Sally Weiss joined SH Medical almost 30 years ago when there were less than 5 providers and only one location. She has dedicated her professional life to the audiology field and works daily as the Patient Care Concierge of our audiology department. In her time with SH Medical, Sally has worked in almost every position and helped to hire and onboard more than half of our providers. She has helped to build our practice into what it is today and uses her extensive knowledge of healthcare management and hearing health to provide the best possible experience for our patients and staff."
+   ],
+   "order": 3
+  },
+  {
+   "slug": "joyce-carter-zeigler",
+   "name": "Joyce Carter-Zeigler",
+   "jobTitle": "",
+   "photo": "staff-joyce-carter-zeigler",
+   "bio": [
+    "I was born and raised in Berkeley, CA. I received my LPN degree from Norfolk Medical College in Norfolk, VA. I received my BA in Healthcare Management from Cal State Hayward and my MS in HR Management from USC. I have over 15 years of combined expertise in the medical field, including managing high-performing practices, human resources management, and revenue cycle management. I partnered with the physicians of the practice to develop business strategies, formulate budgets, and manage daily operations. I am also involved in medical missions with my church, donating my time and expertise in clinics and hospitals. I have been to Haiti, the Dominican Republic, and Africa. I enjoy spending time with my family and showing dogs on the weekend."
+   ],
+   "order": 4
+  },
+  {
+   "slug": "jason-gomes",
+   "name": "Jason Gomes",
+   "jobTitle": "Billing & EHR Manager",
+   "photo": "staff-jason-gomes",
+   "bio": [
+    "Jason Gomes came to SH Medical over 7 years ago and has over 15 years of experience in billing with knowledge in Radiology, Allergy, Audiology and ENT. He is the Billing and EHR Manager for the practice, overseeing AR and communicating denials and trends to providers for improved coding and billing feedback. Jason works hard to ensure the best billing experience possible for patients and SH Medical."
+   ],
+   "order": 5
+  },
+  {
+   "slug": "navnit-kaur",
+   "name": "Navnit Kaur",
+   "jobTitle": "Healthcare Department Manager, Allergy, Asthma & Immunology",
+   "photo": "staff-navnit-kaur",
+   "bio": [
+    "Navnit Kaur is an accomplished professional deeply committed to healthcare management and improving patient outcomes. With a Bachelor’s degree in Healthcare Administration from George Mason University, she has dedicated her career to enhancing healthcare operations, always prioritizing high-quality, efficient, and patient-centered care. Currently, she excels as the Healthcare Department Manager for Allergy, Asthma, and Immunology."
+   ],
+   "order": 6
+  },
+  {
+   "slug": "heather-olk",
+   "name": "Heather Olk",
+   "jobTitle": "Healthcare Department Manager, Sleep & Plastics",
+   "photo": "staff-heather-olk",
+   "bio": [
+    "I am thrilled to join the SH Medical team as a Healthcare Department Manager, supporting the Sleep and Plastics departments at the new surgery center. I have spent the last 15 years in dental management and am eager to start this new chapter in the medical sector. Originally from Denver, Colorado, I moved to San Francisco 14 years ago and have loved calling the Bay Area home ever since. Outside of work, I enjoy traveling, hiking local trails, and hosting dinner parties with friends."
+   ],
+   "order": 7
+  },
+  {
+   "slug": "jaymie-zimmerman",
+   "name": "Jaymie Zimmerman",
+   "jobTitle": "Business Manager",
+   "photo": "staff-jaymie-zimmerman",
+   "bio": [
+    "Jaymie Zimmerman serves as the Business Manager at SH Medical, bringing extensive experience in healthcare operations, patient experience, and practice development. She joined the group in 2019 and has worked in healthcare since 2017, gaining hands-on experience in roles ranging from front desk and back office to surgery scheduling. Her broad exposure across nearly every department and level of administration gives her a unique, well-rounded perspective on what it takes to deliver truly individualized, high-quality care.",
+    "Jaymie earned her Bachelor’s degree in Health Services from Saint Mary’s College of California in 2016. Since then, she has played a key role in overseeing facility-based projects, managing communications with community partners, leading marketing initiatives, and driving efforts to modernize and streamline practice operations. She is passionate about creating a healthcare environment where patients feel cared for and staff are empowered to do their best work."
+   ],
+   "order": 8
+  },
+  {
+   "slug": "jennifer-frank",
+   "name": "Jennifer Frank",
+   "jobTitle": "Human Resources Manager",
+   "photo": "staff-jennifer-frank",
+   "bio": [
+    "Jennifer Frank joined SH Medical in December 2020 as the Human Resources Manager and oversees all aspects of HR such as recruitment, onboarding, benefits management, retention, separation, employee relations, and performance management. Her commitment to professional development and staying abreast of evolving HR practices equips her to effectively support the clinic’s mission of providing exceptional patient care.",
+    "Jennifer holds a Masters in Business Administration specializing in Personnel Management from Alagappa University, India. After receiving her Bachelor’s in mathematics from Women’s Christian College close to two decades ago, she has worn various hats in HR management, project management, program management, and others including the one she considers the most challenging and rewarding of them all – as a homemaker for three lovely children, all under the age of 13 as of May 2024. Outside of work, Jennifer loves to spend time with her family and friends and enjoys going for hikes and long drives. She also loves connecting with and serving people in her local community in the SF Bay Area."
+   ],
+   "order": 9
+  },
+  {
+   "slug": "caroline-jesudoss",
+   "name": "Caroline Jesudoss",
+   "jobTitle": "Administrative Coordinator",
+   "photo": "staff-caroline-jesudoss",
+   "bio": [
+    "Caroline Jesudoss began her career in healthcare administration over 7 years ago as a front desk associate. Since then, she has graduated with her Master of Science in Healthcare Administration from Grand Canyon University while simultaneously working her way up in the healthcare and data entry fields. Caroline is now the Administrative Coordinator at SH Medical, working to ensure proper staffing, provider credentialing, and coordination between the administrative team and the clinical sites."
+   ],
+   "order": 10
+  },
+  {
+   "slug": "michelle-joseph",
+   "name": "Michelle Joseph",
+   "jobTitle": "Administrative & HR Coordinator",
+   "photo": "staff-michelle-joseph",
+   "bio": [
+    "Michelle is an Administrative & HR Coordinator with a well-rounded background in both corporate and community-focused work. She holds a Bachelor’s degree in Commerce and a Master’s degree in Human Resources, and brings a thoughtful, people-focused approach to her role.",
+    "Before moving into Human Resources, Michelle cultivated a strong background in financial crime compliance and anti-money laundering, where she developed strong attention to detail and a commitment to integrity. She has also volunteered for several years as an ESL (English as a Second Language) teacher for senior citizens—an experience that reflects her dedication to helping others and supporting lifelong learning.",
+    "Outside of work, she enjoys baking, cooking, exploring new cuisines, crafting, and spending time with her loved ones."
+   ],
+   "order": 11
+  },
+  {
+   "slug": "anita-kirubakaran",
+   "name": "Anita Kirubakaran",
+   "jobTitle": "Accounting Manager",
+   "photo": "staff-anita-kirubakaran",
+   "bio": [
+    "Anita Kirubakaran joined the SH Medical administrative team 5 years ago and worked her way up to becoming the Accounting Manager. With a passion for making a difference, she previously dedicated herself to supporting special needs children as a caregiver and educator in a school setting. Leveraging her expertise in both finance and compassion, Anita seamlessly integrates fiscal responsibility with a commitment to improving the lives of others in her role."
+   ],
+   "order": 12
+  },
+  {
+   "slug": "julio-aguilera",
+   "name": "Julio Aguilera",
+   "jobTitle": "Business Manager",
+   "photo": "staff-julio-aguilera",
+   "bio": [
+    "Julio Aguilera joined SH Medical 10 years ago and worked his way up through the administration and accounting teams to become the Business Manager. In his career, he worked in sales, finance, and operation management in various industries before finding his passion for healthcare at our practice. Julio plays a crucial role in maintaining the financial health of our practice. He is adept at interpreting complex financial data and providing strategic insights to support decision-making at all levels of the company. Additionally, Julio manages all payroll operations to ensure timely and accurate compensation for employees. He coordinates with various departments, ensuring compliance with all relevant laws and regulations while maintaining confidentiality and security of payroll data."
+   ],
+   "order": 13
+  },
+  {
+   "slug": "jesus-mejia",
+   "name": "Jesus Mejia",
+   "jobTitle": "Facilities & IT Coordinator",
+   "photo": "staff-jesus-mejia",
+   "bio": [
+    "Jesus Mejia’s career journey has been an adventure, spanning roles from chef to handyman and now our Facilities & IT Coordinator. He is the main point of contact across SH Medical’s 10+ locations and 120+ employees for everything Facilities & IT related. Jesus ensures that all technology and equipment at the practice are patient friendly and allows all staff to easily communicate about patient care."
+   ],
+   "order": 14
+  },
+  {
+   "slug": "hawi-awash",
+   "name": "Hawi Awash",
+   "jobTitle": "Branding & Marketing Strategist",
+   "photo": "staff-hawi-awash",
+   "bio": [
+    "Hawi Awash is a Branding and Marketing Strategist at SH Medical, where she leads initiatives in brand development, storytelling, and content strategy to elevate the practice’s visibility and community impact. With a strong foundation in entrepreneurship and digital marketing, Hawi brings a proactive, creative approach to healthcare branding—helping shape SH Medical’s narrative through thoughtful content and culturally resonant campaigns.",
+    "As the co-founder of the lifestyle brand YEMA, Hawi has successfully built and launched retail stores in both California and New York, using fashion as a vehicle for cultural empowerment and social impact. Her experience managing cross-functional teams, executing high-level brand campaigns, and cultivating authentic community relationships has uniquely positioned her as a strategic voice in both the medical and lifestyle sectors.",
+    "Hawi’s work is shaped by her global experiences—she’s lived, worked, and traveled across different countries, which gives her a unique ability to connect with people from all backgrounds. She’s known for being proactive, thoughtful, and deeply committed to doing meaningful work, whether it’s in healthcare, fashion, or community building."
+   ],
+   "order": 15
+  },
+  {
+   "slug": "zuzanna-zapiorkowska",
+   "name": "Zuzanna Zapiórkowska",
+   "jobTitle": "Business Operations Coordinator",
+   "photo": "staff-zuzanna-zapiorkowska",
+   "bio": [
+    "Zuzanna Zapiórkowska joined SH Medical in September 2025 as a Business Operations Coordinator. She brings over six years of experience driving strategic outcomes across healthcare, technology, and education. Prior to joining, she worked as a Project Manager at Stanford School of Medicine, where she supported high-level projects ranging from executive events to multimillion-dollar research contracts.",
+    "She holds a Master of Public Administration from Grand Valley State University and Master’s and Bachelor’s degrees in Finance and Accounting from Cracow University of Economics, and is a certified Project Management Professional (PMP).",
+    "Originally from Poland, Zuz is fluent in both Polish and English. Outside of work, she enjoys volunteering, community engagement, and spending time with her family."
+   ],
+   "order": 16
   }
  ]
 }

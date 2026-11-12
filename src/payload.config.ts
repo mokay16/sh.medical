@@ -13,6 +13,7 @@ import { Departments } from './collections/Departments'
 import { Specialists } from './collections/Specialists'
 import { Offices } from './collections/Offices'
 import { Reviews } from './collections/Reviews'
+import { Staff } from './collections/Staff'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -36,7 +37,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Departments, Specialists, Offices, Reviews, Media, Users],
+  collections: [Departments, Specialists, Offices, Staff, Reviews, Media, Users],
   editor: lexicalEditor(),
   // The site reads content directly and the admin uses the REST API; GraphQL isn't needed.
   graphQL: { disable: true },

@@ -16,8 +16,12 @@ import * as migration_20261109_224344_fp_surgical_photos from './20261109_224344
 import * as migration_20261111_003022_user_roles from './20261111_003022_user_roles';
 import * as migration_20261111_004206_version_history_and_fields from './20261111_004206_version_history_and_fields';
 import * as migration_20261111_200000_kazi_portrait from './20261111_200000_kazi_portrait';
+import * as migration_20261111_233948_staff from './20261111_233948_staff';
 import * as migration_20261112_090000_remove_sunnyvale_brentwood from './20261112_090000_remove_sunnyvale_brentwood';
 import * as migration_20261112_120000_office_photos from './20261112_120000_office_photos';
+import * as migration_20261112_150000_mountain_view_and_former_providers from './20261112_150000_mountain_view_and_former_providers';
+import * as migration_20261112_160000_sh_health_providers from './20261112_160000_sh_health_providers';
+import * as migration_20261112_170000_staff_members from './20261112_170000_staff_members';
 
 export const migrations = [
   {
@@ -103,12 +107,17 @@ export const migrations = [
   {
     up: migration_20261111_004206_version_history_and_fields.up,
     down: migration_20261111_004206_version_history_and_fields.down,
-    name: '20261111_004206_version_history_and_fields'
+    name: '20261111_004206_version_history_and_fields',
   },
   {
     up: migration_20261111_200000_kazi_portrait.up,
     down: migration_20261111_200000_kazi_portrait.down,
     name: '20261111_200000_kazi_portrait',
+  },
+  {
+    up: migration_20261111_233948_staff.up,
+    down: migration_20261111_233948_staff.down,
+    name: '20261111_233948_staff',
   },
   {
     up: migration_20261112_090000_remove_sunnyvale_brentwood.up,
@@ -119,5 +128,20 @@ export const migrations = [
     up: migration_20261112_120000_office_photos.up,
     down: migration_20261112_120000_office_photos.down,
     name: '20261112_120000_office_photos',
+  },
+  {
+    up: migration_20261112_150000_mountain_view_and_former_providers.up,
+    down: migration_20261112_150000_mountain_view_and_former_providers.down,
+    name: '20261112_150000_mountain_view_and_former_providers',
+  },
+  {
+    up: migration_20261112_160000_sh_health_providers.up,
+    down: migration_20261112_160000_sh_health_providers.down,
+    name: '20261112_160000_sh_health_providers',
+  },
+  {
+    up: migration_20261112_170000_staff_members.up,
+    down: migration_20261112_170000_staff_members.down,
+    name: '20261112_170000_staff_members'
   },
 ];

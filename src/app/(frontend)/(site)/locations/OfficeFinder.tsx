@@ -143,9 +143,9 @@ export function OfficeFinder({ offices, cares, initialQuery = '', initialCare = 
           <div className="stack" style={{ gap: 24 }}>
             <p className="eyebrow">Locations</p>
             <h1 className="h1">
-              Nine offices, <em>close to home.</em>
+              Ten offices, <em>close to home.</em>
             </h1>
-            <p className="lede">From Sonoma to San Mateo. Every office is open Monday to Friday, 8am to 5pm.</p>
+            <p className="lede">From Sonoma to Mountain View. Every office is open Monday to Friday, 8am to 5pm.</p>
             <form
               className="stack"
               style={{ gap: 10 }}

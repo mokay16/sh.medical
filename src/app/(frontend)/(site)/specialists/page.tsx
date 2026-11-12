@@ -47,7 +47,7 @@ export default async function Specialists({ searchParams }: Props) {
               The right specialist, <em>close to you.</em>
             </h1>
             <p className="lede" style={{ maxWidth: 380 }}>
-              {all.length} ENT physicians, audiologists, allergists, therapists and speech-language pathologists across 9 Bay Area offices.
+              {all.length} ENT physicians, physician assistants, audiologists, allergists, therapists, speech-language pathologists and acupuncturists across 10 Bay Area offices.
             </p>
           </div>
           <form className="finder" action="/specialists" style={{ marginTop: 8, maxWidth: 'none' }}>

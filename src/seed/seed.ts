@@ -33,7 +33,7 @@ if (process.env.SEED_ONLY_IF_EMPTY === 'true' && process.env.RESEED !== 'true') 
   }
 }
 
-for (const collection of ['reviews', 'departments', 'specialists', 'offices', 'media'] as const) {
+for (const collection of ['reviews', 'departments', 'specialists', 'staff', 'offices', 'media'] as const) {
   await payload.delete({ collection, where: { id: { exists: true } } })
 }
 
@@ -54,6 +54,7 @@ for (const d of content.departments) {
 }
 for (const s of content.specialists) if (s.photo) alts.set(s.photo, s.name)
 for (const o of content.offices) if (o.photo) alts.set(o.photo, o.photoAlt)
+for (const s of content.staff || []) if (s.photo) alts.set(s.photo, s.name)
 
 const files = fs.readdirSync(mediaDir)
 const mediaIds = new Map<string, number>()
@@ -94,11 +95,19 @@ for (const s of content.specialists) {
       title: s.title || undefined,
       photo: media(s.photo),
       offices: offices(s.offices),
+      languages: s.languages,
       bio: texts(s.bio),
       sections: s.sections,
     },
   })
   specialistIds.set(s.slug, doc.id)
+}
+
+for (const s of content.staff || []) {
+  await payload.create({
+    collection: 'staff',
+    data: { name: s.name, slug: s.slug, jobTitle: s.jobTitle || undefined, photo: media(s.photo), bio: texts(s.bio), order: s.order },
+  })
 }
 
 for (const d of content.departments) {

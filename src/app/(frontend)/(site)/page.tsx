@@ -28,12 +28,12 @@ const NEAR: [string, string][] = [
 const PILLARS: [title: string, text: string, quote?: string][] = [
   ['One team around you', 'ENT physicians, audiologists and allergists practice together, so a hearing test, a sinus scan and an allergy plan become one connected plan.'],
   ['Time to understand your options', 'We walk you through every treatment choice, so you decide with confidence.', '“I felt that I was given all the time I needed.”'],
-  ['Close to home', 'Nine offices across San Francisco, the Peninsula, the East Bay and the North Bay, open weekdays 8am–5pm.'],
+  ['Close to home', 'Ten offices across San Francisco, the Peninsula, the East Bay and the North Bay, open weekdays 8am–5pm.'],
   ['Always advancing', 'As a clinical research affiliate, we bring emerging diagnostics and treatments in hearing and ENT care to our patients, and we pair the latest technology with integrated wellness care for the whole person.'],
 ]
 const REGIONS: [string, string][] = [
   ['San Francisco', 'Union Square · Pacific Heights · California Street · Castro'],
-  ['Peninsula', 'San Mateo'],
+  ['Peninsula', 'San Mateo · Mountain View'],
   ['East Bay', 'Walnut Creek · Pleasant Hill'],
   ['North Bay', 'San Rafael · Sonoma'],
 ]
@@ -151,7 +151,7 @@ export default async function Home() {
               [
                 ['1940', '', 'Founded in San Francisco by Dr. Meyer Schindler'],
                 [String(departments.length), '', 'Specialties, from ENT to dermatology'],
-                ['9', '', 'Offices from Sonoma to San Mateo'],
+                ['10', '', 'Offices from Sonoma to Mountain View'],
                 ['4.9', ' / 5', 'Average rating from patient reviews'],
               ] as const
             ).map(([big, suffix, small]) => (
@@ -331,7 +331,7 @@ export default async function Home() {
             <div className="stack" style={{ gap: 28 }}>
               <p className="eyebrow">Locations</p>
               <h2 className="h2" style={{ fontSize: 'clamp(36px, 3.9vw, 56px)' }}>
-                Nine offices, close to home.
+                Ten offices, close to home.
               </h2>
               <dl className="loc-regions">
                 {REGIONS.map(([r, list]) => (

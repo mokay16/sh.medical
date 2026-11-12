@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CtaBand } from '@/components/sections'
-import { Img } from '@/components/ui'
-import { MAIN_PHONE, getDepartments, getSpecialists, media, tel } from '@/lib/content'
+import { Img, Initials } from '@/components/ui'
+import { MAIN_PHONE, getDepartments, getSpecialists, getStaff, media, tel } from '@/lib/content'
 
 export const metadata: Metadata = { title: 'Our story', description: 'SH Medical has cared for Bay Area patients since 1940. Read our story and how our specialists work as one team.' }
 
@@ -37,7 +37,7 @@ const APART: [string, string][] = [
 ]
 
 export default async function About() {
-  const [departments, specialists] = await Promise.all([getDepartments(), getSpecialists()])
+  const [departments, specialists, staff] = await Promise.all([getDepartments(), getSpecialists(), getStaff()])
   const reviews = departments.flatMap((d) => (d.reviews || []).map((r) => ({ ...r, dept: d.name })))
   const pi = specialists.find((s) => s.slug === 'jacob-johnson-md')
 
@@ -184,6 +184,43 @@ export default async function About() {
           </div>
         </div>
       </section>
+
+      {staff.length ? (
+        <section id="team" className="section section--paper">
+          <div className="wrap">
+            <div className="section-head">
+              <div>
+                <p className="eyebrow">Behind the scenes</p>
+                <h2 className="h2">Our administrative team</h2>
+              </div>
+              <p className="lede" style={{ maxWidth: 420 }}>
+                The people who keep our offices running, from billing and records to scheduling and facilities.
+              </p>
+            </div>
+            <div className="grid team-grid" style={{ ['--cols' as string]: 4, gap: '40px 24px' }}>
+              {staff.map((p) => (
+                <article key={p.id} className="person staff-card">
+                  {media(p.photo) ? (
+                    <Img media={media(p.photo)} alt={p.name} className="portrait" quality={90} sizes="(max-width: 680px) 50vw, 300px" />
+                  ) : (
+                    <Initials name={p.name} />
+                  )}
+                  <span className="name">{p.name}</span>
+                  {p.jobTitle ? <span className="meta">{p.jobTitle}</span> : null}
+                  {p.bio?.length ? (
+                    <details className="staff-bio">
+                      <summary>About {p.name.split(' ')[0]}</summary>
+                      {p.bio.map((b) => (
+                        <p key={b.id}>{b.text}</p>
+                      ))}
+                    </details>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section id="reviews" className="section" style={{ paddingTop: 0 }}>
         <div className="wrap">

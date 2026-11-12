@@ -70,6 +70,7 @@ export interface Config {
     departments: Department;
     specialists: Specialist;
     offices: Office;
+    staff: Staff;
     reviews: Review;
     media: Media;
     users: User;
@@ -83,6 +84,7 @@ export interface Config {
     departments: DepartmentsSelect<false> | DepartmentsSelect<true>;
     specialists: SpecialistsSelect<false> | SpecialistsSelect<true>;
     offices: OfficesSelect<false> | OfficesSelect<true>;
+    staff: StaffSelect<false> | StaffSelect<true>;
     reviews: ReviewsSelect<false> | ReviewsSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
@@ -594,6 +596,31 @@ export interface Office {
   createdAt: string;
 }
 /**
+ * The administrative team shown on the About page. Lower “order” numbers appear first.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "staff".
+ */
+export interface Staff {
+  id: number;
+  name: string;
+  slug: string;
+  /**
+   * e.g. Human Resources Manager
+   */
+  jobTitle?: string | null;
+  photo?: (number | null) | Media;
+  bio?:
+    | {
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
+  order?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * New reviews arrive as Pending. Set them to Published to show them on the site.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -688,6 +715,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'offices';
         value: number | Office;
+      } | null)
+    | ({
+        relationTo: 'staff';
+        value: number | Staff;
       } | null)
     | ({
         relationTo: 'reviews';
@@ -1032,6 +1063,25 @@ export interface OfficesSelect<T extends boolean = true> {
   photo?: T;
   lat?: T;
   lng?: T;
+  order?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "staff_select".
+ */
+export interface StaffSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  jobTitle?: T;
+  photo?: T;
+  bio?:
+    | T
+    | {
+        text?: T;
+        id?: T;
+      };
   order?: T;
   updatedAt?: T;
   createdAt?: T;

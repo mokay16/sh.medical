@@ -1,7 +1,7 @@
 import { cache } from 'react'
 import { getPayload } from 'payload'
 import config from '@payload-config'
-import type { Department, Media, Office, Review, Specialist } from '@/payload-types'
+import type { Department, Media, Office, Review, Specialist, Staff } from '@/payload-types'
 
 export const getPayloadClient = cache(() => getPayload({ config }))
 
@@ -19,6 +19,13 @@ export const getDepartment = cache(async (slug: string): Promise<Department | nu
 export const getSpecialists = cache(async (): Promise<Specialist[]> => {
   const payload = await getPayloadClient()
   const res = await payload.find({ collection: 'specialists', depth: 1, limit: 500, sort: 'name' })
+  return res.docs
+})
+
+/** The administrative team, in the order set in the admin. */
+export const getStaff = cache(async (): Promise<Staff[]> => {
+  const payload = await getPayloadClient()
+  const res = await payload.find({ collection: 'staff', depth: 1, limit: 200, sort: 'order' })
   return res.docs
 })
 
