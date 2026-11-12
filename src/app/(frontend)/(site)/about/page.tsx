@@ -43,23 +43,28 @@ export default async function About() {
 
   return (
     <>
-      <section className="section about-hero" style={{ paddingBottom: 48 }}>
-        <div className="wrap about-hero-row">
-          <div className="stack" style={{ gap: 22 }}>
-            <p className="eyebrow">Our story</p>
-            <h1 className="h1" style={{ fontSize: 'clamp(48px, 5.8vw, 84px)', lineHeight: 1 }}>
-              Rooted in San Francisco <em>since 1940.</em>
-            </h1>
-          </div>
-          <p className="lede" style={{ maxWidth: 440 }}>
+      <section className="sp-banner about-banner">
+        <Image
+          src="/images/golden-gate-panorama.jpg"
+          alt="The Golden Gate Bridge from the Marin Headlands, with San Francisco across the bay"
+          fill
+          priority
+          quality={90}
+          sizes="100vw"
+          className="sp-banner-img"
+        />
+        <div className="wrap sp-banner-text">
+          <p className="eyebrow">Our story</p>
+          <h1 className="h1">
+            Rooted in San Francisco
+            <br /> <em>since 1940.</em>
+          </h1>
+          <p className="lede">
             What began as one ENT physician’s practice on Post Street is now SH Medical: more than 35 providers caring for how Bay Area families hear,
             breathe, speak and sleep.
           </p>
         </div>
       </section>
-      <div className="wrap">
-        <Image src="/images/golden-gate.jpg" alt="The Golden Gate Bridge over the blue bay, with San Francisco beyond" width={1568} height={1046} sizes="(max-width: 1440px) 100vw, 1248px" priority className="about-photo" style={{ objectPosition: '30% 45%' }} />
-      </div>
 
       <section className="section">
         <div className="wrap">

@@ -4827,3 +4827,17 @@ html.motion .reveal.is-in {
     margin-top: -40px;
   }
 }
+
+/* About: the Golden Gate panorama as an edge-to-edge banner (shares the Find a specialist banner styles) */
+.about-banner .sp-banner-text {
+  padding-bottom: 64px;
+}
+.about-banner .sp-banner-img {
+  /* keep both towers and the city in view */
+  object-position: 40% 55%;
+}
+@media (max-width: 900px) {
+  .about-banner .sp-banner-img {
+    object-position: 30% 55%;
+  }
+}
