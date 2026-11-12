@@ -4748,9 +4748,9 @@ html.motion .reveal.is-in {
 .sp-banner {
   position: relative;
   display: flex;
-  align-items: flex-end;
-  min-height: 340px;
-  height: min(46vh, 460px);
+  align-items: center;
+  min-height: 400px;
+  height: min(50vh, 480px);
   overflow: hidden;
   background: #0f2d30;
   isolation: isolate;
@@ -4772,7 +4772,7 @@ html.motion .reveal.is-in {
 }
 .sp-banner-text {
   width: 100%;
-  padding-block: 40px 88px;
+  padding-block: 48px 92px;
   color: #fff;
 }
 .sp-banner-text .eyebrow {
@@ -4781,9 +4781,10 @@ html.motion .reveal.is-in {
 }
 .sp-banner-text .h1 {
   margin: 0;
-  max-width: 13ch;
+  max-width: 760px;
   color: #fff;
-  font-size: clamp(40px, 5vw, 68px);
+  font-size: clamp(40px, 4.4vw, 62px);
+  line-height: 1.05;
 }
 .sp-banner-text .h1 em {
   color: #bfe2dc;
