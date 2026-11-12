@@ -4595,9 +4595,17 @@ html.motion .reveal.is-in {
   .care-knob-view {
     height: 56px;
   }
+  .care-knob-view {
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  }
   .care-knob-item {
+    max-width: 200px;
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.2;
     font-size: 15px;
-    padding: 8px 18px;
+    padding: 6px 16px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

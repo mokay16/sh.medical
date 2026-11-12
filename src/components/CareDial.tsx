@@ -130,7 +130,7 @@ export function CareDial({ stops, current }: { stops: CareStop[]; current: strin
                 }}
                 type="button"
                 tabIndex={-1}
-                className={`care-knob-item${i === live ? ' on' : ''}`}
+                className={`care-knob-item${i === live && (!drag || d < 18) ? ' on' : ''}`}
                 style={{ opacity: 1 - k * 0.75, transform: `scale(${1 - k * 0.22})` }}
               >
                 {st.label}
