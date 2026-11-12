@@ -702,7 +702,17 @@ export function Faq({ d }: D) {
   )
 }
 
-export function TeamGrid({ people, empty }: { people: Specialist[]; empty?: string | null }) {
+/** The first sentence or two of a bio, cut at a word, for a card preview. */
+function excerpt(s: Specialist, max = 190) {
+  const text = (s.bio || []).map((b) => b.text).join(' ').replace(/\s+/g, ' ').trim()
+  if (!text) return ''
+  if (text.length <= max) return text
+  const cut = text.slice(0, max)
+  return `${cut.slice(0, cut.lastIndexOf(' '))}…`
+}
+
+/** `flip`: on hover (or keyboard focus) the card turns over to show a short preview of the profile. */
+export function TeamGrid({ people, empty, flip = false }: { people: Specialist[]; empty?: string | null; flip?: boolean }) {
   if (!people.length) {
     return (
       <div className="card" style={{ border: '1.5px dashed var(--field)', background: 'transparent' }}>
@@ -715,15 +725,39 @@ export function TeamGrid({ people, empty }: { people: Specialist[]; empty?: stri
       {people.map((p) => {
         const where = docs<Office>(p.offices).map((o) => o.name)
         return (
-          <Link key={p.id} href={`/specialists/${p.slug}`} className="person">
-            {media(p.photo) ? (
-              <Img media={media(p.photo)} alt={p.name} className="portrait" quality={90} sizes="(max-width: 680px) 50vw, 300px" />
-            ) : (
-              <Initials name={p.name} />
-            )}
-            <span className="name">{p.name}</span>
-            <span className="meta">{p.role}</span>
-            <span className="meta meta--teal">{where.length ? where.join(' · ') : 'Office to confirm'}</span>
+          <Link key={p.id} href={`/specialists/${p.slug}`} className={`person${flip ? ' flip-card' : ''}`}>
+            <span className="flip-inner">
+              <span className="flip-face flip-front">
+                {media(p.photo) ? (
+                  <Img media={media(p.photo)} alt={p.name} className="portrait" quality={90} sizes="(max-width: 680px) 50vw, 300px" />
+                ) : (
+                  <Initials name={p.name} />
+                )}
+                <span className="name">{p.name}</span>
+                <span className="meta">{p.role}</span>
+                <span className="meta meta--teal">{where.length ? where.join(' · ') : 'Office to confirm'}</span>
+              </span>
+              {flip ? (
+                <span className="flip-face flip-back" aria-hidden="true">
+                  <span className="flip-name">{p.name}</span>
+                  <span className="flip-title">{p.title || p.role}</span>
+                  {excerpt(p) ? <span className="flip-bio">{excerpt(p)}</span> : null}
+                  <span className="flip-facts">
+                    {where.length ? (
+                      <span>
+                        <b>Offices</b> {where.join(' · ')}
+                      </span>
+                    ) : null}
+                    {p.languages?.length ? (
+                      <span>
+                        <b>Speaks</b> {p.languages.join(', ')}
+                      </span>
+                    ) : null}
+                  </span>
+                  <span className="flip-cta">View profile →</span>
+                </span>
+              ) : null}
+            </span>
           </Link>
         )
       })}

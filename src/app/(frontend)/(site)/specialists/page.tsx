@@ -118,7 +118,7 @@ export default async function Specialists({ searchParams }: Props) {
                   </Link>
                 )}
               </div>
-              <TeamGrid people={browsing ? people.slice(0, 4) : people} />
+              <TeamGrid people={browsing ? people.slice(0, 4) : people} flip />
             </div>
           ))}
           {staff.length ? (
