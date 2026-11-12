@@ -4348,8 +4348,10 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
 .ins-logo img {
   height: auto;
   width: auto;
-  max-height: 56px;
+  max-height: 52px;
   max-width: 170px;
+  /* some logos have a white (not transparent) background: let the page colour show through */
+  mix-blend-mode: multiply;
   filter: grayscale(1);
   opacity: 0.7;
   transition: filter 0.2s, opacity 0.2s, transform 0.2s;
