@@ -2955,7 +2955,9 @@
     ]
    },
    "reviews": [],
-   "offices": [],
+   "offices": [
+    "union"
+   ],
    "officePhone": null,
    "whereHeading": "Where we’ll see you",
    "whereNote": "[Offices, or remote options, to be confirmed.]",

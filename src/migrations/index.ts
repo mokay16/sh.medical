@@ -22,6 +22,7 @@ import * as migration_20261112_120000_office_photos from './20261112_120000_offi
 import * as migration_20261112_150000_mountain_view_and_former_providers from './20261112_150000_mountain_view_and_former_providers';
 import * as migration_20261112_160000_sh_health_providers from './20261112_160000_sh_health_providers';
 import * as migration_20261112_170000_staff_members from './20261112_170000_staff_members';
+import * as migration_20261112_180000_wellness_office from './20261112_180000_wellness_office';
 
 export const migrations = [
   {
@@ -143,5 +144,10 @@ export const migrations = [
     up: migration_20261112_170000_staff_members.up,
     down: migration_20261112_170000_staff_members.down,
     name: '20261112_170000_staff_members'
+  },
+  {
+    up: migration_20261112_180000_wellness_office.up,
+    down: migration_20261112_180000_wellness_office.down,
+    name: '20261112_180000_wellness_office',
   },
 ];
