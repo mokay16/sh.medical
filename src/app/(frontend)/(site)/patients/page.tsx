@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Checks, CtaBand } from '@/components/sections'
+import { InsuranceExplorer } from '@/components/InsuranceNetwork'
 import { Icon } from '@/components/ui'
 import { MAIN_PHONE, MYCHART_URL, getDepartment, tel } from '@/lib/content'
 
@@ -104,6 +105,12 @@ export default async function Patients() {
             </h3>
             <Checks items={plans} />
           </aside>
+        </div>
+        <div className="wrap" style={{ marginTop: 'clamp(40px, 5vw, 64px)' }}>
+          <h3 className="h3" style={{ fontSize: 'clamp(26px, 2.4vw, 32px)', margin: '0 0 20px' }}>
+            Check your plan
+          </h3>
+          <InsuranceExplorer />
         </div>
       </section>
 

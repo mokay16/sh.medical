@@ -4153,3 +4153,231 @@ body:has(.home-hero--full) .site-header:not([data-stuck]) :focus-visible {
   line-height: 1.6;
   color: var(--muted);
 }
+
+/* In-network insurance (Patients explorer, home marquee) */
+.ins {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.ins-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.ins .chip {
+  cursor: pointer;
+  color: var(--ink);
+  font-family: var(--sans);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.ins .chip:hover {
+  border-color: var(--teal);
+}
+.ins .chip[aria-pressed='true'],
+.ins .chip[aria-expanded='true'] {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+.ins-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 280px;
+  max-width: 380px;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1.5px solid var(--field);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--muted);
+}
+.ins-search:focus-within {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgb(40 105 109 / 0.15);
+}
+.ins-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  color: var(--ink);
+}
+.ins-status {
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+.ins-yes,
+.ins-no {
+  font-weight: 700;
+}
+.ins-yes {
+  color: var(--teal);
+}
+.ins-no {
+  color: var(--clay);
+}
+.ins-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+.ins-tile {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 104px;
+  padding: 16px 18px;
+  border: 1.5px solid var(--sand);
+  border-radius: 18px;
+  background: var(--white);
+  cursor: pointer;
+  transition: transform 0.18s ease, border-color 0.18s, box-shadow 0.18s;
+}
+.ins-tile img {
+  max-width: 100%;
+  max-height: 64px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.75;
+  transition: filter 0.2s, opacity 0.2s;
+}
+.ins-tile:hover,
+.ins-tile:focus-visible {
+  border-color: var(--teal);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px -14px rgb(15 45 48 / 0.45);
+}
+.ins-tile:hover img,
+.ins-tile:focus-visible img,
+.ins-tile[aria-expanded='true'] img {
+  filter: none;
+  opacity: 1;
+}
+.ins-tile[aria-expanded='true'] {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgb(40 105 109 / 0.18);
+}
+.ins-more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.ins-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) auto;
+  align-items: center;
+  gap: 20px 32px;
+  padding: 24px 28px;
+  border-radius: 22px;
+  background: var(--mist);
+  animation: ins-in 0.22s ease;
+}
+.ins-panel[hidden] {
+  display: none;
+}
+.ins-details {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 6px;
+}
+@keyframes ins-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+@media (max-width: 900px) {
+  .ins-panel {
+    grid-template-columns: 1fr;
+  }
+  .ins-search {
+    max-width: none;
+  }
+}
+@media (max-width: 680px) {
+  .ins-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ins-tile {
+    height: 88px;
+  }
+}
+
+.ins-marquee {
+  display: flex;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.ins-track {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 56px;
+  padding-right: 56px;
+  animation: ins-scroll 48s linear infinite;
+}
+.ins-marquee:hover .ins-track,
+.ins-marquee:focus-within .ins-track {
+  animation-play-state: paused;
+}
+.ins-logo {
+  display: grid;
+  place-items: center;
+  height: 72px;
+  border-radius: 12px;
+  outline-offset: 6px;
+}
+.ins-logo img {
+  height: auto;
+  width: auto;
+  max-height: 56px;
+  max-width: 170px;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: filter 0.2s, opacity 0.2s, transform 0.2s;
+}
+.ins-logo:hover img,
+.ins-logo:focus-visible img {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.06);
+}
+@keyframes ins-scroll {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ins-track {
+    animation: none;
+  }
+  .ins-marquee {
+    overflow-x: auto;
+  }
+  .ins-track[aria-hidden] {
+    display: none;
+  }
+  .ins-tile,
+  .ins-panel {
+    transition: none;
+    animation: none;
+  }
+}

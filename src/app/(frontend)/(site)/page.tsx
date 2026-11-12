@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { CtaBand } from '@/components/sections'
+import { InsuranceMarquee } from '@/components/InsuranceNetwork'
 import { StoryCarousel, type Story } from '@/components/StoryCarousel'
 import { Icon, Img } from '@/components/ui'
 import { MAIN_PHONE, MYCHART_URL, getDepartments, getSpecialists, media, tel } from '@/lib/content'
@@ -322,6 +323,24 @@ export default async function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* In-network insurance */}
+      <section className="section" style={{ paddingTop: 0 }} aria-labelledby="ins-h">
+        <div className="wrap">
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">Insurance</p>
+              <h2 id="ins-h" className="h2">
+                In network with the plans you know.
+              </h2>
+            </div>
+            <Link className="link-arrow" href="/patients#insurance">
+              Check your plan →
+            </Link>
+          </div>
+        </div>
+        <InsuranceMarquee />
       </section>
 
       {/* Locations */}
