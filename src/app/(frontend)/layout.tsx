@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { DM_Serif_Text, Figtree } from 'next/font/google'
 import { getDepartments } from '@/lib/content'
 import { ICONS } from '@/components/ui'
+import { SmoothScroll } from '@/components/SmoothScroll'
 import { SITE_NAME, SITE_URL } from '@/lib/site'
 import './globals.css'
 
@@ -46,6 +47,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           Skip to content
         </a>
         {children}
+        <SmoothScroll />
       </body>
     </html>
   )
