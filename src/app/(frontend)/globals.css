@@ -4679,7 +4679,7 @@ html.motion .reveal.is-in {
   line-height: 1.55;
   color: rgb(255 255 255 / 0.92);
   display: -webkit-box;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

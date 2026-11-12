@@ -703,7 +703,7 @@ export function Faq({ d }: D) {
 }
 
 /** The first sentence or two of a bio, cut at a word, for a card preview. */
-function excerpt(s: Specialist, max = 190) {
+function excerpt(s: Specialist, max = 300) {
   const text = (s.bio || []).map((b) => b.text).join(' ').replace(/\s+/g, ' ').trim()
   if (!text) return ''
   if (text.length <= max) return text
