@@ -4548,6 +4548,7 @@ html.motion .reveal.is-in {
   top: 0;
   bottom: 0;
   left: 0;
+  width: max-content;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -4570,6 +4571,7 @@ html.motion .reveal.is-in {
   transition: width 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.2s;
 }
 .care-knob-item {
+  flex: none;
   display: inline-flex;
   align-items: baseline;
   gap: 8px;
