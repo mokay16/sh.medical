@@ -4558,6 +4558,17 @@ html.motion .reveal.is-in {
 .care-knob-view.is-dragging .care-knob-strip {
   transition: none;
 }
+/* while dragging, the pointer goes light so the names passing over it stay readable */
+.care-knob-view.is-dragging .care-knob-pointer {
+  background: var(--mist);
+  box-shadow: inset 0 0 0 2px var(--teal);
+}
+.care-knob-view.is-dragging .care-knob-pointer::before {
+  border-top-color: var(--teal);
+}
+.care-knob-pointer {
+  transition: width 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.2s;
+}
 .care-knob-item {
   display: inline-flex;
   align-items: baseline;
@@ -4599,13 +4610,16 @@ html.motion .reveal.is-in {
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
   }
   .care-knob-item {
-    max-width: 200px;
+    display: block;
+    max-width: 236px;
     white-space: normal;
     text-align: center;
-    justify-content: center;
     line-height: 1.2;
     font-size: 15px;
     padding: 6px 16px;
+  }
+  .care-knob-item .count {
+    margin-left: 6px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
