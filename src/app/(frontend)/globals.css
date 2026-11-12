@@ -4841,3 +4841,20 @@ html.motion .reveal.is-in {
     object-position: 30% 55%;
   }
 }
+/* lighter shade than Find a specialist: the bright panorama only needs a little help behind the text */
+.about-banner::before {
+  background:
+    linear-gradient(180deg, rgb(15 45 48 / 0.5) 0, rgb(15 45 48 / 0) 200px),
+    linear-gradient(90deg, rgb(15 45 48 / 0.72) 0%, rgb(15 45 48 / 0.42) 34%, rgb(15 45 48 / 0) 58%),
+    linear-gradient(0deg, rgb(15 45 48 / 0.45) 0%, rgb(15 45 48 / 0) 40%);
+}
+.about-banner .sp-banner-text .h1,
+.about-banner .sp-banner-text .lede,
+.about-banner .sp-banner-text .eyebrow {
+  text-shadow: 0 1px 18px rgb(0 0 0 / 0.35);
+}
+@media (max-width: 900px) {
+  .about-banner::before {
+    background: linear-gradient(0deg, rgb(15 45 48 / 0.85) 0%, rgb(15 45 48 / 0.55) 55%, rgb(15 45 48 / 0.35) 100%);
+  }
+}
